@@ -17,6 +17,7 @@
     font-size: 1rem;
     line-height: 1.7;
     color: #666;
+    cursor: pointer;
     &.ico{
       text-indent:0;
       &:after {
@@ -44,6 +45,7 @@
 
 .radio-type2{
   text-align:left;
+
   &-radio{
     display: none;
     &:checked {
@@ -61,6 +63,7 @@
     font-size: 1rem;
     line-height: 1.7;
     color: #666;
+    cursor: pointer;
     &.ico{
       text-indent:0;
       &:after {
@@ -85,11 +88,12 @@
 
 .checkbox{
   display: none;
+
   &:checked {
     &+label{
       color:#222;
       &.ico:after {
-        background-position:-271px -293px;
+        background-position:-272px -293px;
       }
     }
   }
@@ -99,6 +103,7 @@
     font-size: 1rem;
     line-height:1.7;
     color: #666;
+    cursor: pointer;
     &.ico{
       text-indent:0;
       &:after {
