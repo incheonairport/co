@@ -328,7 +328,7 @@
       color: #42519e;
       position: absolute;
       top: 3px;
-      left: 0;
+      left: -1px;
     }
 
     &.headline {
@@ -342,14 +342,14 @@
 
 .list5 {
   &-item {
-    padding-left: 23px;
+    padding-left: 28px;
     position: relative;
     font-size: 1rem;
 
     .number {
       position: absolute;
       top: 2px;
-      left: -5px;
+      left: 0;
       background-color: #f2f2f2;
       border: 1px solid #d9d9d9;
       width: 23px;
@@ -421,14 +421,6 @@
   }
 }
 
-.crud-ico{
-  text-indent:0;
-  &:after{
-    left:-22px;
-    right:auto;
-    bottom:4px;
-  }
-}
 // 게시판내 사용되는 아이콘
 .crud-ico{
   display:inline-block;
