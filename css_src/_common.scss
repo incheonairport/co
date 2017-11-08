@@ -523,6 +523,7 @@ em{
 
 .list2{
   &-item{
+    font-size: 1rem;
     padding-left:12px;
     position:relative;
 
@@ -561,7 +562,7 @@ em{
       color: #42519e;
       position: absolute;
       top: 3px;
-      left: 0;
+      left: -1px;
     }
 
     &.headline {
@@ -575,13 +576,14 @@ em{
 
 .list5 {
   &-item {
-    padding-left: 23px;
+    padding-left: 28px;
     position: relative;
+    font-size: 1rem;
 
     .number {
       position: absolute;
       top: 2px;
-      left: -5px;
+      left: 0;
       background-color: #f2f2f2;
       border: 1px solid #d9d9d9;
       width: 23px;
