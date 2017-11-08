@@ -451,6 +451,11 @@
     width: 24px;
     height: 24px;
   }
+  &.download:after{
+    background-position: -68px -98px;
+    width: 13px;
+    height: 12px;
+  }
 }
 
 /* link type select box */

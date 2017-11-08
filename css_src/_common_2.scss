@@ -1,0 +1,492 @@
+// top 타이틀
+.sub-top{
+  min-height:300px;
+  height:300px;
+  background-size: cover;
+  text-align:center;
+  &-inner{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  &-descbox{
+    display:table-cell;
+    font-family: nanumsq, sans-serif;
+    color:#fff;
+    font-size:2.5rem;
+    font-weight:400;
+    vertical-align:middle;
+    &-text{
+      line-height:1.2;
+    }
+    &-tit{
+      font-size:1.875rem;
+
+      &:after{
+        content: '';
+        display: block;
+        width: 40px;
+        height: 1px;
+        background: #fff;
+        margin: 25px auto;
+      }
+    }
+    &-sub{
+      font-size:2.875rem;
+      font-family: roboto, spoqa, sans-serif;
+    }
+    &.center{
+      text-align: center;
+      display: block;
+    }
+  }
+
+  &.bg1{
+    background:url(/static/co/images/bg_co_aa.jpg) center no-repeat;
+  }
+  &.bg2{
+    background:url(/static/co/images/bg_co_cc.jpg) center no-repeat;
+  }
+
+}
+
+//tab
+.tab{
+  &-sub{
+    text-align: center;
+    &-list{
+      @extend %clearfix;
+      &-item {
+        float: left;
+        &-link{
+          width: 220px;
+          height: 57px;
+          line-height:58px;
+          background:#fff;
+          font-size: 	1rem;
+          font-weight:300;
+          border: 1px solid #d9d9d9;
+          display: inline-block;
+          margin-left: -5px;
+          &.on{
+            color: #fff;
+            background: #42519e;
+            border: none;
+            font-weight: 800;
+          }
+        }
+        &+.tab-sub-list-item{
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+//btn
+.btn{
+  &-type{
+    &-normal{
+      min-width:222px;
+      height:50px;
+      background:#fff;
+      padding:0 45px 0 20px;
+      line-height:50px;
+      border:1px solid #666;
+      font-size:1.125rem;
+      font-weight:600;
+      text-align:left;
+      &.btn2{
+        background:#42519e;
+        border:none;
+        color:#fff;
+      }
+      &:hover{
+
+      }
+      &.ico{
+        text-indent:0;
+        &:after{
+          left:auto;
+          right:18px;
+        }
+      }
+      &.btn3{
+        background-color: #333649;
+        color:#fff;
+        border: none;
+      }
+    }
+    &-small{
+      min-width:116px;
+      height:30px;
+      background:#fff;
+      padding:0 32px 0 12px;
+      line-height:30px;
+      border:1px solid #d9d9d9;
+      border-radius:50px;
+      font-size:0.875rem;
+      font-weight:400;
+      color:#222;
+      cursor: pointer;
+      &.point{
+        background:#f2f2f2;
+      }
+      &.under{
+        background:none;
+        color:#fff;
+        &:hover{
+          border-color:rgba(255,255,255,.4);
+          color:#ffae44;
+          &:after{
+            opacity:.4;
+          }
+        }
+      }
+      &.detail{
+        padding:0 58px 0 14px;
+        min-width:110px;
+      }
+
+      &.ico{
+        text-indent:0;
+        &:after{
+          left:auto;
+          right:14px;
+        }
+      }
+    }
+  }
+}
+
+//고객참여 버튼
+.user{
+  &-info{
+    margin-right: 10px;
+  }
+  &-input{
+    &-text{
+      width:80%;
+      height:35px;
+      font-size:1rem;
+      border: 1px solid #d9d9d9;
+      box-sizing: border-box;
+      float:left;
+    }
+
+    &-address{
+      min-width:120px;
+      height:35px;
+      line-height: 35px;
+      padding: 0 20px;
+      background-color: #f2f2f2;
+      border: 1px solid #d9d9d9;
+      font-size: 	0.875rem;
+      font-weight: 900;
+      text-align: center;
+      display: inline-block;
+    }
+
+    &-link{
+      min-width:117px;
+      height:35px;
+      line-height: 35px;
+      padding: 0 20px;
+      background-color: #f2f2f2;
+      border: 1px solid #d9d9d9;
+      font-size: 	0.875rem;
+      font-weight: 900;
+      text-align: center;
+      display: inline-block;
+
+      &.address{
+        min-width:120px;
+      }
+
+      &.small{
+        min-width:84px;
+        height:26px;
+        line-height:26px;
+        font-size: 0.8125rem;
+        font-weight:700;
+        color: #666;
+      }
+
+      &.shortcut{
+        min-width:88px;
+        height:26px;
+        font-weight: normal;
+        line-height:26px;
+        font-size: 0.875rem;
+        background-color: #fff;
+        color: #222;
+      }
+    }
+
+  }
+}
+
+//문단,강조
+.guide-desc {
+  display: block;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  &.color {
+    color: #d43e41;
+  }
+  &.mark{
+    font-size: 0.875rem;
+    text-indent:-20px;
+    padding-left: 20px;
+
+    &:before{
+      content:"※";
+      padding-right: 5px;
+    }
+
+    &-center{
+      text-indent: 0;
+      padding: 0 0;
+      text-align: center;
+    }
+  }
+  &.mark2{
+    text-indent:-20px;
+    padding-left:20px;
+    font-size: 14px;
+
+    &:before{
+      content:"*";
+      position: relative;
+      top: 2px;
+      padding-right: 5px;
+    }
+  }
+}
+
+//리스트 스타일
+.list1{
+  &-item{
+    font-size: 	1rem;
+    padding-left:12px;
+    margin-top:8px;
+    position:relative;
+    &:first-child{
+      margin-top:0
+    }
+
+    &:before{
+      content: "·";
+      font-size: 	1.625rem;
+      position:absolute;
+      top:-6px;
+      left:0;
+    }
+  }
+}
+
+.list2{
+  &-item{
+    font-size: 1rem;
+    padding-left:12px;
+    position:relative;
+
+    &:before{
+      content: "-";
+      font-size: 	1rem;
+      font-weight: 300;
+      position:absolute;
+      top:0;
+      left:0;
+    }
+  }
+}
+
+.list3{
+  &-item{
+    padding-left:23px;
+    position:relative;
+
+    .number{
+      position:absolute;
+      top:0;
+      left:0;
+    }
+  }
+}
+
+.list4 {
+  &-item {
+    padding-left: 20px;
+    position: relative;
+    &:before {
+      content: "▶";
+      font-size: 0.875rem;
+      font-weight: normal;
+      color: #42519e;
+      position: absolute;
+      top: 3px;
+      left: 0;
+    }
+
+    &.headline {
+      font-size:1.125rem;
+      color: #42519e;
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+.list5 {
+  &-item {
+    padding-left: 23px;
+    position: relative;
+    font-size: 1rem;
+
+    .number {
+      position: absolute;
+      top: 2px;
+      left: -5px;
+      background-color: #f2f2f2;
+      border: 1px solid #d9d9d9;
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+
+      &-txt {
+        position: absolute;
+        font-size: 0.875rem;
+        top: 0;
+        left: 6px;
+
+        &-last{
+          position: absolute;
+          font-size: 0.875rem;
+          top: 0;
+          left: 2px;
+        }
+
+      }
+    }
+  }
+}
+
+/*글상자*/
+.text-box{
+  width:100%;
+  border: 1px solid #d9d9d9;
+  padding:30px;
+
+  &-headline{
+    font-weight: 700;
+    font-family:nanumsq, sans-serif;
+  }
+
+  &-headline-col{
+    margin-bottom: 20px;
+  }
+
+}
+
+/*select*/
+.object-list{
+  width:80%;
+  height:35px;
+  padding: 0 15px;
+  border: 1px solid #d9d9d9;
+  font-size: 1rem;
+
+  &option{
+    font-size: 1rem;
+  }
+}
+
+/*글작성 필수아이콘*/
+.table {
+  th, td {
+    .important {
+      display: inline-block;
+      color: #666;
+      &:after {
+        content: "*";
+        position: relative;
+        top: 4px;
+        right: -10px;
+        color: #d43e41;
+      }
+    }
+  }
+}
+
+.crud-ico{
+  text-indent:0;
+  &:after{
+    left:-22px;
+    right:auto;
+    bottom:4px;
+  }
+}
+// 게시판내 사용되는 아이콘
+.crud-ico{
+  display:inline-block;
+  position:relative;
+  text-indent:-999em;
+  &:after{
+    content:'';
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    margin:auto;
+    background: url(/static/ap/images/spr_ico_crud.png) no-repeat;
+  }
+
+  &.file-hwp:after{
+    background-position:-19px -18px;
+    width: 14px;
+    height: 17px;
+  }
+
+  &.file-txt:after{
+    background-position:-44px -18px;
+    width: 15px;
+    height: 17px;
+  }
+
+  &.file-img:after{
+    background-position:-70px -18px;
+    width: 13px;
+    height: 17px;
+  }
+
+  &.file-xlsx:after{
+    background-position:-94px -18px;
+    width: 14px;
+    height: 17px;
+  }
+
+  &.file-ppt:after{
+    background-position:-119px -18px;
+    width: 14px;
+    height: 17px;
+  }
+
+  &.file-pdf:after{
+    background-position:-144px -18px;
+    width: 14px;
+    height: 17px;
+  }
+
+  &.arrow-reply:after{
+    background-position:-19px -56px;
+    width: 12px;
+    height: 13px;
+  }
+
+
+}
