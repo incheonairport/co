@@ -8,6 +8,7 @@
 .sub-top{
   min-height:300px;
   height:300px;
+  padding: 62px 0 40px;
   background-size: cover;
   text-align:center;
   &-inner{
@@ -27,7 +28,7 @@
     }
     &-tit{
       font-size:1.875rem;
-
+      color: #ffae44;
       &:after{
         content: '';
         display: block;
@@ -39,41 +40,23 @@
     }
     &-sub{
       font-size:2.875rem;
-      font-family: roboto, spoqa, sans-serif;
-    }
-    &.center{
-      text-align: center;
-      display: block;
+      font-family: nanumsq, sans-serif;
+      color: #fff;
     }
   }
 
   &.bg1{
     background:url(/static/co/images/bg_category_01.jpg) center no-repeat;
   }
-  &.bg2{
+  &.bg3{
     background:url(/static/co/images/bg_category_03.jpg) center no-repeat;
   }
 
 }
 
-.inner-section{
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-  box-sizing: border-box;
-  @extend %clearfix;
-}
-
-.sub-contents{
-  width: 870px;
-  float: right;
-}
-
-#top-contents{
-  margin-top:126px;
-}
-
 .location{
+  height:15px;
+  margin-bottom: 20px;
   position: relative;
   &-btn{
     position: absolute;
@@ -123,6 +106,35 @@
         }
       }
     }
+  }
+}
+
+.inner-section{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+  @extend %clearfix;
+}
+
+#top-contents{
+  margin-top:126px;
+}
+.left-menu{
+  float: left;
+}
+.sub-contents{
+  width: 870px;
+  float: right;
+  &-heading1{
+    margin-bottom: 40px;
+    font-size: 2.315rem;
+    font-family: nanumsq, sans-serif;
+  }
+  &-heading2{
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-family: nanumsq, sans-serif;
   }
 }
 
