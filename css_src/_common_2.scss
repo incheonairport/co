@@ -1,0 +1,18 @@
+.sub-top{
+  &-descbox{
+    &-sub{
+      color: #fff;
+    }
+  }
+}
+
+.board-page{
+  font-size: 0.875rem;
+  text-align: right;
+  margin: 20px;
+
+  &.b{
+    font-weight: 700;
+  }
+}
+
