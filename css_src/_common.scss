@@ -75,6 +75,9 @@
 
 .location{
   position: relative;
+  height:15px;
+  margin-bottom: 20px;
+
   &-btn{
     position: absolute;
     top:20px;
@@ -817,7 +820,7 @@ em{
         background: #2f4985;
         border:5px solid #2f4985;
         border-radius: 20px;
-        font-size: 0px;
+        font-size: 0;
         position: relative;
         top: -5px;
         &.weekend{
@@ -1811,7 +1814,7 @@ button, a {
     @extend %clearfix;
     &-item{
       float:left;
-      padding:0 30px 0px 10px;
+      padding:0 30px 0 10px;
 
       .list-article {
         width: 139px;
