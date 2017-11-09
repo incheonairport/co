@@ -133,7 +133,7 @@
     font-family: nanumsq, sans-serif;
   }
   &-heading2{
-    margin-bottom: 30px;
+    margin-bottom:30px;
     font-size: 1.5rem;
     font-family: nanumsq, sans-serif;
   }
@@ -141,15 +141,9 @@
 
 //article
 .article{
-  margin-bottom:60px;
+  margin-bottom:50px;
   &:last-child{
     margin-bottom:0;
-  }
-  &-head{
-    margin-bottom:20px;
-    font-family:nanumsq, sans-serif;
-    font-size:1.625rem;
-    font-weight:400;
   }
 }
 
@@ -703,7 +697,7 @@ em{
       }
 
       & .board-list-link{
-        font-size:1.125rem;
+        font-size:1rem;
         transition:all .2s;
         &:hover{
           color:#999;
@@ -899,6 +893,11 @@ em{
         color: #444;
       }
      }
+    &-list{
+      margin-top: 20px;
+      border-top:1px solid #d9d9d9;
+      border-bottom:1px solid #d9d9d9;
+     }
     }
   }
   th, td {
@@ -929,12 +928,16 @@ em{
 // 이벤트 게시판 상세
 .borad-view{
   .view-head{
-    padding:25px 30px;
-    border-bottom:1px solid #a5a7aa;
+    border-bottom:1px solid #d9d9d9;
     &-tit{
-      display:inline;
-      font-size:1.375rem;
+      padding:20px;
+      display:block;
+      font-size:1rem;
       font-weight:900;
+      border-bottom:1px solid #d9d9d9;
+      &.bg{
+        background: #f3f4f8;
+      }
     }
     &-date{
       display:inline;
@@ -942,8 +945,8 @@ em{
     }
     &-info{
       @extend %clearfix;
-      margin-top:16px;
-      font-size:1rem;
+      padding:20px;
+      font-size:0.875rem;
       .info-tit{
         float:left;
         margin-right:10px;
@@ -960,6 +963,7 @@ em{
           vertical-align:middle;
         }
         &:last-child:after{
+
           display:none;
         }
       }
@@ -971,6 +975,7 @@ em{
   .view-file{
     @extend %clearfix;
     border-top:1px solid #d9d9d9;
+    border-bottom:1px solid #d9d9d9;
     padding:30px;
     .file-group-text{
       float:left;
@@ -1041,6 +1046,29 @@ em{
             display:none;
           }
         }
+      }
+    }
+  }
+  .view-list{
+    border-top: 1px solid #d9d9d9;
+    &-item{
+      border-bottom: 1px solid #d9d9d9;
+      @extend %clearfix;
+      &-prev, &-next{
+        width: 135px;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.875rem;
+        font-weight: 700;
+        background: #f2f4f7;
+        float: left;
+        display: inline-block;
+      }
+      &-title{
+        padding-left: 20px;
+        float: left;
+        line-height:54px;
+        display: inline-block;
       }
     }
   }
@@ -1182,9 +1210,12 @@ em{
       font-size:0.875rem;
       font-weight:400;
       color:#222;
-      cursor: pointer;
+      display: inline-block;
       &.point{
         background:#f2f2f2;
+      }
+      &.txt{
+        padding:0px 10px;
       }
       &.under{
         background:none;
@@ -1300,6 +1331,9 @@ button, a {
       .left{
         text-align: left;
       }
+    }
+    &.right{
+      text-align: right;
     }
   }
 
@@ -1457,7 +1491,7 @@ button, a {
 /*select*/
 .object-list{
   width:250px;
-  height:50px;
+  height:40px;
   padding: 0 15px;
   border: 1px solid #d9d9d9;
 }
@@ -1549,7 +1583,9 @@ button, a {
 
   &-headline{
     font-weight: 700;
+    font-size: 	1.125rem;
     font-family:nanumsq, sans-serif;
+    line-height: 1.5;
   }
 
   &-headline-col{
@@ -1559,24 +1595,68 @@ button, a {
 }
 
 .textbox{
-  width: 870px;
-  @extend %clearfix;
-  &-article{
-    width: calc(50% - 10px);
-    border: 1px solid #d9d9d9;
-    box-sizing:border-box;
-    float: left;
-    position: relative;
-    display: block;
-    &-txt{
-      padding: 20px;
-      background: #fff;
-      display: inline-block;
+  border: 1px solid #d9d9d9;
+  box-sizing:border-box;
+  position: relative;
+  display: block;
+  &-txt{
+    padding: 20px;
+    background: #fff;
+    display: inline-block;
+  }
+  &-title{
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+  &.list1{
+    font-size:0.875rem;
+    &-item{
+      line-height: 1.2;
     }
-    &-title{
-      font-size: 1.125rem;
-      margin-bottom: 10px;
-      font-weight: 800;
+  }
+  &-btn{
+    text-align: right;
+  }
+  &-ico{
+    width: 100%;
+    padding-top: 160px;
+    display: block;
+    background:#f2f2f2;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      left: 0;
+      bottom: auto;
+      margin: auto;
+      background:url(/static/co/images/spr_ico_textbox.png) no-repeat;
+    }
+    &.type1:before{
+      background-position: -13px -10px;
+      width: 118px;
+      height: 120px;
+    }
+    &.type2:before{
+      background-position: -150px -10px;
+      width: 118px;
+      height: 120px;
+    }
+  }
+  &-wide{
+    width: 870px;
+    display:table;
+    border: 1px solid #d9d9d9;
+    position: relative;
+    @extend %clearfix;
+
+    &-txt{
+      width: 620px;
+      padding: 30px;
+      background: #fff;
+      margin-left: 250px;
     }
     .list1{
       font-size:0.875rem;
@@ -1584,25 +1664,17 @@ button, a {
         line-height: 1.2;
       }
     }
-    &-right{
-      text-align: right;
-    }
-    &+.textbox-article{
-      margin-left: 20px;
-    }
     &-ico{
       width: 100%;
-      padding-top: 160px;
-      display: block;
       background:#f2f2f2;
       &:before{
         content: '';
         display: block;
         position: absolute;
-        top: 20px;
-        right: 0;
-        left: 0;
-        bottom: auto;
+        top:0;
+        right: auto;
+        left: 60px;
+        bottom: 0;
         margin: auto;
         background:url(/static/co/images/spr_ico_textbox.png) no-repeat;
       }
@@ -1610,54 +1682,6 @@ button, a {
         background-position: -13px -10px;
         width: 118px;
         height: 120px;
-      }
-      &.type2:before{
-        background-position: -150px -10px;
-        width: 118px;
-        height: 120px;
-      }
-    }
-  }
-  &-wide{
-    width: 870px;
-    display:table;
-    &-article{
-      width:100%;
-      border: 1px solid #d9d9d9;
-      position: relative;
-
-      @extend %clearfix;
-      &-txt{
-        width: 620px;
-        padding: 30px;
-        background: #fff;
-        margin-left: 250px;
-      }
-      .list1{
-        font-size:0.875rem;
-        &-item{
-          line-height: 1.2;
-        }
-      }
-      &-ico{
-        width: 100%;
-        background:#f2f2f2;
-        &:before{
-          content: '';
-          display: block;
-          position: absolute;
-          top:0;
-          right: auto;
-          left: 60px;
-          bottom: 0;
-          margin: auto;
-          background:url(/static/co/images/spr_ico_textbox.png) no-repeat;
-        }
-        &.type1:before{
-          background-position: -13px -10px;
-          width: 118px;
-          height: 120px;
-        }
       }
     }
   }
@@ -2103,4 +2127,18 @@ button, a {
 
 .ml10, %ml10{
   margin-left: 10px;
+}
+
+// IR 인포그래픽
+/*공공데이터개방*/
+.digr-public-data-open-guidea{
+  height:493px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_public_data_open_guide.png) no-repeat;
+}
+
+.digr-open-public-data{
+  height:513px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_open_public_data.png) no-repeat;
 }
