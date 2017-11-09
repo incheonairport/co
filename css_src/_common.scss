@@ -1169,13 +1169,13 @@ em{
 .btn{
   &-type{
     &-normal{
-      min-width:222px;
-      height:50px;
+      min-width:150px;
+      height:40px;
       background:#fff;
       padding:0 45px 0 20px;
-      line-height:50px;
+      line-height:40px;
       border:1px solid #666;
-      font-size:1.125rem;
+      font-size:1rem;
       font-weight:600;
       text-align:left;
       &.btn2{
