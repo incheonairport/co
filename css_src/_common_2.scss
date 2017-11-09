@@ -28,7 +28,6 @@
   }
   }
 
-
 .view-file,
 .view-head{
   &.volunteer{
@@ -63,10 +62,18 @@
     &-phone {
     width: 70px;
     }
+
   }
 
 /*이용일시*/
 .timesetting-date{
+
+  &-text{
+    margin-top: 15px;
+    height: 35px;
+    line-height: 35px;
+  }
+
   &.low{
     .timesetting-date-day{
       width: 140px;
@@ -83,6 +90,7 @@
       border: 1px solid #d9d9d9;
       border-left: 0;
       background: #fff;
+      margin-right: 15px;
 
       &:after {
         background-position: -99px -96px;
@@ -92,3 +100,4 @@
     }
   }
 }
+
