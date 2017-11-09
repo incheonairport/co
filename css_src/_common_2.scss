@@ -9,10 +9,86 @@
 .board-page{
   font-size: 0.875rem;
   text-align: right;
-  margin: 20px;
+  margin: 20px 0;
+}
 
-  &.b{
-    font-weight: 700;
+.table{
+  &.borad-view{
+      &.volunteer{
+         border-top: 1px solid #444;
+      }
+    }
+
+  &.hr{
+    &.volunteer{
+      border-top: 1px solid #a5a7aa;
+      border-bottom: 1px solid #a5a7aa;
+      margin-top: 20px;
+    }
+  }
+  }
+
+
+.view-file,
+.view-head{
+  &.volunteer{
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 
+.text{
+  &-left{
+    text-align: left;
+  }
+  &-right{
+    text-align: right;
+    .left{
+      text-align: left;
+    }
+  }
+  &-center{
+    text-align: center;
+  }
+}
+
+.applicant{
+   &-name{
+    width:213px;
+    }
+
+   &-count {
+    width: 80px;
+     }
+
+    &-phone {
+    width: 70px;
+    }
+  }
+
+/*이용일시*/
+.timesetting-date{
+  &.low{
+    .timesetting-date-day{
+      width: 140px;
+      height: 31px;
+      border: 1px solid #d9d9d9;
+      border-right: 0;
+      font-size: 1rem;
+      padding-left: 10px;
+      color: #666;
+    }
+    .timesetting-date-calendar {
+      width: 46px;
+      height: 35px;
+      border: 1px solid #d9d9d9;
+      border-left: 0;
+      background: #fff;
+
+      &:after {
+        background-position: -99px -96px;
+        width: 17px;
+        height: 16px;
+      }
+    }
+  }
+}
