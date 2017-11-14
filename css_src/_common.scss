@@ -350,6 +350,13 @@
     width: 13px;
     height: 12px;
   }
+
+
+  &.certification:after{
+    background-position: -68px -98px;
+    width: 13px;
+    height: 12px;
+  }
 }
 
 /* link type select box */
@@ -882,7 +889,7 @@ em{
         border-right:0;
       }
     }
-  &.borad-view{
+  &.board-view{
     thead th{
       font-size:1.125rem;
       padding:20px 10px;
@@ -926,7 +933,7 @@ em{
 }
 
 // 게시판 상세
-.borad-view{
+.board-view{
   &.vt{
     border-bottom: none;
   }
@@ -1276,6 +1283,7 @@ button, a {
 
     &:before{
       content:"※";
+      margin-right: 2px;
     }
     &-center{
       text-indent: 0;
@@ -1603,6 +1611,8 @@ button, a {
   position: relative;
   display: block;
   &-txt{
+    height: 225px;
+    width: 100%;
     padding: 20px;
     background: #fff;
     display: inline-block;
@@ -1657,6 +1667,7 @@ button, a {
 
     &-txt{
       width: 620px;
+      min-height: 190px;
       padding: 30px;
       background: #fff;
       margin-left: 250px;
@@ -1669,6 +1680,7 @@ button, a {
     }
     &-ico{
       width: 100%;
+      min-height: 190px;
       background:#f2f2f2;
       &:before{
         content: '';
@@ -1686,6 +1698,37 @@ button, a {
         width: 118px;
         height: 120px;
       }
+
+      &.type2:before{
+        background-position: -13px -147px;
+        width: 118px;
+        height: 120px;
+      }
+
+      &.type3:before{
+        background-position:-150px -147px;
+        width: 118px;
+        height: 120px;
+      }
+
+      &.type4:before{
+        background-position: -288px -147px;
+        width: 118px;
+        height: 120px;
+      }
+
+      &.type5:before{
+        background-position: -426px -147px;
+        width: 118px;
+        height: 120px;
+      }
+
+      &.type6:before{
+        background-position:-13px -285px;
+        width: 118px;
+        height: 120px;
+      }
+
     }
   }
 }
@@ -1994,6 +2037,11 @@ button, a {
   &.airport-course{
     background:url(/static/co/images/bg_banner_airport_course.jpg ) no-repeat;
   }
+
+  &.airport-exhibition{
+    background:url(/static/co/images/bg_banner_visit_exhibition.jpg) no-repeat;
+  }
+
   &-txt{
     font-size: 1.125rem;
     text-align: center;
@@ -2007,6 +2055,27 @@ button, a {
       background: #fff;
       margin: 15px auto;
     }
+  }
+}
+
+.banner2{
+  width:869px;
+  height: 265px;
+  &.volunteer-introduce{
+    background:url(/static/co/images/bg_banner_volunteer_introduce.jpg) no-repeat;
+  }
+
+  &.use-information{
+    background:url(/static/co/images/bg_banner_use_information.jpg) no-repeat;
+  }
+}
+
+.map{
+  &.airport-exhibition02{
+    width: 925px;
+    height: 468px;
+    background: url(/static/co/images/map_visit_exhibition.jpg) no-repeat;
+    text-indent: -9999em;
   }
 }
 
@@ -2119,6 +2188,16 @@ button, a {
 // margin-top:40px;
 .mt40, %mt40{
   margin-top:40px;
+}
+
+// margin-top:45px;
+.mt45, %mt45{
+  margin-top:45px;
+}
+
+// margin-top:50px;
+.mt50, %mt50{
+  margin-top:50px;
 }
 
 // margin-top:55px;
