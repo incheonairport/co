@@ -1201,6 +1201,11 @@ em{
         color:#fff;
         border: none;
       }
+      &.btn4{
+        background-color: #666;
+        color:#fff;
+        border: none;
+      }
     }
     &-small{
       min-width:116px;
@@ -1359,6 +1364,12 @@ button, a {
       }
       &.w20{
         width: 20%;
+      }
+      &.w55{
+        width: 55%;
+      }
+      &.w45{
+        width: 45%;
       }
       &.wide{
         width: 100%;
