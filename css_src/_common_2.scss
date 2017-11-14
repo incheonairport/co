@@ -154,5 +154,23 @@
   }
 }
 
+.enter {
+  width: 100%;
+  padding: 30px 0 30px;
+  text-align: center;
+  background: #f5f6f7;
+  border: 1px solid #e2e5e9;
+
+  &-btn {
+    width: 257px;
+    height: 70px;
+    font-size: 1.125rem;
+    color: #fff;
+    background: #323648;
+    border: 0;
+    border-radius: 35px;
+
+    }
+  }
 
 
