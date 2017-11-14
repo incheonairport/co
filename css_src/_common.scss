@@ -1379,6 +1379,12 @@ button, a {
       &.w45{
         width: 45%;
       }
+      &.w60{
+        width: 60%;
+      }
+      &.w40{
+        width: 40%;
+      }
       &.wide{
         width: 100%;
       }
@@ -2130,6 +2136,7 @@ button, a {
     }
     &-btn{
       padding: 10px 20px;
+
       border: 0;
       background: #323648;
     }
@@ -2140,6 +2147,7 @@ button, a {
       padding: 10px 20px;
       border: 0;
       background: #323648;
+      float: left;
       &.ico{
         &:after{
           background-position:-74px -134px;
@@ -2148,6 +2156,9 @@ button, a {
         }
       }
     }
+  }
+  &.day{
+    padding: 20px 30px;
   }
 }
 
