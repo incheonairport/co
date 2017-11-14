@@ -519,7 +519,6 @@ em{
   &-item{
     font-size: 	1rem;
     padding-left:12px;
-    margin-top:8px;
     position:relative;
     &:first-child{
       margin-top:0
@@ -2112,6 +2111,10 @@ button, a {
   &-input{
     width: 550px;
     margin: 0 auto;
+
+    &.small{
+      width:100%;
+    }
     &-item{
       height:40px;
       overflow: hidden;
