@@ -39,17 +39,31 @@
       <h4 class="sub-contents-heading1">행정예고</h4>
 
       <!--검색-->
-      <div class="search-box">
-        <div class="search-box-input">
-          <h4 class="search-box-title">검색</h4>
-          <div class="search-box-input-item">
-            <select class="search-box-input-select" title="검색옵션을 선택해 주세요">
-              <option>전체</option>
-            </select>
-            <input type="text" class="search-box-input-txt" placeholder="검색어 입력" title="검색어 입력을 통해 검색할 수 있습니다">
+      <div class="search-box day">
+        <div class="multi-col double">
+          <div class="inner-col w40">
+            <div class="timesetting">
+              <div class="timesetting-date">
+                <input type="text" class="timesetting-date-day" readonly="" placeholder="2017.12.21" id="to-date" title="작성날짜를 선택하면 출력됩니다">
+                <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+              </div>
+              <span class="timesetting-dash">~</span>
+              <div class="timesetting-date">
+                <input type="text" class="timesetting-date-day" readonly="" placeholder="2017.12.31" id="from-date" title="작성날짜를 선택하면 출력됩니다">
+                <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+              </div>
+            </div>
           </div>
-          <div class="search-box-btn-area">
-            <button type="button" class="search-box-btn ico">검색</button>
+          <div class="inner-col w60">
+            <div class="search-box-input-item">
+              <select class="search-box-input-select" title="검색옵션을 선택해 주세요">
+              <option>전체</option>
+              </select>
+              <input type="text" class="search-box-input-txt" placeholder="검색어 입력" title="검색어 입력을 통해 검색할 수 있습니다">
+            </div>
+            <div class="search-box-btn-area">
+              <button type="button" class="search-box-btn ico">검색</button>
+            </div>
           </div>
         </div>
       </div>
@@ -282,13 +296,12 @@
           <div class="text-box-headline-col">
             <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 해 주시기 바랍니다.</h6>
           </div>
-
           <ul class="list1">
             <li class="list1-item ">
-              <strong>담당부서 :</strong> 청렴감찰팀
+              <strong>담당부서 :</strong> 총무팀
             </li>
             <li class="list1-item ">
-              <strong>TEL :</strong> 032)741-2336~7
+              <strong>TEL :</strong> 032-741-2336, 7
             </li>
           </ul>
         </div>

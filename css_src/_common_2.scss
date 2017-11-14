@@ -43,32 +43,35 @@
   }
 
 /*이용일시*/
-.timesetting-date{
-
-  &-text{
-    margin-top: 15px;
-    height: 35px;
-    line-height: 35px;
-  }
-
-  &.low{
-    .timesetting-date-day{
-      width: 140px;
-      height: 31px;
+.timesetting{
+  width: 312px;
+  @extend %clearfix;
+  &-date{
+    width: 140px;
+    float: left;
+    &-text{
+      margin-top: 15px;
+      height: 35px;
+      line-height: 35px;
+    }
+    &-day{
+      width: 100px;
+      height: 40px;
       border: 1px solid #d9d9d9;
       border-right: 0;
-      font-size: 1rem;
+      font-size: 0.9375rem;
       padding-left: 10px;
       color: #666;
+      box-sizing: border-box;
+      float: left;
     }
-    .timesetting-date-calendar {
-      width: 46px;
-      height: 35px;
+    &-calendar {
+      width: 40px;
+      height: 40px;
       border: 1px solid #d9d9d9;
-      border-left: 0;
+      border-left:0;
       background: #fff;
-      margin-right: 15px;
-
+      float: left;
       &:after {
         background-position: -99px -96px;
         width: 17px;
@@ -76,9 +79,11 @@
       }
     }
   }
+  &-dash{
+    float: left;
+    margin:12px 10px;
+  }
 }
-
-
 
 .banner{
   &-txt-tit{
