@@ -1217,52 +1217,51 @@ em{
   }
 }
 
-.btn{
-  &-type{
-    &-normal{
-      min-width:150px;
-      height:40px;
-      background:#fff;
-      padding:0 45px 0 20px;
-      line-height:40px;
-      border:1px solid #666;
-      font-size:1rem;
-      font-weight:600;
-      text-align:left;
+.btn {
+  &-type {
+    &-normal {
+      min-width: 150px;
+      height: 40px;
+      background: #fff;
+      padding: 0 45px 0 20px;
+      line-height: 40px;
+      border: 1px solid #666;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: left;
 
-
-      &.btn2{
-        background:#42519e;
-        border:none;
-        color:#fff;
+      &.btn2 {
+        background: #42519e;
+        border: none;
+        color: #fff;
       }
-      &:hover{
+      &:hover {
 
       }
-      &.ico{
-        text-indent:0;
-        &:after{
-          left:auto;
-          right:18px;
+      &.ico {
+        text-indent: 0;
+        &:after {
+          left: auto;
+          right: 18px;
         }
 
-        &.certification:after{
+        &.certification:after {
           left: 25px;
           right: auto;
         }
       }
-      &.btn3{
+      &.btn3 {
         background-color: #333649;
-        color:#fff;
+        color: #fff;
         border: none;
       }
-      &.btn4{
+      &.btn4 {
         background-color: #666;
-        color:#fff;
+        color: #fff;
         border: none;
       }
 
-      &.btn5{
+      &.btn5 {
         padding: 0 32px 0 11px;
         background-color: #333649;
         border-radius: 30px;
@@ -1275,52 +1274,50 @@ em{
       }
     }
 
-
-    }
-    &-small{
-      min-width:116px;
-      height:30px;
-      background:#fff;
-      padding:0 32px 0 12px;
-      line-height:30px;
-      border:1px solid #d9d9d9;
-      border-radius:50px;
-      font-size:0.875rem;
-      font-weight:400;
-      color:#222;
+    &-small {
+      min-width: 116px;
+      height: 30px;
+      background: #fff;
+      padding: 0 32px 0 12px;
+      line-height: 30px;
+      border: 1px solid #d9d9d9;
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: #222;
       display: inline-block;
-      &.point{
-        background:#f2f2f2;
+      &.point {
+        background: #f2f2f2;
       }
-      &.txt{
-        padding:0px 10px;
+      &.txt {
+        padding: 0px 10px;
       }
-      &.under{
-        background:none;
-        color:#fff;
-        &:hover{
-          border-color:rgba(255,255,255,.4);
-          color:#ffae44;
-          &:after{
-            opacity:.4;
+      &.under {
+        background: none;
+        color: #fff;
+        &:hover {
+          border-color: rgba(255, 255, 255, .4);
+          color: #ffae44;
+          &:after {
+            opacity: .4;
           }
         }
       }
-      &.detail{
-        padding:0 58px 0 14px;
-        min-width:110px;
+      &.detail {
+        padding: 0 58px 0 14px;
+        min-width: 110px;
       }
 
-      &.ico{
-        text-indent:0;
-        &:after{
-          left:auto;
-          right:14px;
+      &.ico {
+        text-indent: 0;
+        &:after {
+          left: auto;
+          right: 14px;
         }
       }
     }
   }
-
+}
 
 button, a {
   cursor: pointer;
@@ -1680,9 +1677,35 @@ button, a {
   }
 
   &-headline-col{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
+  &.contact{
+    position: relative;
+    padding: 0;
+    height: 137px;
+    &:before{
+      width: 190px;
+      height: 137px;
+      content: '';
+      display: block;
+      position: absolute;
+      top: auto;
+      right:auto;
+      left: 0;
+      bottom:auto;
+      margin: auto;
+      background: url(/static/co/images/ico_contact_box.png) center no-repeat;
+      border-right: 1px solid #d9d9d9;
 
+    }
+    .text-box-headline{
+      margin-top: 30px;
+      padding-left: 230px;
+    }
+    .list1{
+      padding-left: 230px;
+    }
+  }
 }
 
 .textbox{
@@ -2297,6 +2320,9 @@ button, a {
       border: 0;
       background: #323648;
     }
+    &.select{
+      width: 320px;
+    }
   }
   &-btn-area{
     .search-box-btn{
@@ -2344,8 +2370,73 @@ button, a {
   color:#4674c9;
 }
 
+/*연혁*/
+.co-history{
+  font-family: spoqa;
+  &-year{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    .now{
+      margin-left: 70px;
+    }
+  }
+  &-list{
+    font-size: 1.125rem;
+    font-weight: 700;
+    &-item{
+      line-height: 2;
+    }
+    &-year{
+      margin-right: 70px;
+    }
+  }
+}
 
-  /*font-size*/
+.co-traces{
+  p{
+    word-break: keep-all;
+    &+p{
+      margin-top: 30px;
+    }
+  }
+  .multi-col{
+    margin-top: 20px;
+    +p{
+      margin-top: 20px;
+    }
+  }
+}
+
+/*갤러리*/
+.co-gallery{
+  padding: 30px 0;
+  border-top:1px solid #444;
+  border-bottom:1px solid #d9d9d9;
+  &-item{
+    text-align: center;
+    &-img{
+    line-height: 0;
+    }
+    &-title{
+      margin-top: 15px;
+      color: #444;
+    }
+  }
+  .multi-col{
+    &.triple{
+      .inner-col{
+        width: 32%;
+        margin-left:17px;
+        &:first-child{
+          margin:0;
+        }
+      }
+    }
+  }
+}
+
+/*font-size*/
 .font14, %font14{
   font-size: 	0.875rem;
 }
@@ -2363,6 +2454,11 @@ button, a {
 }
 .font26, %font26{
   font-size: 1.625rem;
+}
+
+// margin-top:5px
+.mt5, %mt5{
+  margin-top:5px;
 }
 
 // text margin-top:20px
@@ -2452,4 +2548,19 @@ button, a {
 height:534px;
 text-indent:-999em;
 background: url(/static/co/images/digr_protection_compensation.png) no-repeat;
+}
+
+/*역대기관장*/
+.digr-co-history{
+  width: 655px;
+  height:523px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_co_history.png) no-repeat;
+}
+
+/*발자취*/
+.digr-co-traces{
+height:931px;
+text-indent:-999em;
+background: url(/static/co/images/digr_co_traces.png) no-repeat;
 }
