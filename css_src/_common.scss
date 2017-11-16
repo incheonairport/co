@@ -390,11 +390,13 @@
     height: 12px;
   }
 
-
   &.certification:after{
-    background-position: -68px -98px;
-    width: 13px;
-    height: 12px;
+    left: 25px;
+    right: auto;
+    top: -4px;
+    background-position: -40px -338px;
+    width: 20px;
+    height: 30px;
   }
 }
 
@@ -1227,6 +1229,8 @@ em{
       font-size:1rem;
       font-weight:600;
       text-align:left;
+
+
       &.btn2{
         background:#42519e;
         border:none;
@@ -1241,6 +1245,11 @@ em{
           left:auto;
           right:18px;
         }
+
+        &.certification:after{
+          left: 25px;
+          right: auto;
+        }
       }
       &.btn3{
         background-color: #333649;
@@ -1252,6 +1261,21 @@ em{
         color:#fff;
         border: none;
       }
+
+      &.btn5{
+        padding: 0 32px 0 11px;
+        background-color: #333649;
+        border-radius: 30px;
+        width: 257px;
+        font-size: 1.125rem;
+        height: 60px;
+        color: #fff;
+        text-align: right;
+        border: none;
+      }
+    }
+
+
     }
     &-small{
       min-width:116px;
@@ -1296,7 +1320,7 @@ em{
       }
     }
   }
-}
+
 
 button, a {
   cursor: pointer;
@@ -1713,6 +1737,31 @@ button, a {
       width: 118px;
       height: 120px;
     }
+    &.type3:before{
+      background-position: -151px -286px;
+      width: 118px;
+      height: 120px;
+    }
+
+    &.type4:before{
+      background-position: -287px -285px;
+      width: 118px;
+      height: 120px;
+    }
+
+    &.type5:before{
+      background-position:-425px -285px;
+      width: 118px;
+      height: 120px;
+    }
+
+    &.type6:before{
+      background-position: -13px -423px;
+      width: 118px;
+      height: 120px;
+    }
+
+
   }
   &-wide{
     width: 870px;
@@ -2180,6 +2229,14 @@ button, a {
 
   &.use-information{
     background:url(/static/co/images/bg_banner_use_information.jpg) no-repeat;
+  }
+}
+
+.banner3{
+  width:869px;
+  height: 265px;
+  &.ceo-massage{
+    background:url(/static/co/images/bg_banner_ceo_massage.jpg) no-repeat;
   }
 }
 
