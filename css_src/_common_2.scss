@@ -196,3 +196,138 @@
   background: #f5f6f7;
   border: 1px solid #e2e5e9;
 }
+
+.table{
+  &.vt-dark{
+    td{
+      &.center{
+        &.border{
+          border-bottom: 1px solid #a5a7aa;
+        }
+      }
+    }
+
+  }
+}
+
+.layer{
+  &.construction{
+    width: 600px;
+  }
+}
+
+.layer{
+  &-construction{
+    &-img{
+      width: 100%;
+      height: 170px;
+      text-indent: -9999em;
+      &.terminal{
+        background:url(/static/co/images/img_layer_construction_terminal.jpg) no-repeat;
+      }
+      &.transportation{
+        background:url(/static/co/images/img_layer_construction_transportation.jpg) no-repeat;
+      }
+
+      &.freight{
+        background:url(/static/co/images/img_layer_construction_freight.jpg) no-repeat;
+      }
+
+      &.airstrip{
+        background:url(/static/co/images/img_layer_construction_airstrip.jpg) no-repeat;
+      }
+    }
+
+    &-txt{
+      text-align: center;
+      font-size: 0.875rem;
+      padding-top: 5px;
+    }
+  }
+
+  &-facility{
+    border: 1px solid #d9d9d9;
+    &-map{
+      width:100%;
+      height: 309px;
+      text-indent: -9999em;
+      background: url(/static/co/images/map_layer_facility_arrangement.jpg) no-repeat;
+    }
+
+    &-map2{
+      width:100%;
+      height: 270px;
+      text-indent: -9999em;
+      background: url(/static/co/images/map_layer_facility_arrangement_02.jpg) no-repeat;
+    }
+    &-map3{
+      width:100%;
+      height: 270px;
+      text-indent: -9999em;
+      background: url(/static/co/images/map_layer_facility_arrangement_03.jpg) no-repeat;
+    }
+  }
+
+}
+
+.inner-col{
+  &.construction{
+    padding: 10px 10px;
+  }
+}
+
+.list2{
+  &.layer-list2{
+    margin-left: 10px;
+
+    &-item{
+      color:#666;
+    }
+  }
+}
+
+.history{
+  &-img{
+    width: 100%;
+    height: 295px;
+    text-indent: -9999em;
+    background: url(/static/co/images/img_ceo.png) no-repeat;
+
+  }
+
+  &-txt{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &-ceo{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &-list{
+    @extend %clearfix;
+    &-head{
+      width:160px;
+      float: left;
+    }
+
+    &-body{
+      float:left;
+    }
+  }
+
+}
+
+.multi-col{
+  &.double{
+    &.history{
+      padding: 50px 0;
+      border-bottom: 1px solid #b7c0ce;
+
+      &.last{
+        border-bottom: 0;
+      }
+    }
+  }
+}
