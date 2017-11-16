@@ -121,9 +121,48 @@
 #top-contents{
   margin-top:126px;
 }
+
 .left-menu{
+  width: 230px;
   float: left;
+  &-depth1{
+    border-bottom: 1px solid #d9d9d9;
+    &-link{
+      padding: 10px 15px;
+      font-size: 1.125rem;
+      border-top: 1px solid #d9d9d9;
+      display: block;
+      &.on{
+        border-top:2px solid #42519e;
+        color:#42519e;
+        font-weight: 800;
+      }
+      &.sub{
+        position: relative;
+        &:after{
+          content: "+";
+          color: #666;
+          font-weight: 800;
+          position: absolute;
+          right:15px;
+          left:auto;
+        }
+      }
+    }
+  }
+  &-depth2{
+    border-top: 1px solid #d9d9d9;
+    &-link{
+      padding: 10px 15px;
+      font-size: 1rem;
+      display: block;
+      &.on{
+        color:#42519e;
+      }
+    }
+  }
 }
+
 .sub-contents{
   width: 870px;
   float: right;
@@ -570,7 +609,8 @@ em{
     position: relative;
     &:before {
       content: "▶";
-      font-size: 0.875rem;
+      /*font-size: 0.875rem;*/
+      font-size: 0.75rem;
       font-weight: normal;
       color: #42519e;
       position: absolute;
@@ -1747,6 +1787,54 @@ button, a {
 
     }
   }
+  &.bg-pattern{
+    height: 217px;
+    background: url(/static/co/images/bg_textbox_pattern.png) no-repeat;
+    .textbox-txt{
+      height: auto;
+      padding: 30px 20px 30px 120px;
+      background: bottom;
+      .textbox-title{
+        margin-bottom: 20px;
+      }
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: auto;
+        left: 30px;
+        bottom: auto;
+        margin: auto;
+        background: url(/static/co/images/spr_ico_textbox_protection.png) no-repeat;
+      }
+      &.type1:before{
+        background-position: -10px -10px;
+        width: 45px;
+        height:82px;
+      }
+      &.type2:before{
+        background-position: -75px -24px;
+        width: 51px;
+        height:61px;
+      }
+      &.type3:before{
+       background-position:-150px -29px;
+       width: 65px;
+       height:48px;
+       }
+      &.type4:before{
+        background-position:-234px -26px;
+        width: 56px;
+        height:60px;
+      }
+      &.type5:before{
+        background-position:-11px -116px;
+        width: 68px;
+        height:52px;
+      }
+    }
+  }
 }
 
 /*guidebox*/
@@ -1943,6 +2031,15 @@ button, a {
 
       &:last-child{
         padding-right: 0;
+      }
+    }
+    &.no-ico{
+      width: 100%;
+      .step-circle-list-item{
+        padding:0;
+        &+.step-circle-list-item{
+          padding-left:7px;
+        }
       }
     }
   }
@@ -2162,10 +2259,36 @@ button, a {
   }
   &.day{
     padding: 20px 30px;
+    .day-option{
+      height: 40px;
+      @extend %clearfix;
+      &-link{
+        min-width: 74px;
+        padding: 10px;
+        color: #666;
+        border: 1px solid #a5a7aa;
+        text-align: center;
+        float: left;
+        &+.day-option-link{
+          border-left: none;
+        }
+        &.on{
+          font-weight: 800;
+          color: #323648;
+          border: 1px solid #323648;
+        }
+      }
+    }
   }
 }
 
-/*font-size*/
+/*메일*/
+.mail-link{
+  color:#4674c9;
+}
+
+
+  /*font-size*/
 .font14, %font14{
   font-size: 	0.875rem;
 }
@@ -2235,8 +2358,16 @@ button, a {
   margin-top:60px;
 }
 
+.ml5, %ml5{
+  margin-left: 5px;
+}
+
 .ml10, %ml10{
   margin-left: 10px;
+}
+
+.ml30, %ml30{
+  margin-left: 30px;
 }
 
 // IR 인포그래픽
@@ -2251,4 +2382,17 @@ button, a {
   height:513px;
   text-indent:-999em;
   background: url(/static/co/images/digr_open_public_data.png) no-repeat;
+}
+/*정보공개처리절차*/
+.digr-procedures-disclosure{
+  height:538px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_procedures_disclosure.png) no-repeat;
+}
+
+/*신고자보호및보상*/
+.digr-protection-compensation{
+height:534px;
+text-indent:-999em;
+background: url(/static/co/images/digr_protection_compensation.png) no-repeat;
 }
