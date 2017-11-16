@@ -2187,7 +2187,7 @@ button, a {
     font-size:0.875rem;
     letter-spacing:-0.02rem;
     &-item:before{
-      top: -12px;
+      //top: -12px;
     }
   }
   .info-desc{
@@ -2455,6 +2455,9 @@ button, a {
 .font26, %font26{
   font-size: 1.625rem;
 }
+.font48, %font48{
+  font-size:3rem;
+}
 
 // margin-top:5px
 .mt5, %mt5{
@@ -2511,6 +2514,11 @@ button, a {
   margin-top:60px;
 }
 
+// margin-top:80px;
+.mt80, %mt80{
+  margin-top:80px;
+}
+
 .ml5, %ml5{
   margin-left: 5px;
 }
@@ -2521,6 +2529,14 @@ button, a {
 
 .ml30, %ml30{
   margin-left: 30px;
+}
+
+.ml80, %ml80{
+  margin-left: 80px;
+}
+
+.ml100, %ml100{
+  margin-left: 100px;
 }
 
 // IR 인포그래픽
