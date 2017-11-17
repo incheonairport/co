@@ -2227,6 +2227,10 @@ button, a {
     background:url(/static/co/images/bg_banner_visit_exhibition.jpg) no-repeat;
   }
 
+  &.purpose{
+    background:url(/static/co/images/bg_banner_purpose.jpg) no-repeat;
+  }
+
   &-txt{
     font-size: 1.125rem;
     text-align: center;
