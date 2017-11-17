@@ -2436,6 +2436,111 @@ button, a {
   }
 }
 
+/*숫자로 알아보는IIAC*/
+.iiac-numbering{
+  border: 1px solid #d9d9d9;
+  border-bottom: none;
+  @extend %clearfix;
+  &-item{
+    width: 289px;
+    height: 152px;
+    padding: 35px 18px 20px 120px;
+    border-bottom: 1px solid #d9d9d9;
+    float: left;
+    position: relative;
+    &-title{
+      margin-bottom: 10px;
+      font-size: 1.75rem;
+      font-weight: 900;
+    }
+    &-txt{
+      color: #666;
+      line-height: 1.5;
+    }
+    &+.iiac-numbering-item{
+      border-left:1px solid #f3f4f8 ;
+    }
+    &.img{
+      padding: 0;
+      overflow: hidden;
+    }
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: auto;
+      left: 30px;
+      bottom: 0;
+      margin: auto;
+      background: url(/static/co/images/spr_ico_iiac_numbering.png) no-repeat;
+    }
+    &.type1:before{
+       background-position: -10px -10px;
+       width: 78px;
+       height: 78px;
+     }
+    &.type2:before{
+      background-position: -107px -10px;
+      width: 78px;
+      height: 78px;
+    }
+    &.type3:before{
+      background-position: -205px -10px;
+      width: 78px;
+      height: 78px;
+    }
+    &.type4:before{
+      background-position: -10px -99px;
+      width: 78px;
+      height: 78px;
+    }
+    &.type5:before{
+      background-position: -107px -99px;
+      width: 78px;
+      height: 78px;
+    }
+    &.type6:before{
+      background-position: -205px -99px;
+      width: 78px;
+      height: 78px;
+    }
+    &.type7:before{
+      background-position: -10px -187px;
+      width: 78px;
+      height: 78px;
+    }
+    &.type8:before{
+      background-position: -107px -187px;
+      width: 78px;
+      height: 78px;
+    }
+    &.type9:before{
+      background-position: -205px -187px;
+      width: 78px;
+      height: 78px;
+    }
+    &.type10:before{
+      background-position: -10px -275px;
+      width: 78px;
+      height: 78px;
+    }
+  }
+}
+
+/*비전*/
+.co-vision{
+  margin-left: 110px;
+  &.guide-des{
+    font-size: 0.875rem;
+  }
+}
+
+.imgbox {
+  width: 100%;
+  vertical-align: top;
+}
+
 /*font-size*/
 .font14, %font14{
   font-size: 	0.875rem;
@@ -2579,4 +2684,11 @@ background: url(/static/co/images/digr_protection_compensation.png) no-repeat;
 height:931px;
 text-indent:-999em;
 background: url(/static/co/images/digr_co_traces.png) no-repeat;
+}
+
+/*vision*/
+.digr-co-vision{
+  height:626px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_co_vision.png) no-repeat;
 }
