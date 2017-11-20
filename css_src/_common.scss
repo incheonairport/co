@@ -198,6 +198,11 @@
         width: 25%;
         float: left;
         cursor: pointer;
+        &:first-child{
+          a{
+            border-left:1px solid #d9d9d9!important;
+          }
+        }
       }
 
       &-link {
@@ -205,6 +210,7 @@
         height: 57px;
         background:#fff;
         border: 1px solid #d9d9d9;
+        border-left:0!important;
         font-size: 	1rem;
         font-weight: 300;
         color: #666;
@@ -603,6 +609,7 @@ em{
     }
   }
 }
+
 
 .list2{
   &-item{
@@ -1325,7 +1332,7 @@ em{
         background: #f2f2f2;
       }
       &.txt {
-        padding: 0px 10px;
+        padding: 0 10px;
       }
       &.under {
         background: none;
@@ -2855,6 +2862,10 @@ button, a {
  padding-left: 10px;
 }
 
+.mb20, %mb20{
+  margin-left: 20px;
+}
+
 // IR 인포그래픽
 /*공공데이터개방*/
 .digr-public-data-open-guidea{
@@ -2904,6 +2915,53 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   background: url(/static/co/images/digr_co_vision.png) no-repeat;
 }
 
+<<<<<<< HEAD
+/*지속가능경영 CO_AE_01_01*/
+.digr-co-management{
+  height:612px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_management.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+/*이해관계자참여 CO_AE_01_02*/
+.digr-co-interest{
+  height:508px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_interest.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+.digr-co-interest2{
+  height:349px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_interest2.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+// 임원진 CO_CH_02
+.profile-box{
+  @extend %clearfix;
+  &-img{
+    width:110px;
+    height:110px;
+    float:left;
+  }
+  &-desc{
+    width:calc(100% - 140px);
+    margin-left:30px;
+    float:left;
+  }
+  &-tit{
+    display:block;
+    margin-bottom:10px;
+    font-size:1.125rem;
+  }
+  dt.list1-item{
+    width:180px;
+    float:left;
+  }
+
 /*동반성장*/
 .digr-strengthen-competitive1{
   height:640px;
@@ -2952,3 +3010,45 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   text-indent:-999em;
   background: url(/static/co/images/digr_personal_information.png) no-repeat;
 }
+
+/*사회공헌*/
+
+.digr-social-contribution01{
+  height:1011px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_social_contribution01.png) no-repeat;
+}
+
+.digr-social-contribution02{
+  height:776px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_social_contribution02.png) no-repeat;
+}
+.digr-social-contribution03{
+  height:369px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_social_contribution03.png) no-repeat;
+}
+
+.digr-social-contribution04{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_social_contribution04.png) no-repeat;
+}
+=======
+/*ir기법 클래스적용*/
+.ir-technique{
+  display: block;
+  text-indent: -99999em;
+}
+
+/* 조직도 */
+.organization-chart{
+  width: 100%;
+  height: 3179px;
+  overflow: hidden;
+  background: url(/static/co/images/bg_organization_chart.png)no-repeat;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d9d9d9;
+}
+>>>>>>> d7b92334ce6450aad2a36054c8dcf894011ac6b6
