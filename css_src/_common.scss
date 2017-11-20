@@ -2940,27 +2940,28 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
 }
 
 // 임원진 CO_CH_02
-.profile-box{
+.profile-box {
   @extend %clearfix;
-  &-img{
-    width:110px;
-    height:110px;
-    float:left;
+  &-img {
+    width: 110px;
+    height: 110px;
+    float: left;
   }
-  &-desc{
-    width:calc(100% - 140px);
-    margin-left:30px;
-    float:left;
+  &-desc {
+    width: calc(100% - 140px);
+    margin-left: 30px;
+    float: left;
   }
-  &-tit{
-    display:block;
-    margin-bottom:10px;
-    font-size:1.125rem;
+  &-tit {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.125rem;
   }
-  dt.list1-item{
-    width:180px;
-    float:left;
+  dt.list1-item {
+    width: 180px;
+    float: left;
   }
+}
 
 /*동반성장*/
 .digr-strengthen-competitive1{
@@ -3035,7 +3036,7 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   text-indent:-999em;
   background: url(/static/co/images/digr_social_contribution04.png) no-repeat;
 }
-=======
+
 /*ir기법 클래스적용*/
 .ir-technique{
   display: block;
@@ -3051,4 +3052,4 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   padding-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
 }
->>>>>>> d7b92334ce6450aad2a36054c8dcf894011ac6b6
+
