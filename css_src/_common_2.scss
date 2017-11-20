@@ -1,0 +1,549 @@
+.sub-top{
+  &-descbox{
+    &-sub{
+      color: #fff;
+    }
+  }
+}
+
+.board-page{
+  font-size: 0.875rem;
+  text-align: right;
+  margin: 20px 0;
+}
+
+.text{
+  &-left{
+    text-align: left;
+  }
+  &-right{
+    text-align: right;
+    .left{
+      text-align: left;
+    }
+  }
+  &-center{
+    text-align: center;
+  }
+}
+
+.applicant{
+   &-name{
+    width:213px;
+    }
+
+   &-count {
+    width: 80px;
+     }
+
+    &-phone {
+    width: 70px;
+    }
+
+  }
+
+/*이용일시*/
+.timesetting{
+  width: 312px;
+  @extend %clearfix;
+  &-date{
+    width: 140px;
+    float: left;
+    &-text{
+      margin-top: 15px;
+      height: 35px;
+      line-height: 35px;
+    }
+    &-day{
+      width: 100px;
+      height: 40px;
+      border: 1px solid #d9d9d9;
+      border-right: 0;
+      font-size: 0.9375rem;
+      padding-left: 10px;
+      color: #666;
+      box-sizing: border-box;
+      float: left;
+    }
+    &-calendar {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #d9d9d9;
+      border-left:0;
+      background: #fff;
+      float: left;
+      &:after {
+        background-position: -99px -96px;
+        width: 17px;
+        height: 16px;
+      }
+    }
+  }
+  &-dash{
+    float: left;
+    margin:12px 10px;
+  }
+}
+
+.banner{
+  &-txt{
+    &.no-padding{
+      padding: 0;
+    }
+  }
+
+  &-txt-tit{
+    font-size: 2.25rem;
+    text-align: center;
+    color: #fff;
+    font-family: 'nanumsq', sans-serif;
+    padding-top: 45px;
+  }
+
+  &-txt-tit2{
+    font-size: 1.625rem;
+    text-align: center;
+    color: #fff;
+    font-family: 'nanumsq', sans-serif;
+    padding-top: 45px;
+  }
+
+  &-txt2{
+    font-size: 1.125rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  &-txt-tit3{
+    font-size: 1.75rem;
+    color: #fff;
+    font-family: 'nanumsq', sans-serif;
+  }
+
+  &-txt3{
+    font-size: 1.125rem;
+    color: #fff;
+
+    &:before{
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: #fff;
+      margin: 22px 0;
+    }
+  }
+
+  &-wrap{
+    padding:60px 70px;
+  }
+}
+
+.list5{
+  &.border{
+    border: 1px solid #d9d9d9;
+    padding: 30px;
+  }
+}
+
+.event-img{
+  width: 700px;
+  height: 511px;
+  margin:30px 80px;
+  text-indent: -9999em;
+  background: url(/static/co/images/img_event.jpg) no-repeat;
+}
+
+
+.view-head-info{
+  &.event{
+    padding: 0;
+  }
+}
+
+.list-article{
+    &.small{
+      width: 88px;
+      height: 88px;
+    }
+  }
+
+.board-view{
+  &.border{
+    border-top: 1px solid #444;
+  }
+
+}
+
+.view-head-tit{
+  &.complain-table{
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+
+.object-list{
+  &.wide{
+    width: 560px;
+  }
+}
+
+.enter {
+  width: 100%;
+  padding: 30px 0 30px;
+  text-align: center;
+  background: #f5f6f7;
+  border: 1px solid #e2e5e9;
+}
+
+.table{
+  &.vt-dark{
+    td{
+      &.center{
+        &.border{
+          border-bottom: 1px solid #a5a7aa;
+        }
+      }
+    }
+
+  }
+}
+
+.layer{
+  &.construction{
+    width: 600px;
+  }
+
+  &.social1{
+    width: 715px;
+  }
+
+  &.social2{
+    width: 840px;
+  }
+}
+
+.layer{
+  &-construction{
+    &-img{
+      width: 100%;
+      height: 170px;
+      text-indent: -9999em;
+      &.terminal{
+        background:url(/static/co/images/img_layer_construction_terminal.jpg) no-repeat;
+      }
+      &.transportation{
+        background:url(/static/co/images/img_layer_construction_transportation.jpg) no-repeat;
+      }
+
+      &.freight{
+        background:url(/static/co/images/img_layer_construction_freight.jpg) no-repeat;
+      }
+
+      &.airstrip{
+        background:url(/static/co/images/img_layer_construction_airstrip.jpg) no-repeat;
+      }
+    }
+
+    &-txt{
+      text-align: center;
+      font-size: 0.875rem;
+      padding-top: 5px;
+    }
+  }
+
+  &-facility{
+    border: 1px solid #d9d9d9;
+    &-map{
+      width:100%;
+      height: 309px;
+      text-indent: -9999em;
+      background: url(/static/co/images/map_layer_facility_arrangement.jpg) no-repeat;
+    }
+
+    &-map2{
+      width:100%;
+      height: 270px;
+      text-indent: -9999em;
+      background: url(/static/co/images/map_layer_facility_arrangement_02.jpg) no-repeat;
+    }
+    &-map3{
+      width:100%;
+      height: 270px;
+      text-indent: -9999em;
+      background: url(/static/co/images/map_layer_facility_arrangement_03.jpg) no-repeat;
+    }
+  }
+
+}
+
+.inner-col{
+  &.construction{
+    padding: 10px 10px;
+  }
+
+  &.social{
+    padding: 0 10px;
+  }
+}
+
+.list2{
+  &.layer-list2{
+    &-item{
+      color:#666;
+    }
+  }
+}
+
+.history{
+  &-img{
+    width: 100%;
+    height: 295px;
+    text-indent: -9999em;
+    background: url(/static/co/images/img_ceo.png) no-repeat;
+  }
+
+  &-img2{
+     width: 100%;
+     height: 137px;
+     text-indent: -9999em;
+     background: url(/static/co/images/img_airport_construction.jpg) no-repeat;
+   }
+
+  &-img3{
+    width: 100%;
+    height: 137px;
+    text-indent: -9999em;
+    background: url(/static/co/images/img_airport_operation.jpg) no-repeat;
+  }
+
+  &-txt{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &-ceo{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &-list{
+    @extend %clearfix;
+    &-head{
+      width:160px;
+      float: left;
+    }
+
+    &-body{
+      float:left;
+    }
+  }
+
+}
+
+.multi-col{
+  &.double{
+    &.history{
+      padding: 50px 0;
+      border-bottom: 1px solid #b7c0ce;
+
+      &.last{
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.double-box {
+  &.right{
+    padding-left: 20px;
+  }
+
+
+  &.ico {
+    text-indent: 0;
+    &:after {
+      background-position: -219px -28px;
+      width: 11px;
+      height: 22px;
+      right: -30px;
+      left: auto
+    }
+  }
+
+  &-top {
+    width: 410px;
+    padding: 20px 150px;
+    background-color: #4674c9;
+    color: #fff;
+  }
+
+  &-bottom {
+    width: 410px;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+}
+
+.btn-type-small{
+  &.more{
+    min-width: 90px;
+    height: 25px;
+    text-align: center;
+    background: #fff;
+    padding: 0 15px;
+    line-height: 25px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #222;
+    display: inline-block;
+  }
+}
+
+.social{
+  &-btn{
+    &-list{
+      &-item{
+        width: 100%;
+        height: 60px;
+        border: 1px solid #d9e0ea;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 15px 20px;
+
+
+      }
+
+      &-link{
+        font-size: 1.125rem;
+        font-weight: 700;
+        display:block;
+
+        &.plus{
+
+          position: relative;
+          &:after{
+            content: "+";
+            color: #b2b2b2;
+            font-weight: 800;
+            position: absolute;
+            right: 0;
+            left: auto;
+          }
+        }
+      }
+    }
+  }
+
+  &-img{
+    &.construction07{
+      height: 145px;
+      width: 217px;
+      text-indent: -9999em;
+      background: url(/static/co/images/img_layer_social_contribution07.jpg) no-repeat;
+    }
+
+    &.construction08{
+      height: 145px;
+      width: 217px;
+      text-indent: -9999em;
+      background: url(/static/co/images/img_layer_social_contribution08.jpg) no-repeat;
+    }
+
+    &.construction09{
+      height: 145px;
+      width: 217px;
+      text-indent: -9999em;
+      background: url(/static/co/images/img_layer_social_contribution09.jpg) no-repeat;
+    }
+
+    &.construction10{
+      height: 145px;
+      width: 217px;
+      text-indent: -9999em;
+      background: url(/static/co/images/img_layer_social_contribution10.jpg) no-repeat;
+    }
+
+    &.construction11{
+      height: 145px;
+      width: 217px;
+      text-indent: -9999em;
+      background: url(/static/co/images/img_layer_social_contribution11.jpg) no-repeat;
+    }
+
+
+    &-list{
+      &-item{
+        height:110px;
+        margin-bottom:10px;
+        text-indent:-9999em;
+
+        &.construction01{
+          background: url(/static/co/images/img_layer_social_contribution01.jpg) no-repeat;
+        }
+
+        &.construction02{
+          background: url(/static/co/images/img_layer_social_contribution02.jpg) no-repeat;
+        }
+
+        &.construction03{
+          background: url(/static/co/images/img_layer_social_contribution03.jpg) no-repeat;
+        }
+
+        &.construction04{
+          background: url(/static/co/images/img_layer_social_contribution04.jpg) no-repeat;
+        }
+
+        &.construction05{
+          background: url(/static/co/images/img_layer_social_contribution05.jpg) no-repeat;
+        }
+
+        &.construction06{
+          background: url(/static/co/images/img_layer_social_contribution06.jpg) no-repeat;
+        }
+
+      }
+    }
+
+    &-list2{
+      @extend %clearfix;
+      &-item{
+        height:140px;
+        margin-bottom:10px;
+        margin-right: 5px;
+        text-indent:-9999em;
+        width: 213px;
+        float: left;
+
+        &:last-child{
+          margin-right: 0;
+        }
+
+
+        &.relief01{
+          background: url(/static/co/images/img_relief01.jpg) no-repeat;
+        }
+        &.relief02{
+          background: url(/static/co/images/img_relief02.jpg) no-repeat;
+        }
+        &.relief03{
+          background: url(/static/co/images/img_relief03.jpg) no-repeat;
+        }
+        &.relief04{
+          background: url(/static/co/images/img_relief04.jpg) no-repeat;
+        }
+
+
+
+      }
+    }
+
+  }
+}
+
+
+
+
