@@ -2648,6 +2648,13 @@ button, a {
   margin-left: 100px;
 }
 
+
+.mb20, %mb20{
+  margin-left: 20px;
+}
+
+
+
 // IR 인포그래픽
 /*공공데이터개방*/
 .digr-public-data-open-guidea{
@@ -2696,3 +2703,29 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   text-indent:-999em;
   background: url(/static/co/images/digr_co_vision.png) no-repeat;
 }
+
+/*사회공헌*/
+
+.digr-social-contribution01{
+  height:1011px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_social_contribution01.png) no-repeat;
+}
+
+.digr-social-contribution02{
+  height:776px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_social_contribution02.png) no-repeat;
+}
+.digr-social-contribution03{
+  height:369px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_social_contribution03.png) no-repeat;
+}
+
+.digr-social-contribution04{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_social_contribution04.png) no-repeat;
+}
+
