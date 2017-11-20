@@ -58,8 +58,8 @@
           <ul class="left-menu-depth2">
             <li class="left-menu-depth2-item"><a class="left-menu-depth2-link">조직소개</a></li>
             <li class="left-menu-depth2-item"><a class="left-menu-depth2-link">임원소개</a></li>
-            <li class="left-menu-depth2-item"><a class="left-menu-depth2-link">직원 업무 및 연락처</a></li>
-            <li class="left-menu-depth2-item"><a class="left-menu-depth2-link on">정원</a></li>
+            <li class="left-menu-depth2-item"><a class="left-menu-depth2-link on">직원 업무 및 연락처</a></li>
+            <li class="left-menu-depth2-item"><a class="left-menu-depth2-link">정원</a></li>
           </ul>
         </li>
         <li class="left-menu-depth1-item"><a class="left-menu-depth1-link sub">열린 경영</a>
@@ -79,104 +79,142 @@
     </nav>
 
     <div class="sub-contents">
-      <h4 class="sub-contents-heading1">정원</h4>
+      <h4 class="sub-contents-heading1">직원 업무 및 연락처</h4>
+      <article class="article">
+        <!--검색-->
+        <div class="search-box">
+          <div class="search-box-input small">
+            <div class="multi-col double">
+              <div class="inner-col w85 pl10">
 
-      <article class="article mt30">
-        <table class="table vt-dark" summary="조직별 정원에 대한 안내 표입니다.">
-          <caption>조직별 정원 안내 표</caption>
+                <h4 class="search-box-title"><label for="name">이름으로 찾기</label></h4>
+                <div class="search-box-input-item">
+                  <input type="text" class="search-box-input-txt medium" id="name" placeholder="이름을 입력하세요" title="이름 입력을 통해 검색할 수 있습니다">
+                </div>
+                <h4 class="search-box-title ml30"><label for="task">업무로 찾기</label></h4>
+                <div class="search-box-input-item">
+                  <input type="text" class="search-box-input-txt large" id="task" placeholder="담당업무를 입력하세요">
+                </div>
+
+                <h4 class="search-box-title mt10"><label for="department">부서 선택하기</label></h4>
+                <div class="search-box-input-item mt10">
+                  <select class="search-box-input-select medium" id="department" title="본부를 선택해 주세요">
+                    <option>본부선택</option>
+                  </select>
+                  <select class="search-box-input-select medium" title="부/실을 선택해 주세요">
+                    <option>부/실 선택</option>
+                  </select>
+                  <select class="search-box-input-select medium" title="팀을 선택해 주세요">
+                    <option>팀 선택</option>
+                  </select>
+                </div>
+
+              </div>
+              <div class="inner-col w15 pl10">
+                <div class="search-box-btn-area">
+                  <button type="button" class="search-box-btn big">검색</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--//검색-->
+
+        <div class="text-right mt20">
+          <p>전체 : <strong>1000</strong>건  (1 / 13 page)</p>
+        </div>
+        <table class="table vt board-list mt10" summary="직원 업무 및 연락처 목록">
+          <caption>직원 업무 및 연락처 목록</caption>
           <colgroup>
-            <col style="width:20%">
-            <col style="width:20%">
-            <col style="width:30%">
-            <col style="width:30%">
+            <col style="width:25%">
+            <col style="width:15%">
+            <col style="width:25%">
+            <col style="width:35%">
           </colgroup>
           <thead>
           <tr>
-            <th scope="col" colspan="2">구분</th>
-            <th scope="col">직급(직위)</th>
-            <th scope="col">정원</th>
+            <th scope="col"><strong>부서명</strong></th>
+            <th scope="col"><strong>이름</strong></th>
+            <th scope="col"><strong>전화번호</strong></th>
+            <th scope="col"><strong>담당업무</strong></th>
           </tr>
           </thead>
           <tbody>
           <tr>
-            <td class="center" rowspan="5" colspan="2">임원(상임이사)</td>
-            <td class="center">사장</td>
-            <td class="center">1</td>
-          </tr><tr>
-            <td class="center">감사위원</td>
-            <td class="center">1</td>
-          </tr>
-          <tr>
-            <td class="center">부사장</td>
-            <td class="center">1</td>
-          </tr>
-          <tr>
-            <td class="center">본부장</td>
-            <td class="center">3</td>
-          </tr>
-          <tr>
-            <td class="center">계</td>
-            <td class="center">6</td>
-          </tr>
-          <tr>
-            <td class="center" rowspan="8">직원</td>
-            <td class="center" rowspan="5">일반직</td>
-            <td class="center">1급</td>
-            <td class="center">30</td>
-          </tr>
-          <tr>
-            <td class="center">2급</td>
-            <td class="center">106</td>
-          </tr>
-          <tr>
-            <td class="center">3급</td>
-            <td class="center">314</td>
-          </tr>
-          <tr>
-            <td class="center">4급~7급</td>
-            <td class="center">684</td>
-          </tr>
-          <tr>
-            <td class="center">계</td>
-            <td class="center">1,134</td>
-          </tr>
-          <tr>
-            <td class="center" colspan="2">안전ㆍ보안전문직
-              별정직
-              계약직
+            <td class="center">
+              홍보기획팀<br>032-741-2112~5
             </td>
-            <td class="center">94</td>
+            <td class="center">김나나</td>
+            <td class="center">032-741-2112</td>
+            <td>
+              <ul class="list1">
+                <li class="list1-item">
+                  웹사이트 운영,  관리 및 개편
+                </li>
+                <li class="list1-item">
+                  SNS 운영 및 관리
+                </li>
+              </ul>
+            </td>
           </tr>
           <tr>
-            <td class="center" colspan="2">별정직</td>
-            <td class="center">5</td>
+            <td class="center">
+              홍보기획팀<br>032-741-2112~5
+            </td>
+            <td class="center">제갈우등</td>
+            <td class="center">032-741-2114</td>
+            <td>
+              <ul class="list1">
+                <li class="list1-item">
+                  웹사이트 운영,  관리 및 개편
+                </li>
+                <li class="list1-item">
+                  SNS 운영 및 관리
+                </li>
+              </ul>
+            </td>
           </tr>
           <tr>
-            <td class="center" colspan="2">계약직</td>
-            <td class="center">17</td>
-          </tr>
-          <tr class="total">
-            <td class="center" colspan="3">합계</td>
-            <td class="center">1,256</td>
+            <td class="center">
+              홍보기획팀<br>032-741-2112~5
+            </td>
+            <td class="center">박차차</td>
+            <td class="center">032-741-2115</td>
+            <td>
+              <ul class="list1">
+                <li class="list1-item">
+                  웹사이트 운영,  관리 및 개편
+                </li>
+                <li class="list1-item">
+                  SNS 운영 및 관리
+                </li>
+              </ul>
+            </td>
           </tr>
           </tbody>
         </table>
-      </article>
+        <!--페이지-->
+        <div class="pagenation mt30">
+          <a class="ico first default" href="#">처음</a>
+          <a class="ico prev" href="#">이전</a>
+          <ol class="pagenation-list">
+            <li class="pagenation-list-item on">
+              <a class="pagenation-list-link" href="#">1</a>
+            </li>
 
-      <article class="article">
-        <div class="text-box contact">
-          <div class="text-box-headline-col">
-            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 해 주시기 바랍니다.</h6>
-          </div>
-          <ul class="list1">
-            <li class="list1-item ">
-              <strong>담당부서 :</strong> 경영전략팀
+            <li class="pagenation-list-item">
+              <a class="pagenation-list-link" href="#">2</a>
             </li>
-            <li class="list1-item ">
-              <strong>TEL :</strong> 032-741-2161, 2162
+
+            <li class="pagenation-list-item">
+              <a class="pagenation-list-link" href="#">3</a>
             </li>
-          </ul>
+          </ol>
+          <a class="ico next" href="#">다음</a>
+          <a class="ico last" href="#">마지막</a>
         </div>
+        <!--//페이지-->
       </article>
 
     </div>

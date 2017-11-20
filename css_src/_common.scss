@@ -220,8 +220,37 @@
       }
     }
 
+    &.sub{
+      margin-top: 10px;
+      .tab-nav-list{
+
+        &-item {
+          &:last-child{
+            a{
+              margin-right: 0;
+            }
+          }
+        }
+
+        &-link {
+          margin-right: 10px;
+          color: #999;
+          border:0;
+          border-bottom: 2px solid #999;
+
+          &.on {
+            color: #42519e;
+            background: #fff;
+            border-bottom: 2px solid #42519e;
+          }
+
+        }
+      }
+    }
   }
 }
+
+
 
 /* global sprite icon */
 .ico{
@@ -624,6 +653,9 @@ em{
       font-size:1.125rem;
       color: #42519e;
       margin-bottom: 20px;
+      &.black{
+        color: #444;
+      }
     }
 
   }
@@ -809,6 +841,9 @@ em{
         td{
           border-top:0;
         }
+      }
+      tr.total{
+        background:#f3f4f8;
       }
     }
 
@@ -1420,18 +1455,24 @@ button, a {
         width: auto;
         padding-right:24px;
       }
-      &.w70{
-        width: 70%;
-        padding-right:24px;
-      }
-      &.w30{
-        width: 30%;
+      &.w85{
+        width: 85%;
       }
       &.w80{
         width: 80%;
       }
-      &.w20{
-        width: 20%;
+      &.w70{
+        width: 70%;
+        padding-right:24px;
+        &.pr0{
+          padding-right: 0;
+        }
+      }
+      &.w73{
+        width: 73%;
+      }
+      &.w60{
+        width: 60%;
       }
       &.w55{
         width: 55%;
@@ -1439,11 +1480,20 @@ button, a {
       &.w45{
         width: 45%;
       }
-      &.w60{
-        width: 60%;
-      }
       &.w40{
         width: 40%;
+      }
+      &.w30{
+        width: 30%;
+      }
+      &.w27{
+        width: 27%;
+      }
+      &.w20{
+        width: 20%;
+      }
+      &.w15{
+        width: 15%;
       }
       &.wide{
         width: 100%;
@@ -2313,10 +2363,19 @@ button, a {
     }
     &-select{
       width: 140px;
+      &.medium{
+        width: 185px;
+      }
     }
     &-txt{
       width: 280px;
       border-left:1px solid #d9d9d9;
+      &.medium{
+        width: 185px;
+      }
+      &.large{
+        width: 240px;
+      }
     }
     &-btn{
       padding: 10px 20px;
@@ -2341,6 +2400,12 @@ button, a {
           width: 22px;
           height: 22px;
         }
+      }
+      &.big{
+        width: 100px;
+        height: 92px;
+        color: #fff;
+        font-weight: 800;
       }
     }
   }
@@ -2540,6 +2605,144 @@ button, a {
   }
 }
 
+/*상생협력프로그램*/
+.cooperation-program{
+  margin-top: 50px;
+  &-item{
+    margin-bottom: 50px;
+    padding-left:445px;
+    position: relative;
+    &-title{
+      margin-bottom: 20px;
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: #42519e;
+    }
+    &-txt{
+      line-height: 1.7;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: auto;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      background:url(/static/co/images/spr_ico_img_cooperation_program.png) no-repeat;
+    }
+    &.program1:before{
+      background-position: -17px -20px;
+      width: 415px;
+      height: 100px;
+    }
+    &.program2:before{
+      background-position: -16px -130px;
+      width: 415px;
+      height: 100px;
+    }
+    &.program3:before{
+      background-position: -16px -240px;
+      width: 415px;
+      height: 100px;
+    }
+    &.program4:before{
+      background-position: -16px -351px;
+      width: 415px;
+      height: 100px;
+    }
+    &.program5:before{
+      background-position: -16px -461px;
+      width: 415px;
+      height: 100px;
+    }
+    &.program6:before{
+      background-position: -16px -571px;
+      width: 415px;
+      height: 100px;
+    }
+    &.program7:before{
+      background-position: -16px -681px;
+      width: 415px;
+      height: 100px;
+    }
+  }
+}
+
+.communication-channel{
+  padding: 30px 50px;
+  @extend %clearfix;
+  &-item{
+    width: 190px;
+    text-align: center;
+    float: left;
+  }
+  &-title{
+    margin-top: 10px;
+  }
+
+}
+
+.ico-txt{
+  position: relative;
+  &-substance{
+    height: 116px;
+    padding: 20px 0  0 130px;
+    margin-bottom: 30px;
+    word-break: keep-all;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: auto;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      background:url(/static/co/images/spr_ico_ethics_practice.png) no-repeat;
+    }
+    &.type1:before{
+      background-position: -10px -10px;
+      width: 116px;
+      height: 116px;
+    }
+    &.type2:before{
+      background-position: -10px -10px;
+      width: 116px;
+      height:116px;
+    }
+    &.type3:before{
+      background-position: -10px -10px;
+      width: 116px;
+      height:116px;
+    }
+    &.type4:before{
+      background-position: -10px -10px;
+      width: 116px;
+      height:116px;
+    }
+    &.type5:before{
+      background-position: -10px -10px;
+      width: 116px;
+      height:116px;
+    }
+    &.type6:before{
+      background-position: -10px -10px;
+      width: 116px;
+      height:116px;
+    }
+    &.type7:before{
+      background-position: -10px -10px;
+      width: 116px;
+      height:116px;
+    }
+  }
+}
+
 .imgbox {
   width: 100%;
   vertical-align: top;
@@ -2648,6 +2851,10 @@ button, a {
   margin-left: 100px;
 }
 
+.pl10, %pl10{
+ padding-left: 10px;
+}
+
 // IR 인포그래픽
 /*공공데이터개방*/
 .digr-public-data-open-guidea{
@@ -2695,4 +2902,47 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   height:626px;
   text-indent:-999em;
   background: url(/static/co/images/digr_co_vision.png) no-repeat;
+}
+
+/*동반성장*/
+.digr-strengthen-competitive1{
+  height:640px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_strengthen_competitive_01.png) no-repeat;
+}
+
+.digr-strengthen-competitive2{
+  height:915px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_strengthen_competitive_02.png) no-repeat;
+}
+
+.digr-communication-channel{
+  height:115px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_communication_channel_01.png) no-repeat;
+}
+
+.digr-concomitant-growth{
+  height:1810px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_concomitant_growth_01.png) no-repeat;
+}
+
+.digr-ethics-management-organization{
+  height:738px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_ethics_management_organization.png) no-repeat;
+}
+
+.digr-ethics-management-vision1{
+  height:400px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_ethical_management_vision_01.png) no-repeat;
+}
+
+.digr-ethics-management-vision2{
+  height:595px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_ethical_management_vision_02.png) no-repeat;
 }
