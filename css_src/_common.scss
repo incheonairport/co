@@ -34,7 +34,7 @@
         display: block;
         width: 40px;
         height: 1px;
-        background: #fff;
+        background: rgba(255,255,255,.6);
         margin: 25px auto;
       }
     }
@@ -594,6 +594,7 @@ em{
 
 .list1{
   &-item{
+    margin-top: 4px;
     font-size: 	1rem;
     padding-left:12px;
     position:relative;
@@ -1334,6 +1335,7 @@ em{
       }
       &.txt {
         padding: 0 10px;
+        text-align:center;
       }
       &.under {
         background: none;
@@ -1726,6 +1728,21 @@ button, a {
   width:100%;
   border: 1px solid #d9d9d9;
   padding:30px;
+  &.list{
+    padding-bottom:100px;
+    position:relative;
+    .sign-box{
+      position:absolute;
+      right:0;
+      bottom:0;
+      text-align:right;
+      padding:20px;
+      line-height:1.4;
+      img{
+        display:inline-block;
+      }
+    }
+  }
 
   &-headline{
     font-weight: 700;
@@ -2402,6 +2419,7 @@ button, a {
       border: 0;
       background: #323648;
       float: left;
+      border-radius:0;
       &.ico{
         &:after{
           background-position:-74px -134px;
@@ -2939,6 +2957,13 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   border:1px solid #d9d9d9;
 }
 
+.digr-low-carbon-eco-friendly-strategy1{
+  height:565px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_01.png) no-repeat -2px;
+
+}
+
 // 임원진 CO_CH_02
 .profile-box {
   @extend %clearfix;
@@ -3053,3 +3078,88 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   border-bottom: 1px solid #d9d9d9;
 }
 
+/* 국제 구호 활동 */
+.active-history{
+  background:url(/static/co/images/bg_social_contribution.png);
+  border:1px solid #d9d9d9;
+  text-align:center;
+  padding:60px 0;
+  &-list{
+    display:inline-block;
+    @extend %clearfix;
+    &-item{
+      width:124px;
+      float:left;
+      margin-left:34px;
+      text-align:center;
+      font-size:0.875rem;
+      font-weight:900;
+      &:first-child{
+        margin-left:0;
+      }
+    }
+    &-year{
+      display:block;
+      width:124px;
+      height:124px;
+      margin:10px auto;
+      border-radius:50%;
+      background:#323648;
+      color:#fff;
+      font-size:1.125rem;
+      font-weight:300;
+      line-height:124px;
+      &.bg{
+        em{
+          width:100%;
+          position:absolute;
+          top:0;
+          left:0;
+          text-decoration:none;
+        }
+        position:relative;
+        overflow:hidden;
+
+        &:before{
+          content:'';
+          display:block;
+          position:absolute;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+          background:rgba(0,0,0,.5);
+        }
+      }
+
+      &.bg1{
+        background:url(/static/co/images/img_relief01.jpg) no-repeat;
+      }
+
+      &.bg2{
+        background:url(/static/co/images/img_relief02.jpg) no-repeat;
+      }
+
+      &.bg3{
+        background:url(/static/co/images/img_relief03.jpg) no-repeat;
+      }
+
+      &.bg4{
+        background:url(/static/co/images/img_relief04.jpg) no-repeat;
+      }
+    }
+  }
+}
+
+.result-box{
+  border:1px solid #d9d9d9;
+  padding:20px;
+  position:relative;
+  &-btn{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:20px;
+    margin:auto;
+  }
+}
