@@ -1,0 +1,169 @@
+.list6{
+  position: relative;
+  &-item{
+    height: 116px;
+    padding: 20px 0 0 130px;
+    margin-bottom: 30px;
+    position: relative;
+    &:after{
+      content: '';
+      display: block;
+      background: url(/static/co/images/spr_ico_ethics_practice.png) no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    &.type1{
+      &:after{
+        width: 116px;
+        height: 116px;
+        background-position: -10px -10px;
+      }
+    }
+    &.type2 {
+      &:after {
+        width: 116px;
+        height: 116px;
+        background-position: -10px -10px;
+      }
+    }
+    &.type3{
+      &:after{
+        width: 116px;
+        height: 116px;
+        background-position: -10px -10px;
+      }
+    }
+    &.type4{
+      &:after{
+        width: 116px;
+        height: 116px;
+        background-position: -10px -10px;
+      }
+    }
+    &.type5 {
+      &:after {
+        width: 116px;
+        height: 116px;
+        background-position: -10px -10px;
+      }
+    }
+    &.type6{
+      &:after{
+        width: 116px;
+        height: 116px;
+        background-position: -10px -10px;
+      }
+    }
+    &.type7{
+      &:after{
+        width: 116px;
+       height: 116px;
+        background-position: -10px -10px;
+      }
+    }
+    &-heading{
+      font-size: 1.125rem;
+      color: #42519e;
+      margin-bottom: 20px;
+      &:before{
+        content: "▶";
+        /*font-size: 0.875rem;*/
+        font-size: 0.75rem;
+        font-weight: normal;
+        color: #42519e;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+    &.link{
+      &:after{
+        display: none;
+      }
+    }
+    &-onlink{
+      display: block;
+      width: 116px;
+      height: 116px;
+      position: absolute;
+      text-indent: -99999em;
+      top: 0;
+      left: 0;
+      &:before{
+        content: '';
+        display: block;
+        background: url(/static/co/images/spr_ico_ethics_practice.png) no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      &.type1{
+        &:before{
+          width: 116px;
+          height: 116px;
+          background-position: -10px -133px;
+        }
+      }
+      &.type2{
+        &:before{
+          width: 116px;
+          height: 116px;
+          background-position: -10px -133px;
+        }
+      }
+      &.type3{
+        &:before{
+          width: 116px;
+          height: 116px;
+          background-position: -10px -133px;
+        }
+      }
+    }
+  }
+}
+
+.graph{
+  &-box{
+    border: 1px solid #d9d9d9;
+    padding: 30px 130px 55px 120px;
+  }
+  &-line{
+    height: 417px;
+    border-bottom: 1px solid #323648;
+    border-left: 1px solid #323648;
+    background: url(/static/co/images/bg_result_01.png) repeat-x;
+    @extend %clearfix;
+  }
+  &-list{
+    height: 417px;
+    float: left;
+    position: relative;
+    width: 16.66%;
+    text-align: center;
+    &-heading{
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      right: 0;
+    }
+  }
+  &-bar{
+    display: inline-block;
+    width: 44px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    &>p{
+      -webkit-transform:rotate(-90deg);
+      -moz-transform:rotate(-90deg);
+      -ms-transform:rotate(-90deg);
+      -o-transform:rotate(-90deg);
+      transform:rotate(-90deg);
+    }
+  }
+}
