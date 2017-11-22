@@ -190,33 +190,28 @@
 .tab {
 
   &-nav {
-
     &-list {
       @extend %clearfix;
-
+      display: table;
+      width: 100%;
       &-item {
-        width: 25%;
-        float: left;
-        cursor: pointer;
-        &:first-child{
-          a{
-            border-left:1px solid #d9d9d9!important;
-          }
+        display: table-cell;
+        border: 1px solid #d9d9d9;
+        vertical-align: middle;
+        &+.tab-nav-list-item{
+          border-left: 1px;
         }
       }
 
       &-link {
+        cursor: pointer;
+        padding:20px 0;
         display: block;
-        height: 57px;
         background:#fff;
-        border: 1px solid #d9d9d9;
-        border-left:0!important;
-        font-size: 	1rem;
         font-weight: 300;
         color: #666;
-        line-height: 54px;
+        line-height: 1.5;
         text-align: center;
-
         &.on {
           color: #fff;
           background: #42519e;
@@ -232,6 +227,7 @@
       .tab-nav-list{
 
         &-item {
+          border: 0;
           &:last-child{
             a{
               margin-right: 0;
@@ -838,7 +834,18 @@ em{
         }
       }
     }
-
+    &.padding-0{
+      th {
+        vertical-align: middle;
+        font-size:0.875rem;
+        &:after {
+          top: 25px;
+        }
+      }
+      td{
+        padding: 23px 0;
+      }
+    }
   }
 
   &.vt-dark{
@@ -888,8 +895,28 @@ em{
         &:last-child{
           border-right:0;
         }
-      }
+        &-half {
+          padding: 6px 0 8px;
+          border: {
+            top: 1px solid #212535;
+            right: 1px solid #212535;
+          }
+          background: #4d5164;
+          font-size: 0.875rem;
 
+          &:last-child {
+            border-right: 0;
+          }
+          &-title{
+           background: #fff;
+            color: #444;
+            border: {
+              top: 1px solid #212535;
+              right: 1px solid #f2f4f7;
+            }
+          }
+        }
+      }
     }
 
     td{
@@ -1366,7 +1393,7 @@ button, a {
   cursor: pointer;
 }
 
-// float
+/*float*/
 .f{
   &-left{
     float:left;
@@ -1375,6 +1402,11 @@ button, a {
   &-right{
     float:right;
   }
+}
+
+/*display*/
+.d {
+  &-none{ display: none;}
 }
 
 .guide-desc{
@@ -1524,6 +1556,12 @@ button, a {
   &.triple{
     .inner-col{
       width:33.33%;
+    }
+  }
+
+  &.four{
+    .inner-col{
+      width:25%;
     }
   }
 
@@ -1739,29 +1777,37 @@ button, a {
   }
   &.contact{
     position: relative;
-    padding: 0;
-    height: 137px;
     &:before{
-      width: 190px;
-      height: 137px;
+      width: 69px;
+      height: 62px;
       content: '';
       display: block;
       position: absolute;
-      top: auto;
+      top: 0;
       right:auto;
-      left: 0;
-      bottom:auto;
+      left: 60px;
+      bottom:0;
       margin: auto;
       background: url(/static/co/images/ico_contact_box.png) center no-repeat;
-      border-right: 1px solid #d9d9d9;
-
+    }
+    &:after{
+      width: 1px;
+      height:auto;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right:auto;
+      left:200px;
+      bottom:0;
+      margin: auto;
+      border-left: 1px solid #d9d9d9;
     }
     .text-box-headline{
-      margin-top: 30px;
       padding-left: 230px;
     }
     .list1{
-      padding-left: 230px;
+      padding-left:230px;
     }
   }
 }
@@ -1949,10 +1995,10 @@ button, a {
         height:61px;
       }
       &.type3:before{
-       background-position:-150px -29px;
-       width: 65px;
-       height:48px;
-       }
+        background-position:-150px -29px;
+        width: 65px;
+        height:48px;
+      }
       &.type4:before{
         background-position:-234px -26px;
         width: 56px;
@@ -2052,10 +2098,18 @@ button, a {
     color:#fff;
     font-size:1.375rem;
     font-weight:600;
-    margin-bottom:10px;
-    padding-top:55px;
-    white-space:nowrap;
-    background: url(/static/co/images/ico_customer_voice.png) top center no-repeat;
+    margin: 35px 0 15px;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      background: url(/static/co/images/ico_customer_voice.png) top center no-repeat;
+    }
   }
   &-btn{
     padding: 5px 20px;
@@ -2339,6 +2393,7 @@ button, a {
   width: 870px;
   padding: 20px;
   border: 1px solid #d9d9d9;
+  text-align: center;
   @extend %clearfix;
   &-title{
     font-weight:800;
@@ -2348,36 +2403,35 @@ button, a {
     top:13px;
   }
   &-input{
-    width: 550px;
-    margin: 0 auto;
-
-    &.small{
-      width:100%;
-    }
+    display: inline-block;
     &-item{
-      height:40px;
-      overflow: hidden;
       float: left;
-      border: 1px solid #818181;
-      box-sizing: border-box;
+      border-right:1px solid #818181;
     }
     &-select, &-txt{
       height:40px;
       padding: 0 10px;
-      border: 0;
+      border: 1px solid #818181;
+      border-right:0px;
       font-size:0.9375rem;
       color: #444;
       box-sizing: border-box;
+      float: left;
     }
     &-select{
       width: 140px;
       &.medium{
-        width: 185px;
+        width: 187px;
+      }
+      &+.search-box-input-select{
+        border-left:1px solid #d9d9d9;
+      }
+      &+.search-box-input-txt{
+        border-left:1px solid #d9d9d9;
       }
     }
     &-txt{
       width: 280px;
-      border-left:1px solid #d9d9d9;
       &.medium{
         width: 185px;
       }
@@ -2387,7 +2441,6 @@ button, a {
     }
     &-btn{
       padding: 10px 20px;
-
       border: 0;
       background: #323648;
     }
@@ -2396,12 +2449,14 @@ button, a {
     }
   }
   &-btn-area{
+    float: left;
     .search-box-btn{
       height: 40px;
       padding: 10px 20px;
       border: 0;
       background: #323648;
-      float: left;
+      color: #fff;
+      font-weight: 800;
       &.ico{
         &:after{
           background-position:-74px -134px;
@@ -2412,8 +2467,6 @@ button, a {
       &.big{
         width: 100px;
         height: 92px;
-        color: #fff;
-        font-weight: 800;
       }
     }
   }
@@ -2493,7 +2546,7 @@ button, a {
   &-item{
     text-align: center;
     &-img{
-    line-height: 0;
+      line-height: 0;
     }
     &-title{
       margin-top: 15px;
@@ -2553,10 +2606,10 @@ button, a {
       background: url(/static/co/images/spr_ico_iiac_numbering.png) no-repeat;
     }
     &.type1:before{
-       background-position: -10px -10px;
-       width: 78px;
-       height: 78px;
-     }
+      background-position: -10px -10px;
+      width: 78px;
+      height: 78px;
+    }
     &.type2:before{
       background-position: -107px -10px;
       width: 78px;
@@ -2860,7 +2913,7 @@ button, a {
 }
 
 .pl10, %pl10{
- padding-left: 10px;
+  padding-left: 10px;
 }
 
 .mb20, %mb20{
@@ -2889,9 +2942,9 @@ button, a {
 
 /*신고자보호및보상*/
 .digr-protection-compensation{
-height:534px;
-text-indent:-999em;
-background: url(/static/co/images/digr_protection_compensation.png) no-repeat;
+  height:534px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_protection_compensation.png) no-repeat;
 }
 
 /*역대기관장*/
@@ -2904,9 +2957,9 @@ background: url(/static/co/images/digr_protection_compensation.png) no-repeat;
 
 /*발자취*/
 .digr-co-traces{
-height:931px;
-text-indent:-999em;
-background: url(/static/co/images/digr_co_traces.png) no-repeat;
+  height:931px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_co_traces.png) no-repeat;
 }
 
 /*vision*/
@@ -3052,4 +3105,5 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   padding-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
 }
+
 
