@@ -164,7 +164,7 @@
 }
 
 .sub-contents{
-  width: 864px;
+  width: 870px;
   float: right;
   &-heading1{
     margin-bottom: 40px;
@@ -192,27 +192,18 @@
   &-nav {
     &-list {
       @extend %clearfix;
-      display: table;
       width: 100%;
       &-item {
-        display: table-cell;
-        border: 1px solid #d9d9d9;
-        vertical-align: middle;
+        float: left;
         &+.tab-nav-list-item{
           border-left: 1px;
-        }
-        &.on {
-          color: #fff;
-          background: #42519e;
-          border: 1px solid #d9d9d9;
-          font-weight: 800;
-          height: auto;
         }
       }
       &-link {
         padding:20px 0;
         display: block;
         background:#fff;
+        border: 1px solid #d9d9d9;
         font-weight: 300;
         color: #666;
         line-height: 1.5;
@@ -1984,14 +1975,14 @@ button, a {
 
   }
   &-wide{
-    width: 870px;
+    width: 100%;
     display:table;
     border: 1px solid #d9d9d9;
     position: relative;
     @extend %clearfix;
 
     &-txt{
-      width: 620px;
+      width: auto;
       min-height: 190px;
       padding: 30px;
       background: #fff;
@@ -2109,7 +2100,7 @@ button, a {
 /*guidebox*/
 .guidebox{
   display:table;
-  width: 870px;
+  width: 100%;
 
   &-col{
     display:table-cell;
@@ -2223,7 +2214,7 @@ button, a {
       float:left;
       position:relative;
       width:calc(50% - 12px);
-      margin-right:24px;
+      margin-right:18px;
       &.wide{
         float: none;
         width: 100%;
@@ -2515,7 +2506,7 @@ button, a {
 
 /*검색*/
 .search-box{
-  width: 870px;
+  width:100%;
   padding: 20px;
   border: 1px solid #d9d9d9;
   text-align: center;
