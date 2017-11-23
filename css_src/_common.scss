@@ -164,7 +164,7 @@
 }
 
 .sub-contents{
-  width: 870px;
+  width: 864px;
   float: right;
   &-heading1{
     margin-bottom: 40px;
@@ -201,9 +201,15 @@
         &+.tab-nav-list-item{
           border-left: 1px;
         }
+        &.on {
+          color: #fff;
+          background: #42519e;
+          border: 1px solid #d9d9d9;
+          font-weight: 800;
+          height: auto;
+        }
       }
       &-link {
-        cursor: pointer;
         padding:20px 0;
         display: block;
         background:#fff;
@@ -211,6 +217,7 @@
         color: #666;
         line-height: 1.5;
         text-align: center;
+        cursor: pointer;
         &.on {
           color: #fff;
           background: #42519e;
