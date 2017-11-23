@@ -217,6 +217,7 @@
           background: #42519e;
           border: none;
           font-weight: 800;
+          height: auto;
         }
       }
     }
@@ -727,6 +728,11 @@ em{
     tr.on{
       background:#f3f4f8;
     }
+    tr.border-top{
+      th{
+        border-top: 1px solid #d9d9d9;
+      }
+    }
 
     th{
       padding:19px 0 16px;
@@ -839,8 +845,9 @@ em{
       th {
         vertical-align: middle;
         font-size:0.875rem;
+        display: table-cell;
         &:after {
-          top: 25px;
+          height: 26px;
         }
       }
       td{
@@ -973,7 +980,11 @@ em{
         border-top:0;
       }
     }
-
+    &.no-min{
+      th{
+        min-width:auto;
+      }
+    }
     th{
       min-width:150px;
       border-top:1px solid #d9d9d9;
@@ -2428,7 +2439,7 @@ button, a {
       height:40px;
       padding: 0 10px;
       border: 1px solid #818181;
-      border-right:0px;
+      border-right:0;
       font-size:0.9375rem;
       color: #444;
       box-sizing: border-box;
@@ -2517,6 +2528,102 @@ button, a {
 /*메일*/
 .mail-link{
   color:#4674c9;
+}
+
+/*항공기 소음관리*/
+.p-dv {
+  margin: 0 auto;
+  background-color: white;
+  &-cont {
+    height: 905px;
+    &-map {
+      background: url(/static/co/images/map_aircraft_noise_management.gif) no-repeat;
+      height: 974px;
+      position: relative;
+      .map{
+        background-color: #fff;
+        border: 1px solid #000;
+        display: inline-block;
+        position: absolute;
+        div{
+          padding: 2px 5px;
+          font-size: 11px;
+          text-align: center;
+        }
+        .map-t {
+          height: 14px;
+          line-height: 11px;
+          border-bottom: 1px solid #000;
+        }
+        &.m1 {
+          left: 211px;
+          top: 34px;
+        }
+        &.m2 {
+          left: 347px;
+          top: 53px;
+        }
+        &.m3 {
+          left: 247px;
+          top: 246px;
+        }
+        &.m4 {
+          top: 385px;
+          left: 122px;
+        }
+        &.m5 {
+          top: 513px;
+          left: 177px;
+        }
+        &.m6 {
+          top: 429px;
+          left: 243px;
+        }
+        &.m7 {
+          top: 434px;
+          left: 365px;
+        }
+        &.m8 {
+          left: 315px;
+          top: 420px;
+        }
+        &.m9 {
+          top: 459px;
+          left: 429px;
+        }
+        &.m10 {
+          top: 532px;
+          left: 485px;
+        }
+        &.m11 {
+          top: 612px;
+          left: 224px;
+        }
+        &.m12 {
+          top: 748px;
+          left: 304px;
+        }
+        &.m13 {
+          top: 909px;
+          left: 343px;
+        }
+        &.m14 {
+          top: 790px;
+          left: 371px;
+        }
+        &.m15 {
+          left: 305px;
+          top: 520px;
+        }
+        &.m16 {
+          left: 340px;
+          top: 675px;
+        }
+      }
+    }
+  }
+
+
 }
 
 /*연혁*/
