@@ -701,6 +701,31 @@ em{
   }
 }
 
+.list7 {
+  &-item {
+    &:before{
+      content:'하나.';
+      display:inline-block;
+      width:56px;
+      height:56px;
+      background:#333649;
+      margin-right:20px;
+      color:#fff;
+      font-size:1.125rem;
+      font-weight:900;
+      text-align:center;
+      line-height:56px;
+      border-radius:50%;
+    }
+    font-size:1.125rem;
+    margin-top:20px;
+    &:first-child{
+      margin-top:0;
+    }
+  }
+}
+
+
 .table{
   width:100%;
 
@@ -858,6 +883,12 @@ em{
 
   &.vt-dark{
     border-bottom:1px solid #a5a7aa;
+    &.pd0{
+      td{
+        padding:20px 0;
+      }
+
+    }
 
     tbody{
       tr:first-child{
@@ -919,7 +950,7 @@ em{
            background: #fff;
             color: #444;
             border: {
-              top: 1px solid #212535;
+              bottom: 1px solid #d9d9d9;
               right: 1px solid #f2f4f7;
             }
           }
@@ -1780,20 +1811,21 @@ button, a {
   border: 1px solid #d9d9d9;
   padding:30px;
   &.list{
-    padding-bottom:100px;
-    position:relative;
+    padding-bottom:0;
     .sign-box{
-      position:absolute;
-      right:0;
-      bottom:0;
       text-align:right;
-      padding:20px;
+      padding:40px 20px 20px;
       line-height:1.4;
-      img{
+      &-name{
+        display:block;
+        margin-bottom:10px;
+      }
+      &-img{
         display:inline-block;
       }
     }
   }
+
 
   &-headline{
     font-weight: 700;
@@ -2401,11 +2433,33 @@ button, a {
 }
 
 .banner3{
+  &-heading{
+    padding-top:46px;
+    font-family: nanumsq, sans-serif;
+    font-size:2.125rem;
+    font-weight:900;
+    color:#fff;
+    text-align:center;
+    &+.banner-txt{
+      padding-top:10px
+    }
+  }
   height: 265px;
   &.ceo-massage{
     background:url(/static/co/images/bg_banner_ceo_massage.jpg) no-repeat;
   }
+  &.bg0{
+    height:215px;
+    background:url(/static/co/images/bg_banner_img0.jpg) no-repeat;
+  }
+
+  &.bg1{
+    height:215px;
+    background:url(/static/co/images/bg_banner_img1.jpg) no-repeat;
+  }
 }
+
+
 
 .map{
   &.airport-exhibition02{
@@ -3124,11 +3178,18 @@ button, a {
   border:1px solid #d9d9d9;
 }
 
+/* 에너지 경영 1*/
 .digr-low-carbon-eco-friendly-strategy1{
   height:565px;
   text-indent:-999em;
   background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_01.png) no-repeat -2px;
-
+}
+/* 에너지 경영 2*/
+.digr-low-carbon-eco-friendly-strategy2{
+  height:494px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_02.png) no-repeat;
+  border:1px solid #d9d9d9;
 }
 
 // 임원진 CO_CH_02
