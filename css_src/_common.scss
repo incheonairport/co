@@ -2466,6 +2466,11 @@ button, a {
   }
   &-btn-area{
     float: left;
+
+    &.view-large{
+      position: absolute;
+      bottom: 37px;
+    }
     .search-box-btn{
       height: 40px;
       padding: 10px 20px;
@@ -2486,6 +2491,22 @@ button, a {
       &.big{
         width: 100px;
         height: 92px;
+      }
+
+      &.view-large-btn{
+        padding: 0 20px 0 45px;
+        background:rgba(0,0,0,.5);
+        text-indent: 0;
+        font-weight: normal;
+
+        &.ico{
+          &:after{
+            background-position:-436px -134px;
+            margin-left: 13px;
+            width: 22px;
+            height: 22px;
+          }
+        }
       }
     }
   }
@@ -2922,6 +2943,10 @@ button, a {
 
 .ml10, %ml10{
   margin-left: 10px;
+}
+
+.mr10, %mr10{
+  margin-right: 10px;
 }
 
 .ml30, %ml30{

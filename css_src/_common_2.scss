@@ -424,7 +424,6 @@
   }
 
   &-img{
-
     &-list{
       &-item{
         height:110px;
@@ -485,15 +484,20 @@
         &.relief04{
           background: url(/static/co/images/img_relief04.jpg) no-repeat;
         }
-
-
-
       }
     }
-
   }
 }
 
+.digr-environment-monitoring{
+  height:559px;
+  background: url(/static/co/images/digr_environmental_monitoring.png) no-repeat;
+  text-indent: -9999em;
+}
 
-
+.digr-noise-management{
+  height:340px;
+  background: url(/static/co/images/digr_noise_management.png) no-repeat;
+  text-indent: -9999em;
+}
 
