@@ -351,42 +351,7 @@
     }
   }
 
-  &-img{
-    &-list{
-      &-item{
-        height:110px;
-        margin-bottom:10px;
-        text-indent:-9999em;
-
-        &.construction01{
-          background: url(/static/co/images/img_layer_social_contribution01.jpg) no-repeat;
-        }
-
-        &.construction02{
-          background: url(/static/co/images/img_layer_social_contribution02.jpg) no-repeat;
-        }
-
-        &.construction03{
-          background: url(/static/co/images/img_layer_social_contribution03.jpg) no-repeat;
-        }
-
-        &.construction04{
-          background: url(/static/co/images/img_layer_social_contribution04.jpg) no-repeat;
-        }
-
-        &.construction05{
-          background: url(/static/co/images/img_layer_social_contribution05.jpg) no-repeat;
-        }
-
-        &.construction06{
-          background: url(/static/co/images/img_layer_social_contribution06.jpg) no-repeat;
-        }
-
-      }
-    }
-
-
-  }
+ 
 }
 
 .digr-environment-monitoring{
