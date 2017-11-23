@@ -143,27 +143,79 @@
     float: left;
     position: relative;
     width: 16.66%;
-    text-align: center;
     &-heading{
       position: absolute;
       bottom: -30px;
       left: 0;
       right: 0;
+      text-align: center;
     }
   }
   &-bar{
     display: inline-block;
     width: 44px;
-    height: 100px;
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
+    left: 0;
+    right: 0;
     margin: auto;
-    &>p{
-      -webkit-transform:rotate(-90deg);
-      -moz-transform:rotate(-90deg);
-      -ms-transform:rotate(-90deg);
-      -o-transform:rotate(-90deg);
-      transform:rotate(-90deg);
+    background: #323648;
+    &.h10{
+      height: 10%;
     }
+    &.h20{
+      height: 20%;
+    }
+    &.h30{
+      height: 30%;
+    }
+    &.h40{
+      height: 40%;
+    }
+    &.h50{
+      height: 50%;
+    }
+    &.h55{
+      height: 55%;
+    }
+    &.h60{
+      height: 60%;
+    }
+    &.h65{
+      height: 65%;
+    }
+    &.h70{
+      height: 70%;
+    }
+    &.h75{
+      height: 75%;
+    }
+    &.h80{
+      height: 80%;
+    }
+    &.h90{
+      height: 90%;
+    }
+  }
+  &-data{
+    width: 60px;
+    margin: 30px -6px;
+    color: white;
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+    &.long{
+      margin: 60px -6px;
+    }
+  }
+  &-probability{
+    font-size: 0.8125rem;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 }
