@@ -2763,7 +2763,9 @@ button, a {
       line-height: 2;
     }
     &-year{
-      margin-right: 70px;
+      margin-right: 25px;
+      display: inline-block;
+      width: 158px;
     }
   }
 

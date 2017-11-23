@@ -216,65 +216,7 @@
   }
 }
 
-.layer{
-  &-construction{
-    &-img{
-      width: 100%;
-      height: 170px;
-      text-indent: -9999em;
-      &.terminal{
-        background:url(/static/co/images/img_layer_construction_terminal.jpg) no-repeat;
-      }
-      &.transportation{
-        background:url(/static/co/images/img_layer_construction_transportation.jpg) no-repeat;
-      }
-
-      &.freight{
-        background:url(/static/co/images/img_layer_construction_freight.jpg) no-repeat;
-      }
-
-      &.airstrip{
-        background:url(/static/co/images/img_layer_construction_airstrip.jpg) no-repeat;
-      }
-    }
-
-    &-txt{
-      text-align: center;
-      font-size: 0.875rem;
-      padding-top: 5px;
-    }
-  }
-
-  &-facility{
-    border: 1px solid #d9d9d9;
-    &-map{
-      width:100%;
-      height: 309px;
-      text-indent: -9999em;
-      background: url(/static/co/images/map_layer_facility_arrangement.jpg) no-repeat;
-    }
-
-    &-map2{
-      width:100%;
-      height: 270px;
-      text-indent: -9999em;
-      background: url(/static/co/images/map_layer_facility_arrangement_02.jpg) no-repeat;
-    }
-    &-map3{
-      width:100%;
-      height: 270px;
-      text-indent: -9999em;
-      background: url(/static/co/images/map_layer_facility_arrangement_03.jpg) no-repeat;
-    }
-  }
-
-}
-
 .inner-col{
-  &.construction{
-    padding: 10px 10px;
-  }
-
   &.social{
     padding-left: 10px;
   }
@@ -443,35 +385,7 @@
       }
     }
 
-    &-list2{
-      @extend %clearfix;
-      &-item{
-        height:140px;
-        margin-bottom:10px;
-        margin-right: 5px;
-        text-indent:-9999em;
-        width: 213px;
-        float: left;
 
-        &:last-child{
-          margin-right: 0;
-        }
-
-
-        &.relief01{
-          background: url(/static/co/images/img_relief01.jpg) no-repeat;
-        }
-        &.relief02{
-          background: url(/static/co/images/img_relief02.jpg) no-repeat;
-        }
-        &.relief03{
-          background: url(/static/co/images/img_relief03.jpg) no-repeat;
-        }
-        &.relief04{
-          background: url(/static/co/images/img_relief04.jpg) no-repeat;
-        }
-      }
-    }
   }
 }
 
@@ -484,6 +398,12 @@
 .digr-noise-management{
   height:340px;
   background: url(/static/co/images/digr_noise_management.png) no-repeat;
+  text-indent: -9999em;
+}
+
+.digr-environment-system{
+  height:420px;
+  background: url(/static/co/images/digr_environment_management_system01.jpg) no-repeat;
   text-indent: -9999em;
 }
 
