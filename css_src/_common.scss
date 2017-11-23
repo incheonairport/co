@@ -586,6 +586,14 @@ em{
   }
 }
 
+.profile-box{
+  .list1{
+    &-item{
+      margin-top:0;
+    }
+  }
+}
+
 .list1{
   &-item{
     margin-top: 4px;
@@ -965,6 +973,10 @@ em{
       border-top:1px solid #d9d9d9;
       vertical-align:middle;
       word-break: keep-all;
+
+      &.point{
+        background:#f3f4f8;
+      }
 
       &.center{
         text-align:center;
@@ -1442,6 +1454,7 @@ button, a {
 
 /*float*/
 .f{
+  @extend %clearfix;
   &-left{
     float:left;
   }
@@ -2591,6 +2604,7 @@ button, a {
       &.big{
         width: 100px;
         height: 92px;
+        font-size:1rem;
       }
 
       &.view-large-btn{
@@ -3213,7 +3227,7 @@ button, a {
 .digr-co-vision{
   height:626px;
   text-indent:-999em;
-  background: url(/static/co/images/digr_co_vision.png) no-repeat;
+  background: url(/static/co/images/digr_co_vision.png) no-repeat -1px;
 }
 
 
@@ -3251,6 +3265,21 @@ button, a {
   height:494px;
   text-indent:-999em;
   background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_02.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+/* 모니터링 시스템 */
+.digr-monitoring-system1{
+  height:597px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_monitoring_system_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+.digr-monitoring-system2{
+  height:597px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_monitoring_system_02.png) no-repeat;
   border:1px solid #d9d9d9;
 }
 
@@ -3312,7 +3341,7 @@ button, a {
 .digr-ethics-management-vision1{
   height:400px;
   text-indent:-999em;
-  background: url(/static/co/images/digr_ethical_management_vision_01.png) no-repeat;
+  background: url(/static/co/images/digr_ethical_management_vision_01.png) no-repeat -1px;
 }
 
 .digr-ethics-management-vision2{
@@ -3332,7 +3361,7 @@ button, a {
 .digr-social-contribution01{
   height:1011px;
   text-indent:-999em;
-  background: url(/static/co/images/digr_social_contribution01.png) no-repeat;
+  background: url(/static/co/images/digr_social_contribution01.png) no-repeat -1px;
 }
 
 .digr-social-contribution02{
@@ -3462,4 +3491,8 @@ button, a {
     right:20px;
     margin:auto;
   }
+}
+
+.auto-size{
+  width:100%;
 }
