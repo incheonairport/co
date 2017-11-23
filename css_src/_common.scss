@@ -1624,6 +1624,12 @@ button, a {
     }
   }
 
+  &.five{
+    .inner-col{
+      width: 20%;
+    }
+  }
+
   &.line{
     &:before{
       content:"";
