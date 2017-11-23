@@ -1614,6 +1614,15 @@ button, a {
   &.four{
     .inner-col{
       width:25%;
+      &:first-child{
+        img{
+          padding-left:0;
+        }
+      }
+      img{
+        width:100%;
+        padding-left:4px;
+      }
     }
   }
 
@@ -2469,6 +2478,7 @@ button, a {
     padding-top:46px;
     font-family: nanumsq, sans-serif;
     font-size:2.125rem;
+    line-height:1.2;
     font-weight:900;
     color:#fff;
     text-align:center;
