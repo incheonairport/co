@@ -3333,11 +3333,57 @@ button, a {
   background: url(/static/co/images/digr_social_contribution_performance.png) no-repeat;
 }
 
-.energy-management{
+.energy-management {
   width: 100%;
   height: 511px;
-  background: url(/static/co/images/bg_energy_management_01.png) no-repeat;
+  background: url(/static/co/images/grp_energy_management_01.png) no-repeat;
+}
 
+/* 국제기구와의 협력 */
+.digr-international-cooperation{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_international_cooperation_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+/* 국제화물네트워크 협력 */
+.digr-international-freight-network1{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_international_freight_network_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.grp-international-freight-network1{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_international_freight_network_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.grp-international-freight-network2{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_international_freight_network_02.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.digr-international-freight-network2{
+  height:332px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_international_freight_network_02.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+/* 건설사업 */
+.grp-construction-business1{
+  height:490px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_construction_business_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.grp-construction-business2{
+  height:542px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_construction_business_02.png) no-repeat;
+  border:1px solid #d9d9d9;
 }
 
 // 임원진 CO_CH_02
@@ -3473,21 +3519,21 @@ button, a {
 .airport-capacity1{
   width: 100%;
   height: 504px;
-  background: url(/static/co/images/bg_airport_capacity_01.png) no-repeat;
+  background: url(/static/co/images/grp_airport_capacity_01.png) no-repeat;
   background-size: 100%;
 }
 
 .airport-capacity2{
   width: 100%;
   height: 504px;
-  background: url(/static/co/images/bg_airport_capacity_02.png) no-repeat;
+  background: url(/static/co/images/grp_airport_capacity_02.png) no-repeat;
   background-size: 100%;
 }
 
 .airport-capacity3{
   width: 100%;
   height: 504px;
-  background: url(/static/co/images/bg_airport_capacity_03.png) no-repeat;
+  background: url(/static/co/images/grp_airport_capacity_03.png) no-repeat;
   background-size: 100%;
 }
 
