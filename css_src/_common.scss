@@ -3165,10 +3165,6 @@ button, a {
   margin-left: 10px;
 }
 
-.mr10, %mr10{
-  margin-right: 10px;
-}
-
 .ml30, %ml30{
   margin-left: 30px;
 }
@@ -3187,6 +3183,14 @@ button, a {
 
 .mb20, %mb20{
   margin-left: 20px;
+}
+
+.mr10, %mr10{
+  margin-right: 10px;
+}
+
+.mr50, %mr50{
+  margin-right: 50px;
 }
 
 // IR 인포그래픽
