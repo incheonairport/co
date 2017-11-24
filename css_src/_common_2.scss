@@ -216,11 +216,6 @@
   }
 }
 
-.inner-col{
-  &.social{
-    padding-left: 10px;
-  }
-}
 
 .list2{
   &.layer-list2{
@@ -351,7 +346,7 @@
     }
   }
 
- 
+
 }
 
 .digr-environment-monitoring{
@@ -372,3 +367,15 @@
   text-indent: -9999em;
 }
 
+
+.digr-cp-vision01{
+  height:382px;
+  background: url(/static/co/images/digr_cp_vision01.png) no-repeat;
+  text-indent: -9999em;
+}
+
+.digr-cp-vision02{
+  height:383px;
+  background: url(/static/co/images/digr_cp_vision02.png) no-repeat;
+  text-indent: -9999em;
+}
