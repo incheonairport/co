@@ -3295,6 +3295,53 @@ button, a {
   border:1px solid #d9d9d9;
 }
 
+/* 국제기구와의 협력 */
+.digr-international-cooperation{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_international_cooperation_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+/* 국제화물네트워크 협력 */
+.digr-international-freight-network1{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_international_freight_network_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.grp-international-freight-network1{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_international_freight_network_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.grp-international-freight-network2{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_international_freight_network_02.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.digr-international-freight-network2{
+  height:332px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_international_freight_network_02.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+/* 건설사업 */
+.grp-construction-business1{
+  height:490px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_construction_business_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.grp-construction-business2{
+  height:542px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_construction_business_02.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
 // 임원진 CO_CH_02
 .profile-box {
   @extend %clearfix;
