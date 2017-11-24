@@ -671,6 +671,10 @@ em{
       }
     }
 
+    &.boxsizing{
+      box-sizing: border-box;
+    }
+
   }
 }
 
@@ -1637,6 +1641,9 @@ button, a {
       &.w20{
         width: 20%;
       }
+      &.w25{
+        width: 25%;
+      }
       &.w15{
         width: 15%;
       }
@@ -1654,6 +1661,9 @@ button, a {
       &.w466{
         width: 466px;
         padding:0;
+      }
+      &.pr0{
+        padding: 0;
       }
     }
   }
@@ -3307,6 +3317,7 @@ button, a {
   border:1px solid #d9d9d9;
 }
 
+<<<<<<< HEAD
 /* 모니터링 시스템 */
 .digr-monitoring-system1{
   height:597px;
@@ -3327,6 +3338,12 @@ button, a {
   height:886px;
   text-indent:-999em;
   background: url(/static/co/images/digr_social_contribution_performance.png) no-repeat;
+=======
+.energy-management{
+  width: 100%;
+  height: 511px;
+  background: url(/static/co/images/bg_energy_management_01.png) no-repeat;
+>>>>>>> origin/m/bkkim
 }
 
 // 임원진 CO_CH_02
@@ -3457,6 +3474,27 @@ button, a {
 .ir-technique{
   display: block;
   text-indent: -99999em;
+}
+
+.airport-capacity1{
+  width: 100%;
+  height: 504px;
+  background: url(/static/co/images/bg_airport_capacity_01.png) no-repeat;
+  background-size: 100%;
+}
+
+.airport-capacity2{
+  width: 100%;
+  height: 504px;
+  background: url(/static/co/images/bg_airport_capacity_02.png) no-repeat;
+  background-size: 100%;
+}
+
+.airport-capacity3{
+  width: 100%;
+  height: 504px;
+  background: url(/static/co/images/bg_airport_capacity_03.png) no-repeat;
+  background-size: 100%;
 }
 
 /* 조직도 */
