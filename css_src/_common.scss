@@ -154,7 +154,6 @@
     border-top: 1px solid #d9d9d9;
     &-link{
       padding: 10px 15px;
-      font-size: 1rem;
       display: block;
       &.on{
         color:#42519e;
@@ -599,7 +598,6 @@ em{
 .list1{
   &-item{
     margin-top: 4px;
-    font-size: 	1rem;
     padding-left:12px;
     position:relative;
     &:first-child{
@@ -619,13 +617,11 @@ em{
 
 .list2{
   &-item{
-    font-size: 1rem;
     padding-left:12px;
     position:relative;
 
     &:before{
       content: "-";
-      font-size: 	1rem;
       font-weight: 300;
       position:absolute;
       top:0;
@@ -682,7 +678,6 @@ em{
   &-item {
     padding-left: 28px;
     position: relative;
-    font-size: 1rem;
 
     .number {
       position: absolute;
@@ -741,7 +736,6 @@ em{
   &-item {
     padding-left: 65px;
     position: relative;
-    font-size: 1rem;
     margin-top: 35px;
 
     &:first-child{
@@ -806,7 +800,6 @@ em{
 
     th{
       padding:19px 0 16px;
-      font-size:1rem;
       font-weight:700;
       position:relative;
 
@@ -858,7 +851,6 @@ em{
       }
 
       & .board-list-link{
-        font-size:1rem;
         transition:all .2s;
         &:hover{
           color:#999;
@@ -902,7 +894,6 @@ em{
     }
 
     &.board-list{
-      font-size:1rem;
       & td{
         border-right:0;
         padding:20px;
@@ -950,7 +941,6 @@ em{
 
     th{
       padding:18px 0 16px;
-      font-size:1rem;
       font-weight:400;
       color:#fff;
       line-height:1.4;
@@ -960,6 +950,11 @@ em{
 
       &:last-child{
         border-right:0;
+      }
+      &.left{
+        text-align: left;
+        padding-left: 20px;
+        border-bottom: 1px solid #474a5b;
       }
 
       &.half{
@@ -1078,7 +1073,6 @@ em{
       min-width:150px;
       border-top:1px solid #d9d9d9;
       background:#f3f4f8;
-      font-size:1rem;
       line-height:1.4;
       font-weight:700;
       vertical-align:middle;
@@ -1154,7 +1148,6 @@ em{
     &-tit{
       padding:20px;
       display:block;
-      font-size:1rem;
       font-weight:900;
       border-bottom:1px solid #d9d9d9;
       &.bg{
@@ -1203,7 +1196,6 @@ em{
       float:left;
       width:124px;
       color:#002222;
-      font-size:1rem;
       line-height:1.7;
     }
     .file-list{
@@ -1213,7 +1205,6 @@ em{
       }
       &-link{
         color:#666;
-        font-size:1rem;
       }
     }
     .crud-ico{
@@ -1246,7 +1237,6 @@ em{
       &-info{
         float:right;
         @extend %clearfix;
-        font-size:1rem;
         .info-tit{
           float:left;
           margin-right:10px;
@@ -1397,7 +1387,6 @@ em{
       padding: 0 45px 0 20px;
       line-height: 40px;
       border: 1px solid #666;
-      font-size: 1rem;
       font-weight: 600;
       text-align: left;
 
@@ -1442,6 +1431,15 @@ em{
         color: #fff;
         text-align: right;
         border: none;
+      }
+      &.map{
+        width: 280px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.125rem;
+        &+.btn-type-normal{
+          margin-left: 10px;
+        }
       }
     }
 
@@ -1518,7 +1516,6 @@ button, a {
 .guide-desc{
   display:block;
   color:#666;
-  font-size:1rem;
   line-height:1.6;
   &.color{
     color:#d43e41;
@@ -1744,7 +1741,6 @@ button, a {
     &-text{
       width:80%;
       height:35px;
-      font-size:1rem;
       border: 1px solid #d9d9d9;
       box-sizing: border-box;
       float:left;
@@ -1808,7 +1804,6 @@ button, a {
   min-width:250px;
   height:40px;
   padding: 0 15px;
-  font-size: 1rem;
   border: 1px solid #d9d9d9;
 }
 
@@ -1915,8 +1910,8 @@ button, a {
 
   &-headline{
     font-weight: 700;
-    font-size: 	1.125rem;
     font-family:nanumsq, sans-serif;
+    font-size: 1.125rem;
     line-height: 1.5;
   }
 
@@ -1974,7 +1969,6 @@ button, a {
     display: inline-block;
   }
   &-title{
-    font-size: 1.125rem;
     margin-bottom: 10px;
     font-weight: 800;
   }
@@ -2229,7 +2223,6 @@ button, a {
   &-list{
     margin-top: 10px;
     .list1-item{
-      font-size:1rem;
       line-height: 1.2;
 
       &:last-child{
@@ -2315,7 +2308,6 @@ button, a {
         .article-desc{
           color:#666;
           line-height:1.4;
-          font-size: 	1rem;
           strong{
             font-size: 1.125rem;
           }
@@ -2649,7 +2641,6 @@ button, a {
       &.big{
         width: 100px;
         height: 92px;
-        font-size:1rem;
       }
 
       &.view-large-btn{
@@ -3111,15 +3102,18 @@ button, a {
   vertical-align: top;
 }
 
+.vertical {
+  &-middle {
+    vertical-align: middle;
+  }
+}
+
 /*font-size*/
 .font14, %font14{
   font-size: 	0.875rem;
 }
 .font16, %font16{
   font-size:1rem;
-}
-.font18, %font18{
-  font-size: 	1.125rem;
 }
 .font20, %font20{
   font-size: 1.25rem;
@@ -3595,4 +3589,10 @@ button, a {
 
 .auto-size{
   width:100%;
+}
+
+.map-api{
+  width: 100%;
+  height: 400px;
+  border: 1px solid #d9d9d9 ;
 }
