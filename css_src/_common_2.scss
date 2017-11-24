@@ -119,14 +119,25 @@
     text-align: center;
     color: #fff;
   }
+}
 
-  &-txt-tit3{
+.massage{
+  &-wrap{
+    width:100%;
+    height: 296px;
+    background-color: #4775c9;
+    padding:60px 70px;
+    position: relative;
+
+  }
+
+  &-txt-tit{
     font-size: 1.75rem;
     color: #fff;
     font-family: 'nanumsq', sans-serif;
   }
 
-  &-txt3{
+  &-txt{
     font-size: 1.125rem;
     color: #fff;
 
@@ -140,24 +151,30 @@
     }
   }
 
-  &-wrap{
-    padding:60px 70px;
+  &-img{
+    position: absolute;
+    top:0;
+    right: 0;
+
   }
+
+  &-img2{
+    position: absolute;
+    bottom: 65px;
+    right: 400px;
+  }
+
 }
+
+
+
+
 
 .list5{
   &.border{
     border: 1px solid #d9d9d9;
     padding: 30px;
   }
-}
-
-.event-img{
-  width: 700px;
-  height: 511px;
-  margin:30px 80px;
-  text-indent: -9999em;
-  background: url(/static/co/images/img_event.jpg) no-repeat;
 }
 
 
