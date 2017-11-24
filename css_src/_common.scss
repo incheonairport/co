@@ -48,6 +48,9 @@
   &.bg1{
     background:url(/static/co/images/bg_category_01.jpg) center no-repeat;
   }
+  &.bg2{
+    background:url(/static/co/images/bg_category_02.jpg) no-repeat;
+  }
   &.bg3{
     background:url(/static/co/images/bg_category_03.jpg) center no-repeat;
   }
@@ -2515,6 +2518,7 @@ button, a {
     height:215px;
     background:url(/static/co/images/bg_banner_img1.jpg) no-repeat;
   }
+
 
   &-txt{
     font-size: 1.125rem;
