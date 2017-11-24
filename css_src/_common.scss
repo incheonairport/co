@@ -867,7 +867,7 @@ em{
       font-size:1rem;
       & td{
         border-right:0;
-        padding:23px 20px;
+        padding:20px;
         &.no-data-found{
           padding: 130px 20px;
         }
@@ -1264,8 +1264,8 @@ em{
   margin: 0 auto;
   @extend %clearfix;
   .ico{
-    width:44px;
-    height:44px;
+    width:40px;
+    height:40px;
     border:1px solid #d9d9d9;
     border-left:0;
     float:left;
@@ -1334,8 +1334,8 @@ em{
         }
       }
       float:left;
-      width:44px;
-      height:44px;
+      width:40px;
+      height:40px;
       border:1px solid #d9d9d9;
       border-left:0;
       position:relative;
@@ -1344,7 +1344,7 @@ em{
       display:block;
       width:100%;
       height:100%;
-      line-height:44px;
+      line-height:40px;
       text-align:center;
     }
   }
@@ -1761,7 +1761,7 @@ button, a {
 
 /*select*/
 .object-list{
-  width:250px;
+  min-width:250px;
   height:40px;
   padding: 0 15px;
   font-size: 1rem;
@@ -3293,6 +3293,13 @@ button, a {
   text-indent:-999em;
   background: url(/static/co/images/digr_monitoring_system_02.png) no-repeat;
   border:1px solid #d9d9d9;
+}
+
+/**/
+.digr-social-contribution-performance{
+  height:886px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_social_contribution_performance.png) no-repeat;
 }
 
 // 임원진 CO_CH_02
