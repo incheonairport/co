@@ -1520,6 +1520,9 @@ button, a {
   &.color{
     color:#d43e41;
   }
+  &.color-b{
+    color:#41519e;
+  }
   &.mark{
     text-indent:-20px;
     padding-left:20px;
@@ -3333,6 +3336,7 @@ button, a {
   background: url(/static/co/images/digr_social_contribution_performance.png) no-repeat;
 }
 
+<<<<<<< HEAD
 .energy-management {
   width: 100%;
   height: 511px;
@@ -3370,6 +3374,12 @@ button, a {
   text-indent:-999em;
   background: url(/static/co/images/digr_international_freight_network_02.png) no-repeat;
   border:1px solid #d9d9d9;
+}
+
+.grp-energy-management {
+  width: 100%;
+  height: 511px;
+  background: url(/static/co/images/grp_energy_management_01.png) no-repeat;
 }
 
 /* 건설사업 */
@@ -3516,21 +3526,21 @@ button, a {
   text-indent: -99999em;
 }
 
-.airport-capacity1{
+.grp-airport-capacity1{
   width: 100%;
   height: 504px;
   background: url(/static/co/images/grp_airport_capacity_01.png) no-repeat;
   background-size: 100%;
 }
 
-.airport-capacity2{
+.grp-airport-capacity2{
   width: 100%;
   height: 504px;
   background: url(/static/co/images/grp_airport_capacity_02.png) no-repeat;
   background-size: 100%;
 }
 
-.airport-capacity3{
+.grp-airport-capacity3{
   width: 100%;
   height: 504px;
   background: url(/static/co/images/grp_airport_capacity_03.png) no-repeat;
