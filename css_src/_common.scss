@@ -54,6 +54,9 @@
   &.bg3{
     background:url(/static/co/images/bg_category_03.jpg) center no-repeat;
   }
+  &.bg6{
+    background:url(/static/co/images/bg_category_06.jpg) center no-repeat;
+  }
 
 }
 
@@ -1197,7 +1200,7 @@ em{
     padding:30px;
     .file-group-text{
       float:left;
-      width:124px;
+      //width:124px;
       color:#002222;
       line-height:1.7;
     }
@@ -1217,6 +1220,14 @@ em{
         right:auto;
         bottom:4px;
       }
+    }
+    &.point{
+      background: #f2f4f7;
+    }
+
+    .file-border{
+      padding-right: 20px;
+      border-right: 1px solid #d9d9d9;
     }
   }
   .reply-box{
@@ -3340,7 +3351,6 @@ button, a {
   background: url(/static/co/images/digr_social_contribution_performance.png) no-repeat;
 }
 
-<<<<<<< HEAD
 .energy-management {
   width: 100%;
   height: 511px;
