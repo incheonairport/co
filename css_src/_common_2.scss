@@ -50,7 +50,7 @@
 
 /*이용일시*/
 .timesetting{
-  width: 312px;
+  /*width: 312px;*/
   @extend %clearfix;
   &-date{
     width: 140px;
