@@ -140,20 +140,43 @@
       font-size: 1.125rem;
       border-top: 1px solid #d9d9d9;
       display: block;
+      position: relative;
       &.on{
         border-top:2px solid #42519e;
         color:#42519e;
         font-weight: 800;
       }
-      &.sub{
-        position: relative;
+      &.open{
         &:after{
-          content: "+";
+          content: "";
           color: #666;
+          width: 13px;
+          height: 12px;
           font-weight: 800;
           position: absolute;
+          top:15px;
           right:15px;
           left:auto;
+          bottom:auto;
+          background: url(/static/co/images/spr_ico_left_menu.png) -32px -2px no-repeat;
+        }
+      }
+      &.close{
+        &:after{
+          content: "";
+          color: #666;
+          width: 13px;
+          height: 12px;
+          font-weight: 800;
+          position: absolute;
+          top:18px;
+          right:15px;
+          left:auto;
+          bottom:auto;
+          background: url(/static/co/images/spr_ico_left_menu.png) -9px -4px no-repeat;
+        }
+        &+.left-menu-depth2{
+          display: none;
         }
       }
     }
@@ -1201,7 +1224,7 @@ em{
     padding:30px;
     .file-group-text{
       float:left;
-      //width:124px;
+      min-width: 125px;
       color:#002222;
       line-height:1.7;
     }
@@ -1975,6 +1998,14 @@ button, a {
     }
     .list1{
       padding-left:230px;
+    }
+    .multi-col{
+      padding-left:230px;
+      .inner-col{
+        .list1{
+          padding-left:0;
+        }
+      }
     }
   }
 }
