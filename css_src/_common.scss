@@ -6,7 +6,7 @@
 }
 
 .sub-top {
-  margin: 50px 0;
+  margin: 50px 0 40px;
   height: 240px;
   //padding: 62px 0 40px;
   //background-size: cover;
@@ -198,7 +198,7 @@
   float: right;
   &-heading1{
     margin-bottom: 40px;
-    font-size: 2.315rem;
+    font-size: 2.175rem;
     font-family: nanumsq, sans-serif;
   }
   &-heading2{
@@ -648,7 +648,9 @@ em{
 
 .list2{
   &-item{
+    font-size: 1rem;
     padding-left:12px;
+    line-height: 26px;
     position:relative;
 
     &:before{
@@ -660,6 +662,7 @@ em{
     }
   }
 }
+
 
 .list3{
   &-item{
@@ -767,7 +770,9 @@ em{
     padding-left: 65px;
     position: relative;
     margin-top: 35px;
-
+    &:last-child{
+      margin-bottom: 20px;
+    }
     &:first-child{
       margin-top: 0;
     }
@@ -1168,6 +1173,16 @@ em{
   }
 }
 
+.table-area{
+  position: relative;
+
+  &-btn{
+    position: absolute;
+    top: -40px;
+    right: 0;
+  }
+}
+
 // 게시판 상세
 .board-view{
   &.vt{
@@ -1562,6 +1577,8 @@ button, a {
     color:#41519e;
   }
   &.mark{
+    font-size: 0.875rem;
+    line-height: 24px;
     text-indent:-20px;
     padding-left:20px;
 
