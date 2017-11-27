@@ -1617,24 +1617,23 @@ button, a {
   }
 }
 
-%normal-3{
-  .inner-col{
-    width:calc(33.33% - 16px)!important;
-    margin-left:24px;
-    &:first-child{
-      margin-left:0;
-    }
-  }
-}
+//%normal-3{
+//  .inner-col{
+//    width:calc(33.33% - 16px)!important;
+//    margin-left:24px;
+//    &:first-child{
+//      margin-left:0;
+//    }
+//  }
+//}
 
 .multi-col{
   position:relative;
+  text-align:center;
   @extend %clearfix;
-
   .inner-col{
     float:left;
     text-align:justify;
-
     &.btn-right{
       position: absolute;
       right:0;
@@ -1651,7 +1650,6 @@ button, a {
       text-align: center;
     }
   }
-
   &.double{
     .inner-col{
       width:50%;
@@ -1659,6 +1657,14 @@ button, a {
         width: auto;
         padding-right:24px;
       }
+      &.img-area{
+        width:26%;
+      }
+      &.txt-area{
+        width:74%;
+        padding-left:20px;
+      }
+
       &.w85{
         width: 85%;
       }
@@ -1728,54 +1734,76 @@ button, a {
       }
     }
   }
-
   &.triple{
     .inner-col{
       width:33.33%;
     }
   }
-
   &.four{
     .inner-col{
       width:25%;
-      &:first-child{
-        img{
-          padding-left:0;
-        }
-      }
-      img{
-        width:100%;
-        padding-left:4px;
-      }
     }
   }
-
   &.five{
     .inner-col{
       width: 20%;
     }
   }
-
-  &.line{
-    &:before{
-      content:"";
-      display:block;
-      width:1px;
-      height:100%;
-      background:#d9d9d9;
-      position:absolute;
-      top:0;
-      left:50%;
+  &.unbalance{
+    .inner-col{
+      margin-left:18px;
+      &:first-child{
+        margin-left:0;
+      }
     }
-    @extend %gutter;
   }
+  &.balance{
+    &.double{
+      .inner-col{
+        width:426px;
+      }
+    }
+    &.triple{
+      .inner-col{
+        width:278px;
+      }
+    }
+    &.four{
+      .inner-col{
+        width:204px;
+      }
+    }
 
+    &.five{
+      width:867px;
+      margin:auto;
+      .inner-col{
+        width:159px;
+      }
+    }
+
+    .inner-col{
+      margin-left:18px;
+      &:first-child{
+        margin-left:0;
+      }
+    }
+    img{
+      width:100%;
+      vertical-align:top;
+    }
+  }
+  &-inner{
+    display:inline-block;
+  }
   &.gutter{
     @extend %gutter;
   }
-
-  &.normal-3{
-    @extend %normal-3;
+  .img-caption{
+    display: block;
+    text-align: center;
+    width:100%;
+    font-size:1rem;
   }
 
 }
@@ -2775,7 +2803,7 @@ button, a {
   &-title{
     font-weight:800;
     float: left;
-    padding-right: 30px;
+    padding-right: 20px;
     position: relative;
     top:13px;
   }
