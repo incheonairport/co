@@ -2542,7 +2542,7 @@ button, a {
               }
               &.pass:before {
                 background-position: -7px -62px;
-                top: 4px;
+                top: 9px;
                 width: 24px;
                 height:23px;
               }
@@ -2561,10 +2561,11 @@ button, a {
       }
     }
     &:after {
+      width: 99%;
       content: '';
       display: block;
       position: absolute;
-      top: 24%;
+      top: 23%;
       right: 0;
       left: 1px;
       bottom: auto;
@@ -2585,7 +2586,7 @@ button, a {
               border: 10px solid #2c8179;
               .article-txt {
                 &:before{
-                  top: -2px;
+                  top: 3px;
                   left: -34px;
                   bottom: auto;
                 }
@@ -2600,6 +2601,7 @@ button, a {
         }
       }
       &:after {
+        top: 24%;
         border-bottom: 9px solid #2c8179;
       }
 
