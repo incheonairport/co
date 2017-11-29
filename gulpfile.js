@@ -15,6 +15,8 @@ var fileData = require('gulp-pub-list');
 
 var minify = require('gulp-minify');
 
+var concat = require('gulp-concat');
+
 /**
  * reload
  */
@@ -32,7 +34,7 @@ gulp.task('reload:watch', function() {
   gulp.watch('html_src/**', ['build:include:html', 'reload:livereload']);
   gulp.watch('guide_src/**', ['build:include:guide', 'reload:livereload']);
   gulp.watch('css_src/**', ['build:sass:dev', 'reload:livereload']);
-  gulp.watch('js_src/**', ['build:jsCompress', 'reload:livereload']);
+  gulp.watch('js_src/**', ['build:js:compress', 'reload:livereload']);
 });
 
 /**
@@ -65,8 +67,9 @@ gulp.task('build:sass:dev', function(){
 });
 
 // build js compress
-gulp.task('build:jsCompress', function(){
-  gulp.src('js_src/*.js')
+gulp.task('build:js:compress', function(){
+  gulp.src(['js_src/common*.js', 'js_src/base*.js'])
+      .pipe(concat('base_function.js'))
       .pipe(minify({
         ext:{
           src : '.debug.js',
@@ -74,6 +77,27 @@ gulp.task('build:jsCompress', function(){
         }
       }))
       .pipe(gulp.dest('../static/co/js'));
+
+  gulp.src(['js_src/common*.js', 'js_src/layer*.js'])
+      .pipe(concat('layer_function.js'))
+      .pipe(minify({
+        ext:{
+          src : '.debug.js',
+          min : '.min.js'
+        }
+      }))
+      .pipe(gulp.dest('../static/co/js'));
+
+  gulp.src(['js_src/common*.js', 'js_src/guide*.js'])
+      .pipe(concat('guide_function.js'))
+      .pipe(minify({
+        ext:{
+          src : '.debug.js',
+          min : '.min.js'
+        }
+      }))
+      .pipe(gulp.dest('../static/co/js'));
+
 });
 
 /**
@@ -103,13 +127,23 @@ gulp.task('seperate:copy:fileListJson', function(){
 
 // release site html
 gulp.task('release:html', function(){
-  return gulp.src('html/*.*')
-      .pipe(gulp.dest('../release/co/html/'));
+  gulp.src("html_src/*.html")
+      .pipe(include())
+      .on('error', console.log)
+      .pipe(gulp.dest("../release/co/html/"));
 });
 
 // release guide html
 gulp.task('release:guide', function(){
-  return gulp.src('guide/*.*')
+  gulp.src("guide_src/*.html")
+      .pipe(include())
+      .on('error', console.log)
+      .pipe(gulp.dest("../release/co/guide/"));
+});
+
+// release file list json
+gulp.task('release:copy:fileListJson', function(){
+  return gulp.src('guide_src/*.json')
       .pipe(gulp.dest('../release/co/guide/'));
 });
 
@@ -121,9 +155,42 @@ gulp.task('release:sass', function(){
 });
 
 // release js
-gulp.task('release:js', function(){
-  return gulp.src('../static/co/js/**')
-      .pipe(gulp.dest('../release/static/co/js/'));
+gulp.task('release:js:compress', function(){
+  gulp.src(['js_src/common*.js', 'js_src/base*.js'])
+      .pipe(concat('base_function.js'))
+      .pipe(minify({
+        ext:{
+          src : '.debug.js',
+          min : '.min.js'
+        }
+      }))
+      .pipe(gulp.dest('../release/static/co/js'));
+
+  gulp.src(['js_src/common*.js', 'js_src/layer*.js'])
+      .pipe(concat('layer_function.js'))
+      .pipe(minify({
+        ext:{
+          src : '.debug.js',
+          min : '.min.js'
+        }
+      }))
+      .pipe(gulp.dest('../release/static/co/js'));
+
+  gulp.src(['js_src/common*.js', 'js_src/guide*.js'])
+      .pipe(concat('guide_function.js'))
+      .pipe(minify({
+        ext:{
+          src : '.debug.js',
+          min : '.min.js'
+        }
+      }))
+      .pipe(gulp.dest('../release/static/co/js'));
+});
+
+// release js library file
+gulp.task('release:copy:jsLib', function() {
+  return gulp.src('js_src/lib/*.*')
+      .pipe(gulp.dest('../release/static/co/js/lib'));
 });
 
 // release images
@@ -143,6 +210,6 @@ gulp.task('release:fonts', function(){
  * run task
  */
 
-gulp.task('default', ['build:include:html', 'build:include:guide', 'build:sass:dev', 'build:jsCompress', 'reload:watch']);
+gulp.task('default', ['build:include:html', 'build:include:guide', 'build:sass:dev', 'build:js:compress', 'reload:watch']);
 
-gulp.task('release', ['release:html', 'release:guide', 'release:sass', 'release:js', 'release:images', 'release:fonts']);
+gulp.task('release', ['release:html', 'release:guide', 'release:copy:fileListJson', 'release:sass', 'release:js:compress', 'release:copy:jsLib', 'release:images', 'release:fonts']);
