@@ -5,53 +5,61 @@
   clear:both;
 }
 
-.sub-top{
-  min-height:300px;
-  height:300px;
-  padding: 62px 0 40px;
-  background-size: cover;
-  text-align:center;
-  &-inner{
-    display:table;
-    width:100%;
-    height:100%;
+.sub-top {
+  margin: 50px 0 40px;
+  height: 240px;
+  //padding: 62px 0 40px;
+  //background-size: cover;
+  text-align: center;
+  &-inner {
+    display: table;
+    width: 100%;
+    height: 100%;
   }
-  &-descbox{
-    display:table-cell;
+  &-descbox {
+    display: table-cell;
     font-family: nanumsq, sans-serif;
-    color:#fff;
-    font-size:2.5rem;
-    font-weight:400;
-    vertical-align:middle;
-    &-text{
-      line-height:1.2;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 400;
+    vertical-align: middle;
+    &-text {
+      line-height: 1.2;
     }
-    &-tit{
-      font-size:1.875rem;
+    &-tit {
+      font-size: 1.875rem;
       color: #ffae44;
-      &:after{
+      &:after {
         content: '';
         display: block;
         width: 40px;
         height: 1px;
-        background: #fff;
+        background: rgba(255, 255, 255, .6);
         margin: 25px auto;
       }
     }
-    &-sub{
-      font-size:2.875rem;
+    &-sub {
+      font-size: 2.875rem;
       font-family: nanumsq, sans-serif;
       color: #fff;
     }
   }
 
-  &.bg1{
-    background:url(/static/co/images/bg_category_01.jpg) center no-repeat;
+  &.bg1 {
+    background: url(/static/co/images/bg_category_01.jpg) center no-repeat;
   }
-  &.bg3{
-    background:url(/static/co/images/bg_category_03.jpg) center no-repeat;
+  &.bg2 {
+    background: url(/static/co/images/bg_category_02.jpg) no-repeat;
   }
-
+  &.bg3 {
+    background: url(/static/co/images/bg_category_03.jpg) center no-repeat;
+  }
+  &.bg4 {
+    background: url(/static/co/images/bg_category_04.jpg) center no-repeat;
+  }
+  &.bg6 {
+    background: url(/static/co/images/bg_category_06.jpg) center no-repeat;
+  }
 }
 
 .location{
@@ -132,20 +140,43 @@
       font-size: 1.125rem;
       border-top: 1px solid #d9d9d9;
       display: block;
+      position: relative;
       &.on{
         border-top:2px solid #42519e;
         color:#42519e;
         font-weight: 800;
       }
-      &.sub{
-        position: relative;
+      &.open{
         &:after{
-          content: "+";
+          content: "";
           color: #666;
+          width: 13px;
+          height: 12px;
           font-weight: 800;
           position: absolute;
+          top:15px;
           right:15px;
           left:auto;
+          bottom:auto;
+          background: url(/static/co/images/spr_ico_left_menu.png) -32px -2px no-repeat;
+        }
+      }
+      &.close{
+        &:after{
+          content: "";
+          color: #666;
+          width: 13px;
+          height: 12px;
+          font-weight: 800;
+          position: absolute;
+          top:18px;
+          right:15px;
+          left:auto;
+          bottom:auto;
+          background: url(/static/co/images/spr_ico_left_menu.png) -9px -4px no-repeat;
+        }
+        &+.left-menu-depth2{
+          display: none;
         }
       }
     }
@@ -154,7 +185,6 @@
     border-top: 1px solid #d9d9d9;
     &-link{
       padding: 10px 15px;
-      font-size: 1rem;
       display: block;
       &.on{
         color:#42519e;
@@ -168,7 +198,7 @@
   float: right;
   &-heading1{
     margin-bottom: 40px;
-    font-size: 2.315rem;
+    font-size: 2.175rem;
     font-family: nanumsq, sans-serif;
   }
   &-heading2{
@@ -190,47 +220,44 @@
 .tab {
 
   &-nav {
-
     &-list {
       @extend %clearfix;
-
+      width: 100%;
       &-item {
-        width: 25%;
         float: left;
-        cursor: pointer;
-        &:first-child{
+        &+.tab-nav-list-item{
           a{
-            border-left:1px solid #d9d9d9!important;
+            border-left: 1px;
           }
         }
       }
-
       &-link {
+        padding:20px 0;
         display: block;
-        height: 57px;
         background:#fff;
         border: 1px solid #d9d9d9;
-        border-left:0!important;
-        font-size: 	1rem;
         font-weight: 300;
         color: #666;
-        line-height: 54px;
+        line-height: 1.5;
         text-align: center;
-
+        cursor: pointer;
         &.on {
           color: #fff;
           background: #42519e;
           border: none;
           font-weight: 800;
+          height: auto;
         }
       }
     }
 
     &.sub{
       margin-top: 10px;
+
       .tab-nav-list{
 
         &-item {
+          border: 0;
           &:last-child{
             a{
               margin-right: 0;
@@ -591,9 +618,17 @@ em{
   }
 }
 
+.profile-box{
+  .list1{
+    &-item{
+      margin-top:0;
+    }
+  }
+}
+
 .list1{
   &-item{
-    font-size: 	1rem;
+    margin-top: 4px;
     padding-left:12px;
     position:relative;
     &:first-child{
@@ -615,11 +650,11 @@ em{
   &-item{
     font-size: 1rem;
     padding-left:12px;
+    line-height: 26px;
     position:relative;
 
     &:before{
       content: "-";
-      font-size: 	1rem;
       font-weight: 300;
       position:absolute;
       top:0;
@@ -627,6 +662,7 @@ em{
     }
   }
 }
+
 
 .list3{
   &-item{
@@ -665,6 +701,10 @@ em{
       }
     }
 
+    &.boxsizing{
+      box-sizing: border-box;
+    }
+
   }
 }
 
@@ -672,7 +712,6 @@ em{
   &-item {
     padding-left: 28px;
     position: relative;
-    font-size: 1rem;
 
     .number {
       position: absolute;
@@ -701,6 +740,65 @@ em{
     }
   }
 }
+//
+//.list7 {
+//  &-item {
+//    &:before{
+//      content:'하나.';
+//      display:inline-block;
+//      width:56px;
+//      height:56px;
+//      background:#333649;
+//      margin-right:20px;
+//      color:#fff;
+//      font-size:1.125rem;
+//      font-weight:900;
+//      text-align:center;
+//      line-height:56px;
+//      border-radius:50%;
+//    }
+//    font-size:1.125rem;
+//    margin-top:20px;
+//    &:first-child{
+//      margin-top:0;
+//    }
+//  }
+//}
+
+.list7{
+  &-item {
+    padding-left: 65px;
+    position: relative;
+    margin-top: 35px;
+    &:last-child{
+      margin-bottom: 20px;
+    }
+    &:first-child{
+      margin-top: 0;
+    }
+
+    &-number {
+      position: absolute;
+      top: -8px;
+      left: 0;
+      background: #333649;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+
+      &-txt {
+        position: absolute;
+        top: 0;
+        left: 9px;
+        color: #fff;
+        font-size: 1.125rem;
+        line-height: 56px;
+        text-align: center;
+      }
+    }
+  }
+}
+
 
 .table{
   width:100%;
@@ -729,10 +827,14 @@ em{
     tr.on{
       background:#f3f4f8;
     }
+    tr.border-top{
+      th{
+        border-top: 1px solid #d9d9d9;
+      }
+    }
 
     th{
       padding:19px 0 16px;
-      font-size:1rem;
       font-weight:700;
       position:relative;
 
@@ -784,7 +886,6 @@ em{
       }
 
       & .board-list-link{
-        font-size:1rem;
         transition:all .2s;
         &:hover{
           color:#999;
@@ -828,20 +929,39 @@ em{
     }
 
     &.board-list{
-      font-size:1rem;
       & td{
         border-right:0;
-        padding:23px 20px;
+        padding:20px;
         &.no-data-found{
           padding: 130px 20px;
         }
       }
     }
-
+    &.padding-0{
+      th {
+        vertical-align: middle;
+        font-size:0.875rem;
+        display: table-cell;
+        &:after {
+          height: 26px;
+        }
+      }
+      td{
+        padding: 23px 0;
+      }
+    }
   }
 
   &.vt-dark{
     border-bottom:1px solid #a5a7aa;
+    &.pd0{
+      td{
+        padding:20px 0;
+      }
+    }
+    &.border-top{
+    border-top: 1px solid #a5a7aa;
+    }
 
     tbody{
       tr:first-child{
@@ -856,7 +976,6 @@ em{
 
     th{
       padding:18px 0 16px;
-      font-size:1rem;
       font-weight:400;
       color:#fff;
       line-height:1.4;
@@ -866,6 +985,11 @@ em{
 
       &:last-child{
         border-right:0;
+      }
+      &.left{
+        text-align: left;
+        padding-left: 20px;
+        border-bottom: 1px solid #474a5b;
       }
 
       &.half{
@@ -887,8 +1011,31 @@ em{
         &:last-child{
           border-right:0;
         }
-      }
+        &-half {
+          padding: 6px 0 8px;
+          border: {
+            top: 1px solid #212535;
+            right: 1px solid #212535;
+          }
+          background: #4d5164;
+          font-size: 0.875rem;
 
+          &:last-child {
+            border-right: 0;
+          }
+          &-title{
+           background: #fff;
+            color: #444;
+            border: {
+              bottom: 1px solid #d9d9d9;
+              right: 1px solid #f2f4f7;
+            }
+            &:last-child {
+              border-right: 0;
+            }
+          }
+        }
+      }
     }
 
     td{
@@ -899,12 +1046,20 @@ em{
       vertical-align:middle;
       word-break: keep-all;
 
+      &.point{
+        background:#f3f4f8;
+      }
+
       &.center{
         text-align:center;
       }
 
       &.top{
         vertical-align:top;
+      }
+      &.point{
+        background: #f3f4f8;
+        border-right: 1px solid #e5e9f3;
       }
 
       &:last-child{
@@ -944,12 +1099,15 @@ em{
         border-top:0;
       }
     }
-
+    &.no-min{
+      th{
+        min-width:0;
+      }
+    }
     th{
       min-width:150px;
       border-top:1px solid #d9d9d9;
       background:#f3f4f8;
-      font-size:1rem;
       line-height:1.4;
       font-weight:700;
       vertical-align:middle;
@@ -1015,6 +1173,16 @@ em{
   }
 }
 
+.table-area{
+  position: relative;
+
+  &-btn{
+    position: absolute;
+    top: -40px;
+    right: 0;
+  }
+}
+
 // 게시판 상세
 .board-view{
   &.vt{
@@ -1025,7 +1193,6 @@ em{
     &-tit{
       padding:20px;
       display:block;
-      font-size:1rem;
       font-weight:900;
       border-bottom:1px solid #d9d9d9;
       &.bg{
@@ -1072,9 +1239,8 @@ em{
     padding:30px;
     .file-group-text{
       float:left;
-      width:124px;
+      min-width: 125px;
       color:#002222;
-      font-size:1rem;
       line-height:1.7;
     }
     .file-list{
@@ -1084,7 +1250,6 @@ em{
       }
       &-link{
         color:#666;
-        font-size:1rem;
       }
     }
     .crud-ico{
@@ -1094,6 +1259,14 @@ em{
         right:auto;
         bottom:4px;
       }
+    }
+    &.point{
+      background: #f2f4f7;
+    }
+
+    .file-border{
+      padding-right: 20px;
+      border-right: 1px solid #d9d9d9;
     }
   }
   .reply-box{
@@ -1117,7 +1290,6 @@ em{
       &-info{
         float:right;
         @extend %clearfix;
-        font-size:1rem;
         .info-tit{
           float:left;
           margin-right:10px;
@@ -1173,8 +1345,8 @@ em{
   margin: 0 auto;
   @extend %clearfix;
   .ico{
-    width:44px;
-    height:44px;
+    width:40px;
+    height:40px;
     border:1px solid #d9d9d9;
     border-left:0;
     float:left;
@@ -1243,8 +1415,8 @@ em{
         }
       }
       float:left;
-      width:44px;
-      height:44px;
+      width:40px;
+      height:40px;
       border:1px solid #d9d9d9;
       border-left:0;
       position:relative;
@@ -1253,7 +1425,7 @@ em{
       display:block;
       width:100%;
       height:100%;
-      line-height:44px;
+      line-height:40px;
       text-align:center;
     }
   }
@@ -1268,7 +1440,6 @@ em{
       padding: 0 45px 0 20px;
       line-height: 40px;
       border: 1px solid #666;
-      font-size: 1rem;
       font-weight: 600;
       text-align: left;
 
@@ -1314,6 +1485,15 @@ em{
         text-align: right;
         border: none;
       }
+      &.map{
+        width: 280px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.125rem;
+        &+.btn-type-normal{
+          margin-left: 10px;
+        }
+      }
     }
 
     &-small {
@@ -1333,6 +1513,7 @@ em{
       }
       &.txt {
         padding: 0 10px;
+        text-align:center;
       }
       &.under {
         background: none;
@@ -1357,6 +1538,9 @@ em{
           right: 14px;
         }
       }
+      &.ml30{
+        margin-left: 30px;
+      }
     }
   }
 }
@@ -1365,8 +1549,9 @@ button, a {
   cursor: pointer;
 }
 
-// float
+/*float*/
 .f{
+  @extend %clearfix;
   &-left{
     float:left;
   }
@@ -1376,15 +1561,24 @@ button, a {
   }
 }
 
+/*display*/
+.d {
+  &-none{ display: none;}
+}
+
 .guide-desc{
   display:block;
   color:#666;
-  font-size:1rem;
   line-height:1.6;
   &.color{
     color:#d43e41;
   }
+  &.color-b{
+    color:#41519e;
+  }
   &.mark{
+    font-size: 0.875rem;
+    line-height: 24px;
     text-indent:-20px;
     padding-left:20px;
 
@@ -1423,24 +1617,23 @@ button, a {
   }
 }
 
-%normal-3{
-  .inner-col{
-    width:calc(33.33% - 16px)!important;
-    margin-left:24px;
-    &:first-child{
-      margin-left:0;
-    }
-  }
-}
+//%normal-3{
+//  .inner-col{
+//    width:calc(33.33% - 16px)!important;
+//    margin-left:24px;
+//    &:first-child{
+//      margin-left:0;
+//    }
+//  }
+//}
 
 .multi-col{
   position:relative;
+  text-align:center;
   @extend %clearfix;
-
   .inner-col{
     float:left;
     text-align:justify;
-
     &.btn-right{
       position: absolute;
       right:0;
@@ -1453,8 +1646,10 @@ button, a {
     &.right{
       text-align: right;
     }
+    &.center{
+      text-align: center;
+    }
   }
-
   &.double{
     .inner-col{
       width:50%;
@@ -1462,6 +1657,14 @@ button, a {
         width: auto;
         padding-right:24px;
       }
+      &.img-area{
+        width:26%;
+      }
+      &.txt-area{
+        width:74%;
+        padding-left:20px;
+      }
+
       &.w85{
         width: 85%;
       }
@@ -1478,6 +1681,9 @@ button, a {
       &.w73{
         width: 73%;
       }
+      &.w65{
+        width: 65%;
+      }
       &.w60{
         width: 60%;
       }
@@ -1490,6 +1696,9 @@ button, a {
       &.w40{
         width: 40%;
       }
+      &.w35{
+        width: 35%;
+      }
       &.w30{
         width: 30%;
       }
@@ -1498,6 +1707,9 @@ button, a {
       }
       &.w20{
         width: 20%;
+      }
+      &.w25{
+        width: 25%;
       }
       &.w15{
         width: 15%;
@@ -1517,35 +1729,81 @@ button, a {
         width: 466px;
         padding:0;
       }
+      &.pr0{
+        padding: 0;
+      }
     }
   }
-
   &.triple{
     .inner-col{
       width:33.33%;
     }
   }
-
-  &.line{
-    &:before{
-      content:"";
-      display:block;
-      width:1px;
-      height:100%;
-      background:#d9d9d9;
-      position:absolute;
-      top:0;
-      left:50%;
+  &.four{
+    .inner-col{
+      width:25%;
     }
-    @extend %gutter;
   }
+  &.five{
+    .inner-col{
+      width: 20%;
+    }
+  }
+  &.unbalance{
+    .inner-col{
+      margin-left:18px;
+      &:first-child{
+        margin-left:0;
+      }
+    }
+  }
+  &.balance{
+    &.double{
+      .inner-col{
+        width:426px;
+      }
+    }
+    &.triple{
+      .inner-col{
+        width:278px;
+      }
+    }
+    &.four{
+      .inner-col{
+        width:204px;
+      }
+    }
 
+    &.five{
+      width:867px;
+      margin:auto;
+      .inner-col{
+        width:159px;
+      }
+    }
+
+    .inner-col{
+      margin-left:18px;
+      &:first-child{
+        margin-left:0;
+      }
+    }
+    img{
+      width:100%;
+      vertical-align:top;
+    }
+  }
+  &-inner{
+    display:inline-block;
+  }
   &.gutter{
     @extend %gutter;
   }
-
-  &.normal-3{
-    @extend %normal-3;
+  .img-caption{
+    display: block;
+    text-align: center;
+    width:100%;
+    font-size:1rem;
   }
 
 }
@@ -1575,13 +1833,13 @@ button, a {
     &-text{
       width:80%;
       height:35px;
-      font-size:1rem;
       border: 1px solid #d9d9d9;
       box-sizing: border-box;
       float:left;
     }
 
     &-address{
+      margin-left: -1px;
       min-width:120px;
       height:35px;
       line-height: 35px;
@@ -1635,7 +1893,7 @@ button, a {
 
 /*select*/
 .object-list{
-  width:250px;
+  min-width:250px;
   height:40px;
   padding: 0 15px;
   border: 1px solid #d9d9d9;
@@ -1725,11 +1983,27 @@ button, a {
   width:100%;
   border: 1px solid #d9d9d9;
   padding:30px;
+  &.list{
+    padding-bottom:0;
+    .sign-box{
+      text-align:right;
+      padding:40px 20px 20px;
+      line-height:1.4;
+      &-name{
+        display:block;
+        margin-bottom:10px;
+      }
+      &-img{
+        display:inline-block;
+      }
+    }
+  }
+
 
   &-headline{
     font-weight: 700;
-    font-size: 	1.125rem;
     font-family:nanumsq, sans-serif;
+    font-size: 1.125rem;
     line-height: 1.5;
   }
 
@@ -1738,29 +2012,45 @@ button, a {
   }
   &.contact{
     position: relative;
-    padding: 0;
-    height: 137px;
     &:before{
-      width: 190px;
-      height: 137px;
+      width: 69px;
+      height: 62px;
       content: '';
       display: block;
       position: absolute;
-      top: auto;
+      top: 0;
       right:auto;
-      left: 0;
-      bottom:auto;
+      left: 60px;
+      bottom:0;
       margin: auto;
       background: url(/static/co/images/ico_contact_box.png) center no-repeat;
-      border-right: 1px solid #d9d9d9;
-
+    }
+    &:after{
+      width: 1px;
+      height:auto;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right:auto;
+      left:200px;
+      bottom:0;
+      margin: auto;
+      border-left: 1px solid #d9d9d9;
     }
     .text-box-headline{
-      margin-top: 30px;
       padding-left: 230px;
     }
     .list1{
-      padding-left: 230px;
+      padding-left:230px;
+    }
+    .multi-col{
+      padding-left:230px;
+      .inner-col{
+        .list1{
+          padding-left:0;
+        }
+      }
     }
   }
 }
@@ -1771,14 +2061,14 @@ button, a {
   position: relative;
   display: block;
   &-txt{
-    height: 225px;
+    //height: 225px;
+    min-height: 225px;
     width: 100%;
     padding: 20px;
     background: #fff;
     display: inline-block;
   }
   &-title{
-    font-size: 1.125rem;
     margin-bottom: 10px;
     font-weight: 800;
   }
@@ -1844,14 +2134,14 @@ button, a {
 
   }
   &-wide{
-    width: 870px;
+    width: 100%;
     display:table;
     border: 1px solid #d9d9d9;
     position: relative;
     @extend %clearfix;
 
     &-txt{
-      width: 620px;
+      width: auto;
       min-height: 190px;
       padding: 30px;
       background: #fff;
@@ -1948,10 +2238,10 @@ button, a {
         height:61px;
       }
       &.type3:before{
-       background-position:-150px -29px;
-       width: 65px;
-       height:48px;
-       }
+        background-position:-150px -29px;
+        width: 65px;
+        height:48px;
+      }
       &.type4:before{
         background-position:-234px -26px;
         width: 56px;
@@ -1969,7 +2259,7 @@ button, a {
 /*guidebox*/
 .guidebox{
   display:table;
-  width: 870px;
+  width: 100%;
 
   &-col{
     display:table-cell;
@@ -2033,7 +2323,6 @@ button, a {
   &-list{
     margin-top: 10px;
     .list1-item{
-      font-size:1rem;
       line-height: 1.2;
 
       &:last-child{
@@ -2051,10 +2340,18 @@ button, a {
     color:#fff;
     font-size:1.375rem;
     font-weight:600;
-    margin-bottom:10px;
-    padding-top:55px;
-    white-space:nowrap;
-    background: url(/static/co/images/ico_customer_voice.png) top center no-repeat;
+    margin: 35px 0 15px;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      background: url(/static/co/images/ico_customer_voice.png) top center no-repeat;
+    }
   }
   &-btn{
     padding: 5px 20px;
@@ -2075,7 +2372,7 @@ button, a {
       float:left;
       position:relative;
       width:calc(50% - 12px);
-      margin-right:24px;
+      margin-right:18px;
       &.wide{
         float: none;
         width: 100%;
@@ -2111,7 +2408,6 @@ button, a {
         .article-desc{
           color:#666;
           line-height:1.4;
-          font-size: 	1rem;
           strong{
             font-size: 1.125rem;
           }
@@ -2121,13 +2417,13 @@ button, a {
   }
 }
 
-.step-circle{
-  &-list{
+.step-circle {
+  &-list {
     width: 870px;
     @extend %clearfix;
-    &-item{
-      float:left;
-      padding:0 30px 0 10px;
+    &-item {
+      float: left;
+      padding: 0 30px 0 10px;
 
       .list-article {
         width: 139px;
@@ -2137,54 +2433,196 @@ button, a {
         text-align: center;
         display: table-cell;
         vertical-align: middle;
-        .article-num{
-          font-size: 	0.875rem;
-          font-weight:900;
+        .article-num {
+          font-size: 0.875rem;
+          font-weight: 900;
           color: #4674c9;
-          text-transform:uppercase;
+          text-transform: uppercase;
+          font-family: spoqa, sans-serif;
         }
-        .article-txt{
+        .article-txt {
           color: #444;
         }
       }
-      &.ico{
+      &.ico {
         text-indent: 0;
-        &:after{
+        &:after {
           background-position: -219px -28px;
           width: 11px;
           height: 22px;
-          right:0;
-          left:auto
+          right: 0;
+          left: auto
         }
       }
-
-      &:last-child{
+      &:last-child {
         padding-right: 0;
       }
     }
-    &.no-ico{
+    &.no-ico {
       width: 100%;
-      .step-circle-list-item{
-        padding:0;
-        &+.step-circle-list-item{
-          padding-left:7px;
+      .step-circle-list-item {
+        padding: 0;
+        & + .step-circle-list-item {
+          padding-left: 7px;
         }
       }
     }
   }
+  &.recruit {
+    position: relative;
+    .step-circle-list {
+      &-item {
+        padding: 0 54px 0 0;
+        .list-article {
+          background: #42519e;
+          display: inline-block;
+          padding-top: 20px;
+          .article-num {
+            color: #fff;
+            &.recruit-ico {
+              position: relative;
+              &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 85px;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                margin: auto;
+                background: url(/static/co/images/spr_ico_recruit_guide.png) no-repeat;
+              }
+              &.step1:after {
+                background-position: -10px -12px;
+                width: 29px;
+                height: 40px;
+              }
+              &.step2:after {
+                background-position: -58px -14px;
+                width: 39px;
+                height: 37px;
+              }
+              &.step3:after {
+                background-position: -119px -12px;
+                width: 45px;
+                height: 38px;
+              }
+              &.step4:after {
+                background-position: -185px -17px;
+                width: 53px;
+                height: 31px;
+              }
+            }
+          }
+        }
+        &:last-child {
+          padding: 25px 0 0 0;
+          .list-article {
+            width: 98px;
+            height: 98px;
+            padding-top: 0;
+            background: #fff;
+            border: 10px solid #42519e;
+            display: table-cell;
+            .article-txt {
+              color: #323648;
+              font-size: 1rem;
+              font-weight: 800;
+              position: relative;
+              &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                right: auto;
+                left: -34px;
+                bottom: 0;
+                margin: auto;
+                background:#fff url(/static/co/images/spr_ico_recruit_guide.png) no-repeat;
+              }
+              &.pass:before {
+                background-position: -7px -62px;
+                top: 9px;
+                width: 24px;
+                height:23px;
+              }
+            }
+          }
+        }
+        .list-detail {
+          &-title {
+            font-size: 1rem;
+            font-weight: 800;
+            text-align: center;
+            border-bottom: 1px solid #9d9d9d;
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+    &:after {
+      width: 99%;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 23%;
+      right: 0;
+      left: 1px;
+      bottom: auto;
+      margin: auto;
+      border-bottom: 9px solid #42519e;
+      z-index: -1;
+    }
+    &.color {
+      .step-circle-list {
+        &-item {
+          .list-article {
+            background: #2c8179;
+
+          }
+          &:last-child {
+            .list-article {
+              background: #fff;
+              border: 10px solid #2c8179;
+              .article-txt {
+                &:before{
+                  top: 3px;
+                  left: -34px;
+                  bottom: auto;
+                }
+                &.pass:before {
+                  background-position: -35px -62px;
+                  width: 24px;
+                  height:23px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &:after {
+        top: 24%;
+        border-bottom: 9px solid #2c8179;
+      }
+
+    }
+  }
 }
+
 
 /*layer popup*/
 .layer{
-  width: 550px;
+  min-width: 550px;
   max-height: 684px;
   border: 4px solid #42519e;
   overflow-y:auto;
+  position: relative;
   &-area{
     padding: 20px;
   }
   &-title{
     padding-bottom: 18px;
+    margin-bottom: 20px;
     border-bottom: 2px solid #42519e;
     font-size: 1.5rem;
     font-family: 'nanumsq', sans-serif;
@@ -2196,9 +2634,9 @@ button, a {
     height: 31px;
     background:url(/static/co/images/ico_layer_close.png ) center no-repeat;
     text-indent: -99999em;
-    position:relative;
-    top: -56px;
-    left: 95%;
+    position:absolute;
+    top: 15px;
+    right:20px;
   }
   &-article{
     margin-bottom:20px;
@@ -2250,6 +2688,20 @@ button, a {
   .info-desc{
     font-size: 0.875rem;
   }
+  &.construction{
+    width: 600px;
+  }
+
+  &.social1{
+    width: 715px;
+  }
+
+  &.social2{
+    width: 840px;
+  }
+  &.air-result{
+    width: 968px;
+  }
 }
 
 .enter{
@@ -2271,7 +2723,6 @@ button, a {
 
 /*배너*/
 .banner{
-  width: 869px;
   height: 145px;
   &.airport-tour{
     background:url(/static/co/images/bg_banner_airport_tour.jpg ) no-repeat;
@@ -2288,6 +2739,26 @@ button, a {
     background:url(/static/co/images/bg_banner_purpose.jpg) no-repeat;
   }
 
+  &.volunteer-introduce{
+    background:url(/static/co/images/bg_banner_volunteer_introduce.jpg) no-repeat;
+    height: 265px;
+  }
+  &.use-information{
+    background:url(/static/co/images/bg_banner_use_information.jpg) no-repeat;
+    height: 265px;
+  }
+
+  &.bg0{
+    height:215px;
+    background:url(/static/co/images/bg_banner_img0.jpg) no-repeat;
+  }
+
+  &.bg1{
+    height:215px;
+    background:url(/static/co/images/bg_banner_img1.jpg) no-repeat;
+  }
+
+
   &-txt{
     font-size: 1.125rem;
     text-align: center;
@@ -2302,31 +2773,22 @@ button, a {
       margin: 15px auto;
     }
   }
-}
-
-.banner2{
-  width:869px;
-  height: 265px;
-  &.volunteer-introduce{
-    background:url(/static/co/images/bg_banner_volunteer_introduce.jpg) no-repeat;
-  }
-
-  &.use-information{
-    background:url(/static/co/images/bg_banner_use_information.jpg) no-repeat;
-  }
-}
-
-.banner3{
-  width:869px;
-  height: 265px;
-  &.ceo-massage{
-    background:url(/static/co/images/bg_banner_ceo_massage.jpg) no-repeat;
+  &-heading{
+    padding-top:46px;
+    font-family: nanumsq, sans-serif;
+    font-size:2.125rem;
+    line-height:1.2;
+    font-weight:900;
+    color:#fff;
+    text-align:center;
+    &+.banner-txt{
+      padding-top:10px
+    }
   }
 }
 
 .map{
   &.airport-exhibition02{
-    width: 925px;
     height: 468px;
     background: url(/static/co/images/map_visit_exhibition.jpg) no-repeat;
     text-indent: -9999em;
@@ -2335,48 +2797,48 @@ button, a {
 
 /*검색*/
 .search-box{
-  width: 870px;
+  width:100%;
   padding: 20px;
   border: 1px solid #d9d9d9;
+  text-align: center;
   @extend %clearfix;
   &-title{
     font-weight:800;
     float: left;
-    padding-right: 30px;
+    padding-right: 20px;
     position: relative;
     top:13px;
   }
   &-input{
-    width: 550px;
-    margin: 0 auto;
-
-    &.small{
-      width:100%;
-    }
+    display: inline-block;
     &-item{
-      height:40px;
-      overflow: hidden;
       float: left;
-      border: 1px solid #818181;
-      box-sizing: border-box;
+      border-right:1px solid #818181;
     }
     &-select, &-txt{
       height:40px;
       padding: 0 10px;
-      border: 0;
+      border: 1px solid #818181;
+      border-right:0;
       font-size:0.9375rem;
       color: #444;
       box-sizing: border-box;
+      float: left;
     }
     &-select{
       width: 140px;
       &.medium{
-        width: 185px;
+        width: 187px;
+      }
+      &+.search-box-input-select{
+        border-left:1px solid #d9d9d9;
+      }
+      &+.search-box-input-txt{
+        border-left:1px solid #d9d9d9;
       }
     }
     &-txt{
       width: 280px;
-      border-left:1px solid #d9d9d9;
       &.medium{
         width: 185px;
       }
@@ -2386,7 +2848,6 @@ button, a {
     }
     &-btn{
       padding: 10px 20px;
-
       border: 0;
       background: #323648;
     }
@@ -2395,12 +2856,22 @@ button, a {
     }
   }
   &-btn-area{
+    float: left;
+
+    &.view-large{
+      position: absolute;
+      bottom: 37px;
+    }
     .search-box-btn{
       height: 40px;
       padding: 10px 20px;
       border: 0;
       background: #323648;
+      color: #fff;
+      font-weight: 800;
       float: left;
+      border-radius:0;
+
       &.ico{
         &:after{
           background-position:-74px -134px;
@@ -2411,8 +2882,22 @@ button, a {
       &.big{
         width: 100px;
         height: 92px;
-        color: #fff;
-        font-weight: 800;
+      }
+
+      &.view-large-btn{
+        padding: 0 20px 0 45px;
+        background:rgba(0,0,0,.5);
+        text-indent: 0;
+        font-weight: normal;
+
+        &.ico{
+          &:after{
+            background-position:-436px -134px;
+            margin-left: 13px;
+            width: 22px;
+            height: 22px;
+          }
+        }
       }
     }
   }
@@ -2446,9 +2931,105 @@ button, a {
   color:#4674c9;
 }
 
+/*항공기 소음관리*/
+.p-dv {
+  margin: 0 auto;
+  background-color: white;
+  &-cont {
+    height: 905px;
+    &-map {
+      background: url(/static/co/images/map_aircraft_noise_management.gif) no-repeat;
+      height: 974px;
+      position: relative;
+      .map{
+        background-color: #fff;
+        border: 1px solid #000;
+        display: inline-block;
+        position: absolute;
+        div{
+          padding: 2px 5px;
+          font-size: 11px;
+          text-align: center;
+        }
+        .map-t {
+          height: 14px;
+          line-height: 11px;
+          border-bottom: 1px solid #000;
+        }
+        &.m1 {
+          left: 211px;
+          top: 34px;
+        }
+        &.m2 {
+          left: 347px;
+          top: 53px;
+        }
+        &.m3 {
+          left: 247px;
+          top: 246px;
+        }
+        &.m4 {
+          top: 385px;
+          left: 122px;
+        }
+        &.m5 {
+          top: 513px;
+          left: 177px;
+        }
+        &.m6 {
+          top: 429px;
+          left: 243px;
+        }
+        &.m7 {
+          top: 434px;
+          left: 365px;
+        }
+        &.m8 {
+          left: 315px;
+          top: 420px;
+        }
+        &.m9 {
+          top: 459px;
+          left: 429px;
+        }
+        &.m10 {
+          top: 532px;
+          left: 485px;
+        }
+        &.m11 {
+          top: 612px;
+          left: 224px;
+        }
+        &.m12 {
+          top: 748px;
+          left: 304px;
+        }
+        &.m13 {
+          top: 909px;
+          left: 343px;
+        }
+        &.m14 {
+          top: 790px;
+          left: 371px;
+        }
+        &.m15 {
+          left: 305px;
+          top: 520px;
+        }
+        &.m16 {
+          left: 340px;
+          top: 675px;
+        }
+      }
+    }
+  }
+
+
+}
+
 /*연혁*/
 .co-history{
-  font-family: spoqa;
+  font-family: spoqa, sans-serif;
   &-year{
     font-size: 3rem;
     font-weight: 700;
@@ -2464,8 +3045,15 @@ button, a {
       line-height: 2;
     }
     &-year{
-      margin-right: 70px;
+      margin-right: 25px;
+      display: inline-block;
+      width: 158px;
     }
+  }
+
+  &.border{
+    padding: 40px 0;
+    border-top: 1px solid #b7c0ce;
   }
 }
 
@@ -2492,7 +3080,7 @@ button, a {
   &-item{
     text-align: center;
     &-img{
-    line-height: 0;
+      line-height: 0;
     }
     &-title{
       margin-top: 15px;
@@ -2552,10 +3140,10 @@ button, a {
       background: url(/static/co/images/spr_ico_iiac_numbering.png) no-repeat;
     }
     &.type1:before{
-       background-position: -10px -10px;
-       width: 78px;
-       height: 78px;
-     }
+      background-position: -10px -10px;
+      width: 78px;
+      height: 78px;
+    }
     &.type2:before{
       background-position: -107px -10px;
       width: 78px;
@@ -2755,15 +3343,18 @@ button, a {
   vertical-align: top;
 }
 
+.vertical {
+  &-middle {
+    vertical-align: middle;
+  }
+}
+
 /*font-size*/
 .font14, %font14{
   font-size: 	0.875rem;
 }
 .font16, %font16{
   font-size:1rem;
-}
-.font18, %font18{
-  font-size: 	1.125rem;
 }
 .font20, %font20{
   font-size: 1.25rem;
@@ -2859,11 +3450,19 @@ button, a {
 }
 
 .pl10, %pl10{
- padding-left: 10px;
+  padding-left: 10px;
 }
 
 .mb20, %mb20{
   margin-left: 20px;
+}
+
+.mr10, %mr10{
+  margin-right: 10px;
+}
+
+.mr50, %mr50{
+  margin-right: 50px;
 }
 
 // IR 인포그래픽
@@ -2888,9 +3487,9 @@ button, a {
 
 /*신고자보호및보상*/
 .digr-protection-compensation{
-height:534px;
-text-indent:-999em;
-background: url(/static/co/images/digr_protection_compensation.png) no-repeat;
+  height:534px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_protection_compensation.png) no-repeat;
 }
 
 /*역대기관장*/
@@ -2903,19 +3502,19 @@ background: url(/static/co/images/digr_protection_compensation.png) no-repeat;
 
 /*발자취*/
 .digr-co-traces{
-height:931px;
-text-indent:-999em;
-background: url(/static/co/images/digr_co_traces.png) no-repeat;
+  height:931px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_co_traces.png) no-repeat;
 }
 
 /*vision*/
 .digr-co-vision{
   height:626px;
   text-indent:-999em;
-  background: url(/static/co/images/digr_co_vision.png) no-repeat;
+  background: url(/static/co/images/digr_co_vision.png) no-repeat -1px;
 }
 
-<<<<<<< HEAD
+
 /*지속가능경영 CO_AE_01_01*/
 .digr-co-management{
   height:612px;
@@ -2939,28 +3538,140 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   border:1px solid #d9d9d9;
 }
 
+/* 에너지 경영 1*/
+.digr-low-carbon-eco-friendly-strategy1{
+  height:565px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_01.png) no-repeat -2px;
+}
+/* 에너지 경영 2*/
+.digr-low-carbon-eco-friendly-strategy2{
+  height:494px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_02.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+/* 모니터링 시스템 */
+.digr-monitoring-system1{
+  height:597px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_monitoring_system_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+.digr-monitoring-system2{
+  height:597px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_monitoring_system_02.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+/**/
+.digr-social-contribution-performance {
+  height: 886px;
+  text-indent: -999em;
+  background: url(/static/co/images/digr_social_contribution_performance.png) no-repeat;
+}
+
+.grp-energy-management {
+  width: 100%;
+  height: 511px;
+  background: url(/static/co/images/grp_energy_management_01.png) no-repeat;
+}
+
+/* 국제기구와의 협력 */
+.digr-international-cooperation{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_international_cooperation_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+/* 국제화물네트워크 협력 */
+.digr-international-freight-network1{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_international_freight_network_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.grp-international-freight-network1{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_international_freight_network_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.grp-international-freight-network2{
+  height:502px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_international_freight_network_02.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.digr-international-freight-network2{
+  height:332px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_international_freight_network_02.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+.digr-construction-case01{
+  background: url(/static/co/images/digr_construction_case_01.png) no-repeat;
+  height: 480px;
+}
+
+.digr-construction-case02{
+  background: url(/static/co/images/digr_construction_case_02.png) no-repeat;
+  height: 480px;
+}
+
+.digr-construction-case03{
+  background: url(/static/co/images/digr_construction_case_03.png) no-repeat;
+  height: 308px;
+}
+
+.grp-energy-management {
+  width: 100%;
+  height: 511px;
+  background: url(/static/co/images/grp_energy_management_01.png) no-repeat;
+}
+
+/* 건설사업 */
+.grp-construction-business1{
+  height:490px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_construction_business_01.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+.grp-construction-business2{
+  height:542px;
+  text-indent:-999em;
+  background: url(/static/co/images/grp_construction_business_02.png) no-repeat;
+  border:1px solid #d9d9d9;
+}
+
+
 // 임원진 CO_CH_02
-.profile-box{
+.profile-box {
   @extend %clearfix;
-  &-img{
-    width:110px;
-    height:110px;
-    float:left;
+  &-img {
+    width: 110px;
+    height: 110px;
+    float: left;
   }
-  &-desc{
-    width:calc(100% - 140px);
-    margin-left:30px;
-    float:left;
+  &-desc {
+    width: calc(100% - 140px);
+    margin-left: 30px;
+    float: left;
   }
-  &-tit{
-    display:block;
-    margin-bottom:10px;
-    font-size:1.125rem;
+  &-tit {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.125rem;
   }
-  dt.list1-item{
-    width:180px;
-    float:left;
+  dt.list1-item {
+    width: 180px;
+    float: left;
   }
+}
 
 /*동반성장*/
 .digr-strengthen-competitive1{
@@ -2996,7 +3707,7 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
 .digr-ethics-management-vision1{
   height:400px;
   text-indent:-999em;
-  background: url(/static/co/images/digr_ethical_management_vision_01.png) no-repeat;
+  background: url(/static/co/images/digr_ethical_management_vision_01.png) no-repeat -1px;
 }
 
 .digr-ethics-management-vision2{
@@ -3016,7 +3727,7 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
 .digr-social-contribution01{
   height:1011px;
   text-indent:-999em;
-  background: url(/static/co/images/digr_social_contribution01.png) no-repeat;
+  background: url(/static/co/images/digr_social_contribution01.png) no-repeat -1px;
 }
 
 .digr-social-contribution02{
@@ -3035,11 +3746,71 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   text-indent:-999em;
   background: url(/static/co/images/digr_social_contribution04.png) no-repeat;
 }
-=======
+
+.digr-vision-strategy1{
+  background: url(/static/co/images/digr_vision_strategy_01.png) no-repeat;
+  height: 505px;
+}
+
+.digr-vision-strategy2{
+  background: url(/static/co/images/digr_vision_strategy_02.png) no-repeat;
+  height: 393px;
+}
+
+.digr-energy-independence{
+  height: 279px;
+  padding: 0 20px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_energy_independence_02.png) center no-repeat;
+}
+
+.digr-service-assessment{
+  height: 690px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_service_assessment.png) center no-repeat;
+}
+
+.digr-recruit-guide{
+  height: 609px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_recruit_guide.png) center no-repeat;
+}
+
+.digr-free-trade-zone{
+  height: 450px;
+  padding: 0 30px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_free_trade_zone.png) center no-repeat;
+}
+
 /*ir기법 클래스적용*/
 .ir-technique{
   display: block;
   text-indent: -99999em;
+}
+
+.grp-airport-capacity1{
+  width: 100%;
+  height: 504px;
+  background: url(/static/co/images/grp_airport_capacity_01.png) no-repeat;
+  background-size: 100%;
+}
+
+.grp-airport-capacity2{
+  width: 100%;
+  height: 504px;
+  background: url(/static/co/images/grp_airport_capacity_02.png) no-repeat;
+  background-size: 100%;
+}
+
+.grp-airport-capacity3{
+  width: 100%;
+  height: 504px;
+  background: url(/static/co/images/grp_airport_capacity_03.png) no-repeat;
+  background-size: 100%;
 }
 
 /* 조직도 */
@@ -3051,4 +3822,125 @@ background: url(/static/co/images/digr_co_traces.png) no-repeat;
   padding-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
 }
->>>>>>> d7b92334ce6450aad2a36054c8dcf894011ac6b6
+
+/* 국제 구호 활동 */
+.active-history{
+  background:url(/static/co/images/bg_social_contribution.png);
+  border:1px solid #d9d9d9;
+  text-align:center;
+  padding:60px 0;
+  &-list{
+    display:inline-block;
+    @extend %clearfix;
+    &-item{
+      width:124px;
+      float:left;
+      margin-left:34px;
+      text-align:center;
+      font-size:0.875rem;
+      font-weight:900;
+      &:first-child{
+        margin-left:0;
+      }
+    }
+    &-year{
+      display:block;
+      width:124px;
+      height:124px;
+      margin:10px auto;
+      border-radius:50%;
+      background:#323648;
+      color:#fff;
+      font-size:1.125rem;
+      font-weight:300;
+      line-height:124px;
+      &.bg{
+        em{
+          width:100%;
+          position:absolute;
+          top:0;
+          left:0;
+          text-decoration:none;
+        }
+        position:relative;
+        overflow:hidden;
+
+        &:before{
+          content:'';
+          display:block;
+          position:absolute;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+          background:rgba(0,0,0,.5);
+        }
+      }
+
+      &.bg1{
+        background:url(/static/co/images/img_relief01.jpg) no-repeat;
+      }
+
+      &.bg2{
+        background:url(/static/co/images/img_relief02.jpg) no-repeat;
+      }
+
+      &.bg3{
+        background:url(/static/co/images/img_relief03.jpg) no-repeat;
+      }
+
+      &.bg4{
+        background:url(/static/co/images/img_relief04.jpg) no-repeat;
+      }
+    }
+  }
+}
+
+.result-box{
+  border:1px solid #d9d9d9;
+  padding:20px;
+  position:relative;
+  &-btn{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:20px;
+    margin:auto;
+  }
+}
+
+.auto-size{
+  width:100%;
+}
+
+.map-api{
+  width: 100%;
+  height: 400px;
+  border: 1px solid #d9d9d9 ;
+}
+
+/*오시는길 경로*/
+.directions {
+  @extend %clearfix;
+  &.float-no{
+    li{
+      float: none;
+    }
+  }
+  &-item{
+    float: left;
+    margin-right: 30px;
+    letter-spacing: -0.05rem;
+    &.ico {
+      text-indent: 0;
+    }
+    &.ico:after {
+      background-position: -89px -63px;
+      width: 22px;
+      height: 22px;
+      left: auto;
+      right: -20px;
+      top: 7px;
+    }
+  }
+}
