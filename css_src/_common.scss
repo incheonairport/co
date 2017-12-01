@@ -1261,6 +1261,7 @@ em{
       }
       &-link{
         color:#666;
+        font-size:.825rem;
       }
     }
     .crud-ico{
@@ -2159,7 +2160,7 @@ button, a {
       margin-left: 250px;
     }
     .list1{
-      font-size:0.875rem;
+      font-size:1rem;
       &-item{
         line-height: 1.2;
       }
@@ -3970,4 +3971,8 @@ button, a {
       top: 7px;
     }
   }
+}
+
+.color-r{
+  color: #d43e41;
 }

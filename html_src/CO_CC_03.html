@@ -3,9 +3,9 @@
   <!--위치-->
   <div class="location">
     <div class="location-btn">
-      <button type="button" class="location-btn-minus ico"></button>
-      <button type="button" class="location-btn-plus ico"></button>
-      <button type="button" class="location-btn-print ico"></button>
+      <button type="button" class="location-btn-minus ico">화면 축소</button>
+      <button type="button" class="location-btn-plus ico">화면 확대</button>
+      <button type="button" class="location-btn-print ico">화면 인쇄</button>
     </div>
     <div class="location-bar">
       <ul class="location-bar-nav">
@@ -37,25 +37,9 @@
     <!--=include _include/_left_menu_03.html -->
 
     <div class="sub-contents">
-      <!--탭-->
-      <nav class="tab-nav">
-        <ul class="tab-nav-list">
-          <li class="tab-nav-list-item">
-            <a href="#" class="tab-nav-list-link">신청안내</a>
-          </li>
-          <li class="tab-nav-list-item">
-            <a href="#" class="tab-nav-list-link">견학 코스보기</a>
-          </li>
-          <li class="tab-nav-list-item">
-            <a href="#" class="tab-nav-list-link on">견학 신청하기</a>
-          </li>
-          <li class="tab-nav-list-item">
-            <a href="#" class="tab-nav-list-link">진행현황 보기</a>
-          </li>
-        </ul>
-      </nav>
+      <h4 class="sub-contents-heading1">견학 신청하기</h4>
 
-      <article class="article mt30">
+      <article class="article">
         <div class="text-box">
           <div class="text-box-headline-col">
             <h4 class="text-box-headline font20">글 작성 시 유의사항 안내</h4>
@@ -63,14 +47,13 @@
 
           <ul class="list1">
             <li class="list1-item ">견학일은 선착순 신청으로 지정합니다.</li>
-            <li class="list1-item">기타 문의사항을 제외한 * 는 필수 입력사항입니다.</li>
+            <li class="list1-item">기타 문의사항을 제외한 <strong class="color-r">*</strong> 는 필수 입력사항입니다.</li>
           </ul>
         </div>
       </article>
 
 
       <article class="article">
-
         <div class="multi-col double">
             <div class="inner-col">
               <h5 class="sub-contents-heading2">신청자 정보 입력</h5>
@@ -93,8 +76,8 @@
             </colgroup>
             <tbody>
             <tr>
-              <th class="left">
-                <label for="group-name"><strong>신청단체명</strong></label>
+              <th scope="row" class="left">
+                <label for="group-name" class="important"><strong>신청단체명</strong></label>
               </th>
               <td colspan="3">
                 <div>
@@ -104,24 +87,24 @@
             </tr>
 
             <tr>
-              <th class="left">
-                <p><strong>신청자 명</strong></p>
+              <th scope="row" class="left">
+                <strong class="important">신청자 명</strong>
               </th>
               <td>홍길동</td>
-              <th class="left">
-                <strong class="important">방문자 수</strong>
+              <th scope="row" class="left">
+                <label class="important" for="visitor-count"><strong>방문자 수</strong></label>
               </th>
               <td>
                 <div>
                   <input type="text" id="visitor-count" class="user-text applicant-count">
-                  <label class="password-change" for="visitor-count">(10명 이상~8명 이하)</label>
+                  <span class="password-change">(10명 이상~8명 이하)</span>
                 </div>
               </td>
             </tr>
 
             <tr>
-              <th class="left">
-                <label for="phone-number"><strong>연락처</strong></label>
+              <th scope="row" class="left">
+                <label for="phone-number" class="important"><strong>연락처</strong></label>
               </th>
               <td>
                 <input type="text" id="phone-number" class="user-text applicant-phone">
@@ -130,14 +113,14 @@
                 <span>-</span>
                 <input type="text" class="user-text applicant-phone" title="연락처 끝자리 4자리">
               </td>
-              <th class="left">
-                <p><strong>휴대폰 번호</strong></p>
+              <th scope="row" class="left">
+                <strong class="important">휴대폰 번호</strong>
               </th>
               <td>010-1234-5678</td>
             </tr>
             <tr>
-              <th class="left">
-                <p><strong>이메일</strong></p>
+              <th scope="row" class="left">
+                <strong class="important">이메일</strong>
               </th>
               <td colspan="3">
                 <span class="user-info">asdf@gali.com</span>
@@ -157,7 +140,7 @@
             </colgroup>
             <tbody>
             <tr>
-              <th class="left">
+              <th scope="row" class="left">
                 <strong class="important">견학일 선택</strong>
               </th>
               <td>
@@ -171,7 +154,7 @@
             </tr>
 
             <tr>
-              <th class="left">
+              <th scope="row" class="left">
                 <label for="purpose" class="important"><strong>방문목적</strong></label>
               </th>
               <td>
@@ -181,8 +164,8 @@
             </tr>
 
             <tr>
-              <th class="left">
-                <label for="question"><strong>기타 문의사항</strong></label>
+              <th scope="row" class="left">
+                <label for="question" class="important"><strong>기타 문의사항</strong></label>
               </th>
               <td>
           <textarea class="user-text wide height" id="question">
@@ -195,8 +178,8 @@
                 <div class="multi-col double mt10">
                   <div class="inner-col w70">
                     <div class="radio-type1 left">
-                      <input type="checkbox" name="option1" id="option1" class="checkbox-type2-radio" value="yes" checked="">
-                      <label class="checkbox-type2-label ico font18" for="option1">'개인정보 수집 및 이용'에 동의하시고 등록하시겠습니까? (필수)</label>
+                      <input type="checkbox" name="option1" id="option1" class="checkbox-type2-radio" value="yes">
+                      <label class="checkbox-type2-label ico" for="option1">'개인정보 수집 및 이용'에 동의하시고 등록하시겠습니까? (필수)</label>
                     </div>
                   </div>
 
@@ -210,8 +193,7 @@
           </table>
 
         <div class="text-center mt30">
-          <a href="#" class="btn-type-normal ico arrow-normal-right"><strong>취소하기</strong></a>
-          <a href="#" class="btn-type-normal btn2 ico arrow-point-right"><strong>공장견학신청하기</strong></a>
+          <a href="#" class="btn-type-normal btn2 ico arrow-point-right"><strong>공장견학 신청하기</strong></a>
         </div>
       <!--1단 글상자-->
       </article>
