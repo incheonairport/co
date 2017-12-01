@@ -1058,12 +1058,11 @@ em{
       vertical-align:middle;
       word-break: keep-all;
 
-      &.point{
-        background:#f3f4f8;
-      }
-
       &.center{
-        text-align:center;
+           text-align:center;
+      }
+      &.right{
+        text-align:right;
       }
 
       &.top{
@@ -2113,6 +2112,22 @@ label.d-none{
           padding-left:0;
         }
       }
+    }
+  }
+  &.consulting{
+    height: 320px;
+    padding: 0;
+    text-align: left;
+    .text-box-headline-col{
+      padding: 30px 0;
+      margin-bottom: 0;
+      text-align: center;
+      background: #f2f2f2;
+      border-bottom: 1px solid #d9d9d9;
+    }
+    .list1{
+      padding: 20px;
+      font-size: 1rem;
     }
   }
 }
