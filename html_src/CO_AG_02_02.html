@@ -3,16 +3,15 @@
   <!--위치-->
   <div class="location">
     <div class="location-btn">
-      <button type="button" class="location-btn-minus ico"></button>
-      <button type="button" class="location-btn-plus ico"></button>
-      <button type="button" class="location-btn-print ico"></button>
+      <button type="button" class="location-btn-minus ico">축소</button>
+      <button type="button" class="location-btn-plus ico">확대</button>
+      <button type="button" class="location-btn-print ico">인쇄</button>
     </div>
     <div class="location-bar">
       <ul class="location-bar-nav">
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">공사소개</a></li>
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">경영 공시</a></li>
-        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">경영공시 목차</a></li>
         <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">상임이사업무추진비</a></li>
       </ul>
     </div>
@@ -37,9 +36,6 @@
     <div class="sub-contents">
       <h4 class="sub-contents-heading1">상임이사업무추진비</h4>
       <article class="article">
-
-
-
         <table class="table vt-dark" summary="상임이사업무추진비에 대한 안내 표입니다.">
           <caption>상임이사업무추진비에 안내 표</caption>
           <colgroup>
@@ -79,12 +75,14 @@
           </tr>
           </tbody>
         </table>
-
+      </article>
+      <article class="article">
         <!--검색-->
-        <div class="search-box mt30">
+        <div class="search-box">
           <div class="search-box-input">
             <div class="search-box-input-item">
-              <input type="text" class="search-box-input-txt" placeholder="검색어 입력" title="검색어 입력을 통해 검색할 수 있습니다">
+              <label class="d-none" for="search">검색</label>
+              <input type="text" id="search" class="search-box-input-txt" placeholder="검색어 입력" title="검색어 입력을 통해 검색할 수 있습니다">
             </div>
             <div class="search-box-btn-area">
               <button type="button" class="search-box-btn ico">검색</button>
@@ -94,10 +92,10 @@
         <!--//검색-->
 
         <div class="multi-col double gutter">
-          <div class="inner-col w70">
+          <div class="inner-col">
             <p class="board-caption">공시기준: ‘15년 말 기준 (기관장/상임이사/기타 세부 집행내역 월 별 공개)</p>
           </div>
-          <div class="inner-col w30">
+          <div class="inner-col">
             <p class="board-page"> 전체 :<strong>1000</strong>건 (1 /13 page)</p>
           </div>
         </div>
