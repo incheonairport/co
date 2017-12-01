@@ -3,15 +3,17 @@
   <!--위치-->
   <div class="location">
     <div class="location-btn">
-      <button type="button" class="location-btn-minus ico"></button>
-      <button type="button" class="location-btn-plus ico"></button>
-      <button type="button" class="location-btn-print ico"></button>
+      <button type="button" class="location-btn-minus ico">화면 축소</button>
+      <button type="button" class="location-btn-plus ico">화면 확대</button>
+      <button type="button" class="location-btn-print ico">화면 인쇄</button>
     </div>
     <div class="location-bar">
       <ul class="location-bar-nav">
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">고객참여</a></li>
-        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">공지사항</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">전자민원</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">예산낭비신고</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">신고하기</a></li>
       </ul>
     </div>
   </div>
@@ -165,7 +167,7 @@
           <tbody>
           <tr>
             <th class="left">
-              <label for="complain-tit"><strong class=" font14">민원제목</strong></label>
+              <label for="complain-tit"><strong>민원제목</strong></label>
             </th>
             <td>
               <input id="complain-tit" type="text" class="user-text wide">
@@ -174,16 +176,16 @@
 
           <tr>
             <th class="left">
-              <label for="purpose" class="important font14"><strong>민원내용</strong></label>
+              <label for="purpose" class="important"><strong>민원내용</strong></label>
             </th>
             <td>
-              <textarea class="user-text wide height" id="purpose">          </textarea>
+              <textarea class="user-text wide height" id="purpose"></textarea>
             </td>
           </tr>
 
           <tr>
             <th class="left">
-              <label for="find-file" class="important font14"><strong>첨부파일</strong></label>
+              <label for="find-file" class="important"><strong>첨부파일</strong></label>
             </th>
             <td>
               <div class="user-input">
@@ -194,7 +196,7 @@
 
           <tr>
             <td colspan="2" class="left">
-              <div class="multi-col double mt10">
+              <div class="multi-col double">
                 <div class="inner-col w70">
                   <div class="checkbox-type2 left">
                     <input type="checkbox" name="agree-offer1" id="agree-offer1" class="checkbox-type2-radio" value="yes" checked="">
@@ -203,7 +205,7 @@
                 </div>
 
                 <div class="inner-col w20 btn-right">
-                  <a class="user-input-link small font13">전문보기</a>
+                  <a class="user-input-link small">전문보기</a>
                 </div>
               </div>
             </td>
@@ -211,16 +213,16 @@
 
           <tr>
             <td colspan="2" class="left">
-              <div class="multi-col double mt10">
+              <div class="multi-col double">
                 <div class="inner-col w70">
                   <div class="checkbox-type2 left">
-                    <input type="checkbox" name="agree-offer1" id="agree-offer1" class="checkbox-type2-radio" value="yes" checked="">
-                    <label class="checkbox-type2-label ico" for="agree-offer1">'개인정보 제3자 제공 동의'에 동의하시고 등록하시겠습니까? (필수)</label>
+                    <input type="checkbox" name="agree-offer1" id="agree-offer2" class="checkbox-type2-radio" value="yes" checked="">
+                    <label class="checkbox-type2-label ico" for="agree-offer2">'개인정보 제3자 제공 동의'에 동의하시고 등록하시겠습니까? (필수)</label>
                   </div>
                 </div>
 
                 <div class="inner-col w20 btn-right">
-                  <a class="user-input-link small font13">전문보기</a>
+                  <a class="user-input-link small">전문보기</a>
                 </div>
               </div>
             </td>
@@ -228,16 +230,16 @@
 
           <tr>
             <td colspan="2" class="left">
-              <div class="multi-col double mt10">
+              <div class="multi-col double">
                 <div class="inner-col w70">
                   <div class="checkbox-type2 left">
-                    <input type="checkbox" name="agree-offer1" id="agree-offer1" class="checkbox-type2-radio" value="yes" checked="">
-                    <label class="checkbox-type2-label ico" for="agree-offer1">'개인정보 취급 위탁'에 동의하시고 등록하시겠습니까? (필수)</label>
+                    <input type="checkbox" name="agree-offer1" id="agree-offer3" class="checkbox-type2-radio" value="yes" checked="">
+                    <label class="checkbox-type2-label ico" for="agree-offer3">'개인정보 취급 위탁'에 동의하시고 등록하시겠습니까? (필수)</label>
                   </div>
                 </div>
 
                 <div class="inner-col w20 btn-right">
-                  <a class="user-input-link small font13">전문보기</a>
+                  <a class="user-input-link small">전문보기</a>
                 </div>
               </div>
             </td>
@@ -247,7 +249,7 @@
 
         <div class="text-center mt30">
           <a href="#" class="btn-type-normal ico arrow-normal-right"><strong>취소하기</strong></a>
-          <a href="#" class="btn-type-normal btn2 ico arrow-point-right"><strong>민원접수하기</strong></a>
+          <a href="#" class="btn-type-normal btn2 ico arrow-point-right"><strong>신고하기</strong></a>
         </div>
       </article>
 
@@ -267,12 +269,8 @@
       </article>
 
 
-
     </div>
-
   </div>
-
-
 </section>
 
 <!--=include _include/_footer.html -->

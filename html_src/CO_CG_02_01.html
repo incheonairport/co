@@ -3,15 +3,17 @@
   <!--위치-->
   <div class="location">
     <div class="location-btn">
-      <button type="button" class="location-btn-minus ico"></button>
-      <button type="button" class="location-btn-plus ico"></button>
-      <button type="button" class="location-btn-print ico"></button>
+      <button type="button" class="location-btn-minus ico">화면 축소</button>
+      <button type="button" class="location-btn-plus ico">화면 확대</button>
+      <button type="button" class="location-btn-print ico">화면 인쇄</button>
     </div>
     <div class="location-bar">
       <ul class="location-bar-nav">
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">고객참여</a></li>
-        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">공지사항</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">전자민원</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">예산낭비신고</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">예산낭비신고 안내</a></li>
       </ul>
     </div>
   </div>
@@ -52,8 +54,8 @@
         </ul>
       </nav>
 
-      <article class="article">
-        <div class="vt board-view border mt20">
+      <article class="article mt30">
+        <div class="vt board-view border">
           <div class="view-head-tit radio-type2 complain-table">
             <input type="radio" name="option" id="option1" class="radio-type2-radio" value="yes" checked="">
             <label class="radio-type2-label ico" for="option1">예산이 낭비되고 있다고 판단되는 상황</label>
@@ -62,29 +64,27 @@
             <input type="radio" name="option" id="option3" class="radio-type2-radio" value="no">
             <label class="radio-type2-label ico" for="option3">예산절감 제도의 개선사항</label>
           </div>
+
+          <div class=" text-center mt30">
+            <a href="#" class="btn-type-normal btn2 ico arrow-point-right"><strong>신고하기</strong></a>
+          </div>
+
+          <ul class="list4 mt30">
+            <li class="list4-item">
+              공항이용관련 문의나 불친절 또는 불편을 예산낭비신고에 게시할 경우 고객의 소리로 이관되므로 신속한 답변을 위해서는 고객의 소리에 문의하여 주시기 바랍니다.
+            </li>
+            <li class="list4-item"
+                >실명을 원칙으로 하며, 허위나 가명은 접수되지 않습니다.
+            </li>
+            <li class="list4-item">
+              비밀번호는 처리결과 확인 시 필요하니 기억하여 주시기 바랍니다.
+            </li>
+          </ul>
         </div>
-
-
-        <div class="article text-center mt30">
-          <a href="#" class="btn-type-normal btn2 ico arrow-point-right"><strong>신고하기</strong></a>
-        </div>
-
-
-        <ul class="list4 mt30">
-          <li class="list4-item">공항이용관련 문의나 불친절 또는 불편을 예산낭비신고에 게시할 경우 고객의 소리로 이관되므로 신속한 답변을 <br>
-            위해서는 고객의 소리에 문의하여 주시기 바랍니다.</li>
-          <li class="list4-item">실명을 원칙으로 하며, 허위나 가명은 접수되지 않습니다.</li>
-          <li class="list4-item">비밀번호는 처리결과 확인 시 필요하니 기억하여 주시기 바라며 비밀번호를 모르실 경우, E-mail이나 아래 연락처로 연락 주시기 바랍니다.</li>
-        </ul>
-
-
-
       </article>
 
       <article class="article">
-
-
-        <div class="text-box contact mt50">
+        <div class="text-box contact">
           <div class="text-box-headline-col">
             <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 해 주시기 바랍니다.</h6>
           </div>
@@ -97,10 +97,7 @@
       </article>
 
     </div>
-
   </div>
-
-
 </section>
 
 <!--=include _include/_footer.html -->

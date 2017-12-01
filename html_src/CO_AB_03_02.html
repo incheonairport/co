@@ -3,14 +3,17 @@
   <!--위치-->
   <div class="location">
     <div class="location-btn">
-      <button type="button" class="location-btn-minus ico"></button>
-      <button type="button" class="location-btn-plus ico"></button>
-      <button type="button" class="location-btn-print ico"></button>
+      <button type="button" class="location-btn-minus ico">화면 축소</button>
+      <button type="button" class="location-btn-plus ico">화면 확대</button>
+      <button type="button" class="location-btn-print ico">화면 인쇄</button>
     </div>
     <div class="location-bar">
       <ul class="location-bar-nav">
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
-        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">공사소개</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">공사소개</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">일반현황</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">한 눈에 보는 IIAC</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">규모로 보는 IIAC TAB</a></li>
       </ul>
     </div>
   </div>
@@ -19,8 +22,8 @@
     <div class="sub-top-inner">
       <div class="sub-top-descbox">
         <div class="sub-top-descbox-text">
-        <h2 class="sub-top-descbox-tit">공사소개</h2>
-        <h3 class="sub-top-descbox-sub">마일스톤</h3>
+          <h2 class="sub-top-descbox-tit">공사소개</h2>
+          <h3 class="sub-top-descbox-sub">일반현황</h3>
         </div>
       </div>
     </div>
@@ -48,71 +51,87 @@
       </nav>
 
       <div class="article text-center mt30">
-        <img src="/static/co/images/map_iiac_scale_01.png" alt="시설규모개방 관련 이미지"/>
+        <img src="/static/co/images/map_iiac_scale_01.png" alt="시설규모 관련 이미지"/>
       </div>
 
       <article class="article">
-        <h5 class="sub-contents-heading2">시설규모개방 안내</h5>
-        <table class="table vt-dark" summary="시설규모개방에 대한 안내 표입니다.">
-          <caption>시설규모개방 안내 표</caption>
+        <h5 class="sub-contents-heading2">시설규모</h5>
+        <table class="table vt-dark" summary="시설규모에 대한 안내 표입니다.">
+          <caption>시설규모 안내 표</caption>
           <colgroup>
-            <col style="width:20%">
-            <col style="width:20%">
-            <col style="width:20%">
-            <col style="width:20%">
-            <col style="width:20%">
+            <col style="width:15%">
+            <col style="width:17%">
+            <col style="width:17%">
+            <col style="width:17%">
+            <col style="width:17%">
+            <col style="width:17%">
           </colgroup>
           <thead>
           <tr>
             <th scope="col">구분</th>
-            <th scope="col">1+2단계(현재)</th>
-            <th scope="col">3단계 (2009 ~ 2017)</th>
-            <th scope="col">누계</th>
-            <th scope="col">최종단계(완료 후)</th>
+            <th scope="col">1단계</th>
+            <th scope="col">2단계</th>
+            <th scope="col">3단계</th>
+            <th scope="col">4단계</th>
+            <th scope="col">최종 (누계)</th>
           </tr>
           </thead>
           <tbody>
           <tr>
-            <td class="center">부지면적</td>
-            <td class="center">21,292천㎡</td>
-            <td class="center">1,105천㎡</td>
-            <td class="center">22,397천㎡</td>
-            <td class="center">47,428천㎡</td>
+            <td class="center">사업기간</td>
+            <td class="center">'92년~'01년</td>
+            <td class="center">'02년~'08년</td>
+            <td class="center">'09년~'17년</td>
+            <td class="center">17년~‘23년</td>
+            <td class="center">-</td>
           </tr>
           <tr>
             <td class="center">활주로</td>
-            <td class="center">3개</td>
+            <td class="center">2본(3,750ⅹ60m)</td>
+            <td class="center">1본(4,000ⅹ60m)</td>
             <td class="center">-</td>
-            <td class="center">3개</td>
-            <td class="center">5개</td>
+            <td class="center">1본(4,000ⅹ60m)</td>
+            <td class="center">5본</td>
           </tr>
           <tr>
             <td class="center">여객터미널</td>
-            <td class="center">496천㎡</td>
-            <td class="center">384천㎡</td>
-            <td class="center">880천㎡</td>
-            <td class="center">1,390천㎡</td>
+            <td class="center">507천㎡</td>
+            <td class="center"></td>
+            <td class="center">387천㎡</td>
+            <td class="center">316천㎡</td>
+            <td class="center">1,690천㎡</td>
           </tr>
           <tr>
             <td class="center">탑승동</td>
-            <td class="center">166천㎡</td>
             <td class="center">-</td>
             <td class="center">166천㎡</td>
+            <td class="center">-</td>
+            <td class="center"></td>
             <td class="center">166천㎡</td>
           </tr>
           <tr>
-            <td class="center">계류장(여객)</td>
-            <td class="center">2,437천㎡</td>
-            <td class="center">790천㎡</td>
-            <td class="center">3,227천㎡</td>
-            <td class="center">4,398천㎡</td>
+            <td class="center">여객계류장</td>
+            <td class="center">60개소</td>
+            <td class="center">49개소</td>
+            <td class="center">54개소</td>
+            <td class="center">73개소</td>
+            <td class="center">318개소</td>
           </tr>
           <tr>
-            <td class="center">계류장(화물)</td>
-            <td class="center">737천㎡</td>
-            <td class="center">410천㎡</td>
-            <td class="center">1,147천㎡</td>
-            <td class="center">1,893천㎡</td>
+            <td class="center">화물터미널</td>
+            <td class="center">129천㎡</td>
+            <td class="center">129천㎡</td>
+            <td class="center">-</td>
+            <td class="center">별도시행</td>
+            <td class="center">493천㎡</td>
+          </tr>
+          <tr>
+            <td class="center">화물계류장</td>
+            <td class="center">24개소</td>
+            <td class="center">12개소</td>
+            <td class="center">13개소</td>
+            <td class="center">13개소</td>
+            <td class="center">95개소</td>
           </tr>
           </tbody>
         </table>
@@ -123,49 +142,47 @@
         <table class="table vt-dark" summary="처리능력에 대한 안내 표입니다.">
           <caption>처리능력 안내 표</caption>
           <colgroup>
-            <col style="width:20%">
-            <col style="width:20%">
-            <col style="width:20%">
-            <col style="width:20%">
-            <col style="width:20%">
+            <col style="width:16%">
+            <col style="width:16%">
+            <col style="width:16%">
+            <col style="width:16%">
+            <col style="width:16%">
+            <col style="width:16%">
           </colgroup>
           <thead>
           <tr>
             <th scope="col">구분</th>
-            <th scope="col">1+2단계(현재)</th>
-            <th scope="col">3단계 (2009 ~ 2017)</th>
-            <th scope="col">누계</th>
-            <th scope="col">최종단계(완료 후)</th>
+            <th scope="col">1단계(2001년)</th>
+            <th scope="col">2단계(2008년)</th>
+            <th scope="col">3단계(2017년)</th>
+            <th scope="col">4단계(2023년)</th>
+            <th scope="col">최종(누계)</th>
           </tr>
           </thead>
           <tbody>
           <tr>
-            <td class="center">운항</td>
-            <td class="center">41만 회</td>
+            <td class="center">운항횟수</td>
+            <td class="center">33만회</td>
+            <td class="center">17만회</td>
             <td class="center">-</td>
-            <td class="center">41만 회</td>
-            <td class="center">74만 회</td>
+            <td class="center">6만회</td>
+            <td class="center">79만회</td>
           </tr>
           <tr>
             <td class="center">여객</td>
-            <td class="center">41만 회</td>
-            <td class="center">-</td>
-            <td class="center">41만 회</td>
-            <td class="center">74만 회</td>
-          </tr>
-          <tr>
-            <td class="center">운항</td>
-            <td class="center">4,400만명</td>
-            <td class="center">1,800만 명</td>
-            <td class="center">6,200만 명</td>
+            <td class="center">4,000만명</td>
+            <td class="center">1,400만명</td>
+            <td class="center">1,800만명</td>
+            <td class="center">2,800만명</td>
             <td class="center">1억명</td>
           </tr>
           <tr>
             <td class="center">화물</td>
-            <td class="center">450만 톤</td>
-            <td class="center">50만 톤</td>
-            <td class="center">500만 톤</td>
-            <td class="center">1,140만톤</td>
+            <td class="center">270만톤</td>
+            <td class="center">180만톤</td>
+            <td class="center">50만톤</td>
+            <td class="center">130만톤</td>
+            <td class="center">1,000만톤</td>
           </tr>
           </tbody>
         </table>

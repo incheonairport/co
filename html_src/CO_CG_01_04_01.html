@@ -3,9 +3,9 @@
   <!--위치-->
   <div class="location">
     <div class="location-btn">
-      <button type="button" class="location-btn-minus ico"></button>
-      <button type="button" class="location-btn-plus ico"></button>
-      <button type="button" class="location-btn-print ico"></button>
+      <button type="button" class="location-btn-minus ico">화면 축소</button>
+      <button type="button" class="location-btn-plus ico">화면 확대</button>
+      <button type="button" class="location-btn-print ico">화면 인쇄</button>
     </div>
     <div class="location-bar">
       <ul class="location-bar-nav">
@@ -58,7 +58,7 @@
       </nav>
 
       <article class="mt30">
-        <table class="table vt board-list" summary="일반민원/제안 결과보기">
+        <table class="table vt board-list" summary="일반민원/제안 신청 결과보기">
           <caption>민원신청-결과보기 목록</caption>
           <colgroup>
             <col style="width:10%">
@@ -94,40 +94,38 @@
             <td class="center">2017.12.31</td>
             <td class="center">처리 완료</td>
           </tr>
-
+          <tr>
+            <td colspan="4" class="center no-data-found">
+              접수된 내역이 없습니다. 신청하기 버튼을 클릭하세요
+            </td>
+          </tr>
 
           </tbody>
         </table>
 
-        <div class="mt30">
-          <div class="multi-col double">
-            <div class="inner-col wide">
-              <div class="pagenation">
-                <a class="ico first default" href="#">처음</a>
-                <a class="ico prev" href="#">이전</a>
-                <ol class="pagenation-list">
-                  <li class="pagenation-list-item on">
-                    <a class="pagenation-list-link" href="#">1</a>
-                  </li>
+        <div class="pagenation mt30">
+          <a class="ico first default" href="#">처음</a>
+          <a class="ico prev" href="#">이전</a>
+          <ol class="pagenation-list">
+            <li class="pagenation-list-item on">
+              <a class="pagenation-list-link" href="#">1</a>
+            </li>
 
-                  <li class="pagenation-list-item">
-                    <a class="pagenation-list-link" href="#">2</a>
-                  </li>
+            <li class="pagenation-list-item">
+              <a class="pagenation-list-link" href="#">2</a>
+            </li>
 
-                  <li class="pagenation-list-item">
-                    <a class="pagenation-list-link" href="#">3</a>
-                  </li>
-                  </li>
-                </ol>
-                <a class="ico next" href="#">다음</a>
-                <a class="ico last" href="#">마지막</a>
-              </div>
-            </div>
-            <div class="inner-col w20 btn-right">
-              <a href="#" class="btn-type-normal btn2 medium ico arrow-point-right"><strong>신청하기</strong></a>
-            </div>
-          </div>
+            <li class="pagenation-list-item">
+              <a class="pagenation-list-link" href="#">3</a>
+            </li>
+            </li>
+          </ol>
+          <a class="ico next" href="#">다음</a>
+          <a class="ico last" href="#">마지막</a>
         </div>
+
+        <a href="#" class="btn-type-normal btn2 medium ico arrow-point-right btn-right"><strong>신청하기</strong></a>
+
       </article>
 
       <article class="article">
@@ -147,12 +145,7 @@
       </article>
 
     </div>
-
-
-
   </div>
-
-
 </section>
 
 <!--=include _include/_footer.html -->
