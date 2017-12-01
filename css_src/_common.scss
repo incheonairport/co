@@ -691,6 +691,7 @@ em{
   &-item {
     padding-left: 20px;
     position: relative;
+    line-height: 1.7;
     &:before {
       content: "▶";
       /*font-size: 0.875rem;*/
@@ -2016,6 +2017,9 @@ label.d-none{
   width:100%;
   border: 1px solid #d9d9d9;
   padding:30px;
+  &.padding25{
+    padding: 25px 0 25px 25px;
+  }
   &.list{
     padding-bottom:0;
     .sign-box{

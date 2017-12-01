@@ -3,16 +3,15 @@
   <!--위치-->
   <div class="location">
     <div class="location-btn">
-      <button type="button" class="location-btn-minus ico"></button>
-      <button type="button" class="location-btn-plus ico"></button>
-      <button type="button" class="location-btn-print ico"></button>
+      <button type="button" class="location-btn-minus ico">화면 축소</button>
+      <button type="button" class="location-btn-plus ico">화면 확대</button>
+      <button type="button" class="location-btn-print ico">화면 인쇄</button>
     </div>
     <div class="location-bar">
       <ul class="location-bar-nav">
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">공사소개</a></li>
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">경영공시</a></li>
-        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">경영경시 목차</a></li>
         <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">청렴도 조사결과</a></li>
       </ul>
     </div>
@@ -41,7 +40,8 @@
         <div class="search-box">
           <div class="search-box-input">
             <div class="search-box-input-item">
-              <input type="text" class="search-box-input-txt" placeholder="검색어 입력" title="검색어 입력을 통해 검색할 수 있습니다">
+              <label class="d-none" for="search">검색</label>
+              <input type="text" id="search" class="search-box-input-txt" placeholder="검색어 입력" title="검색어 입력을 통해 검색할 수 있습니다">
             </div>
             <div class="search-box-btn-area">
               <button type="button" class="search-box-btn ico">검색</button>
@@ -60,8 +60,8 @@
         </div>
 
         <!--table-->
-        <table class="table vt board-list" summary="반부패&청렴활동 게시판입니다.">
-          <caption>반부패&청렴활동 게시판</caption>
+        <table class="table vt board-list" summary="청렴도 조사결과 게시판입니다.">
+          <caption>청렴도 조사결과 게시판</caption>
           <colgroup>
             <col style="width:10%">
             <col style="width:80%">
@@ -129,7 +129,7 @@
         </table>
 
         <!--페이지-->
-        <div class="pagenation mt20">
+        <div class="pagenation mt30">
           <a class="ico first default" href="#">처음</a>
           <a class="ico prev" href="#">이전</a>
           <ol class="pagenation-list">
