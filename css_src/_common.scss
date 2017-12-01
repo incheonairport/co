@@ -1252,6 +1252,11 @@ em{
   }
   .view-body{
     padding:30px 30px 70px;
+
+    &.reply{
+      padding: 30px 30px;
+      border-bottom: 1px solid #d9d9d9;
+    }
   }
   .view-file{
     @extend %clearfix;
@@ -1295,7 +1300,8 @@ em{
     background:#f2f4f7;
     padding:40px;
     border:1px solid #d9d9d9;
-    margin-bottom:30px;
+    margin-top: 30px;
+    //margin-bottom:30px;
     .reply-head{
       @extend %clearfix;
       margin-bottom:30px;
