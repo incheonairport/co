@@ -210,9 +210,20 @@
 
 //article
 .article{
+  position: relative;
   margin-bottom:50px;
   &:last-child{
     margin-bottom:0;
+  }
+}
+
+.btn-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  .left {
+    text-align: left;
   }
 }
 
