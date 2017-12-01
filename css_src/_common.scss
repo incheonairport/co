@@ -659,7 +659,6 @@ em{
 
 .list2{
   &-item{
-    font-size: 1rem;
     padding-left:12px;
     line-height: 26px;
     position:relative;
@@ -813,6 +812,7 @@ em{
 
 .table{
   width:100%;
+  font-size: 1rem;
 
   caption{
     display:none;
@@ -1334,8 +1334,8 @@ em{
         width: 135px;
         text-align: center;
         padding: 20px;
-        font-size: 0.875rem;
-        font-weight: 700;
+        font-size: 1rem;
+        font-weight: 800;
         background: #f2f4f7;
         float: left;
         display: inline-block;
@@ -1576,11 +1576,24 @@ button, a {
 .d {
   &-none{ display: none;}
 }
+label.d-none{
+  display: inline-block;
+  visibility:hidden;
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:0;
+  width:0;
+  height:0;
+  font-size:0;
+  line-height:0
+}
 
 .guide-desc{
   display:block;
   color:#666;
   line-height:1.6;
+  font-size: 0.875rem;
   &.color{
     color:#d43e41;
   }
@@ -1588,7 +1601,6 @@ button, a {
     color:#41519e;
   }
   &.mark{
-    font-size: 0.875rem;
     line-height: 24px;
     text-indent:-20px;
     padding-left:20px;
@@ -2453,6 +2465,7 @@ button, a {
         }
         .article-txt {
           color: #444;
+          font-size: 1rem;
         }
       }
       &.ico {
@@ -2733,40 +2746,52 @@ button, a {
 }
 
 /*배너*/
-.banner{
+.banner {
   height: 145px;
-  &.airport-tour{
-    background:url(/static/co/images/bg_banner_airport_tour.jpg ) no-repeat;
+  &.airport-tour {
+    background: url(/static/co/images/bg_banner_airport_tour.jpg) no-repeat;
   }
-  &.airport-course{
-    background:url(/static/co/images/bg_banner_airport_course.jpg ) no-repeat;
-  }
-
-  &.airport-exhibition{
-    background:url(/static/co/images/bg_banner_visit_exhibition.jpg) no-repeat;
+  &.airport-course {
+    background: url(/static/co/images/bg_banner_airport_course.jpg) no-repeat;
   }
 
-  &.purpose{
-    background:url(/static/co/images/bg_banner_purpose.jpg) no-repeat;
+  &.airport-exhibition {
+    background: url(/static/co/images/bg_banner_visit_exhibition.jpg) no-repeat;
   }
 
-  &.volunteer-introduce{
-    background:url(/static/co/images/bg_banner_volunteer_introduce.jpg) no-repeat;
+  &.purpose {
+    background: url(/static/co/images/bg_banner_purpose.jpg) no-repeat;
+  }
+
+  &.volunteer-introduce {
+    background: url(/static/co/images/bg_banner_volunteer_introduce.jpg) no-repeat;
     height: 265px;
   }
-  &.use-information{
-    background:url(/static/co/images/bg_banner_use_information.jpg) no-repeat;
+  &.use-information {
+    background: url(/static/co/images/bg_banner_use_information.jpg) no-repeat;
     height: 265px;
   }
 
-  &.bg0{
-    height:215px;
-    background:url(/static/co/images/bg_banner_img0.jpg) no-repeat;
+  &.bg0 {
+    height: 215px;
+    background: url(/static/co/images/bg_banner_img0.jpg) no-repeat;
   }
 
-  &.bg1{
-    height:215px;
-    background:url(/static/co/images/bg_banner_img1.jpg) no-repeat;
+  &.bg1 {
+    height: 215px;
+    background: url(/static/co/images/bg_banner_img1.jpg) no-repeat;
+  }
+  &.disclosure-information {
+    height: 145px;
+    background: url(/static/co/images/bg_banner_disclosure_information.jpg) no-repeat;
+  }
+  &.disclosure-information-02 {
+    height: 145px;
+    background: url(/static/co/images/bg_banner_disclosure_information_02.jpg) no-repeat;
+  }
+  &.integrity {
+    height: 145px;
+    background: url(/static/co/images/bg_banner_integrity.jpg) no-repeat;
   }
 
 
@@ -2920,7 +2945,7 @@ button, a {
       &-link{
         min-width: 74px;
         padding: 10px;
-        color: #666;
+        font-size: 1rem;
         border: 1px solid #a5a7aa;
         text-align: center;
         float: left;
