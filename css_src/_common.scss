@@ -1799,13 +1799,14 @@ label.d-none{
     }
     &.triple{
       .inner-col{
-        width:278px;
+        width: calc(33% - 10px);
       }
     }
     &.four{
       .inner-col{
-        width:204px;
+        width: calc(25% - 15px);
       }
+
     }
 
     &.five{
@@ -1838,6 +1839,24 @@ label.d-none{
     text-align: center;
     width:100%;
     font-size:1rem;
+  }
+
+  .img-caption2{
+    display: block;
+    width: 50%;
+    font-size:1rem;
+
+    &.left{
+      left:0;
+      position: absolute;
+      bottom: -26px;
+    }
+
+    &.right{
+      right:0;
+      position: absolute;
+      bottom: -26px;
+    }
   }
 
 }
@@ -2322,6 +2341,14 @@ label.d-none{
       vertical-align:middle;
     }
 
+    &.col-3{
+      width: 20%;
+      background:#333649;
+      text-align:center;
+      position:relative;
+      vertical-align:middle;
+    }
+
     &-row{
       width:100%;
       height:50%;
@@ -2378,6 +2405,17 @@ label.d-none{
     font-size:1.375rem;
     font-weight:600;
     margin: 35px 0 15px;
+
+    &.col-3{
+      text-indent: -9999em;
+
+      &:before{
+        top: 25px;
+        right:-7px;
+        background: url(/static/co/images/ico_customer_report.png) top center no-repeat;
+      }
+    }
+
     &:before{
       content: '';
       display: block;
@@ -2389,7 +2427,14 @@ label.d-none{
       margin: auto;
       background: url(/static/co/images/ico_customer_voice.png) top center no-repeat;
     }
+
+
   }
+
+  &-desc2{
+    font-size: 1.375rem;
+  }
+
   &-btn{
     padding: 5px 20px;
     font-size: 0.875rem;
@@ -2677,6 +2722,7 @@ label.d-none{
     right:20px;
   }
   &-article{
+    font-size: 1rem;
     margin-bottom:20px;
     &-title{
       margin-bottom: 20px;
@@ -2910,7 +2956,7 @@ label.d-none{
 
     &.view-large{
       position: absolute;
-      bottom: 37px;
+      bottom: 26px;
     }
     .search-box-btn{
       height: 40px;
@@ -2986,7 +3032,7 @@ label.d-none{
   margin: 0 auto;
   background-color: white;
   &-cont {
-    height: 905px;
+    //height: 905px;
     &-map {
       background: url(/static/co/images/map_aircraft_noise_management.gif) no-repeat;
       height: 974px;
@@ -3553,7 +3599,7 @@ label.d-none{
 
 /*발자취*/
 .digr-co-traces{
-  height:931px;
+  height:1002px;
   text-indent:-999em;
   background: url(/static/co/images/digr_co_traces.png) no-repeat;
 }
@@ -3734,7 +3780,7 @@ label.d-none{
     font-size: 1.125rem;
   }
   dt.list1-item {
-    width: 180px;
+    width: 190px;
     float: left;
   }
 }
@@ -3813,6 +3859,13 @@ label.d-none{
   background: url(/static/co/images/digr_social_contribution04.png) no-repeat;
 }
 
+.digr-social-contribution05{
+  height:420px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_social_contribution05.png) no-repeat -1px;
+}
+
+
 .digr-vision-strategy1{
   background: url(/static/co/images/digr_vision_strategy_01.png) no-repeat;
   height: 505px;
@@ -3884,7 +3937,7 @@ label.d-none{
   width: 100%;
   height: 3179px;
   overflow: hidden;
-  background: url(/static/co/images/bg_organization_chart.png)no-repeat;
+  background: url(/static/co/images/digr_organization_chart.png)no-repeat;
   padding-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -3957,6 +4010,10 @@ label.d-none{
 
       &.bg4{
         background:url(/static/co/images/img_relief04.jpg) no-repeat;
+      }
+
+      &.bg5{
+        background:url(/static/co/images/img_relief05.jpg) no-repeat;
       }
     }
   }
