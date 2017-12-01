@@ -1182,6 +1182,15 @@ em{
       }
     }
   }
+  &.table-text{
+    /*text 많은경우*/
+    th{
+      font-size:0.875rem;
+    }
+    td{
+      font-size:0.875rem;
+    }
+  }
 }
 
 .table-area{
