@@ -659,7 +659,6 @@ em{
 
 .list2{
   &-item{
-    font-size: 1rem;
     padding-left:12px;
     line-height: 26px;
     position:relative;
@@ -692,6 +691,7 @@ em{
   &-item {
     padding-left: 20px;
     position: relative;
+    line-height: 1.7;
     &:before {
       content: "▶";
       /*font-size: 0.875rem;*/
@@ -813,6 +813,7 @@ em{
 
 .table{
   width:100%;
+  font-size: 1rem;
 
   caption{
     display:none;
@@ -1182,6 +1183,15 @@ em{
       }
     }
   }
+  &.table-text{
+    /*text 많은경우*/
+    th{
+      font-size:0.875rem;
+    }
+    td{
+      font-size:0.875rem;
+    }
+  }
 }
 
 .table-area{
@@ -1261,6 +1271,7 @@ em{
       }
       &-link{
         color:#666;
+        font-size:.825rem;
       }
     }
     .crud-ico{
@@ -1334,8 +1345,8 @@ em{
         width: 135px;
         text-align: center;
         padding: 20px;
-        font-size: 0.875rem;
-        font-weight: 700;
+        font-size: 1rem;
+        font-weight: 800;
         background: #f2f4f7;
         float: left;
         display: inline-block;
@@ -1576,11 +1587,24 @@ button, a {
 .d {
   &-none{ display: none;}
 }
+label.d-none{
+  display: inline-block;
+  visibility:hidden;
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:0;
+  width:0;
+  height:0;
+  font-size:0;
+  line-height:0
+}
 
 .guide-desc{
   display:block;
   color:#666;
   line-height:1.6;
+  font-size: 0.875rem;
   &.color{
     color:#d43e41;
   }
@@ -1588,7 +1612,6 @@ button, a {
     color:#41519e;
   }
   &.mark{
-    font-size: 0.875rem;
     line-height: 24px;
     text-indent:-20px;
     padding-left:20px;
@@ -1776,13 +1799,14 @@ button, a {
     }
     &.triple{
       .inner-col{
-        width:278px;
+        width: calc(33% - 10px);
       }
     }
     &.four{
       .inner-col{
-        width:204px;
+        width: calc(25% - 15px);
       }
+
     }
 
     &.five{
@@ -1815,6 +1839,24 @@ button, a {
     text-align: center;
     width:100%;
     font-size:1rem;
+  }
+
+  .img-caption2{
+    display: block;
+    width: 50%;
+    font-size:1rem;
+
+    &.left{
+      left:0;
+      position: absolute;
+      bottom: -26px;
+    }
+
+    &.right{
+      right:0;
+      position: absolute;
+      bottom: -26px;
+    }
   }
 
 }
@@ -1994,6 +2036,9 @@ button, a {
   width:100%;
   border: 1px solid #d9d9d9;
   padding:30px;
+  &.padding25{
+    padding: 25px 0 25px 25px;
+  }
   &.list{
     padding-bottom:0;
     .sign-box{
@@ -2159,7 +2204,7 @@ button, a {
       margin-left: 250px;
     }
     .list1{
-      font-size:0.875rem;
+      font-size:1rem;
       &-item{
         line-height: 1.2;
       }
@@ -2296,6 +2341,14 @@ button, a {
       vertical-align:middle;
     }
 
+    &.col-3{
+      width: 20%;
+      background:#333649;
+      text-align:center;
+      position:relative;
+      vertical-align:middle;
+    }
+
     &-row{
       width:100%;
       height:50%;
@@ -2352,6 +2405,17 @@ button, a {
     font-size:1.375rem;
     font-weight:600;
     margin: 35px 0 15px;
+
+    &.col-3{
+      text-indent: -9999em;
+
+      &:before{
+        top: 25px;
+        right:-7px;
+        background: url(/static/co/images/ico_customer_report.png) top center no-repeat;
+      }
+    }
+
     &:before{
       content: '';
       display: block;
@@ -2363,7 +2427,14 @@ button, a {
       margin: auto;
       background: url(/static/co/images/ico_customer_voice.png) top center no-repeat;
     }
+
+
   }
+
+  &-desc2{
+    font-size: 1.375rem;
+  }
+
   &-btn{
     padding: 5px 20px;
     font-size: 0.875rem;
@@ -2453,6 +2524,7 @@ button, a {
         }
         .article-txt {
           color: #444;
+          font-size: 1rem;
         }
       }
       &.ico {
@@ -2650,6 +2722,7 @@ button, a {
     right:20px;
   }
   &-article{
+    font-size: 1rem;
     margin-bottom:20px;
     &-title{
       margin-bottom: 20px;
@@ -2733,40 +2806,52 @@ button, a {
 }
 
 /*배너*/
-.banner{
+.banner {
   height: 145px;
-  &.airport-tour{
-    background:url(/static/co/images/bg_banner_airport_tour.jpg ) no-repeat;
+  &.airport-tour {
+    background: url(/static/co/images/bg_banner_airport_tour.jpg) no-repeat;
   }
-  &.airport-course{
-    background:url(/static/co/images/bg_banner_airport_course.jpg ) no-repeat;
-  }
-
-  &.airport-exhibition{
-    background:url(/static/co/images/bg_banner_visit_exhibition.jpg) no-repeat;
+  &.airport-course {
+    background: url(/static/co/images/bg_banner_airport_course.jpg) no-repeat;
   }
 
-  &.purpose{
-    background:url(/static/co/images/bg_banner_purpose.jpg) no-repeat;
+  &.airport-exhibition {
+    background: url(/static/co/images/bg_banner_visit_exhibition.jpg) no-repeat;
   }
 
-  &.volunteer-introduce{
-    background:url(/static/co/images/bg_banner_volunteer_introduce.jpg) no-repeat;
+  &.purpose {
+    background: url(/static/co/images/bg_banner_purpose.jpg) no-repeat;
+  }
+
+  &.volunteer-introduce {
+    background: url(/static/co/images/bg_banner_volunteer_introduce.jpg) no-repeat;
     height: 265px;
   }
-  &.use-information{
-    background:url(/static/co/images/bg_banner_use_information.jpg) no-repeat;
+  &.use-information {
+    background: url(/static/co/images/bg_banner_use_information.jpg) no-repeat;
     height: 265px;
   }
 
-  &.bg0{
-    height:215px;
-    background:url(/static/co/images/bg_banner_img0.jpg) no-repeat;
+  &.bg0 {
+    height: 215px;
+    background: url(/static/co/images/bg_banner_img0.jpg) no-repeat;
   }
 
-  &.bg1{
-    height:215px;
-    background:url(/static/co/images/bg_banner_img1.jpg) no-repeat;
+  &.bg1 {
+    height: 215px;
+    background: url(/static/co/images/bg_banner_img1.jpg) no-repeat;
+  }
+  &.disclosure-information {
+    height: 145px;
+    background: url(/static/co/images/bg_banner_disclosure_information.jpg) no-repeat;
+  }
+  &.disclosure-information-02 {
+    height: 145px;
+    background: url(/static/co/images/bg_banner_disclosure_information_02.jpg) no-repeat;
+  }
+  &.integrity {
+    height: 145px;
+    background: url(/static/co/images/bg_banner_integrity.jpg) no-repeat;
   }
 
 
@@ -2871,7 +2956,7 @@ button, a {
 
     &.view-large{
       position: absolute;
-      bottom: 37px;
+      bottom: 26px;
     }
     .search-box-btn{
       height: 40px;
@@ -2920,7 +3005,7 @@ button, a {
       &-link{
         min-width: 74px;
         padding: 10px;
-        color: #666;
+        font-size: 1rem;
         border: 1px solid #a5a7aa;
         text-align: center;
         float: left;
@@ -2947,7 +3032,7 @@ button, a {
   margin: 0 auto;
   background-color: white;
   &-cont {
-    height: 905px;
+    //height: 905px;
     &-map {
       background: url(/static/co/images/map_aircraft_noise_management.gif) no-repeat;
       height: 974px;
@@ -3131,6 +3216,7 @@ button, a {
     &-txt{
       color: #666;
       line-height: 1.5;
+      font-size: 1rem;
     }
     &+.iiac-numbering-item{
       border-left:1px solid #f3f4f8 ;
@@ -3513,7 +3599,7 @@ button, a {
 
 /*발자취*/
 .digr-co-traces{
-  height:931px;
+  height:1002px;
   text-indent:-999em;
   background: url(/static/co/images/digr_co_traces.png) no-repeat;
 }
@@ -3659,6 +3745,21 @@ button, a {
   border:1px solid #d9d9d9;
 }
 
+.grp-management-performance03{
+  background: url(/static/co/images/grp_management_performance_03.png) no-repeat;
+  height: 504px;
+}
+
+.grp-management-performance02{
+  background: url(/static/co/images/grp_management_performance_02.png) no-repeat;
+  height: 504px;
+}
+
+.grp-management-performance01{
+  background: url(/static/co/images/grp_management_performance_01.png) no-repeat;
+  height: 504px;
+}
+
 
 // 임원진 CO_CH_02
 .profile-box {
@@ -3679,7 +3780,7 @@ button, a {
     font-size: 1.125rem;
   }
   dt.list1-item {
-    width: 180px;
+    width: 190px;
     float: left;
   }
 }
@@ -3758,6 +3859,13 @@ button, a {
   background: url(/static/co/images/digr_social_contribution04.png) no-repeat;
 }
 
+.digr-social-contribution05{
+  height:420px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_social_contribution05.png) no-repeat -1px;
+}
+
+
 .digr-vision-strategy1{
   background: url(/static/co/images/digr_vision_strategy_01.png) no-repeat;
   height: 505px;
@@ -3829,7 +3937,7 @@ button, a {
   width: 100%;
   height: 3179px;
   overflow: hidden;
-  background: url(/static/co/images/bg_organization_chart.png)no-repeat;
+  background: url(/static/co/images/digr_organization_chart.png)no-repeat;
   padding-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -3903,6 +4011,10 @@ button, a {
       &.bg4{
         background:url(/static/co/images/img_relief04.jpg) no-repeat;
       }
+
+      &.bg5{
+        background:url(/static/co/images/img_relief05.jpg) no-repeat;
+      }
     }
   }
 }
@@ -3954,4 +4066,8 @@ button, a {
       top: 7px;
     }
   }
+}
+
+.color-r{
+  color: #d43e41;
 }
