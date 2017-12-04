@@ -2925,6 +2925,9 @@ label.d-none{
     padding-right: 20px;
     position: relative;
     top:13px;
+    &.pr15{
+      padding-right: 15px;
+    }
   }
   &-input{
     display: inline-block;
@@ -2946,6 +2949,12 @@ label.d-none{
       width: 140px;
       &.medium{
         width: 187px;
+      }
+      &.large{
+        width: 240px;
+      }
+      &.small{
+        width: 107px;
       }
       &+.search-box-input-select{
         border-left:1px solid #d9d9d9;
@@ -3553,6 +3562,10 @@ label.d-none{
 
 .ml10, %ml10{
   margin-left: 10px;
+}
+
+.ml15, %ml15{
+  margin-left: 15px;
 }
 
 .ml30, %ml30{

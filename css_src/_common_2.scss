@@ -55,6 +55,7 @@
 /*이용일시*/
 .timesetting{
   /*width: 312px;*/
+  display:inline-block;
   @extend %clearfix;
   &-date{
     width: 140px;
@@ -91,7 +92,8 @@
   }
   &-dash{
     float: left;
-    margin:12px 10px;
+    line-height:38px;
+    margin:0 10px;
   }
 }
 
@@ -550,3 +552,7 @@
 
 }
 
+
+.form-layout{
+  display: inline-block;
+}
