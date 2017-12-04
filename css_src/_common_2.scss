@@ -57,6 +57,12 @@
   /*width: 312px;*/
   display:inline-block;
   @extend %clearfix;
+  &-etc{
+    float:left;
+  }
+  &-time{
+    float:left;
+  }
   &-date{
     width: 140px;
     float: left;

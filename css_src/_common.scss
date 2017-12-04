@@ -1136,9 +1136,13 @@ em{
       line-height:1.4;
       font-weight:700;
       vertical-align:middle;
+      font-size:0.825rem;
       &.left{
         text-align: left;
         padding-left: 20px;
+      }
+      &:nth-child(2){
+        border-left:1px solid #d9d9d9;
       }
     }
 
@@ -1585,7 +1589,9 @@ em{
     }
   }
 }
-
+.table-btn{
+  min-width:inherit;
+}
 button, a {
   cursor: pointer;
 }
@@ -2975,6 +2981,9 @@ label.d-none{
       }
       &+.search-box-input-txt{
         border-left:1px solid #d9d9d9;
+      }
+      &.time{
+        width:80px;
       }
     }
     &-txt{
