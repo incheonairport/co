@@ -976,6 +976,20 @@ em{
     }
 
     tbody{
+      tr{
+        &.orange{
+          background:#ffddbc;
+        }
+        &.red{
+          background:#ffa5a5;
+        }
+        &.blue{
+          background:#beeaff;
+        }
+        &.yellow{
+          background:#fff1af;
+        }
+      }
       tr:first-child{
         td{
           border-top:0;

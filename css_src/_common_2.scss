@@ -550,3 +550,47 @@
 
 }
 
+.sticker{
+  display:inline-block;
+  width:80px;
+  padding:0;
+  line-height:26px;
+  color:#222;
+  font-size:0.75rem;
+  text-align:center;
+  &.blue{
+    background:#beeaff;
+  }
+  &.yellow{
+    background:#fff1af;
+  }
+  &.orange{
+    background:#ffddbc;
+  }
+  &.red{
+    background:#ffa5a5;
+  }
+}
+
+.bell{
+  display:inline-block;
+  width:60px;
+  padding:0;
+  line-height:16px;
+  color:#fff;
+  font-size:0.75rem;
+  font-weight:900;
+  text-align:center;
+  &.blue{
+    background:#3b62c6;
+  }
+  &.yellow{
+    background:#d2a938;
+  }
+  &.orange{
+    background:#f36f21;
+  }
+  &.red{
+    background:#de1e24;
+  }
+}
