@@ -55,6 +55,7 @@
 /*이용일시*/
 .timesetting{
   /*width: 312px;*/
+  display:inline-block;
   @extend %clearfix;
   &-date{
     width: 140px;
@@ -91,7 +92,8 @@
   }
   &-dash{
     float: left;
-    margin:12px 10px;
+    line-height:38px;
+    margin:0 10px;
   }
 }
 
@@ -393,4 +395,208 @@
   height:383px;
   background: url(/static/co/images/digr_cp_vision02.png) no-repeat;
   text-indent: -9999em;
+}
+
+.scheduler-box{
+  &-header{
+    text-align: center;
+  }
+  &-controller{
+    display:inline-block;
+    .scheduler-box-controller-prev,
+    .scheduler-box-controller-next{
+      border:none;
+      background:none;
+    }
+    &-date{
+      font-family:nanumsq, sans-serif;
+      font-size: 1.5rem;
+      font-weight:700;
+      letter-spacing:1px;
+    }
+
+  }
+
+  .scheduler{
+    thead{
+      tr{
+        border-top:1px solid #595854;
+        border-bottom:1px solid #a6a7ab;
+        th{
+          padding:18px 0;
+        }
+      }
+    }
+    tbody{
+      tr{
+        border-bottom:1px solid #d9d9d9;
+        td{
+          height:88px;
+        }
+      }
+    }
+
+    td,th{
+      &:first-child{
+        border-left:0;
+      }
+      border-left:1px solid #f3f4f8;
+      padding:14px 10px;
+      color:#000;
+      &.sat{
+        color:#5c92ff;
+      }
+      &.sun{
+        color:#f67923;
+      }
+      &.gone{
+        color:#999;
+      }
+    }
+    &-date{
+      text-align:center;
+      color:#999;
+    }
+    &-group{
+
+      text-align:center;
+      &-inner{
+        @extend %clearfix;
+        display:inline-block;
+        margin-top:14px;
+      }
+      &-btn{
+        display: block;
+        width:44px;
+        max-height:26px;
+        line-height:26px;
+        color: #666;
+        font-size:0.875rem!important;
+        text-align:center;
+        float: left;
+        border-radius:0;
+        border:0;
+        margin-left:6px;
+        &:first-child{
+          margin-left:0;
+        }
+        &.chapter1{
+          background:#4674c9;
+          color:#fff;
+        }
+        &.chapter2{
+          background:#2c8279;
+          color:#fff;
+        }
+        &.close{
+          border: 1px solid #d9d9d9;
+          pointer-events:none;
+        }
+      }
+    }
+    &-radio{
+      display:none;
+      & + .scheduler-radio-label{
+        display: block;
+        width:44px;
+        height:26px;
+        line-height:26px;
+        color: #666;
+        font-size:0.875rem;
+        text-align:center;
+        float: left;
+        cursor: pointer;
+      }
+
+      & + .scheduler-radio-label.chapter1 {
+        background:#4674c9;
+        color:#fff;
+      }
+
+      & + .scheduler-radio-label.chapter2 {
+        background:#2c8279;
+        color:#fff;
+      }
+
+      &:checked + .scheduler-radio-label {
+        color:#fff;
+      }
+      &:disabled + .scheduler-radio-label{
+        border: 1px solid #d9d9d9;
+      }
+    }
+  }
+
+
+  &-footer{
+    margin-top:20px;
+    &-tit{
+      font-size:1.25rem;
+      font-weight:700;
+    }
+    .legend{
+      padding:20px 0;
+      .scheduler-group{
+        text-align: inherit;
+      }
+      &-mark{
+        display:inline-block;
+        margin-right:20px;
+        line-height:1.8;
+        .scheduler-group-btn{
+          margin-right:10px;
+        }
+      }
+    }
+  }
+
+}
+
+.sticker{
+  display:inline-block;
+  width:80px;
+  padding:0;
+  line-height:26px;
+  color:#222;
+  font-size:0.75rem;
+  text-align:center;
+  &.blue{
+    background:#beeaff;
+  }
+  &.yellow{
+    background:#fff1af;
+  }
+  &.orange{
+    background:#ffddbc;
+  }
+  &.red{
+    background:#ffa5a5;
+  }
+}
+
+.bell{
+  display:inline-block;
+  width:60px;
+  padding:0;
+  line-height:16px;
+  color:#fff;
+  font-size:0.75rem;
+  font-weight:900;
+  text-align:center;
+  &.blue{
+    background:#3b62c6;
+  }
+  &.yellow{
+    background:#d2a938;
+  }
+  &.orange{
+    background:#f36f21;
+  }
+  &.red{
+    background:#de1e24;
+  }
+}
+
+.form-layout{
+  display: inline-block;
 }
