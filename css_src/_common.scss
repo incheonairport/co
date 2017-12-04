@@ -982,6 +982,20 @@ em{
     }
 
     tbody{
+      tr{
+        &.orange{
+          background:#ffddbc;
+        }
+        &.red{
+          background:#ffa5a5;
+        }
+        &.blue{
+          background:#beeaff;
+        }
+        &.yellow{
+          background:#fff1af;
+        }
+      }
       tr:first-child{
         td{
           border-top:0;
@@ -2931,6 +2945,9 @@ label.d-none{
     padding-right: 20px;
     position: relative;
     top:13px;
+    &.pr15{
+      padding-right: 15px;
+    }
   }
   &-input{
     display: inline-block;
@@ -2952,6 +2969,12 @@ label.d-none{
       width: 140px;
       &.medium{
         width: 187px;
+      }
+      &.large{
+        width: 240px;
+      }
+      &.small{
+        width: 107px;
       }
       &+.search-box-input-select{
         border-left:1px solid #d9d9d9;
@@ -3508,6 +3531,10 @@ label.d-none{
   margin-top:10px;
 }
 
+.mt15, %mt15{
+  margin-top:15px;
+}
+
 // margin-top:20px;
 .mt20, %mt20{
   margin-top:20px;
@@ -3570,6 +3597,14 @@ label.d-none{
   margin-left: 10px;
 }
 
+.ml20, %ml20 {
+  margin-left: 20px;
+}
+
+.ml15, %ml15{
+  margin-left: 15px;
+}
+
 .ml30, %ml30{
   margin-left: 30px;
 }
@@ -3586,9 +3621,6 @@ label.d-none{
   padding-left: 10px;
 }
 
-.mb20, %mb20{
-  margin-left: 20px;
-}
 
 .mr10, %mr10{
   margin-right: 10px;
@@ -3949,6 +3981,54 @@ label.d-none{
   background: url(/static/co/images/digr_free_trade_zone.png) center no-repeat;
 }
 
+.digr-free-trade-zone{
+  height: 450px;
+  padding: 0 30px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_free_trade_zone.png) center no-repeat;
+}
+
+/*A-CDM*/
+.digr-acdm-report-01{
+  height: 612px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_report_01.png) center no-repeat;
+}
+
+.digr-acdm-report-02{
+  height: 430px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_report_02.png) center no-repeat;
+}
+
+.digr-acdm-milestone{
+  height: 539px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_milestone.png) center no-repeat;
+}
+
+.digr-acdm-major-mailstone01{
+  height: 312px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_major_mailstone_06.png) center no-repeat;
+}
+.digr-acdm-major-mailstone02{
+  height: 274px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_major_mailstone_07.png) center no-repeat;
+}
+.digr-acdm-flow-chart{
+  height: 650px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_flow_chart.png) center no-repeat;
+}
+
 /*ir기법 클래스적용*/
 .ir-technique{
   display: block;
@@ -4086,7 +4166,7 @@ label.d-none{
   border: 1px solid #d9d9d9 ;
 }
 
-/*오시는길 경로*/
+/*안내, 경로*/
 .directions {
   @extend %clearfix;
   &.float-no{
@@ -4100,6 +4180,7 @@ label.d-none{
     letter-spacing: -0.05rem;
     &.ico {
       text-indent: 0;
+      display: inline-block;
     }
     &.ico:after {
       background-position: -89px -63px;
@@ -4109,6 +4190,82 @@ label.d-none{
       right: -20px;
       top: 7px;
     }
+    &.float-no{
+      float: none;
+      display:block;
+    }
+    img{
+      vertical-align: text-bottom;
+    }
+  }
+  &.center{
+    display: inline-block;
+  }
+}
+
+.box-step{
+  &-item{
+    position: relative;
+    display: block;
+    margin-bottom: 70px;
+    &:after{
+      width: 132px;
+      height: 27px;
+      content: '';
+      display: block;
+      position: absolute;
+      top: auto;
+      right: 0;
+      left: 0;
+      bottom: -50px;
+      margin: auto;
+      background: url(/static/co/images/ico_text_box_arrow_bottom.png ) no-repeat;
+    }
+    &:last-child{
+      margin-bottom: 0;
+      &:after{
+        background: none;
+      }
+    }
+    .text-box{
+      text-align: center;
+    }
+  }
+}
+
+// 동영상영역 기존에 있던대로 임시로 iframe으로 구성
+.video-box{
+  /*&:before{
+    content:'';
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#d9d9d9;
+    z-index:2;
+  }
+  &:hover:before{
+    display:none
+  }*/
+  position:relative;
+  height:480px;
+
+  &-frame{
+    top:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:100%;
+  }
+}
+
+.text-display{
+  width: 270px;
+  display: inline-block;
+  &.large{
+    width: 470px;
   }
 }
 
