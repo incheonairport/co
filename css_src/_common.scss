@@ -3926,6 +3926,54 @@ label.d-none{
   background: url(/static/co/images/digr_free_trade_zone.png) center no-repeat;
 }
 
+.digr-free-trade-zone{
+  height: 450px;
+  padding: 0 30px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_free_trade_zone.png) center no-repeat;
+}
+
+/*A-CDM*/
+.digr-acdm-report-01{
+  height: 612px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_report_01.png) center no-repeat;
+}
+
+.digr-acdm-report-02{
+  height: 430px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_report_02.png) center no-repeat;
+}
+
+.digr-acdm-milestone{
+  height: 539px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_milestone.png) center no-repeat;
+}
+
+.digr-acdm-major-mailstone01{
+  height: 312px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_major_mailstone_06.png) center no-repeat;
+}
+.digr-acdm-major-mailstone02{
+  height: 274px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_major_mailstone_07.png) center no-repeat;
+}
+.digr-acdm-flow-chart{
+  height: 650px;
+  border: 1px solid #d9d9d9;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_acdm_flow_chart.png) center no-repeat;
+}
+
 /*ir기법 클래스적용*/
 .ir-technique{
   display: block;
@@ -4063,7 +4111,7 @@ label.d-none{
   border: 1px solid #d9d9d9 ;
 }
 
-/*오시는길 경로*/
+/*안내, 경로*/
 .directions {
   @extend %clearfix;
   &.float-no{
@@ -4086,6 +4134,15 @@ label.d-none{
       right: -20px;
       top: 7px;
     }
+    &.float-no{
+      float: none;
+    }
+    img{
+      vertical-align: text-bottom;
+    }
+  }
+  &.center{
+
   }
 }
 
