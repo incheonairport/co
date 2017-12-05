@@ -1538,6 +1538,14 @@ em{
         text-align: right;
         border: none;
       }
+      &.btn6 {
+        min-width: 230px;
+        line-height: 50px;
+        padding: 10px 15px 10px 20px;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        height: 50px;
+      }
       &.map{
         width: 280px;
         height: 50px;
@@ -2612,6 +2620,9 @@ label.d-none{
         .article-txt {
           color: #444;
           font-size: 1rem;
+          &-desc{
+            font-size: 0.875rem;
+          }
         }
       }
       &.ico {
@@ -3830,6 +3841,26 @@ label.d-none{
 .digr-construction-case03{
   background: url(/static/co/images/digr_construction_case_03.png) no-repeat;
   height: 308px;
+}
+
+.digr-procedure-application{
+  background: url(/static/co/images/digr_procedure_application.png) no-repeat;
+  height: 286px;
+}
+
+.digr-notice-tender{
+  background: url(/static/co/images/digr_notice_tender.png) no-repeat;
+  height: 286px;
+}
+
+.digr-service-procedure01{
+  background: url(/static/co/images/digr_service_procedure_01.png) no-repeat;
+  height: 306px;
+}
+
+.digr-service-procedure02{
+  background: url(/static/co/images/digr_service_procedure_02.png) no-repeat;
+  height: 306px;
 }
 
 .grp-energy-management {
