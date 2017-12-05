@@ -57,6 +57,9 @@
   &.bg4 {
     background: url(/static/co/images/bg_category_04.jpg) center no-repeat;
   }
+  &.bg5 {
+    background: url(/static/co/images/bg_category_05.jpg) center no-repeat;
+  }
   &.bg6 {
     background: url(/static/co/images/bg_category_06.jpg) center no-repeat;
   }
@@ -135,59 +138,64 @@
   float: left;
   &-depth1{
     border-bottom: 1px solid #d9d9d9;
-    &-link{
-      padding: 10px 15px;
-      font-size: 1.125rem;
-      border-top: 1px solid #d9d9d9;
-      display: block;
-      position: relative;
-      &.on{
-        border-top:2px solid #42519e;
-        color:#42519e;
-        font-weight: 800;
-      }
-      &.open{
-        &:after{
-          content: "";
-          color: #666;
-          width: 13px;
-          height: 12px;
+    &-item{
+      &-link{
+        padding: 10px 15px;
+        font-size: 1.125rem;
+        border-top: 1px solid #d9d9d9;
+        display: block;
+        position: relative;
+        &.on{
+          border-top:2px solid #42519e;
+          color:#42519e;
           font-weight: 800;
-          position: absolute;
-          top:15px;
-          right:15px;
-          left:auto;
-          bottom:auto;
-          background: url(/static/co/images/spr_ico_left_menu.png) -32px -2px no-repeat;
         }
-      }
-      &.close{
-        &:after{
-          content: "";
-          color: #666;
-          width: 13px;
-          height: 12px;
-          font-weight: 800;
-          position: absolute;
-          top:18px;
-          right:15px;
-          left:auto;
-          bottom:auto;
-          background: url(/static/co/images/spr_ico_left_menu.png) -9px -4px no-repeat;
+        &.open{
+          &:after{
+            content: "";
+            color: #666;
+            width: 13px;
+            height: 12px;
+            font-weight: 800;
+            position: absolute;
+            top:15px;
+            right:15px;
+            left:auto;
+            bottom:auto;
+            background: url(/static/co/images/spr_ico_left_menu.png) -32px -2px no-repeat;
+          }
         }
-        &+.left-menu-depth2{
-          display: none;
+        &.close{
+          &:after{
+            content: "";
+            color: #666;
+            width: 13px;
+            height: 12px;
+            font-weight: 800;
+            position: absolute;
+            top:18px;
+            right:15px;
+            left:auto;
+            bottom:auto;
+            background: url(/static/co/images/spr_ico_left_menu.png) -9px -4px no-repeat;
+          }
+          &+.left-menu-depth2{
+            display: none;
+          }
         }
       }
     }
+
   }
   &-depth2{
     border-top: 1px solid #d9d9d9;
-    &-link{
-      padding: 10px 15px;
-      display: block;
-      &.on{
-        color:#42519e;
+    &-item{
+      &-link{
+        padding: 10px 15px;
+        display: block;
+        &.on{
+          color:#42519e;
+        }
       }
     }
   }
@@ -1130,7 +1138,7 @@ em{
       }
     }
     th{
-      min-width:150px;
+      /*min-width:150px;*/
       border-top:1px solid #d9d9d9;
       background:#f3f4f8;
       line-height:1.4;
@@ -1948,6 +1956,16 @@ label.d-none{
         font-weight:700;
         color: #666;
       }
+      &.min {
+        min-width: 50px;
+        padding: 0 10px;
+        height:30px;
+        line-height:30px;
+        font-weight:700;
+      }
+      &.radius{
+        border-radius: 20px;
+      }
 
       &.shortcut{
         min-width:88px;
@@ -2162,6 +2180,7 @@ label.d-none{
   &-title{
     margin-bottom: 10px;
     font-weight: 800;
+    font-size: 1.125rem;
   }
   &.list1{
     font-size:0.875rem;
@@ -2294,7 +2313,26 @@ label.d-none{
         width: 118px;
         height: 120px;
       }
-
+      &.type7:before{
+        background-position:-13px -561px;
+        width: 118px;
+        height: 120px;
+      }
+      &.type8:before{
+        background-position:-150px -561px;
+        width: 118px;
+        height: 120px;
+      }
+      &.type9:before{
+        background-position:-288px -561px;
+        width: 118px;
+        height: 120px;
+      }
+      &.type10:before{
+        background-position:-426px -561px;
+        width: 118px;
+        height: 120px;
+      }
     }
   }
   &.bg-pattern{
@@ -4124,6 +4162,9 @@ label.d-none{
   border:1px solid #d9d9d9;
   padding:20px;
   position:relative;
+  &-desc{
+    font-size: 1rem;
+  }
   &-btn{
     position:absolute;
     top:0;
@@ -4206,6 +4247,35 @@ label.d-none{
     }
     .text-box{
       text-align: center;
+    }
+  }
+}
+
+.textbox-step{
+  &-item{
+    &.ico{
+      text-indent: 0;
+      display: block;
+      &:after{
+        width: 11px;
+        height: 22px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: auto;
+        right: 0;
+        left: 0;
+        bottom: -26px;
+        margin: auto;
+        background-position: -218px -28px;
+        transform: rotate(90deg);
+      }
+    }
+    .textbox-wide-ico{
+      min-height: 170px;
+      .textbox-wide-txt{
+        min-height: 170px;
+      }
     }
   }
 }
