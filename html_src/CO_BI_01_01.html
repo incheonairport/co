@@ -1,0 +1,310 @@
+<!--=include _include/_header.html -->
+<section id="top-contents" class="contents">
+  <!--위치-->
+  <div class="location">
+    <div class="location-btn">
+      <button type="button" class="location-btn-minus ico">축소</button>
+      <button type="button" class="location-btn-plus ico">확대</button>
+      <button type="button" class="location-btn-print ico">인쇄</button>
+    </div>
+    <div class="location-bar">
+      <ul class="location-bar-nav">
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">사이버홍보실</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">항공통계</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">인천공항 통계보기</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">요일별통계</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--//위치-->
+  <div class="sub-top bg2">
+    <div class="sub-top-inner">
+      <div class="sub-top-descbox">
+        <div class="sub-top-descbox-text">
+          <h2 class="sub-top-descbox-tit">사이버홍보실</h2>
+          <h3 class="sub-top-descbox-sub">항공통계</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contents">
+  <div class="inner-section">
+
+    <!--=include _include/_left_menu_02.html -->
+
+    <div class="sub-contents">
+      <h4 class="sub-contents-heading1">인천공항 통계보기</h4>
+
+      <nav class="tab-nav">
+        <ul class="tab-nav-list">
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link on">요일별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">시간대별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">지역별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">항공사별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">지연통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">결항통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">허브화지수</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="article mt30">
+
+        <div class="search-box">
+          <div class="search-box-input small">
+            <div class="multi-col double">
+              <div class="inner-col w85 pl10">
+                <div class="form-layout">
+                  <label class="search-box-title pr15" for="flight">운항</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="flight" title="운항를 선택해 주세요">
+                      <option>최대네자</option>
+                    </select>
+                  </div>
+                  <label class="search-box-title pr15 ml15" for="aeroplane">항공기</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="aeroplane" title="항공기를 선택해 주세요">
+                      <option>최대세자</option>
+                    </select>
+                  </div>
+                  <label class="search-box-title pr15 ml15" for="airroute">노선</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="airroute" title="노선을 선택해 주세요">
+                      <option>전체</option>
+                    </select>
+                  </div>
+                  <label class="search-box-title pr15 ml15" for="passenger">여객</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="passenger" title="여객을 선택해 주세요">
+                      <option>전체</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-layout mt10">
+                  <label class="search-box-title pr15" for="department">화물</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select large" id="department" title="화물을 선택해 주세요">
+                      <option>화물 선택</option>
+                    </select>
+                  </div>
+                  <div class="timesetting">
+                    <label class="search-box-title ml15" for="day">날짜</label>
+                    <div class="timesetting-date">
+                      <label for="day" class="d-none">시작일</label>
+                      <input type="text" class="timesetting-date-day" readonly="" placeholder="2017.12.21" id="day" title="작성날짜를 선택하면 출력됩니다">
+                      <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                    </div>
+                    <span class="timesetting-dash">~</span>
+                    <div class="timesetting-date">
+                      <label for="from-day" class="d-none">종료일</label>
+                      <input type="text" class="timesetting-date-day" readonly="" placeholder="2017.12.31" id="from-day" title="작성날짜를 선택하면 출력됩니다">
+                      <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-col w15 pl10">
+                <div class="search-box-btn-area">
+                  <button type="button" class="search-box-btn big">검색</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="multi-col double">
+          <div class="inner-col">
+            <p class="guide-desc mt20 mark text-left">인천공항 실적만 작성</p>
+          </div>
+          <div class="inner-col">
+            <p class="board-page text-right">(단위: 편, 명, 톤)</p>
+          </div>
+        </div>
+
+        <table class="table vt-dark mt10 table-text pd0" summary="요일별 통계에 대한 안내 표입니다.">
+          <caption>허브화 지수 표</caption>
+          <colgroup>
+            <col style="width:19%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+          </colgroup>
+
+          <thead>
+          <tr>
+            <th scope="col" rowspan="2">요일</th>
+            <th scope="col" colspan="3">운항</th>
+            <th scope="col" colspan="3">여객</th>
+            <th scope="col" colspan="3">화물</th>
+          </tr>
+          <tr>
+            <th scope="col" class="sub-half">도착</th>
+            <th scope="col" class="sub-half">출발</th>
+            <th scope="col" class="sub-half">합계</th>
+            <th scope="col" class="sub-half">도착</th>
+            <th scope="col" class="sub-half">출발</th>
+            <th scope="col" class="sub-half">합계</th>
+            <th scope="col" class="sub-half">도착</th>
+            <th scope="col" class="sub-half">출발</th>
+            <th scope="col" class="sub-half">합계</th>
+          </tr>
+          </thead>
+          <tbody>
+
+          <tr>
+            <td class="center">월요일</td>
+            <td class="center">2,500</td>
+            <td class="center">2,458</td>
+            <td class="center">4,958</td>
+            <td class="center">444,099</td>
+            <td class="center">419,632</td>
+            <td class="center">863,731</td>
+            <td class="center">15,191</td>
+            <td class="center">15,037</td>
+            <td class="center">30,228</td>
+          </tr>
+
+          <tr>
+            <td class="center">화요일</td>
+            <td class="center">2,500</td>
+            <td class="center">2,499</td>
+            <td class="center">4,999</td>
+            <td class="center">414,132</td>
+            <td class="center">387,629</td>
+            <td class="center">801,761</td>
+            <td class="center">18,127</td>
+            <td class="center">22,051</td>
+            <td class="center">40,178</td>
+          </tr>
+
+          <tr>
+            <td class="center">수요일</td>
+            <td class="center">2,006</td>
+            <td class="center">2,027</td>
+            <td class="center">4,033</td>
+            <td class="center">332,692</td>
+            <td class="center">314,824</td>
+            <td class="center">647,516</td>
+            <td class="center">16,580</td>
+            <td class="center">17,643</td>
+            <td class="center">34,224</td>
+          </tr>
+
+          <tr>
+            <td class="center">목요일</td>
+            <td class="center">2,033</td>
+            <td class="center">2,032</td>
+            <td class="center">4,065</td>
+            <td class="center">351,620</td>
+            <td class="center">316,646</td>
+            <td class="center">668,266</td>
+            <td class="center">16,150</td>
+            <td class="center">17,513</td>
+            <td class="center">33,663</td>
+          </tr>
+
+          <tr>
+            <td class="center">금요일</td>
+            <td class="center">2,043</td>
+            <td class="center">2,037</td>
+            <td class="center">4,080</td>
+            <td class="center">373,895</td>
+            <td class="center">322,497</td>
+            <td class="center">696,392</td>
+            <td class="center">15,473</td>
+            <td class="center">16,856</td>
+            <td class="center">32,329</td>
+          </tr>
+
+          <tr>
+            <td class="center">토요일</td>
+            <td class="center">2,009</td>
+            <td class="center">2,007</td>
+            <td class="center">4,016</td>
+            <td class="center">371,943</td>
+            <td class="center">308,123</td>
+            <td class="center">680,066</td>
+            <td class="center">17,614</td>
+            <td class="center">17,822</td>
+            <td class="center">35,436</td>
+          </tr>
+
+          <tr>
+            <td class="center">일요일</td>
+            <td class="center">2,625</td>
+            <td class="center">2,620</td>
+            <td class="center">5,245</td>
+            <td class="center">469,869</td>
+            <td class="center">443,798</td>
+            <td class="center">913,667</td>
+            <td class="center">19,582</td>
+            <td class="center">21,588</td>
+            <td class="center">41,171</td>
+          </tr>
+
+          <tr>
+            <td class="center point">합    계</td>
+            <td class="center point">15,716</td>
+            <td class="center point">15,680</td>
+            <td class="center point">31,396</td>
+            <td class="center point">2,758,250</td>
+            <td class="center point">2,513,149</td>
+            <td class="center point">5,271,399</td>
+            <td class="center point">118,717</td>
+            <td class="center point">128,511</td>
+            <td class="center point">247,228</td>
+          </tr>
+
+          </tbody>
+
+        </table>
+
+        <div class="text-right mt30">
+          <a href="#" class="btn-type-small point ico download">엑셀다운로드</a>
+        </div>
+
+      </article>
+
+      <article class="article">
+        <div class="text-box contact">
+          <div class="text-box-headline-col">
+            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 해 주시기 바랍니다.</h6>
+          </div>
+          <ul class="list1">
+            <li class="list1-item ">
+              <strong>담당부서 :</strong> 공항연구소
+            </li>
+            <li class="list1-item ">
+              <strong>TEL :</strong> 032-741-2093
+            </li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+<!--=include _include/_footer.html -->

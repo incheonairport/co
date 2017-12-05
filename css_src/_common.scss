@@ -696,6 +696,12 @@ em{
 }
 
 .list4 {
+
+  &:after{
+    content:"";
+    display:block;
+    clear:both;
+  }
   &-item {
     padding-left: 20px;
     position: relative;
@@ -714,7 +720,7 @@ em{
     &.headline {
       font-size:1.125rem;
       color: #42519e;
-      margin-bottom: 20px;
+      margin-bottom: 9px;
       &.black{
         color: #444;
       }
@@ -2096,6 +2102,18 @@ label.d-none{
   &.padding25{
     padding: 25px 0 25px 25px;
   }
+
+  &.advertising{
+    padding: 30px 20px;
+    position:relative;
+
+    .advertising-down{
+      position: absolute;
+      right: 20px;
+      bottom: 30px;
+    }
+  }
+
   &.list{
     padding-bottom:0;
     .sign-box{
@@ -3581,6 +3599,11 @@ label.d-none{
   margin-top:5px;
 }
 
+// margin-top:15px
+.mt15, %mt15{
+  margin-top:15px;
+}
+
 // text margin-top:20px
 .mt10, %mt10{
   margin-top:10px;
@@ -3640,6 +3663,10 @@ label.d-none{
   margin-top:80px;
 }
 
+.mlm20, %mlm20{
+  margin-left: -20px;
+}
+
 .ml5, %ml5{
   margin-left: 5px;
 }
@@ -3674,6 +3701,14 @@ label.d-none{
 
 .mr10, %mr10{
   margin-right: 10px;
+}
+
+.mr20, %mr20{
+  margin-right: 20px;
+}
+
+.mr40, %mr40{
+  margin-right: 40px;
 }
 
 .mr50, %mr50{
