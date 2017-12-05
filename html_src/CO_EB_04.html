@@ -1,0 +1,309 @@
+<!--=include _include/_header.html -->
+<section id="top-contents" class="contents">
+  <!--위치-->
+  <div class="location">
+    <div class="location-btn">
+      <button type="button" class="location-btn-minus ico">축소</button>
+      <button type="button" class="location-btn-plus ico">확대</button>
+      <button type="button" class="location-btn-print ico">인쇄</button>
+    </div>
+    <div class="location-bar">
+      <ul class="location-bar-nav">
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">업무지원</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">TIP</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">TIP Q&A</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="sub-top bg5">
+    <div class="sub-top-inner">
+      <div class="sub-top-descbox">
+        <div class="sub-top-descbox-text">
+          <h2 class="sub-top-descbox-tit"><em class="color-o">업무지원</em></h2>
+          <h3 class="sub-top-descbox-sub">TIP</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--//위치-->
+</section>
+
+<section class="contents">
+
+
+  <div class="inner-section">
+    <!--=include _include/_left_menu_05.html -->
+
+    <div class="sub-contents">
+      <h4 class="sub-contents-heading1">TIP Q&A</h4>
+
+      <article class="article">
+        <div class="text-box">
+          <div class="text-box-headline-col">
+            <h4 class="text-box-headline font20">글 작성 시 유의사항 안내</h4>
+          </div>
+          <ul class="list1">
+            <li class="list1-item">인천공항 이용에 제안을 주시고 싶은 내용을 남겨 주시면 확인 후 답변 드립니다.</li>
+            <li class="list1-item">타인 비방, 욕설, 장난성 등의 내용은 임의로 삭제될 수 있으며 비공개 요청 시에는 타인이 내용을 확인할 수 없습니다.</li>
+          </ul>
+        </div>
+
+        <table class="table hr writing mt20" summary="TIP Q&A 입력 표">
+            <caption>TIP Q&A 입력 표</caption>
+            <colgroup>
+              <col style="width:10%">
+              <col style="width:40%">
+              <col style="width:10%">
+              <col style="width:40%">
+            </colgroup>
+            <tbody>
+
+            <tr>
+              <th scope="row" class="left">
+                <label for="purpose-object"><strong class="important">작성목적</strong></label>
+              </th>
+              <td>
+                <select class="search-box-input-select" id="purpose-object">
+                  <option>전체</option>
+                </select>
+              </td>
+              <th scope="row" class="left">
+                <strong>작성자</strong>
+              </th>
+              <td>
+                박준영
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="left">
+                <strong>휴대폰번호</strong>
+              </th>
+              <td>
+                010-1111-111
+              </td>
+              <th scope="row" class="left">
+                <strong class="important">이메일</strong>
+              </th>
+              <td>
+                incheon@gmil.com
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="left">
+                <strong class="important">정보수정하기</strong>
+              </th>
+              <td>
+                <a href="#" class="btn-type-small point ico arrow-small-right">개인정보 수정 페이지로 이동</a>
+              </td>
+              <th scope="row" class="left">
+                <strong class="important">공개여부</strong>
+              </th>
+              <td>
+                  <input type="radio" name="option" id="public" class="radio-type2-radio" value="yes" checked="">
+                  <label class="radio-type2-label ico" for="public">공개</label>
+                  <input type="radio" name="option" id="non-public" class="radio-type2-radio" value="no">
+                  <label class="radio-type2-label ico" for="non-public">비공개</label>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="left">
+                <label for="title"><strong class="important">제목</strong></label>
+              </th>
+              <td colspan="3">
+                <input id="title" type="text" class="user-text wide">
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="left">
+                <label for="description"><strong class="important">내용</strong></label>
+              </th>
+              <td colspan="3">
+                <textarea class="user-text wide height" id="description"></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="left">
+                <strong>SNS수신설정</strong>
+              </th>
+              <td>
+                <input type="checkbox" name="search" id="sns-reception" class="checkbox" value="no">
+                <label class="checkbox-label ico" for="sns-reception">답변 여부를 SMS로 받겠습니다.</label>
+              </td>
+              <th scope="row" class="left">
+                <strong>답변 수신설정</strong>
+              </th>
+              <td>
+                <input type="checkbox" name="search" id="email-reception" class="checkbox" value="no">
+                <label class="checkbox-label ico" for="email-reception">이메일</label>
+
+                <input type="checkbox" name="search" id="sms-reception" class="checkbox" value="no">
+                <label class="checkbox-label ico" for="sms-reception">SMS</label>
+
+                <input type="checkbox" name="search" id="non-reception" class="checkbox" value="no">
+                <label class="checkbox-label ico" for="non-reception">답변 불필요</label>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="left">
+                <label for="description"><strong class="important">이용일시</strong></label>
+              </th>
+              <td colspan="3">
+                <div class="timesetting">
+                  <div class="timesetting-date">
+                    <label for="from-day" class="d-none">종료일</label>
+                    <input type="text" class="timesetting-date-day" readonly="" placeholder="2017.12.31" id="from-day" title="작성날짜를 선택하면 출력됩니다">
+                    <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                  </div>
+
+                  <div class="timesetting-time ml10">
+                    <select class="search-box-input-select time" id="time-hour" title="시간(시) 을 선택합니다.">
+                      <option>00</option>
+                    </select>
+
+                    <span class="timesetting-dash">:</span>
+
+                    <select class="search-box-input-select time" id="time-minute" title="시간(분) 을 선택합니다.">
+                      <option>00</option>
+                    </select>
+                  </div>
+
+                  <div class="timesetting-etc ml30">
+                    <label for="flight-name" class="timesetting-dash">편명</label>
+                    <input id="flight-name" type="text" class="user-text">
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="left">
+                <label for="find-file"><strong>첨부파일</strong></label>
+              </th>
+              <td colspan="3">
+                <input type="file" id="find-file" title="버튼을 누르시면 파일을 불러올 수 있고 파일의 제목이 표시됩니다." class="user-input-address-text">
+                <ul class="list1 mt10">
+                  <li class="list1-item guide-desc">
+                    첨부가능 파일 목록 : txt, jpg, jpeg, gif, bmp, png, doc, docx, xls, ppt, pptx, hwp, rtf, zip, rar, pdf
+                  </li>
+                  <li class="list1-item guide-desc">
+                    첨부가능 용량 : 10Mbyt
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="4" class="left">
+                <div class="multi-col double">
+                  <div class="inner-col w70">
+                    <div class="checkbox-type2 left">
+                      <input type="checkbox" name="agree-offer1" id="agree-offer1" class="checkbox-type2-radio" value="">
+                      <label class="checkbox-type2-label ico" for="agree-offer1">개인정보 취급 방침</label>
+                    </div>
+                  </div>
+
+                  <div class="inner-col w20 btn-right">
+                    <a class="user-input-link small">전문보기</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="4" class="left">
+                <div class="multi-col double">
+                  <div class="inner-col w70">
+                    <div class="checkbox-type2 left">
+                      <input type="checkbox" name="agree-offer2" id="agree-offer2" class="checkbox-type2-radio" value="">
+                      <label class="checkbox-type2-label ico" for="agree-offer2">개인정보 제3 자 제공 동의</label>
+                    </div>
+                  </div>
+
+                  <div class="inner-col w20 btn-right">
+                    <a class="user-input-link small">전문보기</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="4" class="left">
+                <div class="multi-col double">
+                  <div class="inner-col w70">
+                    <div class="checkbox-type2 left">
+                      <input type="checkbox" name="agree-offer3" id="agree-offer3" class="checkbox-type2-radio" value="">
+                      <label class="checkbox-type2-label ico" for="agree-offer3">개인정보 취급 위탁</label>
+                    </div>
+                  </div>
+
+                  <div class="inner-col w20 btn-right">
+                    <a class="user-input-link small">전문보기</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <div class="mt30 text-center">
+            <a href="#" class="btn-type-normal btn2 medium ico arrow-point-right"><strong>등록</strong></a>
+          </div>
+      </article>
+
+      <article class="article">
+        <div class="text-box">
+          <div class="text-box-headline-col">
+            <h4 class="text-box-headline font20">아래의 삭제기준에 해당하는 게시글은 예고없이 삭제될 수 있습니다.</h4>
+          </div>
+          <ul class="list1">
+            <li class="list1-item">
+              특정 개인, 단체(특정 종교 포함) 등에 대한 비방
+            </li>
+            <li class="list1-item">
+              욕설, 음란물 등 불건전한 내용
+            </li>
+            <li class="list1-item">
+              홍보, 선전, 광고 등 상업적인 게시
+            </li>
+            <li class="list1-item">
+              근거 없는 유언비어, 선동적인 내용
+            </li>
+            <li class="list1-item">
+              유사 동일한 내용을 반복적으로 게시한 경우
+            </li>
+            <li class="list1-item">
+              기타 해당 란의 설정 취지에 부합되지 않을 경우
+            </li>
+          </ul>
+        </div>
+      </article>
+
+
+      <article class="article">
+        <div class="text-box contact">
+          <div class="text-box-headline-col">
+            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 해 주시기 바랍니다.</h6>
+          </div>
+
+          <ul class="list1">
+            <li class="list1-item"><strong>담당부서 : </strong>환승서비스팀</li>
+            <li class="list1-item"><strong>TEL : </strong>032-741-2406, 2407</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+<!--=include _include/_footer.html -->

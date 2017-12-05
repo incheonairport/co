@@ -57,6 +57,9 @@
   &.bg4 {
     background: url(/static/co/images/bg_category_04.jpg) center no-repeat;
   }
+  &.bg5 {
+    background: url(/static/co/images/bg_category_05.jpg) center no-repeat;
+  }
   &.bg6 {
     background: url(/static/co/images/bg_category_06.jpg) center no-repeat;
   }
@@ -135,59 +138,64 @@
   float: left;
   &-depth1{
     border-bottom: 1px solid #d9d9d9;
-    &-link{
-      padding: 10px 15px;
-      font-size: 1.125rem;
-      border-top: 1px solid #d9d9d9;
-      display: block;
-      position: relative;
-      &.on{
-        border-top:2px solid #42519e;
-        color:#42519e;
-        font-weight: 800;
-      }
-      &.open{
-        &:after{
-          content: "";
-          color: #666;
-          width: 13px;
-          height: 12px;
+    &-item{
+      &-link{
+        padding: 10px 15px;
+        font-size: 1.125rem;
+        border-top: 1px solid #d9d9d9;
+        display: block;
+        position: relative;
+        &.on{
+          border-top:2px solid #42519e;
+          color:#42519e;
           font-weight: 800;
-          position: absolute;
-          top:15px;
-          right:15px;
-          left:auto;
-          bottom:auto;
-          background: url(/static/co/images/spr_ico_left_menu.png) -32px -2px no-repeat;
         }
-      }
-      &.close{
-        &:after{
-          content: "";
-          color: #666;
-          width: 13px;
-          height: 12px;
-          font-weight: 800;
-          position: absolute;
-          top:18px;
-          right:15px;
-          left:auto;
-          bottom:auto;
-          background: url(/static/co/images/spr_ico_left_menu.png) -9px -4px no-repeat;
+        &.open{
+          &:after{
+            content: "";
+            color: #666;
+            width: 13px;
+            height: 12px;
+            font-weight: 800;
+            position: absolute;
+            top:15px;
+            right:15px;
+            left:auto;
+            bottom:auto;
+            background: url(/static/co/images/spr_ico_left_menu.png) -32px -2px no-repeat;
+          }
         }
-        &+.left-menu-depth2{
-          display: none;
+        &.close{
+          &:after{
+            content: "";
+            color: #666;
+            width: 13px;
+            height: 12px;
+            font-weight: 800;
+            position: absolute;
+            top:18px;
+            right:15px;
+            left:auto;
+            bottom:auto;
+            background: url(/static/co/images/spr_ico_left_menu.png) -9px -4px no-repeat;
+          }
+          &+.left-menu-depth2{
+            display: none;
+          }
         }
       }
     }
+
   }
   &-depth2{
     border-top: 1px solid #d9d9d9;
-    &-link{
-      padding: 10px 15px;
-      display: block;
-      &.on{
-        color:#42519e;
+    &-item{
+      &-link{
+        padding: 10px 15px;
+        display: block;
+        &.on{
+          color:#42519e;
+        }
       }
     }
   }
@@ -688,6 +696,12 @@ em{
 }
 
 .list4 {
+
+  &:after{
+    content:"";
+    display:block;
+    clear:both;
+  }
   &-item {
     padding-left: 20px;
     position: relative;
@@ -706,7 +720,7 @@ em{
     &.headline {
       font-size:1.125rem;
       color: #42519e;
-      margin-bottom: 20px;
+      margin-bottom: 9px;
       &.black{
         color: #444;
       }
@@ -1130,15 +1144,19 @@ em{
       }
     }
     th{
-      min-width:150px;
+      /*min-width:150px;*/
       border-top:1px solid #d9d9d9;
       background:#f3f4f8;
       line-height:1.4;
       font-weight:700;
       vertical-align:middle;
+      font-size:0.825rem;
       &.left{
         text-align: left;
         padding-left: 20px;
+      }
+      &:nth-child(2){
+        border-left:1px solid #d9d9d9;
       }
     }
 
@@ -1526,6 +1544,14 @@ em{
         text-align: right;
         border: none;
       }
+      &.btn6 {
+        min-width: 230px;
+        line-height: 50px;
+        padding: 10px 15px 10px 20px;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        height: 50px;
+      }
       &.map{
         width: 280px;
         height: 50px;
@@ -1585,7 +1611,9 @@ em{
     }
   }
 }
-
+.table-btn{
+  min-width:inherit;
+}
 button, a {
   cursor: pointer;
 }
@@ -1664,9 +1692,15 @@ label.d-none{
   .inner-col{
     padding:0 12px 0 0;
 
+    &.no-padding{
+      padding:0;
+    }
+
     &:last-child{
       padding:0 0 0 12px;
     }
+
+
   }
 }
 
@@ -1854,7 +1888,7 @@ label.d-none{
     @extend %gutter;
   }
   .img-caption{
-    display: block;
+    display:inline-block;
     text-align: center;
     width:100%;
     font-size:1rem;
@@ -1947,6 +1981,16 @@ label.d-none{
         font-size: 0.8125rem;
         font-weight:700;
         color: #666;
+      }
+      &.min {
+        min-width: 50px;
+        padding: 0 10px;
+        height:30px;
+        line-height:30px;
+        font-weight:700;
+      }
+      &.radius{
+        border-radius: 20px;
       }
 
       &.shortcut{
@@ -2058,6 +2102,18 @@ label.d-none{
   &.padding25{
     padding: 25px 0 25px 25px;
   }
+
+  &.advertising{
+    padding: 30px 20px;
+    position:relative;
+
+    .advertising-down{
+      position: absolute;
+      right: 20px;
+      bottom: 30px;
+    }
+  }
+
   &.list{
     padding-bottom:0;
     .sign-box{
@@ -2114,13 +2170,15 @@ label.d-none{
       border-left: 1px solid #d9d9d9;
     }
     .text-box-headline{
-      padding-left: 230px;
+      padding-left: 200px;
     }
     .list1{
-      padding-left:230px;
+      font-size:1rem;
+      text-align: left;
+      padding-left:200px;
     }
     .multi-col{
-      padding-left:230px;
+      padding-left:200px;
       .inner-col{
         .list1{
           padding-left:0;
@@ -2162,6 +2220,7 @@ label.d-none{
   &-title{
     margin-bottom: 10px;
     font-weight: 800;
+    font-size: 1.125rem;
   }
   &.list1{
     font-size:0.875rem;
@@ -2294,7 +2353,26 @@ label.d-none{
         width: 118px;
         height: 120px;
       }
-
+      &.type7:before{
+        background-position:-13px -561px;
+        width: 118px;
+        height: 120px;
+      }
+      &.type8:before{
+        background-position:-150px -561px;
+        width: 118px;
+        height: 120px;
+      }
+      &.type9:before{
+        background-position:-288px -561px;
+        width: 118px;
+        height: 120px;
+      }
+      &.type10:before{
+        background-position:-426px -561px;
+        width: 118px;
+        height: 120px;
+      }
     }
   }
   &.bg-pattern{
@@ -2560,6 +2638,9 @@ label.d-none{
         .article-txt {
           color: #444;
           font-size: 1rem;
+          &-desc{
+            font-size: 0.875rem;
+          }
         }
       }
       &.ico {
@@ -2975,6 +3056,9 @@ label.d-none{
       }
       &+.search-box-input-txt{
         border-left:1px solid #d9d9d9;
+      }
+      &.time{
+        width:80px;
       }
     }
     &-txt{
@@ -3515,6 +3599,11 @@ label.d-none{
   margin-top:5px;
 }
 
+// margin-top:15px
+.mt15, %mt15{
+  margin-top:15px;
+}
+
 // text margin-top:20px
 .mt10, %mt10{
   margin-top:10px;
@@ -3574,6 +3663,10 @@ label.d-none{
   margin-top:80px;
 }
 
+.mlm20, %mlm20{
+  margin-left: -20px;
+}
+
 .ml5, %ml5{
   margin-left: 5px;
 }
@@ -3606,9 +3699,16 @@ label.d-none{
   padding-left: 10px;
 }
 
-
 .mr10, %mr10{
   margin-right: 10px;
+}
+
+.mr20, %mr20{
+  margin-right: 20px;
+}
+
+.mr40, %mr40{
+  margin-right: 40px;
 }
 
 .mr50, %mr50{
@@ -3776,6 +3876,26 @@ label.d-none{
 .digr-construction-case03{
   background: url(/static/co/images/digr_construction_case_03.png) no-repeat;
   height: 308px;
+}
+
+.digr-procedure-application{
+  background: url(/static/co/images/digr_procedure_application.png) no-repeat;
+  height: 286px;
+}
+
+.digr-notice-tender{
+  background: url(/static/co/images/digr_notice_tender.png) no-repeat;
+  height: 286px;
+}
+
+.digr-service-procedure01{
+  background: url(/static/co/images/digr_service_procedure_01.png) no-repeat;
+  height: 306px;
+}
+
+.digr-service-procedure02{
+  background: url(/static/co/images/digr_service_procedure_02.png) no-repeat;
+  height: 306px;
 }
 
 .grp-energy-management {
@@ -4124,6 +4244,9 @@ label.d-none{
   border:1px solid #d9d9d9;
   padding:20px;
   position:relative;
+  &-desc{
+    font-size: 1rem;
+  }
   &-btn{
     position:absolute;
     top:0;
@@ -4206,6 +4329,35 @@ label.d-none{
     }
     .text-box{
       text-align: center;
+    }
+  }
+}
+
+.textbox-step{
+  &-item{
+    &.ico{
+      text-indent: 0;
+      display: block;
+      &:after{
+        width: 11px;
+        height: 22px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: auto;
+        right: 0;
+        left: 0;
+        bottom: -26px;
+        margin: auto;
+        background-position: -218px -28px;
+        transform: rotate(90deg);
+      }
+    }
+    .textbox-wide-ico{
+      min-height: 170px;
+      .textbox-wide-txt{
+        min-height: 170px;
+      }
     }
   }
 }
