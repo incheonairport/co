@@ -1664,9 +1664,15 @@ label.d-none{
   .inner-col{
     padding:0 12px 0 0;
 
+    &.no-padding{
+      padding:0;
+    }
+
     &:last-child{
       padding:0 0 0 12px;
     }
+
+
   }
 }
 
@@ -1854,7 +1860,7 @@ label.d-none{
     @extend %gutter;
   }
   .img-caption{
-    display: block;
+    display:inline-block;
     text-align: center;
     width:100%;
     font-size:1rem;
@@ -2114,13 +2120,15 @@ label.d-none{
       border-left: 1px solid #d9d9d9;
     }
     .text-box-headline{
-      padding-left: 230px;
+      padding-left: 200px;
     }
     .list1{
-      padding-left:230px;
+      font-size:1rem;
+      text-align: left;
+      padding-left:200px;
     }
     .multi-col{
-      padding-left:230px;
+      padding-left:200px;
       .inner-col{
         .list1{
           padding-left:0;
@@ -3605,7 +3613,6 @@ label.d-none{
 .pl10, %pl10{
   padding-left: 10px;
 }
-
 
 .mr10, %mr10{
   margin-right: 10px;
