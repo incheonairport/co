@@ -2064,6 +2064,18 @@ label.d-none{
   &.padding25{
     padding: 25px 0 25px 25px;
   }
+
+  &.advertising{
+    padding: 30px 20px;
+    position:relative;
+
+    .advertising-down{
+      position: absolute;
+      right: 20px;
+      bottom: 30px;
+    }
+  }
+
   &.list{
     padding-bottom:0;
     .sign-box{
