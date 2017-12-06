@@ -1875,10 +1875,23 @@ label.d-none{
       &:first-child{
         margin-left:0;
       }
+      &.advertising-width{
+        width: 100%;
+      }
+
+
     }
     img{
       width:100%;
       vertical-align:top;
+
+      &.advertising-img{
+        width: auto;
+        margin-left:8px;
+        &:first-child{
+          margin-left: 0;
+        }
+      }
     }
   }
   &-inner{
@@ -4400,4 +4413,8 @@ label.d-none{
 
 .color-r{
   color: #d43e41;
+}
+
+.book-btn{
+  margin-right: 5px;
 }
