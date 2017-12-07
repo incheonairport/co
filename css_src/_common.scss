@@ -1842,6 +1842,10 @@ label.d-none{
       &:first-child{
         margin-left:0;
       }
+
+      &.list-mg-inner{
+        margin-left: 0;
+      }
     }
   }
   &.balance{
@@ -1923,6 +1927,10 @@ label.d-none{
       position: absolute;
       bottom: -26px;
     }
+  }
+
+  &.list-mg{
+    margin-left: -12px;
   }
 
 }

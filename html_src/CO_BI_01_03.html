@@ -66,6 +66,69 @@
       </nav>
 
       <article class="article mt30">
+        <div class="search-box">
+          <div class="search-box-input small">
+            <div class="multi-col double">
+              <div class="inner-col w85 pl10">
+                <div class="form-layout">
+                  <label class="search-box-title pr15" for="flight">운항</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="flight" title="운항를 선택해 주세요">
+                      <option>최대네자</option>
+                    </select>
+                  </div>
+                  <label class="search-box-title pr15 ml15" for="aeroplane">항공기</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="aeroplane" title="항공기를 선택해 주세요">
+                      <option>최대세자</option>
+                    </select>
+                  </div>
+                  <label class="search-box-title pr15 ml15" for="airroute">노선</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="airroute" title="노선을 선택해 주세요">
+                      <option>전체</option>
+                    </select>
+                  </div>
+                  <label class="search-box-title pr15 ml15" for="passenger">여객</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="passenger" title="여객을 선택해 주세요">
+                      <option>전체</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-layout mt10">
+                  <label class="search-box-title pr15" for="department">항공사</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select large" id="department" title="항공사를 선택해 주세요">
+                      <option>항공사 선택</option>
+                    </select>
+                  </div>
+                  <div class="timesetting">
+                    <label class="search-box-title ml15" for="day">날짜</label>
+                    <div class="timesetting-date">
+                      <label for="day" class="d-none">시작일</label>
+                      <input type="text" class="timesetting-date-day hasDatepicker" readonly="" placeholder="2017.12.21" id="day" title="작성날짜를 선택하면 출력됩니다">
+                      <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                    </div>
+                    <span class="timesetting-dash">~</span>
+                    <div class="timesetting-date">
+                      <label for="from-day" class="d-none">종료일</label>
+                      <input type="text" class="timesetting-date-day hasDatepicker" readonly="" placeholder="2017.12.31" id="from-day" title="작성날짜를 선택하면 출력됩니다">
+                      <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-col w15 pl10">
+                <div class="search-box-btn-area">
+                  <button type="button" class="search-box-btn big">검색</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
         <div class="multi-col double">
           <div class="inner-col">
             <p class="guide-desc mt20 mark text-left">인천공항 실적만 작성</p>
