@@ -2244,9 +2244,9 @@ label.d-none{
   &-btn{
     text-align: right;
   }
-  &-ico{
+  &-stepico{
     width: 100%;
-    padding-top: 160px;
+    padding-top: 130px;
     display: block;
     background:#f2f2f2;
     &:before{
@@ -2258,44 +2258,69 @@ label.d-none{
       left: 0;
       bottom: auto;
       margin: auto;
+      width:94px;
+      height:94px;
+      background:url(/static/co/images/spr_ico_textbox_step.png) no-repeat;
+    }
+    &.step1:before{
+      background-position:-32px -27px;
+    }
+    &.step2:before{
+      background-position: -152px -27px;
+    }
+    &.step3:before{
+      background-position:-276px -27px;
+    }
+    &.step4:before{
+      background-position: -403px -27px;
+    }
+    &.step5:before{
+      background-position: -533px -27px;
+    }
+  }
+  &-ico{
+    width: 100%;
+    padding-top: 160px;
+    display: block;
+    background:#f2f2f2;
+    &:before{
+      content: '';
+      display: block;
+      width: 118px;
+      height: 120px;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      left: 0;
+      bottom: auto;
+      margin: auto;
       background:url(/static/co/images/spr_ico_textbox.png) no-repeat;
     }
     &.type1:before{
       background-position: -13px -10px;
-      width: 118px;
-      height: 120px;
     }
     &.type2:before{
       background-position: -150px -10px;
-      width: 118px;
-      height: 120px;
     }
     &.type3:before{
       background-position: -151px -286px;
-      width: 118px;
-      height: 120px;
     }
 
     &.type4:before{
       background-position: -287px -285px;
-      width: 118px;
-      height: 120px;
     }
 
     &.type5:before{
       background-position:-425px -285px;
-      width: 118px;
-      height: 120px;
     }
 
     &.type6:before{
       background-position: -13px -423px;
-      width: 118px;
-      height: 120px;
     }
 
 
   }
+
   &-wide{
     width: 100%;
     display:table;

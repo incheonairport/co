@@ -3,16 +3,15 @@
   <!--위치-->
   <div class="location">
     <div class="location-btn">
-      <button type="button" class="location-btn-minus ico"></button>
-      <button type="button" class="location-btn-plus ico"></button>
-      <button type="button" class="location-btn-print ico"></button>
+      <button type="button" class="location-btn-minus ico">화면 축소</button>
+      <button type="button" class="location-btn-plus ico">화면 확대</button>
+      <button type="button" class="location-btn-print ico">화면 인쇄</button>
     </div>
     <div class="location-bar">
       <ul class="location-bar-nav">
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">인재채용</a></li>
-        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link ico">채용공고</a></li>
-        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">리스트</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">채용공고</a></li>
       </ul>
     </div>
   </div>
@@ -39,31 +38,44 @@
     <div class="sub-contents">
 
       <article class="article">
-        <!--검색-->
-
-        <div class="search-box">
-          <div class="search-box-input">
-            <label class="search-box-title" for="search">검색</label>
-            <div class="search-box-input-item">
-              <select class="search-box-input-select" id="search" title="검색옵션을 선택해 주세요">
-                <option>전체</option>
-              </select>
-              <input type="text" class="search-box-input-txt" placeholder="검색어 입력" title="검색어 입력을 통해 검색할 수 있습니다">
+        <div class="search-box day">
+          <div class="multi-col double">
+            <div class="inner-col w40">
+              <div class="timesetting">
+                <div class="timesetting-date">
+                  <label for="start-day" class="d-none">시작일</label>
+                  <input type="text" class="timesetting-date-day" id="start-day" readonly="" placeholder="2017.12.21" title="작성날짜를 선택하면 출력됩니다">
+                  <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                </div>
+                <span class="timesetting-dash">~</span>
+                <div class="timesetting-date">
+                  <label for="end-day" class="d-none">종료일</label>
+                  <input type="text" class="timesetting-date-day" id="end-day" readonly="" placeholder="2017.12.31" title="작성날짜를 선택하면 출력됩니다">
+                  <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                </div>
+              </div>
             </div>
-            <div class="search-box-btn-area">
-              <button type="button" class="search-box-btn ico">검색</button>
+            <div class="inner-col w60">
+              <div class="search-box-input-item ml5">
+                <label for="list-search" class="d-none">검색</label>
+                <select class="search-box-input-select" id="list-search" title="검색옵션을 선택해 주세요">
+                  <option>전체</option>
+                </select>
+                <input type="text" class="search-box-input-txt" placeholder="검색어 입력" title="검색어 입력을 통해 검색할 수 있습니다">
+              </div>
+              <div class="search-box-btn-area">
+                <button type="button" class="search-box-btn ico">검색</button>
+              </div>
             </div>
           </div>
         </div>
-
-        <!--//검색-->
 
         <p class="board-page"> 전체 :<strong>1000</strong>건 (1 /13 page)</p>
 
         <!--table-->
 
-        <table class="table vt board-list" summary="불편 칭찬 게시판입니다.">
-          <caption>불편 칭찬 게시판</caption>
+        <table class="table vt board-list" summary="채용공고 게시판 입니다.">
+          <caption>채용공고 게시판</caption>
           <colgroup>
             <col style="width:5%">
             <col style="width:65%">
@@ -275,6 +287,22 @@
           <a class="ico last" href="#">마지막</a>
         </div>
 
+      </article>
+
+      <article class="article">
+        <div class="text-box contact">
+          <div class="text-box-headline-col">
+            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 해 주시기 바랍니다.</h6>
+          </div>
+          <ul class="list1">
+            <li class="list1-item">
+              <strong>담당부서 :</strong> 인사팀
+            </li>
+            <li class="list1-item">
+              <strong>전화번호 :</strong> 032-741-2331, 2332
+            </li>
+          </ul>
+        </div>
       </article>
 
 
