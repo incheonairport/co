@@ -1904,10 +1904,13 @@ label.d-none{
     @extend %gutter;
   }
   .img-caption{
-    display:inline-block;
+    display:block;
     text-align: center;
     width:100%;
     font-size:1rem;
+    &.inline{
+      display: inline-block;
+    }
   }
 
   .img-caption2{
@@ -2869,7 +2872,9 @@ label.d-none{
   transform:translate(-50%, -50%);
   overflow-y:scroll;
   z-index:10;
-
+  &.info{
+    width: 792px;
+  }
   &.on{
     display:block;
   }
