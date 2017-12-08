@@ -1148,7 +1148,7 @@ em{
       line-height:1.4;
       font-weight:700;
       vertical-align:middle;
-      /*font-size:0.825rem;*/
+      font-size:0.825rem;
       &.left{
         text-align: left;
         padding-left: 20px;
@@ -1164,6 +1164,7 @@ em{
       border-right:1px solid #f2f4f7;
       line-height:1.4;
       vertical-align:middle;
+
       &.center{
         text-align:center;
       }
@@ -2859,7 +2860,7 @@ label.d-none{
 .layer{
   display:none;
   min-width: 550px;
-  //max-height: 684px;
+  max-height: 700px;
   border: 4px solid #42519e;
   background:#fff;
   position:absolute;
@@ -4165,14 +4166,6 @@ label.d-none{
   background: url(/static/co/images/digr_free_trade_zone.png) center no-repeat;
 }
 
-.digr-free-trade-zone{
-  height: 450px;
-  padding: 0 30px;
-  border: 1px solid #d9d9d9;
-  text-indent:-999em;
-  background: url(/static/co/images/digr_free_trade_zone.png) center no-repeat;
-}
-
 /*A-CDM*/
 .digr-acdm-report-01{
   height: 612px;
@@ -4223,21 +4216,18 @@ label.d-none{
   width: 100%;
   height: 504px;
   background: url(/static/co/images/grp_airport_capacity_01.png) no-repeat;
-  background-size: 100%;
 }
 
 .grp-airport-capacity2{
   width: 100%;
   height: 504px;
   background: url(/static/co/images/grp_airport_capacity_02.png) no-repeat;
-  background-size: 100%;
 }
 
 .grp-airport-capacity3{
   width: 100%;
   height: 504px;
   background: url(/static/co/images/grp_airport_capacity_03.png) no-repeat;
-  background-size: 100%;
 }
 
 /* 조직도 */
