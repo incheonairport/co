@@ -2478,6 +2478,11 @@ label.d-none{
   display:table;
   width: 100%;
 
+  &-img{
+    display: block;
+    margin: 0 auto 20px;
+  }
+
   &-col{
     display:table-cell;
 
@@ -2597,12 +2602,26 @@ label.d-none{
   }
 
   &-btn{
-    padding: 5px 20px;
+    padding: 5px 30px 5px 20px;
     font-size: 0.875rem;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    &.arrow-middle-right{
+      &:after{
+        content:'';
+        display:block;
+        position:absolute;
+        top:0;
+        right:10px;
+        bottom:0;
+        margin:auto;
+        background: url(/static/co/images/spr_ico_global.png) no-repeat -186px -65px;
+        width: 6px;
+        height: 10px;
+      }
+    }
   }
-
 }
 
 /*step*/
