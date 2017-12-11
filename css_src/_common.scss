@@ -1903,6 +1903,10 @@ label.d-none{
   &.gutter{
     @extend %gutter;
   }
+  &.log-in{
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 20px;
+  }
   .img-caption{
     display:block;
     text-align: center;
@@ -2931,6 +2935,16 @@ label.d-none{
   &-area{
     padding: 20px;
   }
+  /*login*/
+  &.login-area{
+    width: 600px;
+    .layer-sub{
+      font-size: 1rem;
+      font-weight: 900;
+      text-align: center;
+    }
+  }
+
   &-title{
     padding-bottom: 18px;
     margin-bottom: 20px;
@@ -2938,6 +2952,16 @@ label.d-none{
     font-size: 1.5rem;
     font-family: 'nanumsq', sans-serif;
     color: #42519e;
+
+    &.login{
+      font-size: 2.75rem;
+      margin-top: 40px;
+      text-align: center;
+      font-family: 'nanumsq', sans-serif;
+      color: #222;
+      padding:0;
+      border:none;
+    }
   }
   &-close{
     display: block;
@@ -3013,6 +3037,81 @@ label.d-none{
   }
   &.air-result{
     width: 968px;
+  }
+  /*로그인*/
+  &-input-text.user-text{
+    width:345px;
+    height: 50px;
+  }
+  &-btn{
+    float: left;
+    &-login{
+      width:190px;
+      height: 110px;
+      //margin-left: 81px;
+      background: #42519e;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  }
+  .find-info{
+    &-list{
+      margin: 10px 0;
+      @extend %clearfix;
+    }
+
+    &-item{
+      float:left;
+    }
+
+    &-link{
+      font-size: 1rem;
+      color:#444;
+
+      &.id{
+        margin-right: 5px;
+
+      }
+
+      &.pw{
+        padding-left: 5px;
+      }
+    }
+  }
+  .sign-in{
+    padding-bottom: 20px;
+
+    &-title{
+      font-size: 1.125rem;
+      color: #444;
+    }
+
+    &-txt{
+      font-size: 1rem;
+      color: #444;
+    }
+
+    &-btn{
+      width: 99px;
+      height: 40px;
+      background-color: #fff;
+      color: #666;
+      border: 1px solid #a6a7ab;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    &-col1{
+      float: left;
+    }
+
+    &-col2{
+      float: left;
+
+    }
   }
 }
 
