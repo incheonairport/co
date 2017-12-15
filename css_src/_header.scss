@@ -184,7 +184,7 @@
 
 .gnb{
   width:100%;
-  height:54px;
+  height:55px;
   padding-top:17px;
   margin:0 auto;
   background:#fff;
@@ -197,7 +197,7 @@
   z-index:9999;
 
   &.on{
-    height:292px;
+    height:378px;
   }
 
   &:after{
@@ -213,33 +213,47 @@
   }
 
   &-depth1{
-
-    width:907px;
+    width:1086px;
     margin:0 auto;
+    position:relative;
 
     @extend %clearfix;
 
     &-item{
-      width:151px;
+      width:181px;
       float:left;
       box-sizing:border-box;
 
       &:first-child{
-        width:152px;
 
         .gnb-depth2{
           border-left:1px solid #ddd;
         }
       }
-
+      &:hover{
+        &:after{
+          content:"";
+          display:block;
+          width:180px;
+          height:2px;
+          background: #42519e;
+          position:absolute;
+          top:35px;
+          &:first-child{
+            left:0;
+          }
+        }
+      }
     }
 
     &-link{
+      height:37px;
       display:block;
       padding-left:20px;
       font-family:nanumsq, sans-serif;
       font-size:1.25rem;
       font-weight:400;
+      padding-bottom: 5px;
 
       &:hover{
         color:#42519e;
@@ -250,7 +264,6 @@
 
   &-depth2{
     height:236px;
-    margin-top:4px;
     padding:14px 0 0 20px;
     border-right:1px solid #ddd;
     box-sizing:border-box;
@@ -305,6 +318,5 @@
       left:0;
     }
   }
-
-
 }
+
