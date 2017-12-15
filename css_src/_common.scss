@@ -1960,6 +1960,10 @@ label.d-none{
   &.height{
     height:90px;
   }
+  &.dark{
+    background-color: #f2f2f2;
+    height:160px;
+  }
 
 }
 
@@ -1975,7 +1979,26 @@ label.d-none{
       border: 1px solid #d9d9d9;
       box-sizing: border-box;
       float:left;
+
+      &.small{
+        width: 60%;
+      }
     }
+
+    &-sub1{
+      margin-right: 70px;
+    }
+
+    &-sub2{
+      float:left;
+      margin-top: 9px;
+      margin-right: 59px;
+    }
+
+    &-sub3{
+      margin-right: 22px;
+    }
+
 
     &-address{
       margin-left: -1px;
@@ -1989,6 +2012,7 @@ label.d-none{
       font-weight: 900;
       text-align: center;
       display: inline-block;
+
     }
 
     &-link{
@@ -4280,7 +4304,7 @@ label.d-none{
 
 .digr-energy-independence03{
   height: 654px;
-  background: url(/static/co/images/digr_energy_independence_03.png) center no-repeat;
+  background: url(/static/co/images/map_energy_independence_03.png) center no-repeat;
 }
 
 .digr-service-assessment{
