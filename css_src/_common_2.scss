@@ -95,11 +95,25 @@
         height: 16px;
       }
     }
+    &.long{
+      width: 160px;
+      .timesetting-date-day{
+        width: 120px;
+      }
+    }
   }
   &-dash{
     float: left;
     line-height:38px;
     margin:0 10px;
+  }
+  .object-list{
+    min-width: 100px;
+  }
+  .user-text{
+    width: 177px;
+    height: 40px;
+    vertical-align: bottom;
   }
 }
 
