@@ -4385,9 +4385,16 @@ label.d-none{
     margin-bottom: 10px;
     font-size: 1.125rem;
   }
+  .list1{
+    @extend %clearfix;
+  }
   dt.list1-item {
     width: 190px;
     float: left;
+  }
+  dt.list1-item+dd{
+    width: calc(100% - 190px);
+    float:right;
   }
 }
 
