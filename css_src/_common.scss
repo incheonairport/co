@@ -2583,11 +2583,15 @@ label.d-none{
     margin: 35px 0 15px;
 
     &.col-3{
-      text-indent: -9999em;
+      margin: 70px 0 15px;
 
       &:before{
-        top: 25px;
+        content: '';
+        display: block;
+        top: 20px;
         right:-7px;
+        width: 49px;
+        height: 52px;
         background: url(/static/co/images/ico_customer_report.png) top center no-repeat;
       }
     }
@@ -2600,7 +2604,7 @@ label.d-none{
       right: 0;
       left: 0;
       bottom: 0;
-      margin: auto;
+      margin: 0 auto;
       background: url(/static/co/images/ico_customer_voice.png) top center no-repeat;
     }
 
