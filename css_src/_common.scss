@@ -298,7 +298,11 @@
 
         }
       }
-
+      &.long-word{
+        .tab-nav-list-link{
+          height: 96px;
+        }
+      }
     }
     &.long-word{
       .tab-nav-list-link{
@@ -656,6 +660,7 @@ em{
     margin-top: 4px;
     padding-left:12px;
     position:relative;
+    font-size: 1.125rem;
     &:first-child{
       margin-top:0
     }
@@ -1377,6 +1382,10 @@ em{
         }
       }
     }
+    &.mt0{
+      margin-top: 0;
+      border-top: none;
+    }
   }
   .view-list{
     border-top: 1px solid #d9d9d9;
@@ -1564,6 +1573,20 @@ em{
         font-size: 1.125rem;
         &+.btn-type-normal{
           margin-left: 10px;
+        }
+      }
+      &.ing{
+        padding: 10px 15px;
+        background: #d9d9d9;
+        border: none;
+        color: #666;
+        font-size: 0.875rem;
+        line-height: 1;
+        margin-left: 5px;
+        &.on{
+          background: #323648;
+          color: #fff;
+          font-weight: 800;
         }
       }
     }
@@ -1960,7 +1983,15 @@ label.d-none{
   &.height{
     height:90px;
   }
-
+  &.border-b{
+    width: 225px;
+    border:{
+    top:none;
+    left:none;
+    right:none;
+    bottom: 1px solid #222;
+    }
+  }
 }
 
 /*파일 첨부, 주소 검색*/
@@ -4116,6 +4147,10 @@ label.d-none{
   margin-left: 30px;
 }
 
+.ml50, %ml50{
+  margin-left: 50px;
+}
+
 .ml80, %ml80{
   margin-left: 80px;
 }
@@ -4145,6 +4180,13 @@ label.d-none{
 }
 
 // IR 인포그래픽
+/*환경 감시 시스템 위치도*/
+.digr-environment-systema-location{
+  height:640px;
+  text-indent:-999em;
+  background: url(/static/co/images/digr_environment_system_location.png) no-repeat;
+}
+
 /*공공데이터개방*/
 .digr-public-data-open-guidea{
   height:493px;
