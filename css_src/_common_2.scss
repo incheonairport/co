@@ -95,11 +95,25 @@
         height: 16px;
       }
     }
+    &.long{
+      width: 160px;
+      .timesetting-date-day{
+        width: 120px;
+      }
+    }
   }
   &-dash{
     float: left;
     line-height:38px;
     margin:0 10px;
+  }
+  .object-list{
+    min-width: 100px;
+  }
+  .user-text{
+    width: 177px;
+    height: 40px;
+    vertical-align: bottom;
   }
 }
 
@@ -400,6 +414,24 @@
 .digr-cp-vision02{
   height:383px;
   background: url(/static/co/images/digr_cp_vision02.png) no-repeat;
+  text-indent: -9999em;
+}
+
+.digr-co-history1{
+  height:383px;
+  background: url(/static/co/images/digr_co_traces_01.jpg) no-repeat;
+  text-indent: -9999em;
+}
+
+.digr-co-history2{
+  height:383px;
+  background: url(/static/co/images/digr_co_traces_02.jpg) no-repeat;
+  text-indent: -9999em;
+}
+
+.digr-co-history3{
+  height:383px;
+  background: url(/static/co/images/digr_co_traces_03.jpg) no-repeat;
   text-indent: -9999em;
 }
 

@@ -10,7 +10,7 @@
     <div class="location-bar">
       <ul class="location-bar-nav">
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
-        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">입주자 지원</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">업무지원</a></li>
         <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">TIP</a></li>
         <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">TIP 신청하기</a></li>
       </ul>
@@ -21,7 +21,7 @@
     <div class="sub-top-inner">
       <div class="sub-top-descbox">
         <div class="sub-top-descbox-text">
-          <h2 class="sub-top-descbox-tit">입주자 지원</h2>
+          <h2 class="sub-top-descbox-tit">업무지원</h2>
           <h3 class="sub-top-descbox-sub">TIP</h3>
         </div>
       </div>
@@ -66,7 +66,7 @@
             </th>
             <td colspan="3">
               <div class="timesetting">
-                <div class="timesetting-date">
+                <div class="timesetting-date long">
                   <input type="text" class="timesetting-date-day" readonly="" placeholder="2017.12.21 목" id="day" title="신청날짜를 선택하면 출력됩니다">
                   <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
                 </div>
@@ -86,24 +86,71 @@
             <td><input type="text" id="staff-phone" class="user-text wide"></td>
           </tr>
           <tr>
-            <th scope="row" colspan="2"  class="left"><label for="classify" class="important"><strong>신청구분</strong></label></th>
-            <td colspan="3"><input type="text" id="classify" class="user-text wide"></td>
+            <th scope="row" rowspan="2" colspan="2"  class="left"><strong class="important">신청구분</strong></th>
+            <td colspan="3">
+              <div class="multi-col double">
+                <div class="inner-col">
+                  <input type="checkbox" class="checkbox" id="tour">
+                  <label for="tour" class="checkbox-label ico">맞춤형 환승 투어</label>
+                </div>
+                <div class="inner-col">
+                  <input type="checkbox" class="checkbox" id="dutyfree-coupon">
+                  <label for="dutyfree-coupon" class="checkbox-label ico">면세점 할인쿠폰 지원</label>
+                </div>
+              </div>
+              <div class="multi-col double mt10">
+                <div class="inner-col">
+                  <input type="checkbox" class="checkbox" id="lounge-coupon">
+                  <label for="lounge-coupon" class="checkbox-label ico">환승라운지 할인쿠폰 지원</label>
+                </div>
+                <div class="inner-col">
+                  <input type="checkbox" class="checkbox" id="ad">
+                  <label for="ad" class="checkbox-label ico">판촉/광고 지원</label>
+                </div>
+              </div>
+              <div class="mt10">
+                <input type="checkbox" class="checkbox" id="etc">
+                <label for="etc" class="checkbox-label ico">기타</label>
+                <label for="etc-detail" class="d-none">기타 상세</label>
+                ( <input type="text" class="user-text border-b" id="etc-detail"> )
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <input type="checkbox" class="checkbox" id="t2">
+              <label for="t2" class="checkbox-label ico">제2 여객터미널 <span class="color-r">단체환승객 미팅룸(문의 롯데 엘라운지 : 메일 주소 )</span></label>
+            </td>
           </tr>
           <tr>
             <th scope="row" rowspan="3" class="left"><strong class="important">여객<br/>정보</strong></th>
-            <th><label for="number"><strong>인원수</strong></label></th>
+            <th scope="row"><label for="number"><strong>인원수</strong></label></th>
             <td colspan="3"><input type="text" id="number" class="user-text wide"></td>
           </tr>
           <tr>
-            <th><label for="flight"><strong>항공편</strong></label></th>
-            <td colspan="3"><input type="text" id="flight" class="user-text wide"></td>
+            <th scope="row"><label for="flight"><strong>항공편</strong></label></th>
+            <td colspan="3">
+              <div class="timesetting">
+                <div class="timesetting-date long">
+                  <input type="text" class="timesetting-date-day" readonly="" placeholder="2017.12.21 목" id="flight-day" title="신청날짜를 선택하면 출력됩니다">
+                  <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                </div>
+                <select class="object-list ml5" title="시간을 선택할 수 있는 리스트입니다">
+                  <option>시간 선택</option>
+                </select>
+                <select class="object-list ml5" title="분을 선택할 수 있는 리스트입니다.">
+                  <option>분 선택</option>
+                </select>
+                <label for="flight" class="ml50">편명</label>
+                <input type="text" class="user-text ml10" id="flight" placeholder="항공편 입력" title="이용하신 항공편을 입력하실 수 있습니다">
+              </div>
+            </td>
           </tr>
           <tr>
-            <th><label for="travel-agency"><strong>담당 여행사</strong></label></th>
+            <th scope="row"><label for="travel-agency"><strong>담당 여행사</strong></label></th>
             <td><input type="text" id="travel-agency" class="user-text wide"></td>
-            <th class="left"><label for="agency-contact"><strong>연락처</strong></label></th>
+            <th scope="row" class="left"><label for="agency-contact"><strong>연락처</strong></label></th>
             <td><input type="text" id="agency-contact" class="user-text wide"></td>
-
           </tr>
           <tr>
             <th scope="row" colspan="2"  class="left"><label for="details" class="important"><strong>세부요청내역</strong></label></th>
