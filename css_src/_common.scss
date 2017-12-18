@@ -2083,7 +2083,7 @@ label.d-none{
       }
 
       &.shortcut{
-        min-width:88px;
+        min-width:95px;
         height:26px;
         font-weight: normal;
         line-height:26px;
@@ -2305,6 +2305,12 @@ label.d-none{
     padding: 20px;
     background: #fff;
     display: inline-block;
+    position: relative;
+    .list1.font14{
+      .list1-item{
+        font-size: 0.875rem;
+      }
+    }
   }
   &-title{
     margin-bottom: 10px;
@@ -2319,6 +2325,11 @@ label.d-none{
   }
   &-btn{
     text-align: right;
+    .user-input-link.shortcut{
+      position:absolute;
+      right:20px;
+      bottom:20px;
+    }
   }
   &-stepico{
     width: 100%;
