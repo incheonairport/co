@@ -1142,6 +1142,10 @@ em{
       bottom:1px solid #a5a7aa;
     }
 
+    &.border-top{
+      border-top: 0;
+    }
+
     tr:first-child{
       th, td{
         border-top:0;
@@ -2083,7 +2087,7 @@ label.d-none{
       }
 
       &.shortcut{
-        min-width:88px;
+        min-width:95px;
         height:26px;
         font-weight: normal;
         line-height:26px;
@@ -2305,6 +2309,12 @@ label.d-none{
     padding: 20px;
     background: #fff;
     display: inline-block;
+    position: relative;
+    .list1.font14{
+      .list1-item{
+        font-size: 0.875rem;
+      }
+    }
   }
   &-title{
     margin-bottom: 10px;
@@ -2319,6 +2329,11 @@ label.d-none{
   }
   &-btn{
     text-align: right;
+    .user-input-link.shortcut{
+      position:absolute;
+      right:20px;
+      bottom:20px;
+    }
   }
   &-stepico{
     width: 100%;
@@ -4057,6 +4072,97 @@ label.d-none{
   &-middle {
     vertical-align: middle;
   }
+}
+
+.site-map{
+  &-heading{
+    font-family: nanumsq, sans-serif;
+    font-size: 1.5rem;
+    color: #222;
+    padding-bottom:20px;
+
+    &:before{
+      content: '';
+      margin: 5px auto;
+      display: block;
+      background: url(/static/co/images/spr_ico_site_map.png) no-repeat;
+    }
+
+    &.site-introduce:before{
+      width: 40px;
+      height: 40px;
+      background-position: 3px 0;
+    }
+
+    &.site-cyber:before{
+      width: 40px;
+      height: 40px;
+      background-position: -44px 3px;
+    }
+
+    &.site-customer:before{
+      width: 40px;
+      height: 40px;
+      background-position: -91px 0;
+    }
+
+    &.site-business:before{
+      width: 40px;
+      height: 40px;
+      background-position: -136px 0;
+    }
+
+    &.site-work:before{
+      width: 40px;
+      height: 40px;
+      background-position: 1px -40px;
+    }
+
+    &.site-hire:before{
+      width: 40px;
+      height: 40px;
+      background-position: -43px -40px;
+    }
+
+  }
+  &-list{
+    &-depth1{
+
+      @extend %clearfix;
+      &-item{
+        width:265px;
+        float:left;
+        text-align: center;
+        margin-right: 30px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+
+    }
+
+    &-depth2{
+      padding-top: 30px;
+      border-top: 1px solid #d9d9d9;
+      &-item{
+        padding: 5px 8px;
+
+      }
+
+      &-link{
+        font-weight: 700;
+        color: #222;
+
+        &:hover{
+          color: #41519e;
+          font-weight: 900;
+        }
+      }
+    }
+
+  }
+
 }
 
 /*font-size*/

@@ -68,20 +68,23 @@
       <article class="article mt30">
         <div class="search-box day">
           <div class="search-box-input">
-            <div class="f-left">
-              <div class="timesetting">
-                <div class="timesetting-date">
-                  <label for="start-day" class="d-none">시작일</label>
-                  <input type="text" class="timesetting-date-day" id="start-day" readonly="" placeholder="2017.12.21" title="작성날짜를 선택하면 출력됩니다">
-                  <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
-                </div>
-                <span class="timesetting-dash">~</span>
-                <div class="timesetting-date">
-                  <label for="end-day" class="d-none">종료일</label>
-                  <input type="text" class="timesetting-date-day" id="end-day" readonly="" placeholder="2017.12.31" title="작성날짜를 선택하면 출력됩니다">
-                  <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
-                </div>
-              </div>
+            <label class="search-box-title pr15" for="start-day">시작일</label>
+            <div class="search-box-input-item">
+              <select class="search-box-input-select" id="start-day" title="검색을 원하시는 년도를 선택해 주세요">
+                <option>년</option>
+              </select>
+              <select class="search-box-input-select small" title="검색을 원하시는 월을 선택해 주세요">
+                <option>월</option>
+              </select>
+            </div>
+            <label class="search-box-title pf15 ml15" for="end-day">종료일</label>
+            <div class="search-box-input-item">
+              <select class="search-box-input-select" id="end-day" title="검색을 원하시는 년도를 선택해 주세요">
+                <option>년</option>
+              </select>
+              <select class="search-box-input-select small" title="검색을 원하시는 월을 선택해 주세요">
+                <option>월</option>
+              </select>
             </div>
             <div class="search-box-btn-area ml10">
               <button type="button" class="search-box-btn ico">검색</button>
@@ -98,7 +101,7 @@
           </div>
         </div>
 
-        <table class="table vt-dark mt20" summary="인천공항 결항통계에 대한 안내 표입니다.">
+        <table class="table vt-dark mt10" summary="인천공항 결항통계에 대한 안내 표입니다.">
           <caption>인천공항 결항통계 안내 표</caption>
           <colgroup>
             <col style="width:10%">
