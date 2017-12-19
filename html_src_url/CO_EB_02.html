@@ -1,0 +1,199 @@
+<!--=include _include/_header.html -->
+<section id="top-contents" class="contents">
+  <!--위치-->
+  <div class="location">
+    <div class="location-btn">
+      <button type="button" class="location-btn-minus ico">축소</button>
+      <button type="button" class="location-btn-plus ico">확대</button>
+      <button type="button" class="location-btn-print ico">인쇄</button>
+    </div>
+    <div class="location-bar">
+      <ul class="location-bar-nav">
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">업무지원</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">TIP</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">TIP 신청하기</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--//위치-->
+  <div class="sub-top bg5">
+    <div class="sub-top-inner">
+      <div class="sub-top-descbox">
+        <div class="sub-top-descbox-text">
+          <h2 class="sub-top-descbox-tit">업무지원</h2>
+          <h3 class="sub-top-descbox-sub">TIP</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contents">
+  <div class="inner-section">
+
+    [[--ActionStart--]][[--h_co_lnb_5--]][[--Actionend--]]
+
+    <div class="sub-contents">
+
+      <h4 class="sub-contents-heading1">TIP 신청하기</h4>
+
+      <article class="article">
+        <table class="table hr writing font14" summary="TIP 신청하기 글 작성">
+          <caption>TIP 신청하기 글 작성</caption>
+          <colgroup>
+            <col style="width:10%">
+            <col style="width:10%">
+            <col style="width:30%">
+            <col style="width:15%">
+            <col style="width:35%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="row" colspan="2" class="left">
+              <label for="region" class="important"><strong><span class="color-r">지역</span> 선택</strong></label>
+            </th>
+            <td colspan="3">
+              <select class="object-list" id="region">
+                <option>지역을 선택해주세요</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2"  class="left">
+              <label for="day" class="important"><strong>신청일자</strong></label>
+            </th>
+            <td colspan="3">
+              <div class="timesetting">
+                <div class="timesetting-date long">
+                  <input type="text" class="timesetting-date-day" readonly="" placeholder="2017.12.21 목" id="day" title="신청날짜를 선택하면 출력됩니다">
+                  <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2"  class="left"><label for="airline" class="important"><strong>신청항공사</strong></label></th>
+            <td><input type="text" id="airline" class="user-text wide"></td>
+            <th scope="row" class="left"><label for="office"><strong>지점명</strong></label></th>
+            <td><input type="text" id="office" class="user-text wide"></td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2"  class="left"><label for="staff" class="important"><strong>담당자명</strong></label></th>
+            <td><input type="text" id="staff" class="user-text wide"></td>
+            <th scope="row" class="left"><label for="staff-phone"><strong>담당자 연락처</strong></label></th>
+            <td><input type="text" id="staff-phone" class="user-text wide"></td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2" colspan="2"  class="left"><strong class="important">신청구분</strong></th>
+            <td colspan="3">
+              <div class="multi-col double">
+                <div class="inner-col">
+                  <input type="checkbox" class="checkbox" id="tour">
+                  <label for="tour" class="checkbox-label ico">맞춤형 환승 투어</label>
+                </div>
+                <div class="inner-col">
+                  <input type="checkbox" class="checkbox" id="dutyfree-coupon">
+                  <label for="dutyfree-coupon" class="checkbox-label ico">면세점 할인쿠폰 지원</label>
+                </div>
+              </div>
+              <div class="multi-col double mt10">
+                <div class="inner-col">
+                  <input type="checkbox" class="checkbox" id="lounge-coupon">
+                  <label for="lounge-coupon" class="checkbox-label ico">환승라운지 할인쿠폰 지원</label>
+                </div>
+                <div class="inner-col">
+                  <input type="checkbox" class="checkbox" id="ad">
+                  <label for="ad" class="checkbox-label ico">판촉/광고 지원</label>
+                </div>
+              </div>
+              <div class="mt10">
+                <input type="checkbox" class="checkbox" id="etc">
+                <label for="etc" class="checkbox-label ico">기타</label>
+                <label for="etc-detail" class="d-none">기타 상세</label>
+                ( <input type="text" class="user-text border-b" id="etc-detail"> )
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <input type="checkbox" class="checkbox" id="t2">
+              <label for="t2" class="checkbox-label ico">제2 여객터미널 <span class="color-r">단체환승객 미팅룸(문의 롯데 엘라운지 : 메일 주소 )</span></label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="3" class="left"><strong class="important">여객<br/>정보</strong></th>
+            <th scope="row"><label for="number"><strong>인원수</strong></label></th>
+            <td colspan="3"><input type="text" id="number" class="user-text wide"></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="flight"><strong>항공편</strong></label></th>
+            <td colspan="3">
+              <div class="timesetting">
+                <div class="timesetting-date long">
+                  <input type="text" class="timesetting-date-day" readonly="" placeholder="2017.12.21 목" id="flight-day" title="신청날짜를 선택하면 출력됩니다">
+                  <button class="timesetting-date-calendar ico" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                </div>
+                <select class="object-list ml5" title="시간을 선택할 수 있는 리스트입니다">
+                  <option>시간 선택</option>
+                </select>
+                <select class="object-list ml5" title="분을 선택할 수 있는 리스트입니다.">
+                  <option>분 선택</option>
+                </select>
+                <label for="flight" class="ml50">편명</label>
+                <input type="text" class="user-text ml10" id="flight" placeholder="항공편 입력" title="이용하신 항공편을 입력하실 수 있습니다">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="travel-agency"><strong>담당 여행사</strong></label></th>
+            <td><input type="text" id="travel-agency" class="user-text wide"></td>
+            <th scope="row" class="left"><label for="agency-contact"><strong>연락처</strong></label></th>
+            <td><input type="text" id="agency-contact" class="user-text wide"></td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2"  class="left"><label for="details" class="important"><strong>세부요청내역</strong></label></th>
+            <td colspan="3">
+              <textarea class="user-text wide height" id="details"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2"  class="left"><label for="cause"><strong>유치 필요 사유</strong></label></th>
+            <td colspan="3">
+              <textarea class="user-text wide height" id="cause"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2"  class="left"><label for="others"><strong>기타 사항</strong></label></th>
+            <td colspan="3">
+              <textarea class="user-text wide height" id="others"></textarea>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <div class="text-center mt30">
+          <a href="#" class="btn-type-normal btn2 ico arrow-point-right"><strong>신청하기</strong></a>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="text-box contact">
+          <div class="text-box-headline-col">
+            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 문의 주시기 바랍니다.</h6>
+          </div>
+          <ul class="list1">
+            <li class="list1-item">
+              <strong>담당부서 :</strong> 환승서비스팀
+            </li>
+            <li class="list1-item">
+              <strong>전화번호 :</strong> 032-741-2406, 2407
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<!--=include _include/_footer.html -->
