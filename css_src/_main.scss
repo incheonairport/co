@@ -68,62 +68,32 @@
             transform:translateY(-50%);
           }
 
-          &.grand-open{
-            &:nth-child(1){
-              font-family:nanumsq, sans-serif;
-              font-size:1.875rem;
-              font-style:italic;
-            }
-            &:nth-child(2){
-              margin-top:15px;
-              font-family:exo, sans-serif;
-              font-weight:900;
-              font-style:italic;
-              font-size:4.5rem;
-            }
-            &:nth-child(3){
-              margin-top:45px;
-              padding-top:30px;
-              position:relative;
-
-              &:after{
-                content:"";
-                display:block;
-                width:50px;
-                height:1px;
-                background:#fff;
-                position:absolute;
-                top:0;
-                left:50%;
-                transform:translateX(-50%);
-              }
-            }
-          }
-
           &:nth-child(1){
             position:relative;
-            top:-20px;
+            left:-20px;
 
-            font-size:4.375rem;
-            font-family:exo, sans-serif;
-            font-weight:900;
+            font-family:nanumsq, sans-serif;
+            font-weight:300;
             margin-bottom:10px;
             opacity:0;
+            letter-spacing: 20px;
           }
           &:nth-child(2){
             position:relative;
-            top:-20px;
+            right:-20px;
 
-            font-size:2.125rem;
             font-family:nanumsq, sans-serif;
-            font-weight:300;
+            font-weight:700;
             opacity:0;
+            letter-spacing: 20px;
           }
 
           &:nth-child(3){
             position:relative;
-            top:-20px;
+            top:0;
             opacity:0;
+            letter-spacing: 5px;
+            margin-top:20px;
           }
 
           &.white{
