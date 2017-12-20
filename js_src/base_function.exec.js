@@ -126,6 +126,57 @@ $(function(){
 
   })();
 
+  // LNB 이벤트
+  (function(){
+
+    var $lnb = $('.left-menu-depth1-item-link');
+
+    // init
+    $lnb.each(function(i){
+
+      if( $(this).next('.left-menu-depth2').length != 0 ){
+
+        $(this).addClass('has-child');
+
+      }
+
+      if( !$(this).hasClass('open') ){
+        $(this).data('open', false);
+      } else {
+        $(this).data('open', true);
+      }
+
+    });
+
+
+    $lnb.on('click', function(e){
+
+      if( $(this).hasClass('has-child') ){
+
+        e.preventDefault();
+
+        $lnb.each(function(){
+
+          if( $(this).hasClass('has-child') ){
+
+            $(this).addClass('close').removeClass('on open').data('open', false);
+
+          }
+
+        });
+
+        if( $(this).data('open') ){
+          //$(this).removeClass('on open').addClass('close').data('open', false);
+        } else {
+          $(this).removeClass('close').addClass('on open').data('open', true);
+        }
+
+      }
+
+    });
+
+  })();
+
 });
 
 
