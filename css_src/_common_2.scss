@@ -326,7 +326,9 @@
   }
 
   &-bottom {
-    font-size: 1rem;
+    .list1-item{
+      font-size: 1rem;
+    }
     //width: 410px;
     padding: 20px;
     background-color: #f2f2f2;
