@@ -929,7 +929,7 @@ em{
           &:after{
             content:"";
             display:inline-block;
-            background:url(/static/ap/images/spr_ico_crud.png) no-repeat -45px -52px;
+            background:url(/static/co/images/spr_ico_crud.png) no-repeat -45px -52px;
             width: 13px;
             height: 17px;
             margin-left:14px;
@@ -941,7 +941,7 @@ em{
           &:before{
             content:"";
             display:inline-block;
-            background:url(/static/ap/images/spr_ico_crud.png) no-repeat -52px -89px;
+            background:url(/static/co/images/spr_ico_crud.png) no-repeat -52px -89px;
             width: 24px;
             height: 24px;
             margin-right:12px;
@@ -953,7 +953,7 @@ em{
           &:before{
             content:"";
             display:inline-block;
-            background:url(/static/ap/images/spr_ico_crud.png) no-repeat -16px -89px;
+            background:url(/static/co/images/spr_ico_crud.png) no-repeat -16px -89px;
             width: 24px;
             height: 24px;
             margin-right:12px;
@@ -3406,17 +3406,17 @@ label.d-none{
   height: 22px;
 }
 
-.ico:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  background: url(/static/ap/images/spr_ico_global.png) no-repeat;
-}
+//.ico:after {
+//  content: '';
+//  display: block;
+//  position: absolute;
+//  top: 0;
+//  right: 0;
+//  left: 0;
+//  bottom: 0;
+//  margin: auto;
+//  background: url(/static/co/images/spr_ico_global.png) no-repeat;
+//}
 
 .enter{
   width: 100%;
@@ -5020,4 +5020,11 @@ label.d-none{
 
 .book-btn{
   margin-right: 5px;
+}
+
+/*newsletter*/
+.newsletter{
+  .imgbox{
+    border: 1px solid #d4d4d4;
+  }
 }
