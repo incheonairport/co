@@ -223,7 +223,6 @@
     &-news{
       width:100%;
       height:200px;
-      padding-top:43px;
       background:#23368c;
       opacity:0.9;
 
@@ -240,165 +239,116 @@
 
       &-inner{
         display:inline-block;
-        margin-right:100px;
+
+      }
+
+      &-section{
+        width:384px;
+        height:200px;
+        padding:30px;
+        float:left;
+        text-align: left;
+        position:relative;
+
+        &:before{
+          content: "";
+          display: block;
+          clear: both;
+          width: 1px;
+          height: 200px;
+          background: #fff;
+          opacity: 0.1;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &.first{
+          background: url(/static/co/images/bg_main_visual_news_ceo.png) 96px 12px no-repeat;
+        }
+
+        &.middle{
+          background: url(/static/co/images/bg_main_visual_news_02.png) 43px -34px no-repeat;
+        }
+
+        &.last{
+          &:after{
+            content: "";
+            display: block;
+            clear: both;
+            width: 1px;
+            height: 200px;
+            background: #fff;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .more-link{
+          &-arrow{
+            text-indent: -99999px;
+            width: 28px;
+            height: 9px;
+            background:url(/static/co/images/spr_arrow.png) 0 0;
+            position:absolute;
+            bottom:40px;
+            left:30px;
+          }
+
+          &-plus{
+            text-indent: -9999px;
+            height: 13px;
+            width: 13px;
+            background: url(/static/co/images/btn_more.png) no-repeat;
+            position: absolute;
+            top: 34px;
+            right: 20px;
+          }
+        }
       }
 
       &-title{
-        margin:52px 25px auto auto;
-        font-size:1.75rem;
-        font-weight:300;
+        font-size:1.5rem;
+        font-weight: 300;
+        color:#fff;
+      }
+
+      &-txt{
+        font-size:0.875rem;
+        margin-top:16px;
+      }
+
+    }
+    .news-more{
+      position: absolute;
+      top: 34px;
+      right: 84px;
+      @extend %clearfix;
+
+      &-link{
+        width:72px;
+        border-left:1px solid #3b4e9a;
+        padding-left:12px;
+        margin-right: 12px;
         float:left;
-      }
-
-      &-flight{
-        width:370px;
-        padding-top:45px;
-        float:left;
-        position:relative;
-
-        &-area{
-          //position:relative;
-
-          .area{
-            &-tab{
-              width:183px;
-              height:30px;
-              padding-right:15px;
-              border-bottom:1px solid #aec5fb;
-
-              position:absolute;
-              top:0;
-
-              font-size:1.25rem;
-              font-weight:300;
-              color:#aec5fb;
-              text-align:center;
-
-              &.on{
-                border-color:#fff;
-                color:#fff;
-              }
-
-              &:before{
-                content:"";
-                display:inline-block;
-                width:37px;
-                height:15px;
-                background:url(/static/ap/images/spr_ico_main_visual_search_flight.png) no-repeat;
-              }
-
-              &.departure{
-                left:0;
-
-                &.on:before{
-                  background-position:0 0;
-                }
-
-                &:before{
-                  margin-right:5px;
-                  background-position:0 -25px;
-                }
-              }
-
-              &.arrival{
-                right:0;
-
-                &.on:before{
-                  background-position:-51px 0;
-                }
-
-                &:before{
-                  margin-right:5px;
-                  background-position:-51px -25px;
-                }
-              }
-            }
-
-            &-form{
-              display:none;
-              position:relative;
-              padding-bottom:15px;
-              border-bottom:1px solid #fff;
-
-              &.on{
-                display:block;
-              }
-
-              &-input{
-                display:block;
-                width:100%;
-                height:40px;
-                background:transparent url(/static/ap/images/bg_search_flight_place_holder.png) no-repeat 20px center;
-                border:none;
-
-                font-size:1rem;
-                font-weight:300;
-                color:#fff;
-
-                &:focus{
-                  background-image:none;
-                }
-              }
-
-              &-button{
-                width:25px;
-                height:25px;
-
-                position:absolute;
-                top:8px;
-                right:-30px;
-
-                background:transparent url(/static/ap/images/ico_main_visual_search.png) no-repeat;
-                border:0;
-
-                text-indent:-99999em;
-              }
-
-            }
-          }
-        }
-      }
-
-      &-weather{
-        position:absolute;
-        top:84px;
-        left:50%;
-        transform:translateX(350px);
-        padding-left:45px;
-
-        @extend %clearfix;
-
-        .weather{
-          &-image{
-            float:left;
-          }
-
-          &-temperature{
-            float:left;
-            margin:16px auto auto 15px;
-          }
-        }
-
-        &:before{
-          content:"";
-          display:block;
-          width:1px;
-          height:72px;
-          background:#fff;
-          position:absolute;
-          top:-12px;
-          left:0;
-          opacity:0.2;
-        }
-      }
-
-      &-desc{
-        margin-top:11px;
-        font-size:0.8125rem;
-        color:#a0a5be;
+        color:#87b1ff;
+        font-size:1rem;
       }
     }
+  }
 
+  &-list{
+    &-item{
+      position: relative;
+      color:#fff;
+      margin-top: 4px;
+
+      a{
+        color:#fff;
+      }
+    }
   }
 
   &-section2{
@@ -407,6 +357,7 @@
     &-title{
       text-align: center;
       font-size:3.75rem;
+      font-weight: 400;
       color:#dd7714;
       font-family: 'roboto', sans-serif;
       &-txt{
@@ -482,8 +433,7 @@
       display: block;
       padding: 60px 50px 0 0;
       margin-left: 20px;
-
-
+      
       &.webjin{
         margin:0 92px 0 0;
 
