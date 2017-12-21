@@ -1299,10 +1299,26 @@ em{
   .view-body{
     padding:30px 30px 70px;
 
+    h2{
+      margin-bottom:20px;
+      line-height: 1.5;
+    }
+
+    div{
+      margin-bottom:20px;
+      line-height: 1.5;
+    }
+
+    p{
+      margin-bottom:20px;
+    }
+
     &.reply{
       padding: 30px 30px;
       border-bottom: 1px solid #d9d9d9;
     }
+
+
   }
   .view-file{
     @extend %clearfix;
