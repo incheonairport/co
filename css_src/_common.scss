@@ -3582,6 +3582,17 @@ label.d-none{
       &.small{
         width: 107px;
       }
+      &.year{
+        width:79px;
+        border: 1px solid #818181;
+      }
+      &.month{
+        width:61px;
+        border: 1px solid #818181;
+      }
+      &.airline{
+        width:91px;
+      }
       &+.search-box-input-select{
         border-left:1px solid #d9d9d9;
       }
