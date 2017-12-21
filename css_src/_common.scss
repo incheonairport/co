@@ -135,7 +135,7 @@
 }
 
 .left-menu{
-  width: 230px;
+  width: 240px;
   float: left;
   &-depth1{
     border-bottom: 1px solid #d9d9d9;
@@ -264,7 +264,7 @@
         &.on {
           color: #fff;
           background: #42519e;
-          border: none;
+          border: 1px solid #42519e;
           font-weight: 800;
           height: auto;
         }
@@ -967,7 +967,7 @@ em{
     &.board-list{
       & td{
         border-right:0;
-        padding:20px;
+        padding:20px 0;
         &.no-data-found{
           padding: 130px 20px;
         }
