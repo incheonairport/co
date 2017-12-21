@@ -40,61 +40,446 @@
 
       <article class="article">
         <div class="search-box">
+          <input type="hidden" id="PAS" name="PAS" value="">
+          <input type="hidden" id="BAG" name="BAG" value="">
+
           <div class="search-box-input small">
             <div class="multi-col double">
               <div class="inner-col w85 pl10">
                 <div class="form-layout">
-                  <label class="search-box-title pr15" for="flight">운항</label>
+                  <label class="search-box-title pr15" for="NVG_SE">운항</label>
                   <div class="search-box-input-item">
-                    <select class="search-box-input-select small" id="flight" title="운항를 선택해 주세요">
-                      <option>최대네자</option>
+                    <select id="NVG_SE" name="NVG_SE" class="search-box-input-select small">
+                      <option value="">전체</option>
+                      <option value="0">정기</option>
+                      <option value="1">부정기</option>
                     </select>
                   </div>
-                  <label class="search-box-title pr15 ml15" for="aeroplane">항공기</label>
+                  <label class="search-box-title pr15 ml15" for="ARPLN_SE">항공기</label>
                   <div class="search-box-input-item">
-                    <select class="search-box-input-select small" id="aeroplane" title="항공기를 선택해 주세요">
-                      <option>최대세자</option>
+                    <select id="ARPLN_SE" name="ARPLN_SE" class="search-box-input-select small">
+                      <option value="">전체</option>
+                      <option value="Y">여객기</option>
+                      <option value="N">화물기</option>
                     </select>
                   </div>
-                  <label class="search-box-title pr15 ml15" for="airroute">노선</label>
+                  <label class="search-box-title pr15 ml15" for="PAS_SEL">여객</label>
                   <div class="search-box-input-item">
-                    <select class="search-box-input-select small" id="airroute" title="노선을 선택해 주세요">
-                      <option>전체</option>
+                    <select id="PAS_SEL" name="PAS_SEL" class="search-box-input-select small">
+                      <option value="">전체</option>
+                      <option value="PCHRG_PSNGER">유임승객</option>
+                      <option value="FREE_PSNGER">무임승객</option>
+                      <option value="TRANSIT_PSNGER">환승승객</option>
                     </select>
                   </div>
-                  <label class="search-box-title pr15 ml15" for="passenger">여객</label>
+                  <label class="search-box-title pr15 ml15" for="BAG_SEL">화물</label>
                   <div class="search-box-input-item">
-                    <select class="search-box-input-select small" id="passenger" title="여객을 선택해 주세요">
-                      <option>전체</option>
+                    <select id="BAG_SEL" name="BAG_SEL" class="search-box-input-select small">
+                      <option value="">전체</option>
+                      <option value="FRGHT">순화물</option>
+                      <option value="PSTMTR">우편물</option>
+
+                      <option value="FRGHT + PSTMTR">항공화물</option>
+
+                      <option value="BAGG">수화물</option>
                     </select>
                   </div>
                 </div>
                 <div class="form-layout mt10">
-                  <label class="search-box-title pr15" for="department">화물</label>
+                  <label class="search-box-title pr15" for="AIRLINE">항공사</label>
                   <div class="search-box-input-item">
-                    <select class="search-box-input-select" id="department" title="화물을 선택해 주세요">
-                      <option>화물 선택</option>
+                    <select id="AIRLINE" name="AIRLINE" class="search-box-input-select airline">
+                      <option value="">전체</option>
+
+                      <option value="인천">
+                        인천
+                      </option>
+
+                      <option value="김포">
+                        김포
+                      </option>
+
+                      <option value="김해">
+                        김해
+                      </option>
+
+                      <option value="제주">
+                        제주
+                      </option>
+
+                      <option value="대구">
+                        대구
+                      </option>
+
+                      <option value="광주">
+                        광주
+                      </option>
+
+                      <option value="무안">
+                        무안
+                      </option>
+
+                      <option value="청주">
+                        청주
+                      </option>
+
+                      <option value="여수">
+                        여수
+                      </option>
+
+                      <option value="울산">
+                        울산
+                      </option>
+
+                      <option value="사천">
+                        사천
+                      </option>
+
+                      <option value="포항">
+                        포항
+                      </option>
+
+                      <option value="군산">
+                        군산
+                      </option>
+
+                      <option value="원주">
+                        원주
+                      </option>
+
+                      <option value="양양">
+                        양양
+                      </option>
+
+                      <option value="강릉">
+                        강릉
+                      </option>
+
+                      <option value="예천">
+                        예천
+                      </option>
+
+                      <option value="속초">
+                        속초
+                      </option>
+
+                      <option value="목포">
+                        목포
+                      </option>
+
                     </select>
                   </div>
-                  <label class="search-box-title ml15" for="day">날짜</label>
-                  <div class="search-box-input-item">
-                    <select class="search-box-input-select large" id="day" title="검색을 원하시는 년도를 선택해 주세요">
-                      <option>년</option>
+                  <div class="timesetting">
+                    <label class="search-box-title ml15" for="S_YEAR">날짜</label>
+                    <select id="S_YEAR" name="S_YEAR" class="search-box-input-select year">
+
+                      <option value="2017">
+                        2017
+                      </option>
+
+                      <option value="2016">
+                        2016
+                      </option>
+
+                      <option value="2015">
+                        2015
+                      </option>
+
+                      <option value="2014">
+                        2014
+                      </option>
+
+                      <option value="2013">
+                        2013
+                      </option>
+
+                      <option value="2012">
+                        2012
+                      </option>
+
+                      <option value="2011">
+                        2011
+                      </option>
+
+                      <option value="2010">
+                        2010
+                      </option>
+
+                      <option value="2009">
+                        2009
+                      </option>
+
+                      <option value="2008">
+                        2008
+                      </option>
+
+                      <option value="2007">
+                        2007
+                      </option>
+
+                      <option value="2006">
+                        2006
+                      </option>
+
+                      <option value="2005">
+                        2005
+                      </option>
+
+                      <option value="2004">
+                        2004
+                      </option>
+
+                      <option value="2003">
+                        2003
+                      </option>
+
+                      <option value="2002">
+                        2002
+                      </option>
+
+                      <option value="2001">
+                        2001
+                      </option>
+
                     </select>
-                    <select class="search-box-input-select medium" title="검색을 원하시는 월을 선택해 주세요">
-                      <option>월</option>
+                    <label class="search-box-title ml5" for="S_MONTH">년</label>
+
+                    <select id="S_MONTH" name="S_MONTH" title="시작월" class="search-box-input-select month">
+
+
+                      <option value="01">
+                        01
+                      </option>
+
+
+                      <option value="02">
+                        02
+                      </option>
+
+
+                      <option value="03">
+                        03
+                      </option>
+
+
+                      <option value="04">
+                        04
+                      </option>
+
+
+                      <option value="05">
+                        05
+                      </option>
+
+
+                      <option value="06">
+                        06
+                      </option>
+
+
+                      <option value="07">
+                        07
+                      </option>
+
+
+                      <option value="08">
+                        08
+                      </option>
+
+
+                      <option value="09">
+                        09
+                      </option>
+
+
+                      <option value="10">
+                        10
+                      </option>
+
+
+                      <option value="11">
+                        11
+                      </option>
+
+
+                      <option value="12">
+                        12
+                      </option>
+
                     </select>
+                    <label class="search-box-title ml5 pr15" for="S_MONTH">월</label>
+                    <label class="search-box-title pr15" for="E_YEAR">~</label>
+
+                    <select id="E_YEAR" name="E_YEAR" title="종료년도" class="search-box-input-select year">
+
+                      <option value="2017">2017</option>
+
+                      <option value="2016">2016</option>
+
+                      <option value="2015">2015</option>
+
+                      <option value="2014">2014</option>
+
+                      <option value="2013">2013</option>
+
+                      <option value="2012">2012</option>
+
+                      <option value="2011">2011</option>
+
+                      <option value="2010">2010</option>
+
+                      <option value="2009">2009</option>
+
+                      <option value="2008">2008</option>
+
+                      <option value="2007">2007</option>
+
+                      <option value="2006">2006</option>
+
+                      <option value="2005">2005</option>
+
+                      <option value="2004">2004</option>
+
+                      <option value="2003">2003</option>
+
+                      <option value="2002">2002</option>
+
+                      <option value="2001">2001</option>
+
+                    </select>
+                    <label class="search-box-title ml5" for="E_YEAR">년</label>
+                    <select id="E_MONTH" name="E_MONTH" title="종료월" class="search-box-input-select month">
+
+
+                      <option value="01">
+                        01
+                      </option>
+
+
+                      <option value="02">
+                        02
+                      </option>
+
+
+                      <option value="03">
+                        03
+                      </option>
+
+
+                      <option value="04">
+                        04
+                      </option>
+
+
+                      <option value="05">
+                        05
+                      </option>
+
+
+                      <option value="06">
+                        06
+                      </option>
+
+
+                      <option value="07">
+                        07
+                      </option>
+
+
+                      <option value="08">
+                        08
+                      </option>
+
+
+                      <option value="09">
+                        09
+                      </option>
+
+
+                      <option value="10">
+                        10
+                      </option>
+
+
+                      <option value="11">
+                        11
+                      </option>
+
+
+                      <option value="12">
+                        12
+                      </option>
+
+                    </select>
+                    <label class="search-box-title ml5" for="E_MONTH">월</label>
+
                   </div>
                 </div>
               </div>
               <div class="inner-col w15 pl10">
                 <div class="search-box-btn-area">
-                  <button type="button" class="search-box-btn big">검색</button>
+                  <button type="button" class="search-box-btn big" id="btnSearch">검색</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!--<div class="search-box">-->
+          <!--<div class="search-box-input small">-->
+            <!--<div class="multi-col double">-->
+              <!--<div class="inner-col w85 pl10">-->
+                <!--<div class="form-layout">-->
+                  <!--<label class="search-box-title pr15" for="flight">운항</label>-->
+                  <!--<div class="search-box-input-item">-->
+                    <!--<select class="search-box-input-select small" id="flight" title="운항를 선택해 주세요">-->
+                      <!--<option>최대네자</option>-->
+                    <!--</select>-->
+                  <!--</div>-->
+                  <!--<label class="search-box-title pr15 ml15" for="aeroplane">항공기</label>-->
+                  <!--<div class="search-box-input-item">-->
+                    <!--<select class="search-box-input-select small" id="aeroplane" title="항공기를 선택해 주세요">-->
+                      <!--<option>최대세자</option>-->
+                    <!--</select>-->
+                  <!--</div>-->
+                  <!--<label class="search-box-title pr15 ml15" for="airroute">노선</label>-->
+                  <!--<div class="search-box-input-item">-->
+                    <!--<select class="search-box-input-select small" id="airroute" title="노선을 선택해 주세요">-->
+                      <!--<option>전체</option>-->
+                    <!--</select>-->
+                  <!--</div>-->
+                  <!--<label class="search-box-title pr15 ml15" for="passenger">여객</label>-->
+                  <!--<div class="search-box-input-item">-->
+                    <!--<select class="search-box-input-select small" id="passenger" title="여객을 선택해 주세요">-->
+                      <!--<option>전체</option>-->
+                    <!--</select>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-layout mt10">-->
+                  <!--<label class="search-box-title pr15" for="department">화물</label>-->
+                  <!--<div class="search-box-input-item">-->
+                    <!--<select class="search-box-input-select" id="department" title="화물을 선택해 주세요">-->
+                      <!--<option>화물 선택</option>-->
+                    <!--</select>-->
+                  <!--</div>-->
+                  <!--<label class="search-box-title ml15" for="day">날짜</label>-->
+                  <!--<div class="search-box-input-item">-->
+                    <!--<select class="search-box-input-select large" id="day" title="검색을 원하시는 년도를 선택해 주세요">-->
+                      <!--<option>년</option>-->
+                    <!--</select>-->
+                    <!--<select class="search-box-input-select medium" title="검색을 원하시는 월을 선택해 주세요">-->
+                      <!--<option>월</option>-->
+                    <!--</select>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="inner-col w15 pl10">-->
+                <!--<div class="search-box-btn-area">-->
+                  <!--<button type="button" class="search-box-btn big">검색</button>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
         <div class="multi-col double mt30">
           <div class="inner-col">
             <p class="guide-desc mark">인천공항 실적만 작성</p>
