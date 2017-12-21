@@ -1095,6 +1095,10 @@ em{
       vertical-align:middle;
       word-break: keep-all;
 
+      a{
+        font-size:1rem;
+      }
+
       &.center{
            text-align:center;
       }
@@ -2705,7 +2709,7 @@ label.d-none{
   }
 
   &-btn{
-    padding: 5px 30px 5px 20px;
+    padding: 5px 30px 5px 30px;
     font-size: 0.875rem;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.2);
