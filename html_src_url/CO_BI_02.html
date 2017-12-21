@@ -70,20 +70,333 @@
                   </div>
                 </div>
                 <div class="form-layout mt10">
-                  <label class="search-box-title pr15" for="department">화물</label>
+                  <label class="search-box-title pr15" for="AIRLINE">항공사</label>
                   <div class="search-box-input-item">
-                    <select class="search-box-input-select" id="department" title="화물을 선택해 주세요">
-                      <option>화물 선택</option>
+                    <select id="AIRLINE" name="AIRLINE" class="search-box-input-select airline">
+                      <option value="">전체</option>
+
+                      <option value="인천">
+                        인천
+                      </option>
+
+                      <option value="김포">
+                        김포
+                      </option>
+
+                      <option value="김해">
+                        김해
+                      </option>
+
+                      <option value="제주">
+                        제주
+                      </option>
+
+                      <option value="대구">
+                        대구
+                      </option>
+
+                      <option value="광주">
+                        광주
+                      </option>
+
+                      <option value="무안">
+                        무안
+                      </option>
+
+                      <option value="청주">
+                        청주
+                      </option>
+
+                      <option value="여수">
+                        여수
+                      </option>
+
+                      <option value="울산">
+                        울산
+                      </option>
+
+                      <option value="사천">
+                        사천
+                      </option>
+
+                      <option value="포항">
+                        포항
+                      </option>
+
+                      <option value="군산">
+                        군산
+                      </option>
+
+                      <option value="원주">
+                        원주
+                      </option>
+
+                      <option value="양양">
+                        양양
+                      </option>
+
+                      <option value="강릉">
+                        강릉
+                      </option>
+
+                      <option value="예천">
+                        예천
+                      </option>
+
+                      <option value="속초">
+                        속초
+                      </option>
+
+                      <option value="목포">
+                        목포
+                      </option>
+
                     </select>
                   </div>
-                  <label class="search-box-title ml15" for="day">날짜</label>
-                  <div class="search-box-input-item">
-                    <select class="search-box-input-select large" id="day" title="검색을 원하시는 년도를 선택해 주세요">
-                      <option>년</option>
+                  <div class="timesetting">
+                    <label class="search-box-title ml15" for="S_YEAR">날짜</label>
+                    <select id="S_YEAR" name="S_YEAR" class="search-box-input-select year">
+
+                      <option value="2017">
+                        2017
+                      </option>
+
+                      <option value="2016">
+                        2016
+                      </option>
+
+                      <option value="2015">
+                        2015
+                      </option>
+
+                      <option value="2014">
+                        2014
+                      </option>
+
+                      <option value="2013">
+                        2013
+                      </option>
+
+                      <option value="2012">
+                        2012
+                      </option>
+
+                      <option value="2011">
+                        2011
+                      </option>
+
+                      <option value="2010">
+                        2010
+                      </option>
+
+                      <option value="2009">
+                        2009
+                      </option>
+
+                      <option value="2008">
+                        2008
+                      </option>
+
+                      <option value="2007">
+                        2007
+                      </option>
+
+                      <option value="2006">
+                        2006
+                      </option>
+
+                      <option value="2005">
+                        2005
+                      </option>
+
+                      <option value="2004">
+                        2004
+                      </option>
+
+                      <option value="2003">
+                        2003
+                      </option>
+
+                      <option value="2002">
+                        2002
+                      </option>
+
+                      <option value="2001">
+                        2001
+                      </option>
+
                     </select>
-                    <select class="search-box-input-select medium" title="검색을 원하시는 월을 선택해 주세요">
-                      <option>월</option>
+                    <label class="search-box-title ml5" for="S_MONTH">년</label>
+
+                    <select id="S_MONTH" name="S_MONTH" title="시작월" class="search-box-input-select month">
+
+
+                      <option value="01">
+                        01
+                      </option>
+
+
+                      <option value="02">
+                        02
+                      </option>
+
+
+                      <option value="03">
+                        03
+                      </option>
+
+
+                      <option value="04">
+                        04
+                      </option>
+
+
+                      <option value="05">
+                        05
+                      </option>
+
+
+                      <option value="06">
+                        06
+                      </option>
+
+
+                      <option value="07">
+                        07
+                      </option>
+
+
+                      <option value="08">
+                        08
+                      </option>
+
+
+                      <option value="09">
+                        09
+                      </option>
+
+
+                      <option value="10">
+                        10
+                      </option>
+
+
+                      <option value="11">
+                        11
+                      </option>
+
+
+                      <option value="12">
+                        12
+                      </option>
+
                     </select>
+                    <label class="search-box-title ml5 pr15" for="S_MONTH">월</label>
+                    <label class="search-box-title pr15" for="E_YEAR">~</label>
+
+                    <select id="E_YEAR" name="E_YEAR" title="종료년도" class="search-box-input-select year">
+
+                      <option value="2017">2017</option>
+
+                      <option value="2016">2016</option>
+
+                      <option value="2015">2015</option>
+
+                      <option value="2014">2014</option>
+
+                      <option value="2013">2013</option>
+
+                      <option value="2012">2012</option>
+
+                      <option value="2011">2011</option>
+
+                      <option value="2010">2010</option>
+
+                      <option value="2009">2009</option>
+
+                      <option value="2008">2008</option>
+
+                      <option value="2007">2007</option>
+
+                      <option value="2006">2006</option>
+
+                      <option value="2005">2005</option>
+
+                      <option value="2004">2004</option>
+
+                      <option value="2003">2003</option>
+
+                      <option value="2002">2002</option>
+
+                      <option value="2001">2001</option>
+
+                    </select>
+                    <label class="search-box-title ml5" for="E_YEAR">년</label>
+                    <select id="E_MONTH" name="E_MONTH" title="종료월" class="search-box-input-select month">
+
+
+                      <option value="01">
+                        01
+                      </option>
+
+
+                      <option value="02">
+                        02
+                      </option>
+
+
+                      <option value="03">
+                        03
+                      </option>
+
+
+                      <option value="04">
+                        04
+                      </option>
+
+
+                      <option value="05">
+                        05
+                      </option>
+
+
+                      <option value="06">
+                        06
+                      </option>
+
+
+                      <option value="07">
+                        07
+                      </option>
+
+
+                      <option value="08">
+                        08
+                      </option>
+
+
+                      <option value="09">
+                        09
+                      </option>
+
+
+                      <option value="10">
+                        10
+                      </option>
+
+
+                      <option value="11">
+                        11
+                      </option>
+
+
+                      <option value="12">
+                        12
+                      </option>
+
+                    </select>
+                    <label class="search-box-title ml5" for="E_MONTH">월</label>
+
                   </div>
                 </div>
               </div>

@@ -2524,8 +2524,8 @@ label.d-none{
     }
   }
   &.bg-pattern{
-    height: 217px;
-    background: url(/static/co/images/bg_textbox_pattern.png) no-repeat;
+    //height: 217px;
+    background: url(/static/co/images/bg_textbox_pattern.png) bottom no-repeat;
     .textbox-txt{
       height: auto;
       padding: 30px 20px 30px 120px;
