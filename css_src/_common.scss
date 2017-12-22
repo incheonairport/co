@@ -1818,6 +1818,12 @@ label.d-none{
           padding-right: 0;
         }
       }
+      &.w57{
+        width: 57%;
+      }
+      &.w43{
+        width: 43%;
+      }
       &.w73{
         width: 73%;
       }
@@ -2315,7 +2321,10 @@ label.d-none{
     }
     .list1{
       padding: 20px;
-      font-size: 1rem;
+      .list1-item{
+        font-size: 1rem;
+      }
+
     }
   }
 }
