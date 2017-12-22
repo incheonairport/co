@@ -3006,7 +3006,7 @@ label.d-none{
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
-  overflow-y:scroll;
+  overflow-y:auto;
   z-index:10;
   &.info{
     width: 792px;
