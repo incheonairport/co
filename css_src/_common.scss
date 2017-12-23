@@ -71,6 +71,7 @@
   position: relative;
 
   &-btn{
+    display:none;
     position: absolute;
     top:20px;
     right:25px;
@@ -134,7 +135,7 @@
 }
 
 .left-menu{
-  width: 230px;
+  width: 240px;
   float: left;
   &-depth1{
     border-bottom: 1px solid #d9d9d9;
@@ -263,7 +264,7 @@
         &.on {
           color: #fff;
           background: #42519e;
-          border: none;
+          border: 1px solid #42519e;
           font-weight: 800;
           height: auto;
         }
@@ -966,7 +967,7 @@ em{
     &.board-list{
       & td{
         border-right:0;
-        padding:20px;
+        padding:20px 0;
         &.no-data-found{
           padding: 130px 20px;
         }
@@ -1094,6 +1095,10 @@ em{
       border-top:1px solid #d9d9d9;
       vertical-align:middle;
       word-break: keep-all;
+
+      a{
+        font-size:1rem;
+      }
 
       &.center{
            text-align:center;
@@ -1298,10 +1303,26 @@ em{
   .view-body{
     padding:30px 30px 70px;
 
+    h2{
+      margin-bottom:20px;
+      line-height: 1.5;
+    }
+
+    div{
+      margin-bottom:20px;
+      line-height: 1.5;
+    }
+
+    p{
+      margin-bottom:20px;
+    }
+
     &.reply{
       padding: 30px 30px;
       border-bottom: 1px solid #d9d9d9;
     }
+
+
   }
   .view-file{
     @extend %clearfix;
@@ -1796,6 +1817,12 @@ label.d-none{
         &.pr0{
           padding-right: 0;
         }
+      }
+      &.w57{
+        width: 57%;
+      }
+      &.w43{
+        width: 43%;
       }
       &.w73{
         width: 73%;
@@ -2294,7 +2321,10 @@ label.d-none{
     }
     .list1{
       padding: 20px;
-      font-size: 1rem;
+      .list1-item{
+        font-size: 1rem;
+      }
+
     }
   }
 }
@@ -2507,8 +2537,8 @@ label.d-none{
     }
   }
   &.bg-pattern{
-    height: 217px;
-    background: url(/static/co/images/bg_textbox_pattern.png) no-repeat;
+    //height: 217px;
+    background: url(/static/co/images/bg_textbox_pattern.png) bottom no-repeat;
     .textbox-txt{
       height: auto;
       padding: 30px 20px 30px 120px;
@@ -2689,7 +2719,7 @@ label.d-none{
   }
 
   &-btn{
-    padding: 5px 30px 5px 20px;
+    padding: 5px 30px 5px 30px;
     font-size: 0.875rem;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -2976,7 +3006,7 @@ label.d-none{
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
-  overflow-y:scroll;
+  overflow-y:auto;
   z-index:10;
   &.info{
     width: 792px;
@@ -3564,6 +3594,17 @@ label.d-none{
       }
       &.small{
         width: 107px;
+      }
+      &.year{
+        width:79px;
+        border: 1px solid #818181;
+      }
+      &.month{
+        width:61px;
+        border: 1px solid #818181;
+      }
+      &.airline{
+        width:91px;
       }
       &+.search-box-input-select{
         border-left:1px solid #d9d9d9;

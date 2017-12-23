@@ -292,6 +292,7 @@
   }
 
   &-mobile-btn{
+    display:none;
     width:19px;
     height:14px;
     padding:0;
@@ -962,7 +963,7 @@
   border-bottom:1px solid #ddd;
 
   position:fixed;
-  top:101px;
+  top:127px;
   left:0;
 
   text-align:center;
