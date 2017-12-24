@@ -1,0 +1,533 @@
+.section{
+  height:1000px;
+  position:relative;
+  background-repeat:no-repeat;
+  background-position:center top;
+
+  &.auto-height{
+    height:auto;
+  }
+
+  &.bg-fixed{
+    background-attachment:fixed;
+  }
+}
+
+.main-inner{
+  width: 1152px;
+  margin: 0 auto;
+  //padding: 0 24px;
+  //box-sizing: border-box;
+  @extend %clearfix;
+}
+
+.main{
+
+  &-visual{
+    position:relative;
+    overflow:hidden;
+    //height:1000px;
+
+    &-wrap{
+      height:100%;
+
+      position:relative;
+
+      z-index:90;
+      overflow:hidden;
+
+      &:after{
+        content:"";
+        display:block;
+        width:100%;
+        height:100%;
+        background:url(/static/ap/images/bg_dimmed_gradient.png) repeat-x 0 0;
+        position:absolute;
+        top:0;
+        left:0;
+      }
+    }
+
+    &-item{
+      width:100%;
+      height:100%;
+
+      position:absolute;
+      top:0;
+      left:0;
+
+      background-position:center top;
+
+      .visual{
+        &-text{
+
+          &-box{
+            text-align:center;
+            position:relative;
+            top:calc(50% - 55px);
+            transform:translateY(-50%);
+          }
+
+          &:nth-child(1){
+            position:relative;
+            left:-20px;
+
+            font-family:nanumsq, sans-serif;
+            font-weight:300;
+            margin-bottom:10px;
+            opacity:0;
+            letter-spacing: 20px;
+          }
+          &:nth-child(2){
+            position:relative;
+            right:-20px;
+
+            font-family:nanumsq, sans-serif;
+            font-weight:700;
+            opacity:0;
+            letter-spacing: 20px;
+          }
+
+          &:nth-child(3){
+            position:relative;
+            top:0;
+            opacity:0;
+            letter-spacing: 5px;
+            margin-top:20px;
+          }
+
+          &.white{
+            color:#fff;
+          }
+
+          &.black{
+            color:#000;
+          }
+
+          &.blue{
+            color:#42519e;
+          }
+        }
+      }
+    }
+
+    &-control{
+
+      &-arrow{
+        width:100%;
+        position:absolute;
+        top:50%;
+        left:0;
+        z-index:100;
+
+        >.arrow{
+          width:74px;
+          height:74px;
+          padding:0;
+          border:none;
+          background:url(/static/ap/images/spr_main_visual_arrow.png) no-repeat;
+
+          position:absolute;
+          top:calc(50% - 55px);
+          transform:translateY(-50%);
+
+          text-indent:-99999em;
+
+          &.prev{
+            left:80px;
+          }
+
+          &.next{
+            background-position:-84px 0;
+            right:80px;
+          }
+        }
+      }
+
+      &-paging{
+        position:absolute;
+        bottom:250px;
+        left:50%;
+        transform:translateX(-50%);
+        z-index:100;
+
+        @extend %clearfix;
+
+        .play-button{
+          display:block;
+          width:11px;
+          height:11px;
+          padding:0;
+          border:none;
+          border-radius:0;
+
+          float:left;
+
+          background:url(/static/ap/images/spr_ico_main_visual_play.png) no-repeat;
+
+          text-indent:-99999em;
+
+          &.play{
+            background-position:-16px 0;
+          }
+
+        }
+
+        .paging{
+
+          &-visual{
+            float:left;
+            @extend %clearfix;
+          }
+
+          &-item{
+            float:left;
+            margin-right:10px;
+            width:11px;
+            height:11px;
+            border:2px solid #333;
+            border-radius:50%;
+            position:relative;
+            overflow:hidden;
+          }
+          &-link{
+            display:block;
+            width:11px;
+            //height:11px;
+            height:100%;
+            //border:2px solid #333;
+            //border-radius:50%;
+            text-indent:-99999em;
+            position:absolute;
+            left:-2px;
+            bottom:0;
+
+            &.on{
+              background:#333333;
+            }
+          }
+        }
+      }
+
+      &-bar{
+        width:0;
+        height:3px;
+        background:#ffae44;
+        position:absolute;
+        bottom:207px;
+        left:0;
+        z-index:110;
+      }
+    }
+
+    &-news{
+      width:100%;
+      height:200px;
+      background:#23368c;
+      opacity:0.9;
+
+      position:absolute;
+      bottom:0;
+      left:0;
+
+      color:#fff;
+      text-align:center;
+
+      z-index:100;
+
+      @extend %clearfix;
+
+      &-inner{
+        display:inline-block;
+
+      }
+
+      &-section{
+        width:384px;
+        height:200px;
+        padding:30px;
+        float:left;
+        text-align: left;
+        position:relative;
+
+        &:before{
+          content: "";
+          display: block;
+          clear: both;
+          width: 1px;
+          height: 200px;
+          background: #fff;
+          opacity: 0.1;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &.first{
+          background: url(/static/co/images/bg_main_visual_news_ceo.png) 96px 12px no-repeat;
+        }
+
+        &.middle{
+          background: url(/static/co/images/bg_main_visual_news_02.png) 43px -34px no-repeat;
+        }
+
+        &.last{
+          &:after{
+            content: "";
+            display: block;
+            clear: both;
+            width: 1px;
+            height: 200px;
+            background: #fff;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .more-link{
+          &-arrow{
+            text-indent: -99999px;
+            width: 28px;
+            height: 9px;
+            background:url(/static/co/images/spr_arrow.png) 0 0;
+            position:absolute;
+            bottom:40px;
+            left:30px;
+          }
+
+          &-plus{
+            text-indent: -9999px;
+            height: 13px;
+            width: 13px;
+            background: url(/static/co/images/btn_more.png) no-repeat;
+            position: absolute;
+            top: 34px;
+            right: 20px;
+          }
+        }
+      }
+
+      &-title{
+        font-size:1.5rem;
+        font-weight: 300;
+        color:#fff;
+      }
+
+      &-txt{
+        font-size:0.875rem;
+        margin-top:16px;
+      }
+
+    }
+    .news-more{
+      position: absolute;
+      top: 34px;
+      right: 84px;
+      @extend %clearfix;
+
+      &-link{
+        width:72px;
+        border-left:1px solid #3b4e9a;
+        padding-left:12px;
+        margin-right: 12px;
+        float:left;
+        color:#87b1ff;
+        font-size:1rem;
+      }
+    }
+  }
+
+  &-list{
+    &-item{
+      position: relative;
+      color:#fff;
+      margin-top: 4px;
+
+      a{
+        color:#fff;
+      }
+    }
+  }
+
+  &-section2{
+    height: 643px;
+    background-image: url('/static/co/images/bg_main_section_01.jpg');
+    &-title{
+      text-align: center;
+      font-size:3.75rem;
+      font-weight: 400;
+      color:#dd7714;
+      font-family: 'roboto', sans-serif;
+      &-txt{
+        text-align: center;
+        font-size:1.375rem;
+        margin-top: 15px;
+      }
+      &-wrap{
+        padding-top: 92px;
+      }
+    }
+    &-text{
+      font-size:0.875rem;
+      margin-top:12px;
+      &-wrap{
+        margin-top:48px;
+      }
+      &-box{
+        width:288px;
+        height:246px;
+        border-left: 1px solid #c6c6d8;
+        padding: 0 24px;
+        float:left;
+        &:first-child{
+          border-left:0;
+          padding-left:0;
+        }
+      }
+      &-tit{
+        font-size:1.5rem;
+        font-weight:900;
+      }
+      &-list{
+        font-size:1rem;
+        margin-top:44px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &-section3{
+    height:191px;
+    background:#221417;
+  }
+
+  &-banner{
+    &-wrap{
+      float:right;
+      margin-top:14px;
+      position:relative;
+    }
+    &-img{
+
+    }
+  }
+}
+
+.external{
+  &-link{
+    height:86px;
+    border-left:1px solid #392c2f;
+    float:left;
+    position: relative;
+    top: 55px;
+    left: 0;
+
+    &:first-child{
+      border:0;
+    }
+    &-text{
+      color:#fff;
+      font-size:1.125rem;
+      display: block;
+      padding: 60px 50px 0 0;
+      margin-left: 20px;
+      
+      &.webjin{
+        margin:0 92px 0 0;
+
+        &:before{
+          content:"";
+          display:block;
+          background:url(/static/co/images/logo_more_beyond.png) no-repeat ;
+          width: 84px;
+          height: 38px;
+          position:absolute;
+          top:0;
+          left:0;
+        }
+        &:after{
+          content:"";
+          display:inline-block;
+          clear:both;
+          background:url(/static/co/images/spr_arrow.png) 0 0;
+          width: 28px;
+          height: 9px;
+          position: absolute;
+          bottom: 17px;
+          left: 45px;
+        }
+      }
+      &.human{
+        margin-right: 43px;
+        &:before{
+          content:"";
+          display:block;
+          background:url(/static/co/images/logo_human_resources_development.png) no-repeat ;
+          width: 47px;
+          height: 42px;
+          position:absolute;
+          top:0;
+          left:20px;
+        }
+        &:after{
+          content:"";
+          display:inline-block;
+          clear:both;
+          background:url(/static/co/images/spr_arrow.png) 0 0;
+          width: 28px;
+          height: 9px;
+          position: absolute;
+          bottom: 17px;
+          left: 114px;
+        }
+      }
+      &.badminton{
+        &:before{
+          content:"";
+          display:block;
+          background:url(/static/co/images/logo_skymons.png) no-repeat ;
+          width: 129px;
+          height: 42px;
+          position:absolute;
+          top:0;
+          left:20px;
+        }
+        &:after{
+          content:"";
+          display:inline-block;
+          clear:both;
+          background:url(/static/co/images/spr_arrow.png) 0 0;
+          width: 28px;
+          height: 9px;
+          position: absolute;
+          bottom: 17px;
+          left: 116px;
+        }
+      }
+    }
+  }
+}
+
+.banner{
+
+  &-btn{
+    width:39px;
+    height:39px;
+    border:0;
+    text-indent: -99999px;
+    opacity: 0.4;
+    &.left{
+      background:#333 url(/static/co/images/spr_arrow.png) -28px 11px no-repeat;
+    }
+    &.right{
+      background:#333 url(/static/co/images/spr_arrow.png) -67px 11px no-repeat;
+    }
+    &-wrap{
+      position: absolute;
+      bottom: 3px;
+      right: 0;
+    }
+  }
+}

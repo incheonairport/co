@@ -1,0 +1,556 @@
+<!--=include _include/_header.html -->
+<section id="top-contents" class="contents">
+  <!--위치-->
+  <div class="location">
+    <div class="location-btn">
+      <button type="button" class="location-btn-minus ico">확대</button>
+      <button type="button" class="location-btn-plus ico">축소</button>
+      <button type="button" class="location-btn-print ico">인쇄</button>
+    </div>
+    <div class="location-bar">
+      <ul class="location-bar-nav">
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">사이버홍보실</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">항공통계</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">공항 예상 혼잡도</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">출입국 별 </a></li>
+      </ul>
+    </div>
+  </div>
+  <!--//위치-->
+  <div class="sub-top bg2">
+    <div class="sub-top-inner">
+      <div class="sub-top-descbox">
+        <div class="sub-top-descbox-text">
+          <h2 class="sub-top-descbox-tit">사이버홍보실</h2>
+          <h3 class="sub-top-descbox-sub">항공통계</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contents">
+  <div class="inner-section">
+
+    <!--=include _include/_left_menu_02.html -->
+
+    <div class="sub-contents">
+      <h4 class="sub-contents-heading1">공항 예상 혼잡도</h4>
+
+      <nav class="tab-nav">
+        <ul class="tab-nav-list">
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link on">출입국 별</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">노선 별</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="article mt30">
+        <h5 class="sub-contents-heading2">출입국 별 공항 예상 혼잡도</h5>
+        <ul class="list1">
+          <li class="list1-item">
+            공항 예상 혼잡도 서비스는 시간대별 인천국제공항 이용여객수 정보를 제공하는 서비스로서, 해당 정보를 통해서 고객님의 공항이용시간대별 공항 혼잡상황을 미리 확인하실 수 있도록 하고 있습니다.
+          </li>
+          <li class="list1-item">
+            항공기 출발/도착시각, 탑승구 등이 변경될 경우에는 실시간으로 업데이트되는 홈페이지의 공항 예상 혼잡도의 예측 승객 수와 변경 이전에 생성된 엑셀파일의 공항 예상혼잡도 수치가 다를 수 있습니다.
+          </li>
+          <li class="list1-item">
+            예고 자료는 매일 17시에 업데이트 됩니다. (D+2일: 출국공항 예상혼잡도, D+1일: 출입국및환승공항 예상혼잡도)<br />
+            1번, 6번 출국장은 패스트트랙으로,공항 예상혼잡도제 대상에서 제외됩니다.
+          </li>
+        </ul>
+      </article>
+
+      <article class="article">
+        <h5 class="sub-contents-heading2">공항 예상 혼잡도 조회</h5>
+
+        <div class="search-box">
+          <div class="search-box-input">
+            <label class="search-box-title" for="notice-day">예고일</label>
+            <div class="search-box-input-item">
+              <select class="search-box-input-select medium" id="notice-day" title="예고일을 선택할 수 있습니다.">
+                <option>2017.09.12 (화)</option>
+              </select>
+            </div>
+            <div class="search-box-btn-area">
+              <button type="button" class="search-box-btn ico">검색</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="multi-col double mt30">
+          <div class="inner-col">
+            <ul class="list2">
+              <li class="list2-item guide-desc">
+                2017년 09월 12일 (화) 공항 시간대별 출국 승객예고 현황
+              </li>
+              <li class="list2-item guide-desc">
+                2017.09.12 (화) 출국관련 <mark class="bell orange">orange</mark> 경보 발령
+                <!-- class bell.blue, yellow, orange, red 경보 색상 지정 가능 -->
+              </li>
+            </ul>
+          </div>
+
+          <div class="inner-col">
+            <p class="board-page">(단위:편,명,톤)</p>
+          </div>
+        </div>
+
+        <table class="table vt-dark pd0 table-text mt10" summary="출입국별 공항 예상 혼잡도 조회에 대한 안내 표 입니다.">
+          <caption>출입국별 공항 예상 혼잡도 조회 표</caption>
+          <colgroup>
+            <col style="width:auto">
+            <col style="width:auto">
+            <col style="width:auto">
+            <col style="width:auto">
+            <col style="width:auto">
+            <col style="width:auto">
+            <col style="width:auto">
+            <col style="width:auto">
+            <col style="width:auto">
+            <col style="width:auto">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+          <tr>
+            <th scope="col" rowspan="2">시간</th>
+            <th scope="col" colspan="5" class="half">입국장</th>
+            <th scope="col" colspan="5" class="half">출국장</th>
+          </tr>
+          <tr>
+            <th scope="col" class="sub-half">동편A,B</th>
+            <th scope="col" class="sub-half">서편E,F</th>
+            <th scope="col" class="sub-half">입국심사C</th>
+            <th scope="col" class="sub-half">입국심사D</th>
+            <th scope="col" class="sub-half">합계</th>
+            <th scope="col" class="sub-half">출국장1,2</th>
+            <th scope="col" class="sub-half">출국장3</th>
+            <th scope="col" class="sub-half">출국장4</th>
+            <th scope="col" class="sub-half">출국장5,6</th>
+            <th scope="col" class="sub-half">합계</th>
+          </tr>
+          </thead>
+
+          <tbody>
+
+          <tr>
+            <td class="center">00~01시</td>
+            <td class="center">56</td>
+            <td class="center">7</td>
+            <td class="center">2</td>
+            <td class="center">176</td>
+            <td class="center">241</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">253</td>
+            <td class="center">0</td>
+            <td class="center">253</td>
+          </tr>
+
+          <tr class="red">
+            <td class="center">01~02시</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">58</td>
+            <td class="center">58</td>
+            <td class="center">116</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">162</td>
+            <td class="center">0</td>
+            <td class="center">162</td>
+          </tr>
+
+          <tr class="blue">
+            <td class="center">02~03시</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">76</td>
+            <td class="center">0</td>
+            <td class="center">76</td>
+          </tr>
+
+          <tr class="yellow">
+            <td class="center">03~04시</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">217</td>
+            <td class="center">0</td>
+            <td class="center">217</td>
+          </tr>
+
+          <tr class="orange">
+            <td class="center">04~05시</td>
+            <td class="center">141</td>
+            <td class="center">18</td>
+            <td class="center">110</td>
+            <td class="center">110</td>
+            <td class="center">379</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">883</td>
+            <td class="center">0</td>
+            <td class="center">883</td>
+          </tr>
+
+          <tr>
+            <td class="center">05~06시</td>
+            <td class="center">1695</td>
+            <td class="center">1931</td>
+            <td class="center">489</td>
+            <td class="center">489</td>
+            <td class="center">4604</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">2879</td>
+            <td class="center">0</td>
+            <td class="center">2879</td>
+          </tr>
+
+          <tr>
+            <td class="center">06~07시</td>
+            <td class="center">2516</td>
+            <td class="center">1689</td>
+            <td class="center">576</td>
+            <td class="center">576</td>
+            <td class="center">5357</td>
+            <td class="center">1471</td>
+            <td class="center">915</td>
+            <td class="center">1229</td>
+            <td class="center">1173</td>
+            <td class="center">4788</td>
+          </tr>
+
+          <tr class="step3Or">
+            <td class="center">07~08시</td>
+            <td class="center">1863</td>
+            <td class="center">1985</td>
+            <td class="center">819</td>
+            <td class="center">606</td>
+            <td class="center">5273</td>
+            <td class="center">2292</td>
+            <td class="center">1538</td>
+            <td class="center">1297</td>
+            <td class="center">1860</td>
+            <td class="center">6987</td>
+          </tr>
+
+          <tr class="step3Or">
+            <td class="center">08~09시</td>
+            <td class="center">717</td>
+            <td class="center">1191</td>
+            <td class="center">610</td>
+            <td class="center">228</td>
+            <td class="center">2746</td>
+            <td class="center">2030</td>
+            <td class="center">1647</td>
+            <td class="center">1524</td>
+            <td class="center">1493</td>
+            <td class="center">6694</td>
+          </tr>
+
+          <tr>
+            <td class="center">09~10시</td>
+            <td class="center">742</td>
+            <td class="center">1029</td>
+            <td class="center">331</td>
+            <td class="center">590</td>
+            <td class="center">2692</td>
+            <td class="center">1122</td>
+            <td class="center">1094</td>
+            <td class="center">1267</td>
+            <td class="center">1105</td>
+            <td class="center">4588</td>
+          </tr>
+
+          <tr>
+            <td class="center">10~11시</td>
+            <td class="center">145</td>
+            <td class="center">412</td>
+            <td class="center">597</td>
+            <td class="center">526</td>
+            <td class="center">1680</td>
+            <td class="center">989</td>
+            <td class="center">898</td>
+            <td class="center">1114</td>
+            <td class="center">1091</td>
+            <td class="center">4092</td>
+          </tr>
+
+          <tr>
+            <td class="center">11~12시</td>
+            <td class="center">554</td>
+            <td class="center">509</td>
+            <td class="center">486</td>
+            <td class="center">902</td>
+            <td class="center">2451</td>
+            <td class="center">1167</td>
+            <td class="center">1009</td>
+            <td class="center">873</td>
+            <td class="center">849</td>
+            <td class="center">3898</td>
+          </tr>
+
+          <tr>
+            <td class="center">12~13시</td>
+            <td class="center">503</td>
+            <td class="center">934</td>
+            <td class="center">670</td>
+            <td class="center">767</td>
+            <td class="center">2874</td>
+            <td class="center">899</td>
+            <td class="center">808</td>
+            <td class="center">720</td>
+            <td class="center">778</td>
+            <td class="center">3205</td>
+          </tr>
+
+          <tr>
+            <td class="center">13~14시</td>
+            <td class="center">546</td>
+            <td class="center">910</td>
+            <td class="center">336</td>
+            <td class="center">367</td>
+            <td class="center">2159</td>
+            <td class="center">815</td>
+            <td class="center">849</td>
+            <td class="center">645</td>
+            <td class="center">597</td>
+            <td class="center">2906</td>
+          </tr>
+
+          <tr>
+            <td class="center">14~15시</td>
+            <td class="center">836</td>
+            <td class="center">1304</td>
+            <td class="center">325</td>
+            <td class="center">215</td>
+            <td class="center">2680</td>
+            <td class="center">839</td>
+            <td class="center">748</td>
+            <td class="center">647</td>
+            <td class="center">650</td>
+            <td class="center">2884</td>
+          </tr>
+
+          <tr>
+            <td class="center">15~16시</td>
+            <td class="center">994</td>
+            <td class="center">756</td>
+            <td class="center">858</td>
+            <td class="center">858</td>
+            <td class="center">3466</td>
+            <td class="center">1105</td>
+            <td class="center">788</td>
+            <td class="center">663</td>
+            <td class="center">800</td>
+            <td class="center">3356</td>
+          </tr>
+
+          <tr>
+            <td class="center">16~17시</td>
+            <td class="center">2228</td>
+            <td class="center">1885</td>
+            <td class="center">1119</td>
+            <td class="center">420</td>
+            <td class="center">5652</td>
+            <td class="center">1383</td>
+            <td class="center">1049</td>
+            <td class="center">854</td>
+            <td class="center">1188</td>
+            <td class="center">4474</td>
+          </tr>
+
+          <tr>
+            <td class="center">17~18시</td>
+            <td class="center">2419</td>
+            <td class="center">1935</td>
+            <td class="center">394</td>
+            <td class="center">476</td>
+            <td class="center">5224</td>
+            <td class="center">1271</td>
+            <td class="center">1148</td>
+            <td class="center">964</td>
+            <td class="center">1294</td>
+            <td class="center">4677</td>
+          </tr>
+
+          <tr>
+            <td class="center">18~19시</td>
+            <td class="center">1697</td>
+            <td class="center">1967</td>
+            <td class="center">147</td>
+            <td class="center">127</td>
+            <td class="center">3938</td>
+            <td class="center">727</td>
+            <td class="center">1040</td>
+            <td class="center">1023</td>
+            <td class="center">1147</td>
+            <td class="center">3937</td>
+          </tr>
+
+          <tr>
+            <td class="center">19~20시</td>
+            <td class="center">1129</td>
+            <td class="center">2173</td>
+            <td class="center">472</td>
+            <td class="center">472</td>
+            <td class="center">4246</td>
+            <td class="center">311</td>
+            <td class="center">677</td>
+            <td class="center">625</td>
+            <td class="center">617</td>
+            <td class="center">2230</td>
+          </tr>
+
+          <tr>
+            <td class="center">20~21시</td>
+            <td class="center">1563</td>
+            <td class="center">994</td>
+            <td class="center">599</td>
+            <td class="center">463</td>
+            <td class="center">3619</td>
+            <td class="center">139</td>
+            <td class="center">278</td>
+            <td class="center">326</td>
+            <td class="center">204</td>
+            <td class="center">947</td>
+          </tr>
+
+          <tr>
+            <td class="center">21~22시</td>
+            <td class="center">551</td>
+            <td class="center">745</td>
+            <td class="center">602</td>
+            <td class="center">602</td>
+            <td class="center">2500</td>
+            <td class="center">45</td>
+            <td class="center">63</td>
+            <td class="center">143</td>
+            <td class="center">171</td>
+            <td class="center">422</td>
+          </tr>
+
+          <tr>
+            <td class="center">22~23시</td>
+            <td class="center">939</td>
+            <td class="center">1029</td>
+            <td class="center">444</td>
+            <td class="center">305</td>
+            <td class="center">2717</td>
+            <td class="center">2</td>
+            <td class="center">3</td>
+            <td class="center">21</td>
+            <td class="center">70</td>
+            <td class="center">96</td>
+          </tr>
+
+          <tr>
+            <td class="center">23~00시</td>
+            <td class="center">490</td>
+            <td class="center">275</td>
+            <td class="center">388</td>
+            <td class="center">306</td>
+            <td class="center">1459</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center">3</td>
+            <td class="center">3</td>
+          </tr>
+
+          <tr class="total">
+            <td class="center">합   계</td>
+            <td class="center">22324</td>
+            <td class="center">23678</td>
+            <td class="center">10432</td>
+            <td class="center">9639</td>
+            <td class="center">66073</td>
+            <td class="center">16607</td>
+            <td class="center">14552</td>
+            <td class="center">18405</td>
+            <td class="center">15090</td>
+            <td class="center">64654</td>
+          </tr>
+
+          </tbody>
+        </table>
+        <div class="mt10 text-right">
+          <a href="#" class="btn-type-small point ico download">엑셀다운로드</a>
+        </div>
+
+        <table class="table vt-dark mt30" summary="공항 예상 혼잡도 조회 범례표">
+          <caption>공항 예상 혼잡도 조회 범례표</caption>
+          <colgroup>
+            <col style="width:20%">
+            <col style="width:40%">
+            <col style="width:40%">
+          </colgroup>
+          <thead>
+          <tr>
+            <th scope="col">구분</th>
+            <th scope="col">동계(11~4월)</th>
+            <th scope="col">하계(5~10월)</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="center"><mark class="sticker blue">BLUE</mark></td>
+            <td class="center">시간당 5,700 ~6,300명 집중 시</td>
+            <td class="center">시간당 6,500 ~7,100명 집중 시</td>
+          </tr>
+          <tr>
+            <td class="center"><mark class="sticker yellow">YELLOW</mark></td>
+            <td class="center">시간당당 6,300 ~6,800명 집중 시</td>
+            <td class="center">시간당 7,100 ~7,500명 집중 시</td>
+          </tr>
+          <tr>
+            <td class="center"><mark class="sticker orange">ORANGE</mark></td>
+            <td class="center">시간당 6,300명 초과 연속 2시간 지속 또는<br/> 시간당 6,800명 초과 시</td>
+            <td class="center">시간당 7,100명 초과 연속 2시간 지속 또는 <br/>시간당 7,500명 초과 시</td>
+          </tr>
+          <tr>
+            <td class="center"><mark class="sticker red">RED</mark></td>
+            <td class="center">시간당 6,300명 초과 연속 3시간 지속 또는<br/> 시간당 6,800명 초과 연속 2시간 지속 시</td>
+            <td class="center">시간당 7,100명 초과 연속 3시간 지속 또는<br/> 시간당 7,500명 초과 연속 2시간 지속 시</td>
+          </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="article">
+        <div class="text-box contact">
+          <div class="text-box-headline-col">
+            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 문의 주시기 바랍니다.</h6>
+          </div>
+          <ul class="list1">
+            <li class="list1-item ">
+              <strong>담당부서 :</strong> 통합운영센터 상황실
+            </li>
+            <li class="list1-item ">
+              <strong>TEL :</strong> 032-741-2961
+            </li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+<!--=include _include/_footer.html -->

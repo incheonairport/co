@@ -1,0 +1,199 @@
+<!--=include _include/_header.html -->
+<section id="top-contents" class="contents">
+  <!--위치-->
+  <div class="location">
+    <div class="location-btn">
+      <button type="button" class="location-btn-minus ico">확대</button>
+      <button type="button" class="location-btn-plus ico">축소</button>
+      <button type="button" class="location-btn-print ico">인쇄</button>
+    </div>
+    <div class="location-bar">
+      <ul class="location-bar-nav">
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">사이버홍보실</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">항공통계</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">항공통계 자료요청</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--//위치-->
+  <div class="sub-top bg2">
+    <div class="sub-top-inner">
+      <div class="sub-top-descbox">
+        <div class="sub-top-descbox-text">
+          <h2 class="sub-top-descbox-tit">사이버홍보실</h2>
+          <h3 class="sub-top-descbox-sub">항공통계</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contents">
+  <div class="inner-section">
+
+    <!--=include _include/_left_menu_02.html -->
+
+    <div class="sub-contents">
+      <h4 class="sub-contents-heading1">항공통계 자료요청</h4>
+
+      <article class="article">
+        <div class="multi-col double">
+          <div class="inner-col">
+            <h5 class="sub-contents-heading2">서비스현황</h5>
+          </div>
+          <div class="inner-col">
+            <p class="guide-desc mark2 color text-right">
+              필수입력
+            </p>
+          </div>
+        </div>
+        <!--폼테이블-->
+        <table class="table hr writing" summary="신청자의 정보 입력을 할 수 있습니다">
+          <caption>견학신청하기-신청자 정보 입력</caption>
+          <colgroup>
+            <col style="width:15%">
+            <col style="width:35%">
+            <col style="width:15%">
+            <col style="width:35%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="row" class="left">
+              <strong class="important">작성자</strong>
+            </th>
+            <td colspan="3">
+             박준영
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="left">
+              <strong class="important">휴대폰 번호</strong>
+            </th>
+            <td>010-4001-0414</td>
+
+            <th scope="row" class="left">
+              <label class="important"><strong>이메일</strong></label>
+            </th>
+            <td>rapsso@naver.com</td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="left">
+              <label for="group" class="important"><strong>소속</strong></label>
+            </th>
+            <td>
+              <div>
+                <input type="text" id="group" class="user-text">
+              </div>
+            </td>
+            <th scope="row" class="left">
+              <label for="object"><strong class="important">사용목적</strong></label>
+            </th>
+            <td>
+              <div>
+                <input type="text" id="object" class="user-text">
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <p class="guide-desc mark mt30">처리가 완료되면, 등록된 휴대폰 번호로 처리완료 문자가 발송되니 반드시 정확한 번호를 입력해 주시기 바랍니다.</p>
+      </article>
+
+      <article class="article">
+        <h5 class="sub-contents-heading2">신청인 정보</h5>
+
+        <table class="table hr writing" summary="자료요청 상세 내용을 입력할 수 있습니다.">
+          <caption>자료요청-신청인정보</caption>
+          <colgroup>
+            <col style="width:15%">
+            <col style="width:85%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="row" class="left">
+              <label for="request-file-tit"><strong>제목</strong></label>
+            </th>
+            <td>
+              <input id="request-file-tit" type="text" class="user-text wide">
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="left">
+              <label for="request-file-purpose" class="important"><strong>내용</strong></label>
+            </th>
+            <td>
+              <textarea class="user-text wide height" id="request-file-purpose">          </textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="left">
+              <label for="find-file" class="important"><strong>첨부파일</strong></label>
+            </th>
+            <td>
+              <div class="user-input">
+                <input type="file" id="find-file" title="버튼을 누르시면 파일을 불러올 수 있고 파일의 제목이 표시됩니다." class="user-input-address-text">
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" class="left">
+              <div class="multi-col double">
+                <div class="inner-col w70">
+                  <div class="checkbox-type2 left">
+                    <input type="checkbox" name="agree-offer1" id="agree-offer1" class="checkbox-type2-radio" value="yes" checked="">
+                    <label class="checkbox-type2-label ico" for="agree-offer1">'개인정보 수집 및 이용'에 동의하시고 등록하시겠습니까? (필수)</label>
+                  </div>
+                </div>
+
+                <div class="inner-col w20 btn-right">
+                  <a class="user-input-link small">전문보기</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <div class="article text-center mt30">
+          <a href="#" class="btn-type-normal btn2 ico arrow-point-right"><strong>자료 요청하기</strong></a>
+        </div>
+
+        <div class="text-box">
+          <div class="text-box-headline-col">
+            <h4 class="text-box-headline font20">주의사항</h4>
+          </div>
+          <ul class="list1">
+            <li class="list1-item">항공통계 자료 요청 시, 요청 내용은 최대한 상세하게 기록하시기 바랍니다.</li>
+            <li class="list1-item">통계자료 제공은 요청접수순서에 따라 우선 처리되며, 자료 접수에서 제공까지는 5~7일가량 소요됩니다.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="text-box contact">
+          <div class="text-box-headline-col">
+            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 문의 주시기 바랍니다.</h6>
+          </div>
+          <ul class="list1">
+            <li class="list1-item ">
+              <strong>담당부서 :</strong> 운영기획팀
+            </li>
+            <li class="list1-item ">
+              <strong>TEL :</strong> 032-741-2402, 2403
+            </li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+<!--=include _include/_footer.html -->

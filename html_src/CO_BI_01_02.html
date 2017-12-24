@@ -1,0 +1,772 @@
+<!--=include _include/_header.html -->
+<section id="top-contents" class="contents">
+  <!--위치-->
+  <div class="location">
+    <div class="location-btn">
+      <button type="button" class="location-btn-minus ico">축소</button>
+      <button type="button" class="location-btn-plus ico">확대</button>
+      <button type="button" class="location-btn-print ico">인쇄</button>
+    </div>
+    <div class="location-bar">
+      <ul class="location-bar-nav">
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">사이버홍보실</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">항공통계</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">인천공항 통계보기</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">시간대별통계</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--//위치-->
+  <div class="sub-top bg2">
+    <div class="sub-top-inner">
+      <div class="sub-top-descbox">
+        <div class="sub-top-descbox-text">
+          <h2 class="sub-top-descbox-tit">사이버홍보실</h2>
+          <h3 class="sub-top-descbox-sub">항공통계</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contents">
+  <div class="inner-section">
+
+    <!--=include _include/_left_menu_02.html -->
+
+    <div class="sub-contents">
+      <h4 class="sub-contents-heading1">인천공항 통계보기</h4>
+
+      <nav class="tab-nav">
+        <ul class="tab-nav-list">
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">요일별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link on">시간대별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">지역별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">항공사별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">지연통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">결항통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">허브화지수</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="article mt30">
+        <div class="search-box">
+          <div class="search-box-input small">
+            <div class="multi-col double">
+              <div class="inner-col w85 pl10">
+                <div class="form-layout">
+                  <label class="search-box-title pr15" for="flight">운항</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="flight" title="운항를 선택해 주세요">
+                      <option>최대네자</option>
+                    </select>
+                  </div>
+                  <label class="search-box-title pr15 ml15" for="aeroplane">항공기</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="aeroplane" title="항공기를 선택해 주세요">
+                      <option>최대세자</option>
+                    </select>
+                  </div>
+                  <label class="search-box-title pr15 ml15" for="airroute">노선</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="airroute" title="노선을 선택해 주세요">
+                      <option>전체</option>
+                    </select>
+                  </div>
+                  <label class="search-box-title pr15 ml15" for="passenger">여객</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="passenger" title="여객을 선택해 주세요">
+                      <option>전체</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-layout mt10">
+                  <label class="search-box-title pr15" for="department">화물</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select small" id="department" title="화물을 선택해 주세요">
+                      <option>화물 선택</option>
+                    </select>
+                  </div>
+                  <div class="timesetting">
+                    <label class="search-box-title ml15" for="S_YEAR">날짜</label>
+                    <select id="S_YEAR" name="S_YEAR" class="search-box-input-select year">
+
+                      <option value="2017">
+                        2017
+                      </option>
+
+                      <option value="2016">
+                        2016
+                      </option>
+
+                      <option value="2015">
+                        2015
+                      </option>
+
+                      <option value="2014">
+                        2014
+                      </option>
+
+                      <option value="2013">
+                        2013
+                      </option>
+
+                      <option value="2012">
+                        2012
+                      </option>
+
+                      <option value="2011">
+                        2011
+                      </option>
+
+                      <option value="2010">
+                        2010
+                      </option>
+
+                      <option value="2009">
+                        2009
+                      </option>
+
+                      <option value="2008">
+                        2008
+                      </option>
+
+                      <option value="2007">
+                        2007
+                      </option>
+
+                      <option value="2006">
+                        2006
+                      </option>
+
+                      <option value="2005">
+                        2005
+                      </option>
+
+                      <option value="2004">
+                        2004
+                      </option>
+
+                      <option value="2003">
+                        2003
+                      </option>
+
+                      <option value="2002">
+                        2002
+                      </option>
+
+                      <option value="2001">
+                        2001
+                      </option>
+
+                    </select>
+                    <label class="search-box-title ml5" for="S_MONTH">년</label>
+
+                    <select id="S_MONTH" name="S_MONTH" title="시작월" class="search-box-input-select month">
+
+
+                      <option value="01">
+                        01
+                      </option>
+
+
+                      <option value="02">
+                        02
+                      </option>
+
+
+                      <option value="03">
+                        03
+                      </option>
+
+
+                      <option value="04">
+                        04
+                      </option>
+
+
+                      <option value="05">
+                        05
+                      </option>
+
+
+                      <option value="06">
+                        06
+                      </option>
+
+
+                      <option value="07">
+                        07
+                      </option>
+
+
+                      <option value="08">
+                        08
+                      </option>
+
+
+                      <option value="09">
+                        09
+                      </option>
+
+
+                      <option value="10">
+                        10
+                      </option>
+
+
+                      <option value="11">
+                        11
+                      </option>
+
+
+                      <option value="12">
+                        12
+                      </option>
+
+                    </select>
+                    <label class="search-box-title ml5 pr15" for="S_MONTH">월</label>
+                    <label class="search-box-title pr15" for="E_YEAR">~</label>
+
+                    <select id="E_YEAR" name="E_YEAR" title="종료년도" class="search-box-input-select year">
+
+                      <option value="2017">2017</option>
+
+                      <option value="2016">2016</option>
+
+                      <option value="2015">2015</option>
+
+                      <option value="2014">2014</option>
+
+                      <option value="2013">2013</option>
+
+                      <option value="2012">2012</option>
+
+                      <option value="2011">2011</option>
+
+                      <option value="2010">2010</option>
+
+                      <option value="2009">2009</option>
+
+                      <option value="2008">2008</option>
+
+                      <option value="2007">2007</option>
+
+                      <option value="2006">2006</option>
+
+                      <option value="2005">2005</option>
+
+                      <option value="2004">2004</option>
+
+                      <option value="2003">2003</option>
+
+                      <option value="2002">2002</option>
+
+                      <option value="2001">2001</option>
+
+                    </select>
+                    <label class="search-box-title ml5" for="E_YEAR">년</label>
+                    <select id="E_MONTH" name="E_MONTH" title="종료월" class="search-box-input-select month">
+
+
+                      <option value="01">
+                        01
+                      </option>
+
+
+                      <option value="02">
+                        02
+                      </option>
+
+
+                      <option value="03">
+                        03
+                      </option>
+
+
+                      <option value="04">
+                        04
+                      </option>
+
+
+                      <option value="05">
+                        05
+                      </option>
+
+
+                      <option value="06">
+                        06
+                      </option>
+
+
+                      <option value="07">
+                        07
+                      </option>
+
+
+                      <option value="08">
+                        08
+                      </option>
+
+
+                      <option value="09">
+                        09
+                      </option>
+
+
+                      <option value="10">
+                        10
+                      </option>
+
+
+                      <option value="11">
+                        11
+                      </option>
+
+
+                      <option value="12">
+                        12
+                      </option>
+
+                    </select>
+                    <label class="search-box-title ml5" for="E_MONTH">월</label>
+
+                  </div>
+                  <!--<label class="search-box-title ml15" for="day">날짜</label>-->
+                  <!--<div class="search-box-input-item">-->
+                    <!--<select class="search-box-input-select large" id="day" title="검색을 원하시는 년도를 선택해 주세요">-->
+                      <!--<option>년</option>-->
+                    <!--</select>-->
+                    <!--<select class="search-box-input-select medium" title="검색을 원하시는 월을 선택해 주세요">-->
+                      <!--<option>월</option>-->
+                    <!--</select>-->
+                  <!--</div>-->
+                </div>
+              </div>
+              <div class="inner-col w15 pl10">
+                <div class="search-box-btn-area">
+                  <button type="button" class="search-box-btn big">검색</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="multi-col double">
+          <div class="inner-col">
+            <p class="guide-desc mt20 mark text-left">인천공항 실적만 작성</p>
+          </div>
+          <div class="inner-col">
+            <p class="board-page text-right">(단위: 편, 명, 톤)</p>
+          </div>
+        </div>
+
+        <table class="table vt-dark table-text pd0" summary="시간대별 통계에 대한 안내 표입니다.">
+          <caption>허브화 지수 표</caption>
+          <colgroup>
+            <col style="width:19%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:9%">
+          </colgroup>
+
+          <thead>
+          <tr>
+            <th scope="col" rowspan="2">요일</th>
+            <th scope="col" colspan="3">운항</th>
+            <th scope="col" colspan="3">여객</th>
+            <th scope="col" colspan="3">화물</th>
+          </tr>
+          <tr>
+            <th scope="col" class="sub-half">도착</th>
+            <th scope="col" class="sub-half">출발</th>
+            <th scope="col" class="sub-half">합계</th>
+            <th scope="col" class="sub-half">도착</th>
+            <th scope="col" class="sub-half">출발</th>
+            <th scope="col" class="sub-half">합계</th>
+            <th scope="col" class="sub-half">도착</th>
+            <th scope="col" class="sub-half">출발</th>
+            <th scope="col" class="sub-half">합계</th>
+          </tr>
+          </thead>
+
+          <tbody>
+
+          <tr>
+            <td class="center">00:00 ~ 00:59</td>
+            <td class="center">100</td>
+            <td class="center">258</td>
+            <td class="center">358</td>
+            <td class="center">10,521</td>
+            <td class="center">41,193</td>
+            <td class="center">51,714</td>
+            <td class="center">1,877</td>
+            <td class="center">6,992</td>
+            <td class="center">8,868</td>
+          </tr>
+
+          <tr>
+            <td class="center">01:00 ~ 01:59</td>
+            <td class="center">35</td>
+            <td class="center">163</td>
+            <td class="center">198</td>
+            <td class="center">2,686</td>
+            <td class="center">18,217</td>
+            <td class="center">20,903</td>
+            <td class="center">907</td>
+            <td class="center">5,659</td>
+            <td class="center">6,566</td>
+          </tr>
+
+          <tr>
+            <td class="center">02:00 ~ 02:59</td>
+            <td class="center">54</td>
+            <td class="center">95</td>
+            <td class="center">149</td>
+            <td class="center">6,509</td>
+            <td class="center">4,272</td>
+            <td class="center">10,781</td>
+            <td class="center">1,123</td>
+            <td class="center">3,706</td>
+            <td class="center">4,828</td>
+          </tr>
+
+          <tr>
+            <td class="center">03:00 ~ 03:59</td>
+            <td class="center">145</td>
+            <td class="center">27</td>
+            <td class="center">172</td>
+            <td class="center">24,200</td>
+            <td class="center">701</td>
+            <td class="center">24,901</td>
+            <td class="center">2,082</td>
+            <td class="center">1,463</td>
+            <td class="center">3,545</td>
+          </tr>
+
+          <tr>
+            <td class="center">04:00 ~ 04:59</td>
+            <td class="center">589</td>
+            <td class="center">50</td>
+            <td class="center">639</td>
+            <td class="center">101,376</td>
+            <td class="center">5,396</td>
+            <td class="center">106,772</td>
+            <td class="center">3,028</td>
+            <td class="center">867</td>
+            <td class="center">3,895</td>
+          </tr>
+
+          <tr>
+            <td class="center">05:00 ~ 05:59</td>
+            <td class="center">782</td>
+            <td class="center">74</td>
+            <td class="center">856</td>
+            <td class="center">155,813</td>
+            <td class="center">2,438</td>
+            <td class="center">158,251</td>
+            <td class="center">4,318</td>
+            <td class="center">1,670</td>
+            <td class="center">5,988</td>
+          </tr>
+
+          <tr>
+            <td class="center">06:00 ~ 06:59</td>
+            <td class="center">1,051</td>
+            <td class="center">160</td>
+            <td class="center">1,211</td>
+            <td class="center">196,436</td>
+            <td class="center">19,012</td>
+            <td class="center">215,448</td>
+            <td class="center">7,748</td>
+            <td class="center">713</td>
+            <td class="center">8,461</td>
+          </tr>
+
+          <tr>
+            <td class="center">07:00 ~ 07:59</td>
+            <td class="center">840</td>
+            <td class="center">586</td>
+            <td class="center">1,426</td>
+            <td class="center">127,960</td>
+            <td class="center">80,355</td>
+            <td class="center">208,315</td>
+            <td class="center">10,973</td>
+            <td class="center">1,742</td>
+            <td class="center">12,715</td>
+          </tr>
+
+          <tr>
+            <td class="center">08:00 ~ 08:59</td>
+            <td class="center">685</td>
+            <td class="center">1,130</td>
+            <td class="center">1,815</td>
+            <td class="center">117,118</td>
+            <td class="center">177,976</td>
+            <td class="center">295,094</td>
+            <td class="center">7,771</td>
+            <td class="center">4,946</td>
+            <td class="center">12,717</td>
+          </tr>
+
+          <tr>
+            <td class="center">09:00 ~ 09:59</td>
+            <td class="center">501</td>
+            <td class="center">1,215</td>
+            <td class="center">1,716</td>
+            <td class="center">87,338</td>
+            <td class="center">219,210</td>
+            <td class="center">306,548</td>
+            <td class="center">3,612</td>
+            <td class="center">8,491</td>
+            <td class="center">12,103</td>
+          </tr>
+
+          <tr>
+            <td class="center">10:00 ~ 10:59</td>
+            <td class="center">519</td>
+            <td class="center">1,177</td>
+            <td class="center">1,696</td>
+            <td class="center">74,192</td>
+            <td class="center">230,458</td>
+            <td class="center">304,650</td>
+            <td class="center">5,422</td>
+            <td class="center">7,857</td>
+            <td class="center">13,279</td>
+          </tr>
+
+          <tr>
+            <td class="center">11:00 ~ 11:59</td>
+            <td class="center">935</td>
+            <td class="center">902</td>
+            <td class="center">1,837</td>
+            <td class="center">150,008</td>
+            <td class="center">149,034</td>
+            <td class="center">299,042</td>
+            <td class="center">6,166</td>
+            <td class="center">5,953</td>
+            <td class="center">12,119</td>
+          </tr>
+
+          <tr>
+            <td class="center">12:00 ~ 12:59</td>
+            <td class="center">908</td>
+            <td class="center">762</td>
+            <td class="center">1,670</td>
+            <td class="center">155,264</td>
+            <td class="center">108,256</td>
+            <td class="center">263,520</td>
+            <td class="center">6,275</td>
+            <td class="center">4,932</td>
+            <td class="center">11,207</td>
+          </tr>
+
+          <tr>
+            <td class="center">13:00 ~ 13:59</td>
+            <td class="center">718</td>
+            <td class="center">1,000</td>
+            <td class="center">1,718</td>
+            <td class="center">113,847</td>
+            <td class="center">159,305</td>
+            <td class="center">273,152</td>
+            <td class="center">4,564</td>
+            <td class="center">5,272</td>
+            <td class="center">9,836</td>
+          </tr>
+
+          <tr>
+            <td class="center">14:00 ~ 14:59</td>
+            <td class="center">857</td>
+            <td class="center">978</td>
+            <td class="center">1,835</td>
+            <td class="center">155,938</td>
+            <td class="center">164,071</td>
+            <td class="center">320,009</td>
+            <td class="center">7,613</td>
+            <td class="center">5,458</td>
+            <td class="center">13,071</td>
+          </tr>
+
+          <tr>
+            <td class="center">15:00 ~ 15:59</td>
+            <td class="center">961</td>
+            <td class="center">788</td>
+            <td class="center">1,749</td>
+            <td class="center">179,580</td>
+            <td class="center">138,812</td>
+            <td class="center">318,392</td>
+            <td class="center">6,500</td>
+            <td class="center">3,866</td>
+            <td class="center">10,366</td>
+          </tr>
+
+          <tr>
+            <td class="center">16:00 ~ 16:59</td>
+            <td class="center">1,145</td>
+            <td class="center">698</td>
+            <td class="center">1,843</td>
+            <td class="center">233,063</td>
+            <td class="center">111,122</td>
+            <td class="center">344,185</td>
+            <td class="center">8,967</td>
+            <td class="center">3,096</td>
+            <td class="center">12,063</td>
+          </tr>
+
+          <tr>
+            <td class="center">17:00 ~ 17:59</td>
+            <td class="center">1,174</td>
+            <td class="center">601</td>
+            <td class="center">1,775</td>
+            <td class="center">247,319</td>
+            <td class="center">105,391</td>
+            <td class="center">352,710</td>
+            <td class="center">7,201</td>
+            <td class="center">2,658</td>
+            <td class="center">9,859</td>
+          </tr>
+
+          <tr>
+            <td class="center">18:00 ~ 18:59</td>
+            <td class="center">954</td>
+            <td class="center">695</td>
+            <td class="center">1,649</td>
+            <td class="center">176,966</td>
+            <td class="center">116,750</td>
+            <td class="center">293,716</td>
+            <td class="center">6,890</td>
+            <td class="center">3,695</td>
+            <td class="center">10,584</td>
+          </tr>
+
+          <tr>
+            <td class="center">19:00 ~ 19:59</td>
+            <td class="center">795</td>
+            <td class="center">1,117</td>
+            <td class="center">1,912</td>
+            <td class="center">134,509</td>
+            <td class="center">202,283</td>
+            <td class="center">336,792</td>
+            <td class="center">3,068</td>
+            <td class="center">4,980</td>
+            <td class="center">8,048</td>
+          </tr>
+
+          <tr>
+            <td class="center">20:00 ~ 20:59</td>
+            <td class="center">789</td>
+            <td class="center">995</td>
+            <td class="center">1,784</td>
+            <td class="center">120,418</td>
+            <td class="center">194,642</td>
+            <td class="center">315,060</td>
+            <td class="center">3,870</td>
+            <td class="center">4,306</td>
+            <td class="center">8,177</td>
+          </tr>
+
+          <tr>
+            <td class="center">21:00 ~ 21:59</td>
+            <td class="center">640</td>
+            <td class="center">882</td>
+            <td class="center">1,522</td>
+            <td class="center">103,111</td>
+            <td class="center">134,594</td>
+            <td class="center">237,705</td>
+            <td class="center">3,771</td>
+            <td class="center">3,820</td>
+            <td class="center">7,592</td>
+          </tr>
+
+          <tr>
+            <td class="center">22:00 ~ 22:59</td>
+            <td class="center">347</td>
+            <td class="center">810</td>
+            <td class="center">1,157</td>
+            <td class="center">52,420</td>
+            <td class="center">82,962</td>
+            <td class="center">135,382</td>
+            <td class="center">3,067</td>
+            <td class="center">14,531</td>
+            <td class="center">17,598</td>
+          </tr>
+
+          <tr>
+            <td class="center">23:00 ~ 23:59</td>
+            <td class="center">192</td>
+            <td class="center">517</td>
+            <td class="center">709</td>
+            <td class="center">31,658</td>
+            <td class="center">46,699</td>
+            <td class="center">78,357</td>
+            <td class="center">1,904</td>
+            <td class="center">21,841</td>
+            <td class="center">23,745</td>
+          </tr>
+
+          <tr>
+            <td class="center point">합    계</td>
+            <td class="center point">15,716</td>
+            <td class="center point">15,680</td>
+            <td class="center point">31,396</td>
+            <td class="center point">2,758,250</td>
+            <td class="center point">2,513,149</td>
+            <td class="center point">5,271,399</td>
+            <td class="center point">118,717</td>
+            <td class="center point">128,511</td>
+            <td class="center point">247,228</td>
+          </tr>
+
+          </tbody>
+
+        </table>
+
+        <div class="text-right mt30">
+          <a href="#" class="btn-type-small point ico download">엑셀다운로드</a>
+        </div>
+
+      </article>
+
+
+      <article class="article">
+        <div class="text-box contact">
+          <div class="text-box-headline-col">
+            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 문의 주시기 바랍니다.</h6>
+          </div>
+          <ul class="list1">
+            <li class="list1-item ">
+              <strong>담당부서 :</strong> 공항연구소
+            </li>
+            <li class="list1-item ">
+              <strong>TEL :</strong> 032-741-2093
+            </li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+<!--=include _include/_footer.html -->

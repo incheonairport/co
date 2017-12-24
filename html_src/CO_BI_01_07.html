@@ -1,0 +1,170 @@
+<!--=include _include/_header.html -->
+<section id="top-contents" class="contents">
+  <!--위치-->
+  <div class="location">
+    <div class="location-btn">
+      <button type="button" class="location-btn-minus ico">확대</button>
+      <button type="button" class="location-btn-plus ico">축소</button>
+      <button type="button" class="location-btn-print ico">인쇄</button>
+    </div>
+    <div class="location-bar">
+      <ul class="location-bar-nav">
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">사이버홍보실</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">항공통계</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">인천공항 통계보기</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--//위치-->
+  <div class="sub-top bg2">
+    <div class="sub-top-inner">
+      <div class="sub-top-descbox">
+        <div class="sub-top-descbox-text">
+          <h2 class="sub-top-descbox-tit">사이버홍보실</h2>
+          <h3 class="sub-top-descbox-sub">항공통계</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contents">
+  <div class="inner-section">
+
+    <!--=include _include/_left_menu_02.html -->
+
+    <div class="sub-contents">
+      <h4 class="sub-contents-heading1">인천공항 통계보기</h4>
+
+      <nav class="tab-nav">
+        <ul class="tab-nav-list">
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">요일별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">시간대별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">지역별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">항공사별통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">지연통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">결함통계</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link on">허브화지수</a>
+          </li>
+        </ul>
+      </nav>
+
+
+      <article class="article mt30">
+        <div class="search-box day">
+          <div class="search-box-input">
+            <label class="search-box-title pr15" for="start-day">시작일</label>
+            <div class="search-box-input-item">
+              <select class="search-box-input-select" id="start-day" title="검색을 원하시는 년도를 선택해 주세요">
+                <option>년</option>
+              </select>
+              <select class="search-box-input-select small" title="검색을 원하시는 월을 선택해 주세요">
+                <option>월</option>
+              </select>
+            </div>
+            <label class="search-box-title pf15 ml15" for="end-day">종료일</label>
+            <div class="search-box-input-item">
+              <select class="search-box-input-select" id="end-day" title="검색을 원하시는 년도를 선택해 주세요">
+                <option>년</option>
+              </select>
+              <select class="search-box-input-select small" title="검색을 원하시는 월을 선택해 주세요">
+                <option>월</option>
+              </select>
+            </div>
+            <div class="search-box-btn-area ml10">
+              <button type="button" class="search-box-btn ico">검색</button>
+            </div>
+          </div>
+        </div>
+        <div class="multi-col double mt30">
+          <div class="inner-col">
+            <p class="guide-desc mark">정기 여객기 기준 인천공항 실적만 작성</p>
+          </div>
+          <div class="inner-col">
+            <p class="text-right guide-desc">(단위: 편)</p>
+          </div>
+        </div>
+        <table class="table vt-dark mt10" summary="허브화 지수에 대한 안내 표입니다.">
+          <caption>허브화 지수 표</caption>
+          <colgroup>
+            <col style="width:33.33%">
+            <col style="width:33.33%">
+            <col style="width:33.33%">
+          </colgroup>
+          <thead>
+          <tr>
+            <th scope="col">허브화 지수</th>
+            <th scope="col">접근성</th>
+            <th scope="col">중심성</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="center">39</td>
+            <td class="center">3,270</td>
+            <td class="center">214</td>
+          </tr>
+          <tr>
+            <td class="center">39</td>
+            <td class="center">3,270</td>
+            <td class="center">214</td>
+          </tr>
+          <tr>
+            <td class="center">39</td>
+            <td class="center">3,270</td>
+            <td class="center">214</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="text-right mt10">
+          <a href="#" class="btn-type-small point ico download">엑셀 다운로드</a>
+        </div>
+        <ul class="list4 mt10">
+          <li class="list4-item">허브화 지수 = 접근성 ⅹ 중심성
+            <ul class="list2">
+              <li class="list2-item">국제공항협의회(ACI)도 동 기본개념(접근성/중심성)을 토대로 매년 공항 경쟁력 평가 시행 중</li>
+            </ul>
+          </li>
+          <li class="list4-item">접근성: 해당 공항에서 다른 공항들로 얼마나 잘 연결되어 있는지를 나타내는 인자(국제선 출발 운항횟수, 천편)</li>
+          <li class="list4-item">중심성: 해당 공항을 중심으로 얼마나 많은 환승이 일어나는지를 나타내는 인자(72시간 기준 환승객 수, 백만명)
+            <p class="guide-desc mark">허브화 지수는 원시데이터로 산출됨에 따라, 소수점 둘째자리까지 표출되는 접근성과 중심성 지수의 곱과 상이할 수 있음</p>
+          </li>
+        </ul>
+      </article>
+
+      <article class="article">
+        <div class="text-box contact">
+          <div class="text-box-headline-col">
+            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 문의 주시기 바랍니다.</h6>
+          </div>
+          <ul class="list1">
+            <li class="list1-item ">
+              <strong>담당부서 :</strong> 공항연구소
+            </li>
+            <li class="list1-item ">
+              <strong>TEL :</strong> 032-741-2093
+            </li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+<!--=include _include/_footer.html -->
