@@ -310,31 +310,85 @@
       }
 
       &-title{
+        height:22px;
         font-size:1.5rem;
         font-weight: 300;
         color:#fff;
+
+        &.tab{
+          padding-top:6px;
+          position:absolute;
+          top:30px;
+          left:30px;
+          font-size:1rem;
+          cursor:pointer;
+          color:#666;
+
+          &:after{
+            content:"";
+            display:block;
+            width:1px;
+            height:13px;
+            background:#666;
+            position:absolute;
+            right:-12px;
+            bottom:3px;
+          }
+
+          &.on{
+            padding-top:0;
+            font-size:1.5rem;
+            color:#fff;
+          }
+
+          &.press{
+
+            &.prev{
+              left:109px;
+            }
+
+            &.next{
+              left:136px;
+            }
+
+            &.on{
+              left:109px;
+            }
+          }
+
+          &.recruit{
+
+            &.prev{
+
+            }
+
+            &.next{
+              left:214px;
+            }
+
+            &.on{
+              left:190px;
+            }
+
+            &:after{
+              content:none;
+            }
+          }
+        }
       }
 
       &-txt{
         font-size:0.875rem;
         margin-top:16px;
-      }
 
-    }
-    .news-more{
-      position: absolute;
-      top: 34px;
-      right: 84px;
-      @extend %clearfix;
+        &.tab{
+          margin-top:38px;
+          display:none;
 
-      &-link{
-        width:72px;
-        border-left:1px solid #3b4e9a;
-        padding-left:12px;
-        margin-right: 12px;
-        float:left;
-        color:#87b1ff;
-        font-size:1rem;
+          &.on{
+            display:block;
+          }
+        }
       }
     }
   }
@@ -409,10 +463,30 @@
       margin-top:14px;
       position:relative;
     }
-    &-img{
 
+    &-img{
+      width:564px;
+      height:150px;
+      position:relative;
+
+      &-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        p {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        img{
+          display:block;
+        }
+      }
     }
   }
+
 }
 
 .external{
@@ -513,20 +587,27 @@
 .banner{
 
   &-btn{
+    display:block;
     width:39px;
     height:39px;
     border:0;
+    float:left;
     text-indent: -99999px;
     opacity: 0.4;
+
+    &-wrap{
+      @extend %clearfix;
+    }
     &.left{
       background:#333 url(/static/co/images/spr_arrow.png) -28px 11px no-repeat;
+      margin-right:3px;
     }
     &.right{
       background:#333 url(/static/co/images/spr_arrow.png) -67px 11px no-repeat;
     }
     &-wrap{
       position: absolute;
-      bottom: 3px;
+      bottom: 0;
       right: 0;
     }
   }
