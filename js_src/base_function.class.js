@@ -302,8 +302,6 @@ $(function(){
 
   BottomBanner = new function(){
 
-    Index.apply(this);
-
     // private
     var currentVisualIndex = 0;
     var nextVisualIndex = 0;
@@ -315,8 +313,6 @@ $(function(){
 
     var timeID, timeID2;
     var imageMovingTime = 1000;
-    //var imageIntervalTime = 7000;
-    //var barStretchTime = 10;
 
     // private
     var _initPosition = function(){
@@ -358,33 +354,12 @@ $(function(){
 
     };
 
-    //this.rollAuto = function(){
-    //
-    //  var _fade = this.fade;
-    //
-    //  timeID = setInterval(function(){
-    //
-    //    nextVisualIndex = currentVisualIndex + 1;
-    //    _fade();
-    //
-    //    _timeBar(true);
-    //
-    //    //HeaderGnb.setClass(HeaderGnb.getCurrentMainSectionIndex(), nextVisualIndex);
-    //
-    //  }, imageIntervalTime);
-    //
-    //  _setPlayButtonClass('pause');
-    //
-    //};
-
     this.rollLeft = function(){
 
       this.rollStop();
 
       nextVisualIndex = currentVisualIndex + 1;
       this.fade();
-
-      //HeaderGnb.setClass(HeaderGnb.getCurrentMainSectionIndex(), nextVisualIndex);
 
     };
 
@@ -394,8 +369,6 @@ $(function(){
 
       nextVisualIndex = currentVisualIndex - 1;
       this.fade();
-
-      //HeaderGnb.setClass(HeaderGnb.getCurrentMainSectionIndex(), nextVisualIndex);
 
     };
 
@@ -425,7 +398,6 @@ $(function(){
 
     // running in constructor when loading
     _init();
-    //this.rollAuto();
 
   };
 
