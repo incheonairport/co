@@ -1176,6 +1176,9 @@ em{
       &:nth-child(2){
         border-left:1px solid #d9d9d9;
       }
+      &[rowspan]{
+        border-right:1px solid #d9d9d9;
+      }
     }
 
     td{
@@ -2133,7 +2136,7 @@ label.d-none{
 .object-list{
   min-width:250px;
   height:40px;
-  padding: 0 15px;
+  padding-left: 15px;
   border: 1px solid #d9d9d9;
 }
 
@@ -3576,7 +3579,7 @@ label.d-none{
     }
     &-select, &-txt{
       height:40px;
-      padding: 0 10px;
+      padding-left: 10px;
       border: 1px solid #818181;
       border-right:0;
       font-size:0.9375rem;
