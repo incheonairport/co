@@ -4819,13 +4819,134 @@ label.d-none{
 }
 
 /* 조직도 */
-.organization-chart{
+.organization-chart-wrap{
   width: 100%;
-  height: 3179px;
   overflow: hidden;
-  background: url(/static/co/images/digr_organization_chart.png)no-repeat;
+  background: url(/static/co/images/digr_organization_chart.png) no-repeat 0 -12px;
   padding-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
+  .organization-chart{
+    @extend %clearfix;
+    text-align:center;
+    &-grid{
+      width:100%;
+      height:160px;
+      position:relative;
+    }
+    &-box{
+      position:absolute;
+      width:210px;
+      line-height:50px;
+      background:#333649;
+      color:#fff;
+      font-weight:700;
+      font-size:1.125rem;
+      &.round{
+        width:190px;
+        height:64px;
+        line-height:64px;
+        font-size:1.25rem;
+        border-radius:50px;
+      }
+      &:first-child{
+        left:0;
+        right:0;
+        margin:auto;
+      }
+      &:nth-child(2){
+        top:66px;
+        left:0;
+      }
+      &:last-child{
+        top:66px;
+        right:0;
+      }
+    }
+    &-list{
+      float:right;
+      @extend %clearfix;
+      &-item{
+        float:left;
+        width:205px;
+        margin-left:16px;
+        line-height:50px;
+        color:#fff;
+        font-size:1.125rem;
+        font-weight:700;
+        &:first-child{
+          margin-left:0;
+        }
+        &:nth-child(2){
+          margin-right:4px;
+        }
+        &:nth-child(3){
+          margin-left:14px;
+        }
+      }
+    }
+    &-tit{
+      display:block;
+      width:100%;
+      background:#2c8279;
+      color:#fff;
+    }
+    &-subtit{
+      display:block;
+      width:100%;
+      border:1px solid #d9d9d9;
+      margin-top:16px;
+      line-height:48px;
+      font-weight:900;
+    }
+    &-team{
+      padding:18px;
+      text-align:left;
+      background:#f2f2f2;
+      .list1-item{
+        font-size:1rem;
+        line-height:1.3;
+        &:before{
+          color:#222;
+        }
+      }
+      .organization-chart-team-link{
+        &:hover{
+          color:#999;
+        }
+      }
+    }
+
+    &.type1{
+      .organization-chart-team{
+        min-height:124px;
+      }
+    }
+
+    &.type2{
+      margin-bottom:56px;
+      .organization-chart-box{
+        background:#41519e;
+      }
+      .organization-chart-team{
+        min-height:148px;
+      }
+      .organization-chart-tit{
+        background:#4674c9;
+      }
+    }
+
+    &.type3{
+      .organization-chart-tit{
+        background:#dd7713;
+      }
+      .organization-chart-team{
+        min-height:148px;
+      }
+    }
+  }
+
+
+
 }
 
 /* 국제 구호 활동 */
