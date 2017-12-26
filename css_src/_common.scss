@@ -4923,7 +4923,6 @@ label.d-none{
     }
 
     &.type2{
-      margin-bottom:56px;
       .organization-chart-box{
         background:#41519e;
       }
@@ -4941,6 +4940,9 @@ label.d-none{
       }
       .organization-chart-team{
         min-height:148px;
+      }
+      .organization-chart-list{
+        float:left;
       }
     }
   }
