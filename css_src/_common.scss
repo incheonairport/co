@@ -1631,6 +1631,11 @@ em{
       font-weight: 400;
       color: #222;
       display: inline-block;
+
+      &.large{
+        height:auto;
+        padding: 5px 32px 5px 12px;
+      }
       &.point {
         background: #f2f2f2;
       }
