@@ -2233,6 +2233,10 @@ label.d-none{
     padding: 25px 0 25px 25px;
   }
 
+  &.full-step{
+    padding: 30px 0;
+  }
+
   &.advertising{
     padding: 30px 20px;
     position:relative;
@@ -2805,12 +2809,25 @@ label.d-none{
 }
 
 .step-circle {
+
   &-list {
     width: 870px;
     @extend %clearfix;
     &-item {
       float: left;
       padding: 0 30px 0 10px;
+
+      &.three{
+        padding: 0 170px 0 10px;
+
+        &.ico:after{
+          background-position: -219px -28px;
+          width: 11px;
+          height: 22px;
+          right: 75px;
+          left: auto;
+        }
+      }
 
       .list-article {
         width: 139px;
@@ -2851,10 +2868,18 @@ label.d-none{
     }
     &.no-ico {
       width: 100%;
+      &.four{
+        .step-circle-list-item {
+          padding: 0;
+          & + .step-circle-list-item {
+            padding-left: 84px;
+          }
+        }
+      }
       .step-circle-list-item {
         padding: 0;
         & + .step-circle-list-item {
-          padding-left: 7px;
+          padding-left: 6px;
         }
       }
     }
