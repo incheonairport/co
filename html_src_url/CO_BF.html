@@ -9,9 +9,9 @@
     </div>
     <div class="location-bar">
       <ul class="location-bar-nav">
-        <li class="location-bar-nav-item ico"><a href="/co/ko/index.do" class="location-bar-nav-item-link home ico">home</a></li>
-        <li class="location-bar-nav-item ico"><a href="/co/ko/cmm/cmmBbsList.do?FNCT_CODE=121" class="location-bar-nav-item-link">사이버홍보실</a></li>
-        <li class="location-bar-nav-item"><a href="/co_cnt/ko/cyberpr/prinad/prinad.do" class="location-bar-nav-item-link">인쇄광고</a></li>
+        <li class="location-bar-nav-item ico"><a href="/co/${LANG_SE}/index.do" class="location-bar-nav-item-link home ico">home</a></li>
+        <li class="location-bar-nav-item ico"><a href="/co/${LANG_SE}/cmm/cmmBbsList.do?FNCT_CODE=121" class="location-bar-nav-item-link">사이버홍보실</a></li>
+        <li class="location-bar-nav-item"><a href="/co_cnt/${LANG_SE}/cyberpr/prinad/prinad.do" class="location-bar-nav-item-link">인쇄광고</a></li>
       </ul>
     </div>
   </div>
@@ -35,6 +35,19 @@
     [[--ActionStart--]][[--h_co_lnb_2--]][[--Actionend--]]
 
     <div class="sub-contents">
+      <div class="search-box article mt30">
+        <div class="search-box-input">
+          <label class="search-box-title" for="search">연도 별로 보기</label>
+          <div class="search-box-input-item">
+            <select class="search-box-input-select" id="search" title="검색을 원하시는 연도를 선택해 주세요">
+              <option>2017</option>
+            </select>
+          </div>
+          <div class="search-box-btn-area ml10">
+            <button type="button" class="search-box-btn ico">검색</button>
+          </div>
+        </div>
+      </div>
 
       <article class="article mt30">
         <div class="multi-col balance double">
