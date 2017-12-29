@@ -1098,6 +1098,10 @@ em{
 
       a{
         font-size:1rem;
+
+        &.table{
+          font-size: 0.875rem;
+        }
       }
 
       &.center{
@@ -1244,6 +1248,10 @@ em{
     td{
       font-size:0.875rem;
     }
+  }
+
+  .list1-item{
+    font-size:1rem;
   }
 }
 
@@ -1615,6 +1623,16 @@ em{
           background: #323648;
           color: #fff;
           font-weight: 800;
+        }
+      }
+
+      &.table{
+        height: 30px;
+        line-height: 30px;
+        margin-bottom:10px;
+
+        &:last-child{
+          margin-bottom:0;
         }
       }
     }
