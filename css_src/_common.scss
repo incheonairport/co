@@ -974,12 +974,18 @@ em{
       }
     }
     &.padding-0{
+      thead tr:nth-child(even) th{
+          border-top:1px solid #d9d9d9;
+        }
       th {
         vertical-align: middle;
         font-size:0.875rem;
         display: table-cell;
         &:after {
           height: 26px;
+        }
+        &:nth-child(2){
+          border-top:1px solid #d9d9d9;
         }
       }
       td{
