@@ -1,5 +1,9 @@
 .en{
 
+  .sub-contents-heading2{
+    text-align: left;
+    line-height: 1.3;
+  }
 }
 
 .ch{
@@ -14,5 +18,8 @@
 .ja{
   * {
     font-family: 'Noto Sans JP', roboto, spoqa, sans-serif!important;
+  }
+  .table.vt-dark td{
+    word-break: break-all;
   }
 }
