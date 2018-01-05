@@ -17,51 +17,72 @@
     }
     &.type1{
       &:after{
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -17px -128px;
       }
     }
     &.type2 {
       &:after {
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -159px -128px;
       }
     }
     &.type3{
       &:after{
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -291px -128px;
       }
     }
     &.type4{
       &:after{
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -17px -254px;
       }
     }
     &.type5 {
       &:after {
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -160px -254px;
       }
     }
     &.type6{
       &:after{
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -291px -254px;
       }
     }
     &.type7{
       &:after{
-        width: 116px;
-       height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -17px -379px;
+      }
+    }
+    &.type8{
+      &:after{
+        width: 100px;
+        height: 100px;
+        background-position: -159px -379px;
+      }
+    }
+    &.type9{
+      &:after{
+        width: 100px;
+        height: 100px;
+        background-position: -291px -379px;
+      }
+    }
+    &.type10{
+      &:after{
+        width: 100px;
+        height: 100px;
+        background-position: -17px -505px;
       }
     }
     &-heading{
