@@ -1,7 +1,34 @@
 .en{
-
   .sub-contents-heading2{
     text-align: left;
+    line-height: 1.3;
+  }
+  .step-circle {
+    &-list {
+      &-item {
+        .list-article {
+          .article-num{
+            font-size: 0.75rem;
+          }
+          .article-txt {
+            font-size: 0.75rem;
+            .guide-desc{
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .multi-col{
+    .double .inner-col.txt-area{
+      padding: 0 20px;
+    }
+  }
+  .guidebox-btn{
+    word-break: keep-all;
+    display: inline-block;
+    max-width: 220px;
     line-height: 1.3;
   }
 }
