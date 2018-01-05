@@ -1,10 +1,8 @@
 .en{
-
   .sub-contents-heading2{
     text-align: left;
     line-height: 1.3;
   }
-
   .step-circle {
     &-list {
       &-item {
@@ -22,11 +20,16 @@
       }
     }
   }
-
   .multi-col{
     .double .inner-col.txt-area{
       padding: 0 20px;
     }
+  }
+  .guidebox-btn{
+    word-break: keep-all;
+    display: inline-block;
+    max-width: 220px;
+    line-height: 1.3;
   }
 }
 
