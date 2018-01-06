@@ -1,0 +1,663 @@
+// IR PC
+
+.en{
+  // 인천국제공항공사 IR 이미지 :: 영문
+  .digr-environment-systema-location{
+    background: url(/static/co/images/digr_environment_system_location_en.png) no-repeat;
+  }
+  .digr-public-data-open-guidea{
+    background: url(/static/co/images/digr_public_data_open_guide_en.png) no-repeat;
+  }
+  .digr-open-public-data{
+    background: url(/static/co/images/digr_open_public_data_en.png) no-repeat;
+  }
+  .digr-procedures-disclosure{
+    background: url(/static/co/images/digr_procedures_disclosure_en.png) no-repeat;
+  }
+  .digr-protection-compensation{
+    background: url(/static/co/images/digr_protection_compensation_en.png) no-repeat;
+  }
+  .digr-co-history{
+    background: url(/static/co/images/digr_co_history_en.png) no-repeat;
+  }
+  .digr-co-traces{
+    background: url(/static/co/images/digr_co_traces_en.png) no-repeat;
+  }
+  .digr-co-vision{
+    background: url(/static/co/images/digr_co_vision_en.png) no-repeat -1px;
+  }
+  .digr-co-management{
+    background: url(/static/co/images/digr_management_en.png) no-repeat;
+  }
+  .digr-co-interest{
+    background: url(/static/co/images/digr_interest_en.png) no-repeat;
+  }
+  .digr-co-interest2{
+    background: url(/static/co/images/digr_interest2_en.png) no-repeat;
+  }
+  .digr-low-carbon-eco-friendly-strategy1{
+    background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_01_en.png) no-repeat -2px;
+  }
+  .digr-low-carbon-eco-friendly-strategy2{
+    background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_02_en.png) no-repeat;
+  }
+  .digr-monitoring-system1{
+    background: url(/static/co/images/digr_monitoring_system_01_en.png) no-repeat;
+  }
+  .digr-monitoring-system2{
+    background: url(/static/co/images/digr_monitoring_system_02_en.png) no-repeat;
+  }
+  .digr-social-contribution-performance {
+    background: url(/static/co/images/digr_social_contribution_performance_en.png) no-repeat;
+  }
+  .grp-energy-management {
+    background: url(/static/co/images/grp_energy_management_01_en.png) no-repeat;
+  }
+  .digr-international-cooperation{
+    background: url(/static/co/images/digr_international_cooperation_01_en.png) no-repeat;
+  }
+  .digr-international-freight-network1{
+    background: url(/static/co/images/digr_international_freight_network_01_en.png) no-repeat;
+  }
+  .grp-international-freight-network1{
+    background: url(/static/co/images/grp_international_freight_network_01_en.png) no-repeat;
+  }
+  .grp-international-freight-network2{
+    background: url(/static/co/images/grp_international_freight_network_02_en.png) no-repeat;
+  }
+  .digr-international-freight-network2{
+    background: url(/static/co/images/digr_international_freight_network_02_en.png) no-repeat;
+  }
+  .digr-construction-case01{
+    background: url(/static/co/images/digr_construction_case_01_en.png) no-repeat;
+  }
+  .digr-construction-case02{
+    background: url(/static/co/images/digr_construction_case_02_en.png) no-repeat;
+  }
+  .digr-construction-case03{
+    background: url(/static/co/images/digr_construction_case_03_en.png) no-repeat;
+  }
+  .digr-procedure-application{
+    background: url(/static/co/images/digr_procedure_application_en.png) no-repeat;
+  }
+  .digr-notice-tender{
+    background: url(/static/co/images/digr_notice_tender_en.png) no-repeat;
+  }
+  .digr-service-procedure01{
+    background: url(/static/co/images/digr_service_procedure_01_en.png) no-repeat;
+  }
+  .digr-service-procedure02{
+    background: url(/static/co/images/digr_service_procedure_02_en.png) no-repeat;
+  }
+  .grp-energy-management {
+    background: url(/static/co/images/grp_energy_management_01_en.png) no-repeat;
+  }
+  .grp-construction-business1{
+    background: url(/static/co/images/grp_construction_business_01_en.png) no-repeat;
+  }
+  .grp-construction-business2{
+    background: url(/static/co/images/grp_construction_business_02_en.png) no-repeat;
+  }
+  .grp-management-performance03{
+    background: url(/static/co/images/grp_management_performance_03_en.png) no-repeat;
+  }
+  .grp-management-performance02{
+    background: url(/static/co/images/grp_management_performance_02_en.png) no-repeat;
+  }
+  .grp-management-performance01{
+    background: url(/static/co/images/grp_management_performance_01_en.png) no-repeat;
+  }
+  .grp-airport-capacity1{
+    background: url(/static/co/images/grp_airport_capacity_01_en.png) no-repeat;
+  }
+  .grp-airport-capacity2{
+    background: url(/static/co/images/grp_airport_capacity_02_en.png) no-repeat;
+  }
+  .grp-airport-capacity3{
+    background: url(/static/co/images/grp_airport_capacity_03_en.png) no-repeat;
+  }
+  .digr-acdm-report-01{
+    background: url(/static/co/images/digr_acdm_report_01_en.png) center no-repeat;
+  }
+  .digr-acdm-report-02{
+    background: url(/static/co/images/digr_acdm_report_02_en.png) center no-repeat;
+  }
+  .digr-acdm-milestone{
+    background: url(/static/co/images/digr_acdm_milestone_en.png) center no-repeat;
+  }
+  .digr-acdm-major-mailstone01{
+    background: url(/static/co/images/digr_acdm_major_mailstone_06_en.png) center no-repeat;
+  }
+  .digr-acdm-major-mailstone02{
+    background: url(/static/co/images/digr_acdm_major_mailstone_07_en.png) center no-repeat;
+  }
+  .digr-acdm-flow-chart{
+    background: url(/static/co/images/digr_acdm_flow_chart_en.png) center no-repeat;
+  }
+  .digr-strengthen-competitive1{
+    background: url(/static/co/images/digr_strengthen_competitive_01_en.png) no-repeat;
+  }
+  .digr-strengthen-competitive2{
+    background: url(/static/co/images/digr_strengthen_competitive_02_en.png) no-repeat;
+  }
+  .digr-communication-channel{
+    background: url(/static/co/images/digr_communication_channel_01_en.png) no-repeat;
+  }
+  .digr-concomitant-growth{
+    background: url(/static/co/images/digr_concomitant_growth_01_en.png) no-repeat;
+  }
+  .digr-ethics-management-organization{
+    height:768px;
+    background: url(/static/co/images/digr_ethics_management_organization_en.png) no-repeat;
+  }
+  .digr-ethics-management-vision1{
+    background: url(/static/co/images/digr_ethical_management_vision_01_en.png) no-repeat -1px;
+  }
+  .digr-ethics-management-vision2{
+    background: url(/static/co/images/digr_ethical_management_vision_02_en.png) no-repeat;
+  }
+  .digr-personal-information{
+    background: url(/static/co/images/digr_personal_information_en.png) no-repeat;
+  }
+  .digr-social-contribution01{
+    background: url(/static/co/images/digr_social_contribution01_en.png) no-repeat -1px;
+  }
+  .digr-social-contribution02{
+    background: url(/static/co/images/digr_social_contribution02_en.png) no-repeat;
+  }
+  .digr-social-contribution03{
+    background: url(/static/co/images/digr_social_contribution03_en.png) no-repeat;
+  }
+  .digr-social-contribution04{
+    background: url(/static/co/images/digr_social_contribution04_en.png) no-repeat;
+  }
+  .digr-social-contribution05{
+    background: url(/static/co/images/digr_social_contribution05_en.png) no-repeat -1px;
+  }
+  .digr-vision-strategy1{
+    background: url(/static/co/images/digr_vision_strategy_01_en.png) no-repeat;
+  }
+  .digr-vision-strategy2{
+    background: url(/static/co/images/digr_vision_strategy_02_en.png) no-repeat;
+  }
+  .digr-energy-independence{
+    background: url(/static/co/images/digr_energy_independence_02_en.png) center no-repeat;
+  }
+  .digr-energy-independence03{
+    background: url(/static/co/images/map_energy_independence_03_en.png) center no-repeat;
+  }
+  .digr-service-assessment{
+    background: url(/static/co/images/digr_service_assessment_en.png) center no-repeat;
+  }
+  .digr-recruit-guide{
+    background: url(/static/co/images/digr_recruit_guide_en.png) center no-repeat;
+  }
+  .digr-free-trade-zone{
+    background: url(/static/co/images/digr_free_trade_zone_en.png) center no-repeat;
+  }
+  .digr-environment-monitoring{
+    background: url(/static/co/images/digr_environmental_monitoring_en.png) no-repeat;
+  }
+  .digr-noise-management{
+    background: url(/static/co/images/digr_noise_management_en.png) no-repeat;
+  }
+  .digr-environment-system{
+    background: url(/static/co/images/digr_environment_management_system01_en.jpg) no-repeat;
+  }
+  .digr-cp-vision01{
+    background: url(/static/co/images/digr_cp_vision01_en.png) no-repeat;
+  }
+  .digr-cp-vision02{
+    background: url(/static/co/images/digr_cp_vision02_en.png) no-repeat;
+  }
+  .digr-co-history1{
+    background: url(/static/co/images/digr_co_traces_01_en.jpg) no-repeat;
+  }
+  .digr-co-history2{
+    background: url(/static/co/images/digr_co_traces_02_en.jpg) no-repeat;
+  }
+  .digr-co-history3{
+    background: url(/static/co/images/digr_co_traces_03_en.jpg) no-repeat;
+  }
+}
+
+.ch{
+  // 인천국제공항공사 IR 이미지 :: 중문
+  .digr-environment-systema-location{
+    background: url(/static/co/images/digr_environment_system_location_ch.png) no-repeat;
+  }
+  .digr-public-data-open-guidea{
+    background: url(/static/co/images/digr_public_data_open_guide_ch.png) no-repeat;
+  }
+  .digr-open-public-data{
+    background: url(/static/co/images/digr_open_public_data_ch.png) no-repeat;
+    height:581px;
+  }
+  .digr-procedures-disclosure{
+    background: url(/static/co/images/digr_procedures_disclosure_ch.png) no-repeat;
+  }
+  .digr-protection-compensation{
+    background: url(/static/co/images/digr_protection_compensation_ch.png) no-repeat;
+  }
+  .digr-co-history{
+    background: url(/static/co/images/digr_co_history_ch.png) no-repeat;
+  }
+  .digr-co-traces{
+    background: url(/static/co/images/digr_co_traces_ch.png) no-repeat;
+  }
+  .digr-co-vision{
+    background: url(/static/co/images/digr_co_vision_ch.png) no-repeat -1px;
+  }
+  .digr-co-management{
+    background: url(/static/co/images/digr_management_ch.png) no-repeat;
+  }
+  .digr-co-interest{
+    background: url(/static/co/images/digr_interest_ch.png) no-repeat;
+  }
+  .digr-co-interest2{
+    background: url(/static/co/images/digr_interest2_ch.png) no-repeat;
+  }
+  .digr-low-carbon-eco-friendly-strategy1{
+    background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_01_ch.png) no-repeat -2px;
+  }
+  .digr-low-carbon-eco-friendly-strategy2{
+    background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_02_ch.png) no-repeat;
+  }
+  .digr-monitoring-system1{
+    background: url(/static/co/images/digr_monitoring_system_01_ch.png) no-repeat;
+  }
+  .digr-monitoring-system2{
+    background: url(/static/co/images/digr_monitoring_system_02_ch.png) no-repeat;
+  }
+  .digr-social-contribution-performance {
+    background: url(/static/co/images/digr_social_contribution_performance_ch.png) no-repeat;
+  }
+  .grp-energy-management {
+    background: url(/static/co/images/grp_energy_management_01_ch.png) no-repeat;
+  }
+  .digr-international-cooperation{
+    background: url(/static/co/images/digr_international_cooperation_01_ch.png) no-repeat;
+  }
+  .digr-international-freight-network1{
+    background: url(/static/co/images/digr_international_freight_network_01_ch.png) no-repeat;
+  }
+  .grp-international-freight-network1{
+    background: url(/static/co/images/grp_international_freight_network_01_ch.png) no-repeat;
+  }
+  .grp-international-freight-network2{
+    background: url(/static/co/images/grp_international_freight_network_02_ch.png) no-repeat;
+  }
+  .digr-international-freight-network2{
+    background: url(/static/co/images/digr_international_freight_network_02_ch.png) no-repeat;
+  }
+  .digr-construction-case01{
+    background: url(/static/co/images/digr_construction_case_01_ch.png) no-repeat;
+  }
+  .digr-construction-case02{
+    background: url(/static/co/images/digr_construction_case_02_ch.png) no-repeat;
+  }
+  .digr-construction-case03{
+    background: url(/static/co/images/digr_construction_case_03_ch.png) no-repeat;
+  }
+  .digr-procedure-application{
+    background: url(/static/co/images/digr_procedure_application_ch.png) no-repeat;
+  }
+  .digr-notice-tender{
+    background: url(/static/co/images/digr_notice_tender_ch.png) no-repeat;
+  }
+  .digr-service-procedure01{
+    background: url(/static/co/images/digr_service_procedure_01_ch.png) no-repeat;
+  }
+  .digr-service-procedure02{
+    background: url(/static/co/images/digr_service_procedure_02_ch.png) no-repeat;
+  }
+  .grp-energy-management {
+    background: url(/static/co/images/grp_energy_management_01_ch.png) no-repeat;
+  }
+  .grp-construction-business1{
+    background: url(/static/co/images/grp_construction_business_01_ch.png) no-repeat;
+  }
+  .grp-construction-business2{
+    background: url(/static/co/images/grp_construction_business_02_ch.png) no-repeat;
+  }
+  .grp-management-performance03{
+    background: url(/static/co/images/grp_management_performance_03_ch.png) no-repeat;
+  }
+  .grp-management-performance02{
+    background: url(/static/co/images/grp_management_performance_02_ch.png) no-repeat;
+  }
+  .grp-management-performance01{
+    background: url(/static/co/images/grp_management_performance_01_ch.png) no-repeat;
+  }
+  .grp-airport-capacity1{
+    background: url(/static/co/images/grp_airport_capacity_01_ch.png) no-repeat;
+  }
+  .grp-airport-capacity2{
+    background: url(/static/co/images/grp_airport_capacity_02_ch.png) no-repeat;
+  }
+  .grp-airport-capacity3{
+    background: url(/static/co/images/grp_airport_capacity_03_ch.png) no-repeat;
+  }
+  .digr-acdm-report-01{
+    background: url(/static/co/images/digr_acdm_report_01_ch.png) center no-repeat;
+  }
+  .digr-acdm-report-02{
+    background: url(/static/co/images/digr_acdm_report_02_ch.png) center no-repeat;
+  }
+  .digr-acdm-milestone{
+    background: url(/static/co/images/digr_acdm_milestone_ch.png) center no-repeat;
+  }
+  .digr-acdm-major-mailstone01{
+    background: url(/static/co/images/digr_acdm_major_mailstone_06_ch.png) center no-repeat;
+  }
+  .digr-acdm-major-mailstone02{
+    background: url(/static/co/images/digr_acdm_major_mailstone_07_ch.png) center no-repeat;
+  }
+  .digr-acdm-flow-chart{
+    background: url(/static/co/images/digr_acdm_flow_chart_ch.png) center no-repeat;
+  }
+  .digr-strengthen-competitive1{
+    background: url(/static/co/images/digr_strengthen_competitive_01_ch.png) no-repeat;
+  }
+  .digr-strengthen-competitive2{
+    background: url(/static/co/images/digr_strengthen_competitive_02_ch.png) no-repeat;
+  }
+  .digr-communication-channel{
+    background: url(/static/co/images/digr_communication_channel_01_ch.png) no-repeat;
+  }
+  .digr-concomitant-growth{
+    background: url(/static/co/images/digr_concomitant_growth_01_ch.png) no-repeat;
+  }
+  .digr-ethics-management-organization{
+    background: url(/static/co/images/digr_ethics_management_organization_ch.png) no-repeat;
+  }
+  .digr-ethics-management-vision1{
+    background: url(/static/co/images/digr_ethical_management_vision_01_ch.png) no-repeat -1px;
+  }
+  .digr-ethics-management-vision2{
+    background: url(/static/co/images/digr_ethical_management_vision_02_ch.png) no-repeat;
+  }
+  .digr-personal-information{
+    background: url(/static/co/images/digr_personal_information_ch.png) no-repeat;
+  }
+  .digr-social-contribution01{
+    background: url(/static/co/images/digr_social_contribution01_ch.png) no-repeat -1px;
+  }
+  .digr-social-contribution02{
+    background: url(/static/co/images/digr_social_contribution02_ch.png) no-repeat;
+  }
+  .digr-social-contribution03{
+    background: url(/static/co/images/digr_social_contribution03_ch.png) no-repeat;
+  }
+  .digr-social-contribution04{
+    background: url(/static/co/images/digr_social_contribution04_ch.png) no-repeat;
+  }
+  .digr-social-contribution05{
+    background: url(/static/co/images/digr_social_contribution05_ch.png) no-repeat -1px;
+  }
+  .digr-vision-strategy1{
+    background: url(/static/co/images/digr_vision_strategy_01_ch.png) no-repeat;
+  }
+  .digr-vision-strategy2{
+    background: url(/static/co/images/digr_vision_strategy_02_ch.png) no-repeat;
+  }
+  .digr-energy-independence{
+    background: url(/static/co/images/digr_energy_independence_02_ch.png) center no-repeat;
+  }
+  .digr-energy-independence03{
+    background: url(/static/co/images/map_energy_independence_03_ch.png) center no-repeat;
+  }
+  .digr-service-assessment{
+    background: url(/static/co/images/digr_service_assessment_ch.png) center no-repeat;
+  }
+  .digr-recruit-guide{
+    background: url(/static/co/images/digr_recruit_guide_ch.png) center no-repeat;
+  }
+  .digr-free-trade-zone{
+    background: url(/static/co/images/digr_free_trade_zone_ch.png) center no-repeat;
+  }
+  .digr-environment-monitoring{
+    background: url(/static/co/images/digr_environmental_monitoring_ch.png) no-repeat;
+  }
+  .digr-noise-management{
+    background: url(/static/co/images/digr_noise_management_ch.png) no-repeat;
+  }
+  .digr-environment-system{
+    background: url(/static/co/images/digr_environment_management_system01_ch.jpg) no-repeat;
+  }
+  .digr-cp-vision01{
+    background: url(/static/co/images/digr_cp_vision01_ch.png) no-repeat;
+  }
+  .digr-cp-vision02{
+    background: url(/static/co/images/digr_cp_vision02_ch.png) no-repeat;
+  }
+  .digr-co-history1{
+    background: url(/static/co/images/digr_co_traces_01_ch.jpg) no-repeat;
+  }
+  .digr-co-history2{
+    background: url(/static/co/images/digr_co_traces_02_ch.jpg) no-repeat;
+  }
+  .digr-co-history3{
+    background: url(/static/co/images/digr_co_traces_03_ch.jpg) no-repeat;
+  }
+}
+
+.ja{
+  // 인천국제공항공사 IR 이미지 :: 일문
+  .digr-environment-systema-location{
+    background: url(/static/co/images/digr_environment_system_location_ja.png) no-repeat;
+  }
+  .digr-public-data-open-guidea{
+    background: url(/static/co/images/digr_public_data_open_guide_ja.png) no-repeat;
+  }
+  .digr-open-public-data{
+    background: url(/static/co/images/digr_open_public_data_ja.png) no-repeat;
+  }
+  .digr-procedures-disclosure{
+    background: url(/static/co/images/digr_procedures_disclosure_ja.png) no-repeat;
+  }
+  .digr-protection-compensation{
+    background: url(/static/co/images/digr_protection_compensation_ja.png) no-repeat;
+  }
+  .digr-co-history{
+    background: url(/static/co/images/digr_co_history_ja.png) no-repeat;
+  }
+  .digr-co-traces{
+    background: url(/static/co/images/digr_co_traces_ja.png) no-repeat;
+  }
+  .digr-co-vision{
+    background: url(/static/co/images/digr_co_vision_ja.png) no-repeat -1px;
+  }
+  .digr-co-management{
+    background: url(/static/co/images/digr_management_ja.png) no-repeat;
+  }
+  .digr-co-interest{
+    background: url(/static/co/images/digr_interest_ja.png) no-repeat;
+  }
+  .digr-co-interest2{
+    background: url(/static/co/images/digr_interest2_ja.png) no-repeat;
+  }
+  .digr-low-carbon-eco-friendly-strategy1{
+    background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_01_ja.png) no-repeat -2px;
+  }
+  .digr-low-carbon-eco-friendly-strategy2{
+    background: url(/static/co/images/digr_low_carbon_eco_friendly_strategy_02_ja.png) no-repeat;
+  }
+  .digr-monitoring-system1{
+    background: url(/static/co/images/digr_monitoring_system_01_ja.png) no-repeat;
+  }
+  .digr-monitoring-system2{
+    background: url(/static/co/images/digr_monitoring_system_02_ja.png) no-repeat;
+  }
+  .digr-social-contribution-performance {
+    background: url(/static/co/images/digr_social_contribution_performance_ja.png) no-repeat;
+  }
+  .grp-energy-management {
+    background: url(/static/co/images/grp_energy_management_01_ja.png) no-repeat;
+  }
+  .digr-international-cooperation{
+    background: url(/static/co/images/digr_international_cooperation_01_ja.png) no-repeat;
+  }
+  .digr-international-freight-network1{
+    background: url(/static/co/images/digr_international_freight_network_01_ja.png) no-repeat;
+  }
+  .grp-international-freight-network1{
+    background: url(/static/co/images/grp_international_freight_network_01_ja.png) no-repeat;
+  }
+  .grp-international-freight-network2{
+    background: url(/static/co/images/grp_international_freight_network_02_ja.png) no-repeat;
+  }
+  .digr-international-freight-network2{
+    background: url(/static/co/images/digr_international_freight_network_02_ja.png) no-repeat;
+  }
+  .digr-construction-case01{
+    background: url(/static/co/images/digr_construction_case_01_ja.png) no-repeat;
+  }
+  .digr-construction-case02{
+    background: url(/static/co/images/digr_construction_case_02_ja.png) no-repeat;
+  }
+  .digr-construction-case03{
+    background: url(/static/co/images/digr_construction_case_03_ja.png) no-repeat;
+  }
+  .digr-procedure-application{
+    background: url(/static/co/images/digr_procedure_application_ja.png) no-repeat;
+  }
+  .digr-notice-tender{
+    background: url(/static/co/images/digr_notice_tender_ja.png) no-repeat;
+  }
+  .digr-service-procedure01{
+    background: url(/static/co/images/digr_service_procedure_01_ja.png) no-repeat;
+  }
+  .digr-service-procedure02{
+    background: url(/static/co/images/digr_service_procedure_02_ja.png) no-repeat;
+  }
+  .grp-energy-management {
+    background: url(/static/co/images/grp_energy_management_01_ja.png) no-repeat;
+  }
+  .grp-construction-business1{
+    background: url(/static/co/images/grp_construction_business_01_ja.png) no-repeat;
+  }
+  .grp-construction-business2{
+    background: url(/static/co/images/grp_construction_business_02_ja.png) no-repeat;
+  }
+  .grp-management-performance03{
+    background: url(/static/co/images/grp_management_performance_03_ja.png) no-repeat;
+  }
+  .grp-management-performance02{
+    background: url(/static/co/images/grp_management_performance_02_ja.png) no-repeat;
+  }
+  .grp-management-performance01{
+    background: url(/static/co/images/grp_management_performance_01_ja.png) no-repeat;
+  }
+  .grp-airport-capacity1{
+    background: url(/static/co/images/grp_airport_capacity_01_ja.png) no-repeat;
+  }
+  .grp-airport-capacity2{
+    background: url(/static/co/images/grp_airport_capacity_02_ja.png) no-repeat;
+  }
+  .grp-airport-capacity3{
+    background: url(/static/co/images/grp_airport_capacity_03_ja.png) no-repeat;
+  }
+  .digr-acdm-report-01{
+    background: url(/static/co/images/digr_acdm_report_01_ja.png) center no-repeat;
+  }
+  .digr-acdm-report-02{
+    background: url(/static/co/images/digr_acdm_report_02_ja.png) center no-repeat;
+  }
+  .digr-acdm-milestone{
+    background: url(/static/co/images/digr_acdm_milestone_ja.png) center no-repeat;
+  }
+  .digr-acdm-major-mailstone01{
+    background: url(/static/co/images/digr_acdm_major_mailstone_06_ja.png) center no-repeat;
+  }
+  .digr-acdm-major-mailstone02{
+    background: url(/static/co/images/digr_acdm_major_mailstone_07_ja.png) center no-repeat;
+  }
+  .digr-acdm-flow-chart{
+    background: url(/static/co/images/digr_acdm_flow_chart_ja.png) center no-repeat;
+  }
+  .digr-strengthen-competitive1{
+    background: url(/static/co/images/digr_strengthen_competitive_01_ja.png) no-repeat;
+  }
+  .digr-strengthen-competitive2{
+    background: url(/static/co/images/digr_strengthen_competitive_02_ja.png) no-repeat;
+  }
+  .digr-communication-channel{
+    background: url(/static/co/images/digr_communication_channel_01_ja.png) no-repeat;
+  }
+  .digr-concomitant-growth{
+    background: url(/static/co/images/digr_concomitant_growth_01_ja.png) no-repeat;
+  }
+  .digr-ethics-management-organization{
+    background: url(/static/co/images/digr_ethics_management_organization_ja.png) no-repeat;
+  }
+  .digr-ethics-management-vision1{
+    background: url(/static/co/images/digr_ethical_management_vision_01_ja.png) no-repeat -1px;
+  }
+  .digr-ethics-management-vision2{
+    background: url(/static/co/images/digr_ethical_management_vision_02_ja.png) no-repeat;
+  }
+  .digr-personal-information{
+    background: url(/static/co/images/digr_personal_information_ja.png) no-repeat;
+  }
+  .digr-social-contribution01{
+    background: url(/static/co/images/digr_social_contribution01_ja.png) no-repeat -1px;
+  }
+  .digr-social-contribution02{
+    background: url(/static/co/images/digr_social_contribution02_ja.png) no-repeat;
+  }
+  .digr-social-contribution03{
+    background: url(/static/co/images/digr_social_contribution03_ja.png) no-repeat;
+  }
+  .digr-social-contribution04{
+    background: url(/static/co/images/digr_social_contribution04_ja.png) no-repeat;
+  }
+  .digr-social-contribution05{
+    background: url(/static/co/images/digr_social_contribution05_ja.png) no-repeat -1px;
+  }
+  .digr-vision-strategy1{
+    background: url(/static/co/images/digr_vision_strategy_01_ja.png) no-repeat;
+  }
+  .digr-vision-strategy2{
+    background: url(/static/co/images/digr_vision_strategy_02_ja.png) no-repeat;
+  }
+  .digr-energy-independence{
+    background: url(/static/co/images/digr_energy_independence_02_ja.png) center no-repeat;
+  }
+  .digr-energy-independence03{
+    background: url(/static/co/images/map_energy_independence_03_ja.png) center no-repeat;
+  }
+  .digr-service-assessment{
+    background: url(/static/co/images/digr_service_assessment_ja.png) center no-repeat;
+  }
+  .digr-recruit-guide{
+    background: url(/static/co/images/digr_recruit_guide_ja.png) center no-repeat;
+  }
+  .digr-free-trade-zone{
+    background: url(/static/co/images/digr_free_trade_zone_ja.png) center no-repeat;
+  }
+  .digr-environment-monitoring{
+    background: url(/static/co/images/digr_environmental_monitoring_ja.png) no-repeat;
+  }
+  .digr-noise-management{
+    background: url(/static/co/images/digr_noise_management_ja.png) no-repeat;
+  }
+  .digr-environment-system{
+    background: url(/static/co/images/digr_environment_management_system01_ja.jpg) no-repeat;
+  }
+  .digr-cp-vision01{
+    background: url(/static/co/images/digr_cp_vision01_ja.png) no-repeat;
+  }
+  .digr-cp-vision02{
+    background: url(/static/co/images/digr_cp_vision02_ja.png) no-repeat;
+  }
+  .digr-co-history1{
+    background: url(/static/co/images/digr_co_traces_01_ja.jpg) no-repeat;
+  }
+  .digr-co-history2{
+    background: url(/static/co/images/digr_co_traces_02_ja.jpg) no-repeat;
+  }
+  .digr-co-history3{
+    background: url(/static/co/images/digr_co_traces_03_ja.jpg) no-repeat;
+  }
+}

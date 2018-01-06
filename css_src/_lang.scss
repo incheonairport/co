@@ -1,5 +1,54 @@
 .en{
 
+  .text-box.consulting{
+   height: 350px;
+  }
+
+  .result-box-btn{
+    position: relative;
+    right: 0;
+  }
+
+  .user-input-link.min{
+    display: block;
+  }
+
+  .left-menu-depth1-item-link{
+    padding: 10px 30px 10px 15px;
+  }
+
+  .sub-contents-heading2{
+    text-align: left;
+    line-height: 1.3;
+  }
+  .step-circle {
+    &-list {
+      &-item {
+        .list-article {
+          .article-num{
+            font-size: 0.75rem;
+          }
+          .article-txt {
+            font-size: 0.75rem;
+            .guide-desc{
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .multi-col{
+    .double .inner-col.txt-area{
+      padding: 0 20px;
+    }
+  }
+  .guidebox-btn{
+    word-break: keep-all;
+    display: inline-block;
+    max-width: 220px;
+    line-height: 1.3;
+  }
 }
 
 .ch{
@@ -14,5 +63,8 @@
 .ja{
   * {
     font-family: 'Noto Sans JP', roboto, spoqa, sans-serif!important;
+  }
+  .table.vt-dark td{
+    word-break: break-all;
   }
 }
