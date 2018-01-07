@@ -3627,6 +3627,13 @@ label.d-none{
   border: 1px solid #d9d9d9;
   text-align: center;
   @extend %clearfix;
+  // for develop main html
+  &-year-contents{
+    display:none;
+    &.on{
+      display:block;
+    }
+  }
   &-title{
     font-weight:800;
     float: left;
