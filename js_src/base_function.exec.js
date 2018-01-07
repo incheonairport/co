@@ -250,6 +250,24 @@ $(function(){
 
   })();
 
+  // select box 이벤트
+  (function(){
+
+    $('.search-box-btn').on('click', function(){
+      if( $('div').hasClass('search-box-year-contents') ){
+        var index = $('#search-year.search-box-input-select option:selected').index();
+        var val = $('#search-year.search-box-input-select option:selected').text();
+
+        $('.search-box-year-contents').removeClass('on');
+        $('.search-box-year-contents').eq(index).addClass('on');
+      }
+
+      $('.sub-contents-heading2.change-heading .year').text( val );
+      $('.sub-contents-heading2.change-heading .number').text( $('.search-box-year-contents').eq(index).find('.table.vt-dark tr').length-1 );
+    });
+
+  })();
+
 });
 
 
