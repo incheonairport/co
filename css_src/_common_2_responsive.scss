@@ -1,0 +1,65 @@
+
+// 1024
+@media all and (max-width:1023px) {
+  .massage{
+
+    &-wrap{
+      width:100%;
+      height:auto;
+      padding:15px;
+      position: static;
+      text-align:center;
+
+    }
+
+    &-txt-tit{
+      br{
+        display:none;
+      }
+      font-size: 1.5rem;
+    }
+
+    &-txt{
+      font-size: 1rem;
+
+      &:before{
+       display:none;
+      }
+    }
+
+    &-img{
+      position: static;
+      width: 50%;
+      margin-bottom: 10px;
+    }
+
+    &-img2{
+      position: static;
+    }
+
+  }
+  .history{
+    text-align:center;
+    &-txt{
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    &-ceo{
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    &-list{
+      &-head{
+        width:160px;
+        float: left;
+      }
+
+      &-body{
+        float:left;
+      }
+    }
+
+  }
+}
