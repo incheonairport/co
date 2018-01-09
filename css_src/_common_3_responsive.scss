@@ -1,0 +1,60 @@
+// 1024
+@media all and (max-width:1023px) {
+
+  .list6{
+    position: relative;
+    &-item{
+      min-height:inherit;
+      padding:140px 0 0;
+      margin-bottom: 20px;
+      border-top:1px solid #d9d9d9;
+      &:first-child{
+        border-top:0;
+      }
+      &:after{
+        margin: 20px auto auto;
+        bottom:auto;
+      }
+      &-heading{
+        font-size: 1rem;
+        margin-bottom:10px;
+      }
+      &-onlink{
+        position:static;
+        margin-top:10px;
+        text-align:center;
+        height:40px;
+        line-height:40px;
+        &:before{
+          display:block;
+          width:100px!important;
+          height:100px!important;
+          border:1px solid #d9d9d9;
+          position: absolute;
+          top:0;
+          left:0;
+          right:0;
+          margin:20px auto auto;
+          border-radius:50%;
+        }
+        &.type1{
+          &:before{
+            background-position: -17px -20px;
+          }
+        }
+        &.type2{
+          &:before{
+            background-position: -155px -18px;
+          }
+        }
+        &.type3{
+          &:before{
+            background-position: -290px -16px;;
+          }
+        }
+      }
+    }
+  }
+
+}
+
