@@ -66,6 +66,9 @@
       </nav>
 
       <nav class="tab-nav sub">
+        <button type="button" name="button" title="클릭하면 관련사이트 목록이 나타납니다." class="tab-nav-sub-default">
+          <span>비전 및 전략</span><span class="ico arrow_up">목록보기</span>
+        </button>
         <ul class="tab-nav-list">
           <li class="tab-nav-list-item">
             <a href="#" class="tab-nav-list-link on">비전 및 전략</a>
@@ -82,22 +85,59 @@
         </ul>
       </nav>
 
-      <script>
-        if( $('html').hasClass('mobile') ){
-          $('.tab-nav.sub').find('.tab-nav-list-link').on('click', function(){
-            $(this).addClass('open');
-          });
 
+
+
+      <script>
+
+
+        if ($('html').hasClass('mobile')) {
+          $('.tab-nav').addClass('mobile-tab');
         }
 
-//        $(window).on('resize', function(){
-//          var widthSize = window.outerWidth;
-//          if (widthSize <= 1023) {
+        $('.tab-nav-sub-default').on('click', function(){
+          $(this).toggleClass('on');
+          $(this).next('.tab-nav-list').toggleClass('on');
+        });
+
+        $('.tab-nav-sub-default').on('click', function(){
+          $(this).parents('.tab-nav-list').removeClass('on');
+          $(this).parents('.tab-nav-list').prev('.tab-nav-sub-default').removeClass('on');
+        });
+
+        var tabcontainer = $('.tab-nav-list');
+        if (!tabcontainer.is(e.target) && tabcontainer.has(e.target).length === 0) {
+          tabcontainer.removeClass('on');
+          $('.tab-nav-sub-default').removeClass('on');
+        }
+
+        /**
+         * SelectBox Class
+         */
+
+//        function mobileTabSub(){
 //
-//          } else if (widthSize > 1023) {
+//          this.toggleSelectList = function( $this ){
+//            $this.toggleClass('on');
+//            $this.next('.select-list').toggleClass('on');
+//          };
 //
-//          }
-//        });
+//          this.afterClickList = function( $this ){
+//            $this.parents('.select-list').removeClass('on');
+//            $this.parents('.select-list').prev('.select-link-default').removeClass('on');
+//          };
+//
+//          this.hideList = function(e){
+//
+//            var container = $('.select-list');
+//            if (!container.is(e.target) && container.has(e.target).length === 0) {
+//              container.removeClass('on');
+//              $('.select-link-default').removeClass('on');
+//            }
+//
+//          };
+//
+//        } mobileTabSub();
       </script>
 
 

@@ -274,7 +274,9 @@
 
     &.sub{
       margin-top: 10px;
-
+      .tab-nav-sub-default{
+        display:none;
+      }
       .tab-nav-list{
 
         &-item {
