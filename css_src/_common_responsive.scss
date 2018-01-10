@@ -812,6 +812,7 @@
     }
   }
   //글작성 게시판 추가
+  //글작성 게시판 추가
   .table{
 
     &.hr.writing{
@@ -837,23 +838,23 @@
         width:100%;
         border-right:1px solid #d9d9d9;
         border-left:1px solid #d9d9d9;
-        border-bottom:1px solid #d9d9d9;
         padding:10px;
-        text-align:center;
 
       }
       td{
         position:relative;
-        border:none;
+        border:1px solid #d9d9d9;
+
         float:left;
         width:100%;
         text-align:center;
-        min-height:50px;
+
         margin-bottom:20px;
-        vertical-align:middle;
-        padding:0;
+
+        padding:20px 10px;
+
         height:auto;
-        line-height: 40px;
+        line-height: 1;
         &.agreement-offer{
           padding:25px 20px;
         }
