@@ -62,4 +62,55 @@
     }
 
   }
+
+  /*이용일시*/
+  .timesetting{
+    display:block;
+    &-etc{
+      float:none;
+    }
+    &-time{
+      float:none;
+    }
+    &-date{
+      width:100%;
+      float:none;
+      &-text{
+        height: 40px;
+        line-height:40px;
+      }
+      &-day{
+        width:calc(100% - 40px);
+      }
+      &-calendar {
+        border-left:1px solid #d9d9d9;
+        &:after {
+          background-position: -99px -96px;
+          width: 17px;
+          height: 16px;
+        }
+      }
+      &.long{
+        width: 160px;
+        .timesetting-date-day{
+          width: 120px;
+        }
+      }
+    }
+    &-dash{
+      width:100%;
+      float: none;
+      display:inline-block;
+      text-align:center;
+      margin:0;
+    }
+    .object-list{
+      min-width: 100px;
+    }
+    .user-text{
+      width: 177px;
+      height: 40px;
+      vertical-align: bottom;
+    }
+  }
 }
