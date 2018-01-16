@@ -16,6 +16,29 @@
     }
   }
 
+  .external-link-text{
+    &.webjin{
+      margin:0;
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.human{
+      margin-right: 0;
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.badminton{
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+  }
+
   .text-box.consulting{
    height: 350px;
   }
@@ -81,6 +104,28 @@
     min-height: 63px;
   }
 
+  .external-link-text{
+    &.webjin{
+      margin:0 43px 0 0;
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.human{
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.badminton{
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+  }
+
 }
 
 
@@ -96,6 +141,28 @@
 
   .main-section2-text{
     min-height: 84px;
+  }
+
+  .external-link-text{
+    &.webjin{
+      margin:0 43px 0 0;
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.human{
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.badminton{
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
   }
 
   .table.vt-dark td{
