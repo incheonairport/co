@@ -3677,6 +3677,9 @@ label.d-none{
         width:79px;
         border: 1px solid #818181;
       }
+      &.year2{
+        border: 1px solid #818181;
+      }
       &.month{
         width:61px;
         border: 1px solid #818181;
@@ -3739,6 +3742,11 @@ label.d-none{
       &.big{
         width: 100px;
         height: 92px;
+      }
+
+      &.big2{
+        width: 160px;
+        height: 145px;
       }
 
       &.view-large-btn{

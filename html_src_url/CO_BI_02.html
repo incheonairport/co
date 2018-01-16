@@ -39,40 +39,53 @@
       <h4 class="sub-contents-heading1">국내공항 통계보기</h4>
 
       <article class="article">
+
+
+
+        <!-- 180116 수정부분 -->
         <div class="search-box">
+        <!-- 180116 수정부분 -->
+
+
+
+
+
+          <input type="hidden" id="PAS" name="PAS" value="">
+          <input type="hidden" id="BAG" name="BAG" value="">
+
           <div class="search-box-input small">
             <div class="multi-col double">
-              <div class="inner-col w85 pl10">
+              <div class="inner-col w80 pl10">
                 <div class="form-layout">
                   <label class="search-box-title pr15" for="flight">운항</label>
                   <div class="search-box-input-item">
-                    <select class="search-box-input-select small" id="flight" title="운항를 선택해 주세요">
+                    <select class="search-box-input-select" id="flight" title="운항를 선택해 주세요">
                       <option>최대네자</option>
                     </select>
                   </div>
                   <label class="search-box-title pr15 ml15" for="aeroplane">항공기</label>
                   <div class="search-box-input-item">
-                    <select class="search-box-input-select small" id="aeroplane" title="항공기를 선택해 주세요">
+                    <select class="search-box-input-select" id="aeroplane" title="항공기를 선택해 주세요">
                       <option>최대세자</option>
                     </select>
                   </div>
                   <label class="search-box-title pr15 ml15" for="airroute">노선</label>
                   <div class="search-box-input-item">
-                    <select class="search-box-input-select small" id="airroute" title="노선을 선택해 주세요">
-                      <option>전체</option>
-                    </select>
-                  </div>
-                  <label class="search-box-title pr15 ml15" for="passenger">여객</label>
-                  <div class="search-box-input-item">
-                    <select class="search-box-input-select small" id="passenger" title="여객을 선택해 주세요">
+                    <select class="search-box-input-select" id="airroute" title="노선을 선택해 주세요">
                       <option>전체</option>
                     </select>
                   </div>
                 </div>
                 <div class="form-layout mt10">
-                  <label class="search-box-title pr15" for="AIRLINE">항공사</label>
+                  <label class="search-box-title pr15" for="passenger">여객</label>
                   <div class="search-box-input-item">
-                    <select id="AIRLINE" name="AIRLINE" class="search-box-input-select airline">
+                    <select class="search-box-input-select" id="passenger" title="여객을 선택해 주세요">
+                      <option>전체</option>
+                    </select>
+                  </div>
+                  <label class="search-box-title pr15 ml15" for="AIRLINE">항공사</label>
+                  <div class="search-box-input-item">
+                    <select id="AIRLINE" name="AIRLINE" class="search-box-input-select">
                       <option value="">전체</option>
 
                       <option value="인천">
@@ -153,9 +166,17 @@
 
                     </select>
                   </div>
+                  <label class="search-box-title pr15 ml15" for="BAG_SEL">화물</label>
+                  <div class="search-box-input-item">
+                    <select class="search-box-input-select" id="BAG_SEL" title="여객을 선택해 주세요">
+                      <option>전체</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-layout mt10">
                   <div class="timesetting">
-                    <label class="search-box-title ml15" for="S_YEAR">날짜</label>
-                    <select id="S_YEAR" name="S_YEAR" class="search-box-input-select year">
+                    <label class="search-box-title" for="S_YEAR">날짜</label>
+                    <select id="S_YEAR" name="S_YEAR" class="search-box-input-select year2">
 
                       <option value="2017">
                         2017
@@ -294,7 +315,7 @@
                     <label class="search-box-title ml5 pr15" for="S_MONTH">월</label>
                     <label class="search-box-title pr15" for="E_YEAR">~</label>
 
-                    <select id="E_YEAR" name="E_YEAR" title="종료년도" class="search-box-input-select year">
+                    <select id="E_YEAR" name="E_YEAR" title="종료년도" class="search-box-input-select year2">
 
                       <option value="2017">2017</option>
 
@@ -400,14 +421,18 @@
                   </div>
                 </div>
               </div>
-              <div class="inner-col w15 pl10">
+              <div class="inner-col w20">
                 <div class="search-box-btn-area">
-                  <button type="button" class="search-box-btn big">검색</button>
+                  <button type="button" class="search-box-btn big2" id="btnSearch">검색</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
+
+
         <div class="multi-col double mt30">
           <div class="inner-col">
             <p class="guide-desc mark">인천공항 실적만 작성</p>
