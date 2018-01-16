@@ -1,5 +1,21 @@
 .en{
 
+  .main-section2{
+    height: 753px;
+    background-size: cover;
+  }
+
+  .main-section2-text-box{
+    height: 385px;
+  }
+
+  .main-section2-text{
+    min-height: 126px;
+    &-list{
+      margin-top: 25px;
+    }
+  }
+
   .text-box.consulting{
    height: 350px;
   }
@@ -57,13 +73,31 @@
     font-family: 'Noto Sans SC', roboto, spoqa ,sans-serif!important;
   }
 
+  .main-section2-text-box{
+    height: 286px;
+  }
+
+  .main-section2-text{
+    min-height: 63px;
+  }
+
 }
 
 
 .ja{
+
   * {
     font-family: 'Noto Sans JP', roboto, spoqa, sans-serif!important;
   }
+
+  .main-section2-text-box{
+    height: 300px;
+  }
+
+  .main-section2-text{
+    min-height: 84px;
+  }
+
   .table.vt-dark td{
     word-break: break-all;
   }
