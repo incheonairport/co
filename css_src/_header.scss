@@ -239,7 +239,7 @@
           border-left:1px solid #ddd;
         }
       }
-      &:hover{
+      &:hover, &.on{
         &:after{
           content:"";
           display:block;
