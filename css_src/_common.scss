@@ -2253,6 +2253,7 @@ label.d-none{
 
 /*textbox*/
 .text-box{
+  display:block;
   width:100%;
   border: 1px solid #d9d9d9;
   padding:30px;
@@ -5278,6 +5279,8 @@ label.d-none{
 }
 
 .book-btn{
+  display:block;
+  width:100%;
   margin-right: 5px;
 }
 

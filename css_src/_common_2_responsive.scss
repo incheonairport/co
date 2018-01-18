@@ -1,6 +1,90 @@
 
 // 1024
-@media all and (max-width:1023px) {
+@media all and (max-width:640px) {
+  .btn-type-small{
+    &.more{
+      min-width:100%;
+      height: 40px;
+      line-height:40px;
+    }
+  }
+  .step-circle-list-item{
+    width:calc(50% - 10px);
+
+    .list-article{
+      &.small{
+        width: 139px;
+        height: 139px;
+      }
+    }
+  }
+
+  .textbox-step{
+    .step2{
+      .textbox-title{
+        line-height:1.7;
+        margin-bottom:0;
+      }
+    }
+
+    .textbox{
+      width:100%;
+      margin-left:0;
+      float:none;
+      margin-bottom:10px;
+
+      .textbox-txt{
+        min-height:inherit;
+        padding:10px;
+      }
+      &:last-child{
+        &:after{
+          display:none;
+        }
+      }
+      &:after{
+        display:none;
+      }
+    }
+    .textbox-stepico{
+      padding-top:0;
+
+      &:before{
+        display:none;
+      }
+    }
+  }
+
+  .list5{
+    &.border{
+      padding:15px;
+    }
+  }
+  .double-box {
+    width:100%;
+    &.right{
+      padding-left:0;
+    }
+    &.ico {
+      text-indent: 0;
+      &:after {
+        display:none;
+      }
+    }
+    &-top {
+      padding:10px 15px;
+      font-weight:400;
+    }
+
+    &-bottom {
+      .list1-item{
+        font-size: 0.825rem;
+      }
+      padding: 15px;
+    }
+  }
+
+
   .massage{
 
     &-wrap{
@@ -134,4 +218,96 @@
       width:100%!important;
     }
   }
+
+  .banner{
+
+    &-txt-tit{
+      font-size: 1.125rem;
+      padding:15px 15px 0;
+    }
+
+    &-txt-tit2{
+      font-size: 1.125rem;
+      padding-top: 10px;
+    }
+
+    &-txt2{
+      font-size: 1rem;
+      margin-bottom:15px;
+    }
+    &-txt{
+      &.no-padding{
+        padding:15px;
+      }
+    }
+  }
+
+  .enter {
+    border:0;
+    padding:0 15px;
+    background: #fff;
+  }
+
+  .view-head-tit{
+    &.complain-table{
+      font-weight: normal;
+      text-align: left;
+      display:block;
+      label{
+        margin-bottom:10px;
+      }
+
+    }
+  }
+
+
+  // ir pakage
+  .digr-co-history1{
+    height: 178px;
+    background-size:contain;
+    background-position:center;
+  }
+  .digr-co-history2{
+    height: 178px;
+    background-size:contain;
+    background-position:center;
+  }
+  .digr-co-history3{
+    height: 210px;
+    background-size:contain;
+    background-position:center;
+  }
+
+  .digr-environment-system{
+    height: 288px;
+    background-size:contain;
+    background-position:center;
+  }
+
+  .digr-environment-monitoring{
+    height: 188px;
+    background-size:contain;
+    background-position:center;
+  }
+
+  .digr-noise-management{
+    height: 114px;
+    background-size:contain;
+    background-position:center;
+  }
+
+  .digr-cp-vision01{
+    height: 129px;
+    background-size:contain;
+    background-position:center;
+  }
+  .digr-cp-vision02{
+    height: 129px;
+    background-size:contain;
+    background-position:center;
+  }
+
+
+
+
 }

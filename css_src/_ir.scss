@@ -4,6 +4,7 @@
   // 인천국제공항공사 IR 이미지 :: 영문
   .digr-environment-systema-location{
     background: url(/static/co/images/digr_environment_system_location_en.png) no-repeat;
+    background-size:contain!important;
   }
   .digr-public-data-open-guidea{
     background: url(/static/co/images/digr_public_data_open_guide_en.png) no-repeat;
