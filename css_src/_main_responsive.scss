@@ -2,7 +2,7 @@
 // 640
 @media screen and (max-width:1024px) {
   .section{
-    height:700px;
+    height:600px;
 
   }
 
@@ -126,27 +126,30 @@
           &-text{
 
             &-box{
-              z-index:2;
-              top:calc(42% - 160px);
+
+              position: static;
+              transform: none;
+              padding-top: 100px;
             }
 
             &:nth-child(1){
-              font-size:2rem!important;
+              font-size:3rem!important;
               letter-spacing:0;
             }
             &:nth-child(2){
-              font-size:1.125rem!important;
+              font-size:2.5rem!important;
               line-height:1.4;
-              padding:0 30px;
-              margin-bottom:15px;
+              padding:0 15px;
+              margin-bottom:0;
               letter-spacing:0;
             }
 
             &:nth-child(3){
-              font-size:1.125rem!important;
+              font-size:1rem!important;
               letter-spacing:0;
               line-height:1.4;
-              padding:0 30px;
+              padding:0 15px;
+              margin-top:0;
               //margin-top:15px;
               &:after{
                 display:none;
@@ -178,7 +181,7 @@
       }
 
       &-control{
-
+        display:none;
         &-arrow{
           width:100%;
           position:absolute;
@@ -210,7 +213,7 @@
         }
 
         &-paging{
-          //display:none;
+          display:none;
           bottom:170px;
 
           .paging-item{
@@ -252,6 +255,9 @@
 
 
         }
+        .main-list{
+          float:left;
+        }
 
         &-section{
           width:100%;
@@ -262,6 +268,12 @@
           position:relative;
           margin-bottom:15px;
           background:#23368c;
+          &:last-child{
+            margin-bottom:0;
+            .main-visual-news-title{
+              display:none;
+            }
+          }
 
 
           &:before{
@@ -278,7 +290,7 @@
           }
 
           &.first{
-            background: url(/static/co/images/bg_main_visual_news_ceo.png) #23368c right top no-repeat;
+            background: url(/static/co/images/bg_main_visual_news_ceo.png) #23368c 35px top no-repeat;
           }
 
           &.middle{
@@ -312,20 +324,17 @@
             }
 
             &-plus{
-              text-indent: -9999px;
-              height: 13px;
-              width: 13px;
-              background: url(/static/co/images/btn_more.png) no-repeat;
-              position: absolute;
-              top: 34px;
+              top: 0;
               right: 20px;
+              bottom: 0;
+              margin: auto;
             }
           }
         }
 
         &-title{
           height:22px;
-          font-size:1.5rem;
+          font-size:1.25rem;
           font-weight: 300;
           color:#fff;
 
@@ -389,10 +398,10 @@
 
         &-txt{
           font-size:0.875rem;
-          margin-top:16px;
+          margin-top:0;
 
           &.tab{
-            margin-top:38px;
+            margin-top:0;
             display:none;
 
             &.on{
@@ -512,17 +521,11 @@
 
         &-inner {
           position: static;
-          top: 0;
-          left: 0;
-
           p {
             position: static;
-            top: 0;
-            left: 0;
           }
-
           img{
-            display:block;
+            width:100%;
           }
         }
       }
@@ -533,7 +536,6 @@
 
   .main-section2-text-tit.on{
     &:after{
-
       background:url(/static/co/images/spr_ico_global.png) no-repeat -174px -49px;
       background-size: 250px 200px;
       width: 10px;

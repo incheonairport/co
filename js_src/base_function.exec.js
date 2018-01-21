@@ -19,22 +19,20 @@
 
 })();
 
-
-// 공사 메인 탭 모바일
-(function(){
-
-  if( $('html').hasClass('mobile') ){
-    $('.main-section2-text-tit').addClass('on');
-
-    $('.main-section2-text-tit').on('click',function(){
-      $(this).toggleClass('on');
-    });
-  }
-
-
-})();
-
 $(function(){
+
+  // 공사 메인 탭 모바일
+  (function(){
+
+    if( $('html').hasClass('mobile') ){
+      $('.main-section2-text-tit').addClass('on');
+      $('.main-section2-text-tit').on('click',function(){
+        $(this).toggleClass('on');
+      });
+    }
+
+
+  })();
 
   /**
    * loading
