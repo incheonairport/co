@@ -1,0 +1,550 @@
+
+// 640
+@media screen and (max-width:1024px) {
+  .section{
+    height:700px;
+
+  }
+
+  .external{
+    &-link{
+      height:auto;
+      width:33.33%;
+      border-left:1px solid #392c2f;
+      float:left;
+      position: relative;
+      top: 0;
+      left: 0;
+
+      &:first-child{
+        border:0;
+      }
+      &-text{
+        color:#fff;
+        font-size:0.825rem;
+        display: block;
+        text-align:center;
+        padding: 30px 0 0 0;
+        margin-left:0;
+
+        &.webjin{
+          margin:0;
+
+          &:before{
+            content:"";
+            display:block;
+            background:url(/static/co/images/logo_more_beyond.png) no-repeat ;
+            width: 46px;
+            height: 20px;
+            background-size:cover;
+            position:absolute;
+            top:0;
+            right:0;
+            left:0;
+            margin:auto;
+          }
+          &:after{
+            display:none;
+
+          }
+        }
+        &.human{
+          margin-right:0px;
+          &:before{
+            content:"";
+            display:block;
+            background:url(/static/co/images/logo_human_resources_development.png) no-repeat ;
+            width: 24px;
+            height: 21px;
+            background-size:cover;
+            position:absolute;
+            top:0;
+            right:0;
+            left:0;
+            margin:auto;
+          }
+          &:after{
+            display:none;
+
+          }
+        }
+        &.badminton{
+          &:before{
+            content:"";
+            display:block;
+            background:url(/static/co/images/logo_skymons.png) no-repeat ;
+            width: 64px;
+            height: 21px;
+            background-size:cover;
+            position:absolute;
+            top:0;
+            right:0;
+            left:0;
+            margin:auto;
+          }
+          &:after{
+            display:none;
+
+          }
+        }
+      }
+    }
+  }
+  .main-inner{
+    width: 100%;
+
+  }
+  .main{
+
+    &-visual{
+      position:relative;
+      overflow:hidden;
+      //height:1000px;
+
+      &-wrap{
+        height:100%;
+
+        position:relative;
+
+        z-index:90;
+        overflow:hidden;
+
+        &:after{
+          content:"";
+          display:block;
+          width:100%;
+          height:100%;
+          background:url(/static/ap/images/bg_dimmed_gradient.png) repeat-x 0 0;
+          position:absolute;
+          top:0;
+          left:0;
+        }
+      }
+
+      &-item{
+        .visual{
+          &-text{
+
+            &-box{
+              z-index:2;
+              top:calc(42% - 160px);
+            }
+
+            &:nth-child(1){
+              font-size:2rem!important;
+              letter-spacing:0;
+            }
+            &:nth-child(2){
+              font-size:1.125rem!important;
+              line-height:1.4;
+              padding:0 30px;
+              margin-bottom:15px;
+              letter-spacing:0;
+            }
+
+            &:nth-child(3){
+              font-size:1.125rem!important;
+              letter-spacing:0;
+              line-height:1.4;
+              padding:0 30px;
+              //margin-top:15px;
+              &:after{
+                display:none;
+              }
+
+            }
+          }
+        }
+        //
+        //&:nth-child(1){
+        //  background-image:url(/static/ap/images/bg_mobile_main_visual_01.jpg) !important;
+        //}
+        //
+        //&:nth-child(2){
+        //  background-image:url(/static/ap/images/bg_mobile_main_visual_02.jpg) !important;
+        //}
+        //
+        //&:nth-child(3){
+        //  background-image:url(/static/ap/images/bg_mobile_main_visual_03.jpg) !important;
+        //}
+        //
+        //&:nth-child(4){
+        //  background-image:url(/static/ap/images/bg_mobile_main_visual_04.jpg) !important;
+        //}
+        //
+        //&:nth-child(5){
+        //  background-image:url(/static/ap/images/bg_mobile_main_visual_05.jpg) !important;
+        //}
+      }
+
+      &-control{
+
+        &-arrow{
+          width:100%;
+          position:absolute;
+          top:50%;
+          left:0;
+          z-index:100;
+
+          >.arrow{
+            background-size: 79px 75px;
+            width: 37px;
+            height: 37px;
+            position:absolute;
+            top:calc(50% - 55px);
+            transform:translateY(-50%);
+
+            text-indent:-99999em;
+
+            &.prev{
+              left:15px;
+              top:0;
+            }
+
+            &.next{
+              background-position:-42px 0;
+              right:15px;
+              top:0;
+            }
+          }
+        }
+
+        &-paging{
+          //display:none;
+          bottom:170px;
+
+          .paging-item{
+            margin-right:5px;
+          }
+
+        }
+
+        &-bar{
+          width:0;
+          height:3px;
+          background:#ffae44;
+          position:absolute;
+          bottom:207px;
+          left:0;
+          z-index:110;
+        }
+      }
+
+      &-news{
+        width:100%;
+        height:auto;
+        padding:15px;
+
+        position:absolute;
+        bottom:0;
+        left:0;
+        background:none;
+
+        color:#fff;
+        text-align:center;
+
+        z-index:100;
+
+        
+
+        &-inner{
+
+
+
+        }
+
+        &-section{
+          width:100%;
+          height:auto;
+          padding:15px;
+          float:left;
+          text-align: left;
+          position:relative;
+          margin-bottom:15px;
+          background:#23368c;
+
+
+          &:before{
+            content: "";
+            display: block;
+            clear: both;
+            width: 1px;
+            height: 200px;
+            background: #fff;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          &.first{
+            background: url(/static/co/images/bg_main_visual_news_ceo.png) #23368c right top no-repeat;
+          }
+
+          &.middle{
+            background: url(/static/co/images/bg_main_visual_news_02.png) #23368c right center no-repeat;
+          }
+
+          &.last{
+            &:after{
+              content: "";
+              display: block;
+              clear: both;
+              width: 1px;
+              height: 200px;
+              background: #fff;
+              opacity: 0.1;
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+          }
+
+          .more-link{
+            &-arrow{
+              text-indent: -99999px;
+              width: 28px;
+              height: 9px;
+              background:url(/static/co/images/spr_arrow.png) 0 0;
+              position:absolute;
+              bottom:40px;
+              left:30px;
+            }
+
+            &-plus{
+              text-indent: -9999px;
+              height: 13px;
+              width: 13px;
+              background: url(/static/co/images/btn_more.png) no-repeat;
+              position: absolute;
+              top: 34px;
+              right: 20px;
+            }
+          }
+        }
+
+        &-title{
+          height:22px;
+          font-size:1.5rem;
+          font-weight: 300;
+          color:#fff;
+
+          &.tab{
+            padding-top:6px;
+            position:absolute;
+            top:30px;
+            left:30px;
+            font-size:1rem;
+            cursor:pointer;
+            color:#666;
+
+            &:after{
+              display:none;
+            }
+
+            &.on{
+
+              font-size:0.825rem;
+              font-weight:900;
+            }
+
+            &.press{
+
+              &.prev{
+                left:109px;
+
+              }
+
+              &.next{
+                left:136px;
+                display:none;
+              }
+
+              &.on{
+                left:109px;
+              }
+            }
+
+            &.recruit{
+
+              &.prev{
+
+              }
+
+              &.next{
+                left:214px;
+                display:none;
+              }
+
+              &.on{
+                left:190px;
+              }
+
+              &:after{
+                content:none;
+              }
+            }
+          }
+        }
+
+        &-txt{
+          font-size:0.875rem;
+          margin-top:16px;
+
+          &.tab{
+            margin-top:38px;
+            display:none;
+
+            &.on{
+              display:block;
+            }
+          }
+        }
+      }
+    }
+
+    &-list{
+      &-item{
+        display:none;
+        &:first-child{
+          display:block;
+        }
+
+        a{
+          color:#fff;
+        }
+      }
+    }
+
+    &-section2{
+      height:auto;
+      background: url(/static/co/images/bg_main_section_01.jpg) no-repeat;
+      background-size:cover;
+      &-title{
+
+        font-size:2.5rem;
+        &-txt{
+          font-size:0.825rem;
+          margin-top: 15px;
+        }
+        &-wrap{
+          padding-top: 30px;
+        }
+      }
+      &-text{
+        font-size:0.875rem;
+        margin-top:10px;
+        min-height: 60px;
+        background:#fff;
+        padding:10px 15px 0;
+        border:1px solid #d9d9d9;
+        border-bottom:0;
+        &-wrap{
+          margin-top:30px;
+        }
+        &-box{
+          width:100%;
+          height:auto;
+          border-left:0;
+          padding:0 15px;
+          float:left;
+
+          &:first-child{
+            border-left:0;
+            padding-left:15px;
+          }
+        }
+        &-tit{
+          font-size:1.25rem;
+          font-weight:900;
+          padding:15px 0;
+          position:relative;
+          border-bottom: 1px solid #c6c6d8;
+          &:first-child{
+
+          }
+
+          &:after{
+            content:'';
+            display:block;
+
+            //background:red;
+            background:url(/static/co/images/spr_ico_global.png) no-repeat -159px -49px;
+            background-size: 250px 200px;
+            width: 10px;
+            height: 6px;
+            position:absolute;
+            right:10px;
+            top:0;
+            bottom:0;
+            margin:auto;
+
+          }
+        }
+        &-list{
+          background:#fff;
+          font-size:0.825rem;
+          padding:10px 15px;
+          margin-top:0;
+          font-weight: 400;
+          border:1px solid #d9d9d9;
+          border-top:0;
+        }
+      }
+    }
+
+    &-section3{
+      height:auto;
+      padding:15px;
+    }
+
+    &-banner{
+      &-wrap{
+        float:none;
+        margin-top:14px;
+        position:relative;
+      }
+
+      &-img{
+        width:100%;
+        height:auto;
+        position:static;
+
+        &-inner {
+          position: static;
+          top: 0;
+          left: 0;
+
+          p {
+            position: static;
+            top: 0;
+            left: 0;
+          }
+
+          img{
+            display:block;
+          }
+        }
+      }
+    }
+
+  }
+
+
+  .main-section2-text-tit.on{
+    &:after{
+
+      background:url(/static/co/images/spr_ico_global.png) no-repeat -174px -49px;
+      background-size: 250px 200px;
+      width: 10px;
+      height: 6px;
+    }
+    &+.main-section2-text{
+      display:none;
+    }
+    &+.main-section2-text+.main-section2-text-list{
+      display:none;
+    }
+  }
+
+}
