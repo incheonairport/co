@@ -21,7 +21,7 @@
 
 
 // 공사 메인 탭 모바일
-$(function(){
+(function(){
 
   if( $('html').hasClass('mobile') ){
     $('.main-section2-text-tit').addClass('on');
