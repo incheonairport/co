@@ -36,13 +36,13 @@
 
     <ul class="header-util-cs">
       <li class="header-util-cs-item">
-        <a href="#" class="header-util-cs-link">로그인</a>
+        <a href="" class="header-util-cs-link">로그인</a>
       </li>
       <li class="header-util-cs-item">
-        <a href="#" class="header-util-cs-link">회원가입</a>
+        <a href="" class="header-util-cs-link">회원가입</a>
       </li>
       <li class="header-util-cs-item">
-        <a href="#" class="header-util-cs-link strong">고객센터</a>
+        <a href="" class="header-util-cs-link strong">고객센터</a>
       </li>
       <li class="header-util-cs-item">
         <a href="#" class="header-util-cs-link">사이트맵</a>
@@ -56,16 +56,16 @@
 
       <ul class="select-list down">
         <li class="select-list-item">
-          <a href="#" class="select-list-link" title="한국어 사이트로 이동합니다.">한국어</a>
+          <a href="" class="select-list-link" title="한국어 사이트로 이동합니다.">한국어</a>
         </li>
         <li class="select-list-item">
-          <a href="#" class="select-list-link" title="English 사이트로 이동합니다.">English</a>
+          <a href="" class="select-list-link" title="English 사이트로 이동합니다.">English</a>
         </li>
         <li class="select-list-item">
-          <a href="#" class="select-list-link" title="中文 사이트로 이동합니다.">中文</a>
+          <a href="" class="select-list-link" title="中文 사이트로 이동합니다.">中文</a>
         </li>
         <li class="select-list-item">
-          <a href="#" class="select-list-link" title="日本語 사이트로 이동합니다.">日本語</a>
+          <a href="" class="select-list-link" title="日本語 사이트로 이동합니다.">日本語</a>
         </li>
       </ul>
     </div>
@@ -73,7 +73,7 @@
   </div>
 
   <h1 class="header-logo">
-    <a href="#">
+    <a href="">
       <img src="/static/co/images/logo.png" alt="인천공항공사 로고" />
     </a>
   </h1>
@@ -84,7 +84,7 @@
   <!--<button type="button" class="gnb-mobile-btn"><span>메뉴열기</span></button>-->
   <ul class="gnb-depth1">
     <li class="gnb-depth1-item">
-      <a href="#" class="gnb-depth1-link">공사소개</a>
+      <a href="" class="gnb-depth1-link">공사소개</a>
 
       <ul class="gnb-depth2">
         <li class="gnb-depth2-item">
@@ -258,21 +258,16 @@
     </li>
   </ul>
 
-  <ul class="header-search">
-    <li class="header-search-item">
-      <button type="button" class="header-search-btn ico gnb-search">검색</button>
-    </li>
-  </ul>
-</nav>
+  <div class="header-search">
+    <div class="header-search-item gnb-map-wrap">
+      <button type="button" class="header-search-btn ico gnb-map">공항지도</button>
+    </div>
+    <div class="header-search-item gnb-search">
+      <input type="text" id="header-search" class="header-search-input" placeholder="검색어를 입력해주세요." />
+      <label for="header-search"><button type="button" class="header-search-btn ico gnb-search">검색</button></label>
+      <button type="button" class="header-search-close">닫기</button>
+    </div>
 
-<div class="total-search">
-
-  <div class="total-search-inner">
-    <label for="total-search" class="total-search-label">통합검색</label>
-    <input type="text" id="total-search" class="total-search-input" placeholder="검색어 입력" />
-    <button type="button" class="total-search-btn ico">검색</button>
   </div>
 
-  <button type="button" class="total-search-close ico">검색 닫기</button>
-
-</div>
+</nav>
