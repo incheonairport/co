@@ -26,13 +26,22 @@ $(function(){
 
   // 공사 메인 탭 모바일
   (function(){
+    var windowSize = $(window).width();
 
-    if( $('html').hasClass('mobile') ){
+    if( $('html').hasClass('mobile') || windowSize <= 1024){
       $('.main-section2-text-tit').addClass('on');
       $('.main-section2-text-tit').on('click',function(){
         $(this).toggleClass('on');
       });
     }
+
+    if( $('html').hasClass('mobile') ){
+      //$('.left-menu-depth1-item-link').removeClass('open');
+      $('.left-menu-depth1-item-link').addClass('close');
+
+    }
+
+
 
 
   })();

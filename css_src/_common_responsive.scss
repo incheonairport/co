@@ -547,22 +547,19 @@
     padding: 0 15px;
   }
   .left-menu{
-    display:none;
-    width: 240px;
-    float: left;
+    width: 100%;
+    float: none;
+    margin-bottom:30px;
     &-depth1{
       border-bottom: 1px solid #d9d9d9;
       &-item{
         &-link{
-          padding: 10px 15px;
-          font-size: 1.125rem;
-          border-top: 1px solid #d9d9d9;
-          display: block;
-          position: relative;
+          padding: 8px 15px;
+          font-size: 1rem;
           &.on{
-            border-top:2px solid #42519e;
-            color:#42519e;
-            font-weight: 800;
+            border:1px solid #d9d9d9;
+            border-bottom:0;
+            background:#f7f7f7;
           }
           &.open{
             &:after{
@@ -572,10 +569,14 @@
               height: 12px;
               font-weight: 800;
               position: absolute;
-              top:15px;
-              right:15px;
-              left:auto;
-              bottom:auto;
+              //top:15px;
+              //right:15px;
+              //left:auto;
+              //bottom:auto;
+              top: 0;
+              right: 15px;
+              bottom: 0;
+              margin: auto;
               background: url(/static/co/images/spr_ico_left_menu.png) -32px -2px no-repeat;
             }
           }
@@ -587,10 +588,14 @@
               height: 12px;
               font-weight: 800;
               position: absolute;
-              top:18px;
-              right:15px;
-              left:auto;
-              bottom:auto;
+              //top:18px;
+              //right:15px;
+              //left:auto;
+              //bottom:auto;
+              top: 0;
+              right: 15px;
+              bottom: 0;
+              margin: auto;
               background: url(/static/co/images/spr_ico_left_menu.png) -9px -4px no-repeat;
             }
             &+.left-menu-depth2{
@@ -602,14 +607,14 @@
 
     }
     &-depth2{
-      border-top: 1px solid #d9d9d9;
+      border: 1px solid #42519e;
+
       &-item{
         &-link{
-          padding: 10px 15px;
+          font-size:0.825rem;
+          padding: 6px 15px;
           display: block;
           &.on{
-            color: #fff;
-            background: #42519e;
           }
         }
       }
@@ -3118,22 +3123,8 @@
       width: 100%;
     }
   }
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-// mobile sub tab
-.mobile{
   .tab {
 
     &-nav {
@@ -3152,8 +3143,9 @@
         }
         &-link {
           height:100%!important;
-          font-size:1rem;
+          font-size:0.825rem;
           line-height:1.3;
+          flex: 2;
           padding:5px;
 
 
@@ -3167,7 +3159,8 @@
 
 
       &.sub{
-        height:50px;
+        height:40px;
+        line-height:40px;
         position: relative;
         .tab-nav-sub-default{
           display:block;
@@ -3271,6 +3264,30 @@
       }
     }
   }
+
+  .left-menu-depth1-item-link{
+    display:none;
+  }
+
+  .left-menu-depth1-item-link.on{
+    display:block!important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mobile sub tab
+.mobile{
 
 }
 
