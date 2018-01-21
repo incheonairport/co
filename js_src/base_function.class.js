@@ -2,7 +2,7 @@
  * Base Class *
  **************/
 
-var Index, HeaderGnb, MainVisual, BottomBanner;
+var Index, HeaderGnb, MainVisual, BottomBanner, Zoom;
 
 $(function(){
 
@@ -22,7 +22,56 @@ $(function(){
    * HeaderGnb Class
    */
 
+  HeaderGnb = new function(){
 
+    Index.apply(this);
+
+    this.mobileHeaderInit = function(){
+
+      $('.header-util-cs').insertBefore('.gnb-depth1');
+
+      $('.header-util-lang').insertAfter('.gnb-depth1');
+
+      $('.header-site').insertAfter('.gnb-depth1');
+
+      $('.scroll-amount').insertBefore('.header-util');
+
+      $('.header-search-item.gnb-search .header-search-input').addClass('mobile-none');
+      $('.header-search-item.gnb-search .header-search-close').removeClass('mobile-none');
+
+      if( $('.gnb-mobile-btn').length <= 0 ){
+        $('.header').append('<button type="button" class="gnb-mobile-btn btn-gnb"><span>주메뉴 열기</span></button>');
+      }
+
+      if( $('.quick-toggle').length <= 0 ){
+        $('.quick').append('<button type="button" class="quick-toggle"><span>퀵메뉴 열기</span></button>');
+      }
+
+      if( $('.gnb-mobile-btn-close').length <= 0){
+        $('.gnb').append('<button type="button" class="gnb-mobile-btn-close">닫기</button>');
+      }
+
+    };
+
+    this.pcHeaderInit = function(){
+
+      $('.header-util-cs').appendTo( $('.header-util') );
+
+      $('.header-util-lang').appendTo( $('.header-util') );
+
+      $('.header-site').prependTo( $('.header') );
+
+      $('.scroll-amount').insertAfter('.header-search');
+
+      //$('.header-search-item.gnb-search').appendTo($('.header-search'));
+
+      $('.gnb-mobile-btn').remove();
+      $('.gnb-mobile-btn-close').remove();
+      $('.quick-toggle').remove();
+
+    };
+
+  };
 
   /**
    * MainVisual Class
@@ -350,6 +399,66 @@ $(function(){
 
     // running in constructor when loading
     _init();
+
+  };
+
+  /**
+   * Zoom Class
+   */
+
+  Zoom = new function(){
+
+    var size = 1.0;
+
+    this.exec = function (v) {
+
+      var currentSize = size;
+      if (v == 0) {
+        currentSize = 1.0;
+      } else {
+        currentSize += v * 0.1;
+      }
+
+      if (currentSize < 0.8 || currentSize > 3.0) {
+        //alert(currentSize);
+        return;
+      } else {
+        size = currentSize;
+      }
+
+      if ( !$('html').hasClass('ie') ) {
+        $('body').css('-webkit-transform','scale(' + size + ')');
+        $('body').css('-moz-transform','scale(' + size + ')');
+        $('body').css('-o-transform','scale(' + size + ')');
+
+        $('body').css('-webkit-transform-origin', '50% 0%');
+        $('body').css('-moz-transform-origin', '50% 0%');
+        $('body').css('-o-transform-origin', '50% 0%');
+      } else {
+        $('body').css('zoom', (size * 100) + '%');
+        $('body').css('-ms-transform','scale(' + size + ')');
+        $('body').css('-ms-transform-origin', '50% 0%');
+
+        $('body')[0].filters.item(0).M11 *= 1.5;
+        $('body')[0].filters.item(0).M12 *= 1.5;
+        $('body')[0].filters.item(0).M21 *= 1.5;
+        $('body')[0].filters.item(0).M22 *= 1.5;
+
+        $('body').css('transform','scale(' + size + ')');
+        $('body').css('transform-origin', '50% 0%');
+      }
+
+      if( size == 1 ){
+
+        $('body').attr('style', '');
+
+      }
+
+
+
+    };
+
+    //this.exec(1);
 
   };
 

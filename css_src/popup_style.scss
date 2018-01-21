@@ -1,0 +1,425 @@
+table{
+  width:100%;
+  font-size: 1rem;
+
+  caption{
+    display:none;
+  }
+
+  &.table_style01{
+    border:{
+      top:2px solid #444;
+      bottom:1px solid #a5a7aa;
+    }
+    &.border-no{
+      border-top: none;
+      td:last-child{
+        border-right: 1px solid #d9d9d9;
+      }
+    }
+    &.border-right{
+      td:last-child{
+        border-right: 1px solid #d9d9d9;
+      }
+    }
+
+    tr.on{
+      background:#f3f4f8;
+    }
+    tr.border-top{
+      th{
+        border-top: 1px solid #d9d9d9;
+      }
+    }
+
+    th{
+      padding:19px 0 16px;
+      font-weight:700;
+      position:relative;
+
+      &:after{
+        content:"";
+        display:block;
+        width:1px;
+        height:16px;
+        background:#a5a7aa;
+        position:absolute;
+        top:17px;
+        right:0;
+      }
+
+      &:last-child:after{
+        content:none;
+      }
+    }
+
+    td{
+      padding:19px 20px 16px;
+      line-height:1.4;
+      border:{
+        right:1px solid #f2f4f7;
+        top:1px solid #d9d9d9;
+      }
+      vertical-align:middle;
+
+      &.center{
+        text-align:center;
+      }
+
+      &.right{
+        text-align:right;
+      }
+
+      &:last-child{
+        border-right:0;
+      }
+
+      &.color-b{
+        border-left: 4px solid #42519e;
+      }
+      &.color-g{
+        border-left: 4px solid #2c8279;
+      }
+      &.color-o{
+        border-left: 4px solid #dd7714;
+      }
+
+      & .board-list-link{
+        transition:all .2s;
+        &:hover{
+          color:#999;
+        }
+        &.lock{
+          &:after{
+            content:"";
+            display:inline-block;
+            background:url(/static/co/images/spr_ico_crud.png) no-repeat -45px -52px;
+            width: 13px;
+            height: 17px;
+            margin-left:14px;
+            vertical-align:-1px;
+          }
+        }
+
+        &.good{
+          &:before{
+            content:"";
+            display:inline-block;
+            background:url(/static/co/images/spr_ico_crud.png) no-repeat -52px -89px;
+            width: 24px;
+            height: 24px;
+            margin-right:12px;
+            vertical-align:-5px;
+          }
+        }
+
+        &.bad{
+          &:before{
+            content:"";
+            display:inline-block;
+            background:url(/static/co/images/spr_ico_crud.png) no-repeat -16px -89px;
+            width: 24px;
+            height: 24px;
+            margin-right:12px;
+            vertical-align:-5px;
+          }
+        }
+      }
+    }
+
+    &.board-list{
+      & td{
+        border-right:0;
+        padding:20px 0;
+        &.no-data-found{
+          padding: 130px 20px;
+        }
+      }
+    }
+    &.padding-0{
+      thead tr:nth-child(even) th{
+        border-top:1px solid #d9d9d9;
+      }
+      th {
+        vertical-align: middle;
+        font-size:0.875rem;
+        display: table-cell;
+        &:after {
+          height: 26px;
+        }
+        &:nth-child(2){
+          border-top:1px solid #d9d9d9;
+        }
+      }
+      td{
+        padding: 23px 0;
+      }
+    }
+  }
+
+  &.vt-dark{
+    border-bottom:1px solid #a5a7aa;
+    &.pd0{
+      td{
+        padding:20px 0;
+      }
+    }
+    &.border-top{
+      border-top: 1px solid #a5a7aa;
+    }
+
+    tbody{
+      tr{
+        &.orange{
+          background:#ffddbc;
+        }
+        &.red{
+          background:#ffa5a5;
+        }
+        &.blue{
+          background:#beeaff;
+        }
+        &.yellow{
+          background:#fff1af;
+        }
+      }
+      tr:first-child{
+        td{
+          border-top:0;
+        }
+      }
+      tr.total{
+        background:#f3f4f8;
+      }
+    }
+
+    th{
+      padding:18px 0 16px;
+      font-weight:400;
+      color:#fff;
+      line-height:1.4;
+      background:#323648;
+      border-right:1px solid #474a5b;
+      vertical-align:middle;
+
+      &:last-child{
+        border-right:0;
+      }
+      &.left{
+        text-align: left;
+        padding-left: 20px;
+        border-bottom: 1px solid #474a5b;
+      }
+
+      &.half{
+        padding:12px;
+      }
+
+      &.sub{
+        //padding:6px 0 8px;
+        border:{
+          top:1px solid #474a5b;
+          right:1px solid #474a5b;
+        }
+        //background:#323648;
+        //font-size:0.875rem;
+        &.point{
+          background: #2f4985;
+        }
+
+        &:last-child{
+          border-right:0;
+        }
+        &-half {
+          padding: 6px 0 8px;
+          border: {
+            top: 1px solid #212535;
+            right: 1px solid #212535;
+          }
+          background: #4d5164;
+          font-size: 0.875rem;
+
+          &:last-child {
+            border-right: 0;
+          }
+          &-title{
+            background: #fff;
+            color: #444;
+            border: {
+              bottom: 1px solid #d9d9d9;
+              right: 1px solid #f2f4f7;
+            }
+            &:last-child {
+              border-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    td{
+      padding:16px 20px;
+      line-height:1.4;
+      border-right:1px solid #f2f4f7;
+      border-top:1px solid #d9d9d9;
+      vertical-align:middle;
+      word-break: keep-all;
+
+      a{
+        font-size:1rem;
+
+        &.table{
+          font-size: 0.875rem;
+        }
+      }
+
+      &.center{
+        text-align:center;
+      }
+      &.right{
+        text-align:right;
+      }
+
+      &.top{
+        vertical-align:top;
+      }
+      &.point{
+        background: #f3f4f8;
+        border-right: 1px solid #e5e9f3;
+      }
+
+      &:last-child{
+        border-right:0;
+      }
+      .schedule {
+        background: #2f4985;
+        border:5px solid #2f4985;
+        border-radius: 20px;
+        font-size: 0;
+        position: relative;
+        top: -5px;
+        &.weekend{
+          background: #2c8179;
+          border:5px solid #2c8179;
+        }
+      }
+    }
+    &.even{
+      tbody{
+        tr:nth-child(even){
+          background: #f8f8f8;
+        }
+      }
+    }
+  }
+
+  &.hr{
+
+    border:{
+      top:2px solid #444;
+      bottom:1px solid #a5a7aa;
+    }
+
+    &.border-top{
+      border-top: 0;
+    }
+
+    tr:first-child{
+      th, td{
+        border-top:0;
+      }
+    }
+    &.no-min{
+      th{
+        min-width:0;
+      }
+    }
+    th{
+      /*min-width:150px;*/
+      border-top:1px solid #d9d9d9;
+      background:#f3f4f8;
+      line-height:1.4;
+      font-weight:700;
+      vertical-align:middle;
+      font-size:0.825rem;
+      &.left{
+        text-align: left;
+        padding-left: 20px;
+      }
+      &:nth-child(2){
+        border-left:1px solid #d9d9d9;
+      }
+      &[rowspan]{
+        border-right:1px solid #d9d9d9;
+      }
+    }
+
+    td{
+      padding:19px 20px 16px;
+      border-top:1px solid #d9d9d9;
+      border-right:1px solid #f2f4f7;
+      line-height:1.4;
+      vertical-align:middle;
+
+      &.center{
+        text-align:center;
+      }
+      &:last-child{
+        border-right:0;
+      }
+    }
+    &.board-view{
+      thead th{
+        font-size:1.125rem;
+        padding:20px 10px;
+      }
+      tbody td{
+        padding:20px 10px;
+        a{
+          color: #444;
+        }
+      }
+      &-list{
+        margin-top: 20px;
+        border-top:1px solid #d9d9d9;
+        border-bottom:1px solid #d9d9d9;
+      }
+    }
+  }
+  th, td {
+    .important {
+      display: inline-block;
+      color: #666;
+      &:after {
+        content: "*";
+        position: relative;
+        top: 4px;
+        right: -10px;
+        color: #d43e41;
+      }
+    }
+  }
+  &.hr.writing{
+    td{
+      padding:10px 20px;
+      height: 70px;
+      line-height: 1;
+      &.agreement-offer{
+        padding:25px 20px;
+      }
+    }
+  }
+  &.table-text{
+    /*text 많은경우*/
+    th{
+      font-size:0.875rem;
+    }
+    td{
+      font-size:0.875rem;
+    }
+  }
+
+  .list1-item{
+    font-size:1rem;
+  }
+}

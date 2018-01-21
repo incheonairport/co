@@ -77,3 +77,7 @@ input, textarea, select, button{
   font-size:1rem;
   font-weight:300;
 }
+
+input{
+  box-sizing:border-box;
+}

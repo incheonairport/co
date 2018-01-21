@@ -5,6 +5,10 @@
   clear:both;
 }
 
+.before-load{
+  display:none;
+}
+
 .sub-top {
   margin: 50px 0 40px;
   height: 240px;
@@ -377,17 +381,17 @@
     height: 10px;
   }
 
-  &.gnb-map:after{
-    background-position:-154px -131px;
-    width: 22px;
-    height: 27px;
-  }
-
-  &.gnb-search:after {
-    background-position: -34px -134px;
-    width: 22px;
-    height: 27px;
-  }
+  //&.gnb-map:after{
+  //  background-position:-154px -131px;
+  //  width: 22px;
+  //  height: 27px;
+  //}
+  //
+  //&.gnb-search:after {
+  //  background-position: -34px -134px;
+  //  width: 22px;
+  //  height: 27px;
+  //}
    /*location*/
   &.location-btn-minus:after{
     background-position:-192px -93px;
