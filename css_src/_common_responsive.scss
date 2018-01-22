@@ -4,6 +4,13 @@
   display:none;
 }
 
+.header-logo *{
+  width:100%;
+}
+
+.gnb.on {
+  height: 100%;
+}
 
 // 1024
 @media all and (max-width:1024px) {
