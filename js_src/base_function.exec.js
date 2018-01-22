@@ -28,7 +28,7 @@ $(function(){
 
   // 공사 메인 탭 모바일
   (function(){
-    var windowSize = $(window).width();
+    var windowSize = $(window).outerWidth();
 
     if( $('html').hasClass('mobile') || windowSize <= 1024){
       $('.main-section2-text-tit').addClass('on');
@@ -91,7 +91,7 @@ $(function(){
 
       scrollHeight = $('body').height() - $(window).height();
 
-      if( $(window).outerWidth() > 1024 ){
+      if( $(window).outerWidth() > 1200 ){
 
         if( $('section.top-big-popup').length >= 0 ){
           $('section.top-big-popup').removeClass('mobile none');
@@ -267,7 +267,7 @@ $(function(){
     });
 
     $('body').on('click', 'button.gnb-mobile-btn.btn-gnb', function(e){
-
+      $('body').addClass('scrollfix');
       $('.gnb').removeClass('mobile-off').addClass('mobile-on');
       $('body').addClass('mobile-menu-on');
       $('.quick').addClass('none');
@@ -275,7 +275,7 @@ $(function(){
     });
 
     $('body').on('click', 'button.gnb-mobile-btn-close', function(e){
-
+      $('body').removeClass('scrollfix');
       $('.gnb').removeClass('mobile-on').addClass('mobile-off');
       $('body').removeClass('mobile-menu-on');
       $('.quick').removeClass('none');

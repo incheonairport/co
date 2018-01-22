@@ -33,20 +33,11 @@ table{
     }
 
     th{
-      padding:19px 0 16px;
+      padding:0;
       font-weight:700;
       position:relative;
 
-      &:after{
-        content:"";
-        display:block;
-        width:1px;
-        height:16px;
-        background:#a5a7aa;
-        position:absolute;
-        top:17px;
-        right:0;
-      }
+
 
       &:last-child:after{
         content:none;
@@ -54,7 +45,7 @@ table{
     }
 
     td{
-      padding:19px 20px 16px;
+      padding:0;
       line-height:1.4;
       border:{
         right:1px solid #f2f4f7;
