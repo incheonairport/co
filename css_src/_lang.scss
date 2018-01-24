@@ -1,7 +1,17 @@
 .en{
 
+
+  .header-search-btn.gnb-search{
+    min-width:85px;
+    font-size: 0.825rem;
+    line-height: 21px;
+  }
+  .gnb-depth1-item{
+    width:190px;
+  }
+
   .gnb-depth1{
-    width: 905px;
+    width: 951px;
   }
 
   .main-section2{
@@ -100,8 +110,12 @@
     font-family: 'Noto Sans SC', roboto, spoqa ,sans-serif!important;
   }
 
+  .gnb-depth1-item{
+    width:190px;
+  }
+
   .gnb-depth1{
-    width: 905px;
+    width: 951px;
   }
 
   .main-section2-text-box{
@@ -147,8 +161,12 @@
     font-family: 'Noto Sans JP', roboto, spoqa, sans-serif!important;
   }
 
+  .gnb-depth1-item{
+    width:190px;
+  }
+
   .gnb-depth1{
-    width: 905px;
+    width: 951px;
   }
 
   .main-section2-text-box{

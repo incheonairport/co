@@ -338,6 +338,7 @@
     top:0;
     left:-100%;
     z-index:99997;
+    transition:none;
     //transition:left .3s ease-out;
 
     &.none{
@@ -501,7 +502,7 @@
             &-search{
               position:relative;
               top:auto;
-              left:auto;
+              left:0;
               float:left;
               //margin-left:10px;
             }
