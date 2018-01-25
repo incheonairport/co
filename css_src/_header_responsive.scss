@@ -1,5 +1,18 @@
 @media screen and (max-width:1200px) {
 
+  // mobile gnb hover none on block
+  .gnb-depth2-link{
+    display:block;
+    width:100%;
+    height:100%;
+  }
+  .gnb-depth1-item:hover:after, .gnb-depth1-item.on:after{
+    display:none;
+  }
+  .gnb-depth1-item.on .gnb-depth1-link{
+    border-bottom: 2px solid #42519e;
+  }
+
   .top{
     &-popup{
       padding:0 20px;

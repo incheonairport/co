@@ -3433,6 +3433,8 @@
 
   .scrollfix{
     height:100%;
-    overflow:hidden;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
   }
 }
