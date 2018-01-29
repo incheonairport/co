@@ -400,7 +400,13 @@
       margin-top: 4px;
 
       a{
-        color:#fff;
+        display: block;
+        width: 100%;
+        position: relative;
+        color: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
     }
   }
