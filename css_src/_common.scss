@@ -1061,6 +1061,14 @@ em{
         &.yellow{
           background:#fff1af;
         }
+        &.span{
+          td{
+            border-right: 1px solid #f2f4f7;
+            &:first-child {
+              border-left:0;
+            }
+          }
+        }
       }
       tr:first-child{
         td{
@@ -1070,6 +1078,7 @@ em{
       tr.total{
         background:#f3f4f8;
       }
+
     }
 
     th{
