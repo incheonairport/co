@@ -1,3 +1,4 @@
+<!--=include _include/_header.html -->
 
 <section id="top-contents" class="contents">
   <!--위치-->
@@ -31,11 +32,10 @@
   </div>
 </section>
 
-
 <section class="contents">
   <div class="inner-section">
 
-    [[--ActionStart--]][[--h_co_lnb_1_ja--]][[--Actionend--]]
+    <!--=include _include/_left_menu_01.html -->
 
     <div class="sub-contents">
       <h4 class="sub-contents-heading1">環境マネジメント</h4>
@@ -90,10 +90,10 @@
           </div>
           <div class="inner-col txt-area">
             <p>
-                仁川国際空港は利用客に快適な室内空間を提供するために「室内空気質管理法」に基づき、空港施設の旅客ターミナル、旅客自動車ターミナルの待合室、屋内駐車場などの室内空気質の測定を実施しています。
+              仁川国際空港は利用客に快適な室内空間を提供するために「室内空気質管理法」に基づき、空港施設の旅客ターミナル、旅客自動車ターミナルの待合室、屋内駐車場などの室内空気質の測定を実施しています。
             </p>
             <p class="mt30">
-                特に旅客の利用が多い旅客ターミナル地域は、四半期に1回微細粉塵の項目を測定しており、維持基準と勧告基準について年1回の測定を実行して、クリーンな室内空気環境の維持に最善を尽くしています。
+              特に旅客の利用が多い旅客ターミナル地域は、四半期に1回微細粉塵の項目を測定しており、維持基準と勧告基準について年1回の測定を実行して、クリーンな室内空気環境の維持に最善を尽くしています。
             </p>
           </div>
         </div>
@@ -101,15 +101,9 @@
         <a href="#" class="btn-type-small point ico arrow-small-right mt30">室内空気環境調査測定位置を表示</a>
 
         <ul class="list2 mt30">
-          <li class="guide-desc mark">
-              室内空気質管理法の基準は、項目
-          </li>
-          <li class="list2-item">
-            維持基準（年1回）：微細粉塵、二酸化炭素、ホルムアルデヒド、一酸化炭素
-          </li>
-          <li class="list2-item">
-              勧告基準（2年に1回）：二酸化窒素、ラドン、総揮発性有機化合物、（アスベスト、オゾン）
-          </li>
+          <li class="guide-desc mark"> 室内空気質管理法の基準は、項目</li>
+          <li class="list2-item">維持基準（年1回）：微細粉塵、二酸化炭素、ホルムアルデヒド、一酸化炭素</li>
+          <li class="list2-item">勧告基準（2年に1回）：二酸化窒素、ラドン、総揮発性有機化合物、（アスベスト、オゾン）</li>
         </ul>
 
       </article>
@@ -119,23 +113,23 @@
 
         <div class="search-box">
           <div class="search-box-input">
-            <label class="search-box-title" for="year-search">年度別</label>
+            <label class="search-box-title" for="search-year">年度別</label>
             <div class="search-box-input-item">
-              <select id="year-search" class="search-box-input-select" title="검색옵션을 선택하여 검색합니다.">
-                <option>2004</option>
-                <option>2005</option>
-                <option>2006</option>
-                <option>2007</option>
-                <option>2008</option>
-                <option>2009</option>
-                <option>2010</option>
-                <option>2011</option>
-                <option>2012</option>
-                <option>2013</option>
-                <option>2014</option>
-                <option>2015</option>
-                <option>2016</option>
+              <select id="search-year" class="search-box-input-select" title="検索옵션을 선택하여 検索합니다.">
                 <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
               </select>
             </div>
             <div class="search-box-btn-area">
@@ -144,7 +138,12 @@
           </div>
         </div>
 
-        <div>
+<!--
+온클릭이벤트
+onclick="window.open('/static/co/popup/CO_AF_05_07_03_2004_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')"
+-->
+
+        <div class="search-box-year-contents on">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -163,19 +162,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2017年第1四半期<br />
+                  2017年 1/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2017年第2四半期<br />
+                  2017年 2/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -183,10 +182,10 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2017年第3四半期<br />
+                  2017年 3/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -213,19 +212,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2017年第1四半期<br />
+                  2017年 1/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2017年第2四半期<br />
+                  2017年 2/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -233,10 +232,10 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2017年第3四半期<br />
+                  2017年 3/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_06_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -249,13 +248,13 @@
           <!--<h6 class="list4-item headline"><strong>제2 여객터미널</strong></h6>-->
           <!--<ul class="list2 mt20">-->
           <!--<li class="list2-item">-->
-          <!--<strong>측정지점 :</strong> 14개 지점-->
+          <!--<strong>測定ポイント :</strong> 14ポイント-->
           <!--</li>-->
           <!--<li class="list2-item">-->
-          <!--<strong>측정주기 :</strong> 분기 1회-->
+          <!--<strong>測定周期 :</strong> 四半期に1回-->
           <!--</li>-->
           <!--<li class="list2-item">-->
-          <!--<strong>측정결과</strong>-->
+          <!--<strong>測定結果</strong>-->
           <!--</li>-->
           <!--</ul>-->
           <!--</div>-->
@@ -263,10 +262,10 @@
           <!--<div class="inner-col">-->
           <!--<div class="result-box">-->
           <!--<p class="result-box-desc">-->
-          <!--2017년 1/4분기<br />-->
-          <!--(유지기준)-->
+          <!--2017年 1/4半期<br />-->
+          <!--(維持基準)-->
           <!--</p>-->
-          <!--<a href="#" class="result-box-btn btn-type-small point txt">세부측정결과</a>-->
+          <!--<a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>-->
           <!--</div>-->
           <!--</div>-->
           <!--<div class="inner-col">-->
@@ -295,7 +294,7 @@
                   2017年<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_07_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -304,16 +303,16 @@
           </div>
 
           <!--<div class="mt30">-->
-          <!--<h6 class="list4-item headline"><strong>제2 교통센터</strong></h6>-->
+          <!--<h6 class="list4-item headline"><strong>제2 交通センター</strong></h6>-->
           <!--<ul class="list2 mt20">-->
           <!--<li class="list2-item">-->
-          <!--<strong>측정지점 :</strong> 대합실 2개 지점-->
+          <!--<strong>測定ポイント :</strong> 대합실 2ポイント-->
           <!--</li>-->
           <!--<li class="list2-item">-->
-          <!--<strong>측정주기 :</strong> 연 1회-->
+          <!--<strong>測定周期 :</strong> 年1回-->
           <!--</li>-->
           <!--<li class="list2-item">-->
-          <!--<strong>측정결과</strong>-->
+          <!--<strong>測定結果</strong>-->
           <!--</li>-->
           <!--</ul>-->
           <!--</div>-->
@@ -321,10 +320,10 @@
           <!--<div class="inner-col">-->
           <!--<div class="result-box">-->
           <!--<p class="result-box-desc">-->
-          <!--2017년 2/4분기<br />-->
-          <!--(유지기준 및 권고기준)-->
+          <!--2017年 2/4半期<br />-->
+          <!--(維持基準と勧告基準)-->
           <!--</p>-->
-          <!--<a href="#" class="result-box-btn btn-type-small point txt">세부측정결과</a>-->
+          <!--<a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>-->
           <!--</div>-->
           <!--</div>-->
           <!--<div class="inner-col">-->
@@ -353,7 +352,7 @@
                   2017年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_08_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -362,7 +361,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -381,19 +380,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2016年第1四半期<br />
+                  2016年 1/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2016_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2016年第2四半期<br />
+                  2016年 2/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2016_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -401,19 +400,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2016年第3四半期<br />
+                  2016年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2016_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2016年第4四半期<br />
+                  2016年 4/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2016_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -437,19 +436,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2016年第1四半期<br />
+                  2016年 1/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2016_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2016年第2四半期<br />
+                  2016年 2/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2016_06_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -457,19 +456,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2016年第3四半期<br />
+                  2016年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2016_07_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2016年第4四半期<br />
+                  2016年 4/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2016_08_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -495,7 +494,7 @@
                   2016年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2016_09_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -524,7 +523,7 @@
                   2016年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2016_10_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -533,7 +532,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -552,19 +551,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2015年第1四半期<br />
+                  2015年 1/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2015_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2015年第2四半期<br />
+                  2015年 2/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2015_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -572,19 +571,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2015年第3四半期<br />
+                  2015年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2015_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2015年第4四半期<br />
+                  2015年 4/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2015_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -607,19 +606,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2015年第1四半期<br />
+                  2015年 1/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2015_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2015年第2四半期<br />
+                  2015年 2/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2015_06_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -627,19 +626,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2015年第3四半期<br />
+                  2015年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2015_07_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2015年第4四半期<br />
+                  2015年 4/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2015_08_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -648,7 +647,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 8ポイント 
+                <strong>測定ポイント :</strong> 8ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -665,7 +664,7 @@
                   2015年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2015_09_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -694,7 +693,7 @@
                   2015年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt"  onclick="window.open('/static/co/popup/CO_AF_05_07_03_2015_10_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -703,7 +702,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -722,19 +721,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2014年第1四半期<br />
+                  2014年 1/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2014_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2014年第2四半期<br />
+                  2014年 2/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2014_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -742,19 +741,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2014年第3四半期<br />
+                  2014年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2014_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2014年第4四半期<br />
+                  2014年 4/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2014_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -777,19 +776,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2014年第1四半期<br />
+                  2014年 1/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2014_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2014年第2四半期<br />
+                  2014年 2/4半期<br />
                   (維持基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2014_06_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -797,19 +796,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2014年第3四半期<br />
+                  2014年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2014_07_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2014年第4四半期<br />
+                  2014年 4/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2014_08_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -818,7 +817,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 8ポイント 
+                <strong>測定ポイント :</strong> 8ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -835,7 +834,7 @@
                   2014年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2014_09_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -864,7 +863,7 @@
                   2014年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2014_10_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -873,7 +872,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -892,19 +891,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2013年第1四半期<br />
+                  2013年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2013_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2013年第2四半期<br />
+                  2013年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2013_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -912,19 +911,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2013年第3四半期<br />
+                  2013年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2013_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2013年第4四半期<br />
+                  2013年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2013_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -947,19 +946,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2013年第1四半期<br />
+                  2013年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2013_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2013年第2四半期<br />
+                  2013年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2013_06_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -967,19 +966,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2013年第3四半期<br />
+                  2013年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2013_07_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2013年第4四半期<br />
+                  2013年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2013_08_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -988,7 +987,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 6ポイント 
+                <strong>測定ポイント :</strong> 6ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -1005,7 +1004,7 @@
                   2013年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2013_09_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1034,7 +1033,7 @@
                   2013年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2013_10_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1043,7 +1042,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -1062,19 +1061,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2012年第1四半期<br />
+                  2012年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2012_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2012年第2四半期<br />
+                  2012年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2012_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1082,19 +1081,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2012年第3四半期<br />
+                  2012年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2012_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2012年第4四半期<br />
+                  2012年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2012_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1117,19 +1116,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2012年第1四半期<br />
+                  2012年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2012_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2012年第2四半期<br />
+                  2012年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2012_06_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1137,19 +1136,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2012年第3四半期<br />
+                  2012年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2012_07_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2012年第4四半期<br />
+                  2012年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2012_08_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1158,7 +1157,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 6ポイント 
+                <strong>測定ポイント :</strong> 6ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -1175,7 +1174,7 @@
                   2012年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2012_09_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1204,7 +1203,7 @@
                   2012年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2012_10_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1213,7 +1212,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -1232,19 +1231,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2011年第1四半期<br />
+                  2011年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2011_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2011年第2四半期<br />
+                  2011年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2011_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1252,19 +1251,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2011年第3四半期<br />
+                  2011年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2011_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2011年第4四半期<br />
+                  2011年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2011_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1287,19 +1286,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2011年第1四半期<br />
+                  2011年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2011_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2011年第2四半期<br />
+                  2011年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2011_06_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1307,19 +1306,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2011年第3四半期<br />
+                  2011年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2011_07_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2011年第4四半期<br />
+                  2011年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2011_08_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1328,7 +1327,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 6ポイント 
+                <strong>測定ポイント :</strong> 6ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -1345,7 +1344,7 @@
                   2011年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2011_09_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1374,7 +1373,7 @@
                   2011年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2011_10_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1383,7 +1382,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -1402,19 +1401,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2010年第1四半期<br />
+                  2010年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2010_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2010年第2四半期<br />
+                  2010年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2010_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1422,19 +1421,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2010年第3四半期<br />
+                  2010年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2010_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2010年第4四半期<br />
+                  2010年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2010_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1457,19 +1456,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2010年第1四半期<br />
+                  2010年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2010_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2010年第2四半期<br />
+                  2010年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2010_06_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1477,19 +1476,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2010年第3四半期<br />
+                  2010年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2010_07_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2010年第4四半期<br />
+                  2010年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2010_08_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1498,7 +1497,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 6ポイント 
+                <strong>測定ポイント :</strong> 6ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -1515,7 +1514,7 @@
                   2010年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2010_09_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1544,7 +1543,7 @@
                   2010年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2010_10_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1553,7 +1552,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -1572,19 +1571,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2009年第1四半期<br />
+                  2009年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2009_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2009年第2四半期<br />
+                  2009年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2009_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1592,19 +1591,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2009年第3四半期<br />
+                  2009年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2009_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2009年第4四半期<br />
+                  2009年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2009_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1627,19 +1626,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2009年第1四半期<br />
+                  2009年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2009_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2009年第2四半期<br />
+                  2009年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2009_06_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1647,19 +1646,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2009年第3四半期<br />
+                  2009年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2009_07_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2009年第4四半期<br />
+                  2009年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2009_08_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1668,7 +1667,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 6ポイント 
+                <strong>測定ポイント :</strong> 6ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -1685,7 +1684,7 @@
                   2009年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2009_09_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1714,7 +1713,7 @@
                   2009年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2009_10_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1723,7 +1722,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -1742,19 +1741,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2008年第1四半期<br />
+                  2008年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2008_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2008年第2四半期<br />
+                  2008年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2008_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1762,19 +1761,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2008年第3四半期<br />
+                  2008年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2008_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2008年第4四半期<br />
+                  2008年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2008_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1797,10 +1796,10 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2008年第1四半期<br />
+                  2008年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2008_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1812,7 +1811,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 6ポイント 
+                <strong>測定ポイント :</strong> 6ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -1829,7 +1828,7 @@
                   2008年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2008_06_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1858,7 +1857,7 @@
                   2008年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2008_07_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1867,7 +1866,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -1886,19 +1885,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2007年第1四半期<br />
+                  2007年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2007_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2007年第2四半期<br />
+                  2007年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2007_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1906,19 +1905,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2007年第3四半期<br />
+                  2007年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2007_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2007年第4四半期<br />
+                  2007年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2007_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1927,7 +1926,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 6ポイント 
+                <strong>測定ポイント :</strong> 6ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -1944,7 +1943,7 @@
                   2007年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2007_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -1953,7 +1952,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -1972,19 +1971,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2006年第1四半期<br />
+                  2006年 1/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2006_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2006年第2四半期<br />
+                  2006年 2/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2006_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -1992,19 +1991,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2006年第3四半期<br />
+                  2006年 3/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2006_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2006年第4四半期<br />
+                  2006年 4/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2006_04_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -2013,7 +2012,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 6ポイント 
+                <strong>測定ポイント :</strong> 6ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -2030,7 +2029,7 @@
                   2006年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2006_05_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -2039,7 +2038,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -2058,19 +2057,19 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2005年第3四半期<br />
+                  2005年 3/4半期<br />
                   (微細粉塵)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2005_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2005年第4四半期<br />
+                  2005年 4/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2005_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
           </div>
@@ -2079,7 +2078,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 6ポイント 
+                <strong>測定ポイント :</strong> 6ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -2096,7 +2095,7 @@
                   2005年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2005_03_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -2105,7 +2104,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="search-box-year-contents">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>第1 旅客ターミナル</strong></h6>
             <ul class="list2">
@@ -2124,10 +2123,10 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2004年第4四半期<br />
+                  2004年 4/4半期<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2004_01_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -2139,7 +2138,7 @@
             <h6 class="list4-item headline"><strong>交通センター</strong></h6>
             <ul class="list2 mt20">
               <li class="list2-item">
-                <strong>測定ポイント :</strong> 6ポイント 
+                <strong>測定ポイント :</strong> 6ポイント
               </li>
               <li class="list2-item">
                 <strong>測定周期 :</strong> 年1回
@@ -2153,10 +2152,10 @@
             <div class="inner-col">
               <div class="result-box">
                 <p class="result-box-desc">
-                  2005年<br />
+                  2004年<br />
                   (維持基準と勧告基準)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">詳細測定結果</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2004_02_ja.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">詳細測定結果</a>
               </div>
             </div>
             <div class="inner-col">
@@ -2188,3 +2187,11 @@
 
   </div>
 </section>
+
+<script type="text/javascript">
+  $('.result-box-btn').on('click',function(e){
+    e.preventDefault();
+  });
+</script>
+
+<!--=include _include/_footer.html -->
