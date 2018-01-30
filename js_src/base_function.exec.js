@@ -84,6 +84,49 @@ $(function(){
 
   })();
 
+  // set full page
+  (function(){
+
+    if( $(window).outerWidth() > 1024 ){
+
+      if( $('#fullpage').length > 0 ){
+
+        $('#fullpage').fullpage({
+          scrollBar: true,
+          scrollingSpeed: 1000,
+          responsiveWidth: 1025,
+          normalScrollElements: '.layer',
+          afterLoad: function(anchorLink, index){
+            if(index == 2){
+              //MainVisual.rollStop();
+              //MainVisual.rollFirst();
+              //MainVisual.rollAuto();
+            }
+          }
+        });
+
+      }
+
+    } else {
+
+      if( $('#fullpage').length > 0 ){
+
+        $('#fullpage').fullpage({
+          scrollBar: true,
+          scrollingSpeed: 1000,
+          responsiveWidth: 1025,
+          normalScrollElements: '.layer.system, .layer'
+        });
+
+        //MainVisual.rollFirst();
+        //MainVisual.rollAuto();
+
+      }
+
+    }
+
+  })();
+
   // header set when resize/scroll
   (function(){
 
@@ -421,6 +464,7 @@ $(function(){
     });
 
   })();
+
 
   // LNB 이벤트
   (function(){

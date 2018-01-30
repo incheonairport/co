@@ -412,8 +412,8 @@
   }
 
   &-section2{
-    height: 643px;
-    background-image: url('/static/co/images/bg_main_section_01.jpg');
+    //height: 643px;
+    background: url('/static/co/images/bg_main_section_01.jpg') no-repeat bottom center #d8dff5;
     &-title{
       text-align: center;
       font-size:3.75rem;
@@ -426,7 +426,8 @@
         margin-top: 15px;
       }
       &-wrap{
-        padding-top: 92px;
+        //padding-top: 92px;
+        margin-bottom:120px;
       }
     }
     &-text{
@@ -462,6 +463,12 @@
   &-section3{
     height:191px;
     background:#221417;
+
+   //test
+   // position: absolute;
+   // bottom: 0;
+   // width: 100%;
+   // left: 0;
   }
 
   &-banner{

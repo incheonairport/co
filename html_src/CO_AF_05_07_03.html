@@ -138,6 +138,11 @@
           </div>
         </div>
 
+<!--
+온클릭이벤트
+onclick="window.open('/static/co/popup/CO_AF_05_07_03_2004_01.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')"
+-->
+
         <div class="search-box-year-contents on">
           <div class="mt30">
             <h6 class="list4-item headline"><strong>제1 여객터미널</strong></h6>
@@ -160,7 +165,7 @@
                   2017년 1/4분기<br />
                   (유지기준)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">세부측정결과</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_01.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">세부측정결과</a>
               </div>
             </div>
             <div class="inner-col">
@@ -169,7 +174,7 @@
                   2017년 2/4분기<br />
                   (유지기준 및 권고기준)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">세부측정결과</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_02.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">세부측정결과</a>
               </div>
             </div>
           </div>
@@ -180,7 +185,7 @@
                   2017년 3/4분기<br />
                   (유지기준)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">세부측정결과</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_03.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">세부측정결과</a>
               </div>
             </div>
             <div class="inner-col">
@@ -210,7 +215,7 @@
                   2017년 1/4분기<br />
                   (유지기준)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">세부측정결과</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_04.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">세부측정결과</a>
               </div>
             </div>
             <div class="inner-col">
@@ -219,7 +224,7 @@
                   2017년 2/4분기<br />
                   (유지기준 및 권고기준)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">세부측정결과</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_05.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">세부측정결과</a>
               </div>
             </div>
           </div>
@@ -230,7 +235,7 @@
                   2017년 3/4분기<br />
                   (유지기준)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">세부측정결과</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_06.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">세부측정결과</a>
               </div>
             </div>
             <div class="inner-col">
@@ -289,7 +294,7 @@
                   2017년<br />
                   (유지기준)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">세부측정결과</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_07.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">세부측정결과</a>
               </div>
             </div>
             <div class="inner-col">
@@ -347,7 +352,7 @@
                   2017년<br />
                   (유지기준 및 권고기준)
                 </p>
-                <a href="#" class="result-box-btn btn-type-small point txt">세부측정결과</a>
+                <a href="#" class="result-box-btn btn-type-small point txt" onclick="window.open('/static/co/popup/CO_AF_05_07_03_2017_08.html','about:blank','left=0,top=200,width=600,height=600,location=no,status=no,scrollbars=yes')">세부측정결과</a>
               </div>
             </div>
             <div class="inner-col">
@@ -2182,5 +2187,11 @@
 
   </div>
 </section>
+
+<script type="text/javascript">
+  $('.result-box-btn').on('click',function(e){
+    e.preventDefault();
+  });
+</script>
 
 <!--=include _include/_footer.html -->

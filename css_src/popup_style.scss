@@ -1,7 +1,7 @@
 table{
   width:100%;
   font-size: 1rem;
-
+  border-collapse: collapse;
   caption{
     display:none;
   }
@@ -33,20 +33,23 @@ table{
     }
 
     th{
-      padding:0;
+      padding:4px;
       font-weight:700;
       position:relative;
-
-
-
+      background:#ebebeb;
+      font-size:0.825rem;
+      border-right:1px solid #d9d9d9;
+      border-top:1px solid #d9d9d9;
       &:last-child:after{
         content:none;
       }
     }
 
     td{
-      padding:0;
+      padding:4px;
       line-height:1.4;
+      font-size:0.825rem;
+      text-align:center;
       border:{
         right:1px solid #f2f4f7;
         top:1px solid #d9d9d9;
@@ -412,5 +415,22 @@ table{
 
   .list1-item{
     font-size:1rem;
+  }
+}
+.popup_top{
+  font-size:24px;
+}
+.btn_close4{
+  display:none;
+  width:25px;
+  height:25px;
+  position:absolute;
+  top:20px;
+  right:20px;
+  a{
+    display:block;
+    width:100%;
+    height:100%;
+    cursor: pointer;
   }
 }
