@@ -122,6 +122,7 @@
       }
 
       &-item{
+        background-size: cover;
         .visual{
           &-text{
 
@@ -159,17 +160,17 @@
           }
         }
         //
-        //&:nth-child(1){
-        //  background-image:url(/static/ap/images/bg_mobile_main_visual_01.jpg) !important;
-        //}
-        //
-        //&:nth-child(2){
-        //  background-image:url(/static/ap/images/bg_mobile_main_visual_02.jpg) !important;
-        //}
-        //
-        //&:nth-child(3){
-        //  background-image:url(/static/ap/images/bg_mobile_main_visual_03.jpg) !important;
-        //}
+        &:nth-child(1){
+          background-image:url(/static/co/images/bg_mobile_main_visual_01.jpg) !important;
+        }
+
+        &:nth-child(2){
+          background-image:url(/static/co/images/bg_mobile_main_visual_02.jpg) !important;
+        }
+
+        &:nth-child(3){
+          background-image:url(/static/co/images/bg_mobile_main_visual_03.jpg) !important;
+        }
         //
         //&:nth-child(4){
         //  background-image:url(/static/ap/images/bg_mobile_main_visual_04.jpg) !important;
