@@ -75,7 +75,7 @@
   position: relative;
 
   &-btn{
-    display:none;
+    //display:none;
     position: absolute;
     top:20px;
     right:25px;
@@ -135,7 +135,7 @@
 }
 
 #top-contents{
-  margin-top:126px;
+  padding-top:126px;
 }
 
 .left-menu{
@@ -1664,6 +1664,7 @@ em{
         height: 50px;
         line-height: 50px;
         font-size: 1.125rem;
+        padding: 0 35px 0 20px;
         &+.btn-type-normal{
           margin-left: 10px;
         }
@@ -2625,6 +2626,11 @@ label.d-none{
       }
       &.type10:before{
         background-position:-426px -561px;
+        width: 118px;
+        height: 120px;
+      }
+      &.type11:before{//처리
+        background-position:-13px -701px;
         width: 118px;
         height: 120px;
       }
@@ -4537,6 +4543,7 @@ label.d-none{
   height:538px;
   text-indent:-999em;
   background: url(/static/co/images/digr_procedures_disclosure.png) no-repeat;
+  border:1px solid #d9d9d9;
 }
 
 /*신고자보호및보상*/
