@@ -1,4 +1,8 @@
-
+.header.bg.fixed{
+  .select-list{
+    display:none;
+  }
+}
 
 .skip-navigation-link{
   position:absolute;
@@ -206,7 +210,7 @@
           min-width: 70px;
           height: 19px;
           padding: 4px 6px 6px 11px;
-          background: #6281c1;
+          background: #466fb7;
           text-indent: 0;
           border-radius: 20px;
           box-sizing: content-box;
