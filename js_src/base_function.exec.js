@@ -26,9 +26,35 @@
 
 $(function(){
 
+
+
   // 공사 메인 탭 모바일
   (function(){
+
+
+
+
+
+
+    $('.tab-nav-list-link.on').on('click', function(e){
+      //$(this).addClass('active');
+      $(this).parent().siblings().children().toggleClass('m-on');
+      e.preventDefault();
+    });
+
+
     var windowSize = $(window).outerWidth();
+
+    if( windowSize <= 1024){
+      //$('.left-menu-depth1-item-link.on').addClass('on');
+      $('.left-menu-depth2-item-link.on').on('click', function(e){
+        $(this).parent().siblings().children().toggleClass('m-on');
+        e.preventDefault();
+      });
+    }
+
+
+
 
     if( $('html').hasClass('mobile') || windowSize <= 1024){
       $('.main-section2-text-tit').addClass('on');
@@ -538,6 +564,10 @@ $(function(){
   })();
 
 });
+
+
+
+
 
 //$(window).on('resize', function(){
 //

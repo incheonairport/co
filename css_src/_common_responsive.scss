@@ -16,7 +16,7 @@
 @media all and (max-width:1024px) {
 
   #top-contents {
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   .tab {
@@ -26,33 +26,62 @@
         width: 100%;
         //display:flex;
         &-item {
-          width:50%!important;
+          //display:none;
+          width:100%!important;
           height:auto;
           float: left;
-
-
           &+.tab-nav-list-item{
             a{
               border-left: 1px solid #d9d9d9;
-              padding:5px;
+              padding:10px;
+              font-weight: 400;
+              border-top:0;
               br{
                 display:none;
               }
             }
           }
         }
+
         &-link {
           height:100%!important;
           font-size:0.825rem;
           line-height:1.3;
           padding:5px;
+          display:none;
+          position:relative;
+
           &.on {
+            background:#fafafa;
+            color:#222!important;
+            border:1px solid #d9d9d9!important;
+            display:block;
             font-weight: 400;
-            padding:5px;
+            padding:10px;
+            text-align:left;
+            &:after{
+              content: '';
+              display: block;
+              width: 13px;
+              height: 12px;
+              position: absolute;
+              top: 0;
+              right: 10px;
+              bottom: 0;
+              margin: auto;
+              background: url(/static/co/images/spr_ico_left_menu.png) no-repeat -9px -4px;
+              transform:rotate(180deg);
+            }
           }
+
+          &.m-on{
+            display:block;
+          }
+
         }
       }
       &.sub{
+        margin-top:0;
         .tab-nav-list{
 
           &-item{
@@ -60,6 +89,13 @@
           }
           &-link{
             margin-right:0;
+            border:1px solid #d9d9d9;
+            border-top:0;
+            color:#222;
+
+            &.on{
+              background:#fafafa;
+            }
           }
 
         }
@@ -675,7 +711,7 @@
         }
       }
       &-sub {
-        font-size: 1.5rem;
+        font-size: 1.125rem;
       }
     }
   }
@@ -686,54 +722,32 @@
   .left-menu{
     width: 100%;
     float: none;
-    margin-bottom:30px;
+    margin-bottom:0;
     &-depth1{
       border-bottom: 1px solid #d9d9d9;
       &-item{
         &-link{
-          padding: 8px 15px;
+          padding:0 0 10px;
           font-size: 1rem;
+          text-align:center;
+          border:0;
           &.on{
-            border:1px solid #d9d9d9;
-            border-bottom:0;
-            background:#f7f7f7;
+            border:0;
+            background:none;
+            pointer-events:none;
+            &+.left-menu-depth2{
+              display: block!important;
+            }
           }
           &.open{
             &:after{
-              content: "";
-              color: #666;
-              width: 13px;
-              height: 12px;
-              font-weight: 800;
-              position: absolute;
-              //top:15px;
-              //right:15px;
-              //left:auto;
-              //bottom:auto;
-              top: 0;
-              right: 15px;
-              bottom: 0;
-              margin: auto;
-              background: url(/static/co/images/spr_ico_left_menu.png) -32px -2px no-repeat;
+              display:none;
             }
           }
           &.close{
             &:after{
-              content: "";
-              color: #666;
-              width: 13px;
-              height: 12px;
-              font-weight: 800;
-              position: absolute;
-              //top:18px;
-              //right:15px;
-              //left:auto;
-              //bottom:auto;
-              top: 0;
-              right: 15px;
-              bottom: 0;
-              margin: auto;
-              background: url(/static/co/images/spr_ico_left_menu.png) -9px -4px no-repeat;
+              display:none;
+
             }
             &+.left-menu-depth2{
               display: none;
@@ -744,14 +758,44 @@
 
     }
     &-depth2{
-      border: 1px solid #42519e;
+      border:0;
+      //border: 1px solid #42519e;
 
       &-item{
         &-link{
+          display:none;
           font-size:0.825rem;
-          padding: 6px 15px;
-          display: block;
+          font-weight: 400;
+          padding: 10px;
+          color: #222 !important;
+          border: 1px solid #d9d9d9 !important;
+          border-bottom:0!important;
+          line-height: 1.4;
+          text-align:center;
+          &.m-on{
+            display:block;
+          }
+
           &.on{
+            text-align: left;
+            background: #fafafa;
+            display: block;
+            position:relative;
+            border-bottom: 0!important;
+
+            &:after{
+              content: '';
+              display: block;
+              width: 13px;
+              height: 12px;
+              position: absolute;
+              top: 0;
+              right: 10px;
+              bottom: 0;
+              margin: auto;
+              background: url(/static/co/images/spr_ico_left_menu.png) no-repeat -9px -4px;
+              transform: rotate(180deg);
+            }
           }
         }
       }
@@ -761,6 +805,7 @@
     width: 100%;
     float: none;
     &-heading1{
+      display:none;
       margin-bottom: 10px;
       font-size: 1.25rem;
       text-align:center;
@@ -837,7 +882,8 @@
           }
           padding: 8px 0;
           & .board-list-link{
-            font-size:1rem;
+            font-size:0.825rem;
+            padding-left:10px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -912,7 +958,7 @@
         }
         & td{
           max-width: 0;
-          width: 70.4%;
+          width: 50%;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
@@ -1119,7 +1165,7 @@
 
 
     &-headline{
-      font-size: 1rem;
+      font-size: 0.825rem;
       line-height: 1.5;
     }
 
@@ -1930,8 +1976,15 @@
   }
 
   /*검색*/
+  select,input[type="text"]{
+    height:40px!important;
+    line-height:40px!important;
+    font-size:0.825rem!important;
+    font-weight: 400!important;
+  }
   .search-box{
     .form-layout,.multi-col{
+
       display:block;
       .timesetting{
 
@@ -1952,25 +2005,34 @@
         .search-box-input-select{
           width:20%;
           float:left;
+          font-size:0.825rem!important;
+          border-bottom:1px solid #818181;
+
         }
       }
       .search-box-title{
         width:20%;
         float:left;
+        text-align:left;
         border:none;
       }
       .search-box-input-select{
         width:30%;
+        border-bottom:0;
       }
       .mt10{
         margin:0;
       }
       .search-box-input-item{
         .search-box-input-select{
+
           width:100%;
+          font-size:0.825rem!important;
+
+
         }
 
-        width:30%;
+        width:80%;
         //float:none;
         .search-box-input-select.medium{
           width:50%;
@@ -1996,8 +2058,8 @@
     &-title{
       font-size:0.825rem;
       display:block;
-      height:40px;
-      line-height:40px;
+      height:30px;
+      line-height:30px;
       float: none;
       padding-right:0;
       text-align:center;
@@ -2078,8 +2140,8 @@
         bottom: 26px;
       }
       .search-box-btn{
-        width:100%;
-        height: 40px;
+        width:100%!important;
+        height: 40px!important;
 
         &.big{
           width:100%;
@@ -3434,6 +3496,9 @@
   }
 
   .left-menu-depth1-item-link.on{
+    display:block!important;
+  }
+  .left-menu-depth2-item-link.on+.left-menu-depth2{
     display:block!important;
   }
 
