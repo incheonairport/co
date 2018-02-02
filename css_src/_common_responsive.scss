@@ -52,6 +52,9 @@
           position:relative;
 
           &.on {
+            br{
+              display:none;
+            }
             background:#fafafa;
             color:#222!important;
             border:1px solid #d9d9d9!important;
@@ -1983,6 +1986,15 @@
     font-weight: 400!important;
   }
   .search-box{
+    &.responsive{
+      .search-box-title{
+        display:none;
+      }
+
+      .w100{
+        width:100%;
+      }
+    }
     .form-layout,.multi-col{
 
       display:block;
