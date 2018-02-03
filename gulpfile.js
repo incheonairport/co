@@ -129,6 +129,18 @@ gulp.task('release:html', function(){
       .pipe(include())
       .on('error', console.log)
       .pipe(gulp.dest("../release/co/html/"));
+  gulp.src("html_src/en/*.html")
+      .pipe(include())
+      .on('error', console.log)
+      .pipe(gulp.dest("../release/co/html/en/"));
+  gulp.src("html_src/ch/*.html")
+      .pipe(include())
+      .on('error', console.log)
+      .pipe(gulp.dest("../release/co/html/ch/"));
+  gulp.src("html_src/ja/*.html")
+      .pipe(include())
+      .on('error', console.log)
+      .pipe(gulp.dest("../release/co/html/ja/"));
 });
 
 // release sass
