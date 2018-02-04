@@ -45,21 +45,19 @@ $(function(){
 
     var windowSize = $(window).outerWidth();
 
-    $('.tab-nav-list-link.on').attr("href", "#");
-    $('.left-menu-depth2-item-link.on').attr("href", "#");
-    $('.tab-nav-list-link.on').attr("href", "#");
-
-    $('.tab-nav-list-link.on').on('click', function(e){
-      //$(this).addClass('active');
-      //$(this).append(".tab-nav-list-item").eq(0);
-      $(this).parent().siblings().children().toggleClass('m-on');
-      e.preventDefault();
-
-    });
-
 
 
     if( windowSize <= 1024){
+
+      $('.tab-nav-list-link.on').attr("href", "#");
+      $('.left-menu-depth2-item-link.on').attr("href", "#");
+      $('.tab-nav-list-link.on').attr("href", "#");
+
+      $('.tab-nav-list-link.on').on('click', function(e){
+        $(this).parent().siblings().children().toggleClass('m-on');
+        e.preventDefault();
+      });
+
       $('.left-menu+.sub-contents .tab-nav:first').each(function() {
         $('.left-menu+.sub-contents .tab-nav:first .tab-nav-list-item > .tab-nav-list-link.on').each(function(){
           $(this).parent().detach().prependTo('.left-menu+.sub-contents .tab-nav:first .tab-nav-list'); // 해당 li를 떼어내서 #example의 처음에 끼운다. });
@@ -71,7 +69,6 @@ $(function(){
           $(this).parent().detach().prependTo('.tab-nav.sub .tab-nav-list'); // 해당 li를 떼어내서 #example의 처음에 끼운다. });
         });
       });
-
 
       $('.left-menu-depth1-item-link.on').addClass('on');
       $('.left-menu-depth2-item-link.on').on('click', function(e){
