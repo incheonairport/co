@@ -36,26 +36,36 @@ $(function(){
 
 
 
-    //$('.tab-nav.sub').each(function() {
-    //  $('.tab-nav.sub .tab-nav-list-link.on').parent().insertAfter('.tab-nav.sub .tab-nav-list-item').eq(0);
+
+
+    //$(window).on('resize', function(){
+    //
+    //  if( $(window).outerWidth() <= 1024 ){
+    //
+    //    if( $('.gnb-mobile-btn').length <= 0 ){
+    //      $('.header').prepend('<button type="button" class="gnb-mobile-btn btn-gnb"><span>주메뉴 열기</span></button>');
+    //    }
+    //
+    //  } else {
+    //    $('.gnb-mobile-btn.btn-gnb').remove();
+    //  }
+    //
     //});
-
-
-
 
     var windowSize = $(window).outerWidth();
 
 
 
-    if( windowSize <= 1024){
+    if( windowSize <= 640){
 
-      $('.tab-nav-list-link.on').attr("href", "#");
-      $('.left-menu-depth2-item-link.on').attr("href", "#");
-      $('.tab-nav-list-link.on').attr("href", "#");
+      //$('.tab-nav-list-link.on').attr("href", "#");
+      //$('.left-menu-depth2-item-link.on').attr("href", "#");
+      //$('.tab-nav-list-link.on').attr("href", "#");
 
       $('.tab-nav-list-link.on').on('click', function(e){
-        $(this).parent().siblings().children().toggleClass('m-on');
         e.preventDefault();
+        $(this).parent().siblings().children().toggleClass('m-on');
+
       });
 
       $('.left-menu+.sub-contents .tab-nav:first').each(function() {
@@ -72,8 +82,9 @@ $(function(){
 
       $('.left-menu-depth1-item-link.on').addClass('on');
       $('.left-menu-depth2-item-link.on').on('click', function(e){
-        $(this).parent().siblings().children().toggleClass('m-on');
         e.preventDefault();
+        $(this).parent().siblings().children().toggleClass('m-on');
+
       });
     } else {
 
@@ -595,19 +606,7 @@ $(function(){
 
 
 
-//$(window).on('resize', function(){
-//
-//  if( $(window).outerWidth() <= 1024 ){
-//
-//    if( $('.gnb-mobile-btn').length <= 0 ){
-//      $('.header').prepend('<button type="button" class="gnb-mobile-btn btn-gnb"><span>주메뉴 열기</span></button>');
-//    }
-//
-//  } else {
-//    $('.gnb-mobile-btn.btn-gnb').remove();
-//  }
-//
-//});
+
 
 
 

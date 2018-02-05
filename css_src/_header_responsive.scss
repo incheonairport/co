@@ -1,4 +1,10 @@
 @media screen and (max-width:1200px) {
+  .scrollfix{
+    height:100%;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+  }
 
   // mobile gnb hover none on block
   .gnb-depth2-link{
@@ -64,6 +70,10 @@
       position:relative;
       left:-4px;
       z-index:0;
+
+      img{
+        width:100%;
+      }
 
       &-link{
         height:23px;

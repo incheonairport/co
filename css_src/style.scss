@@ -9,29 +9,30 @@
 @import "jquery-ui";
 
 @import "header";
-@import "header_responsive";
 
 @import "jquery.fullpage.min";
 
 @import "main";
-@import "main_responsive";
 
 @import "common";
-@import "common_responsive";
 
 @import "common_2";
-@import "common_2_responsive";
 
 @import "common_3";
-@import "common_3_responsive";
 
 @import "subcontents_radio";
-@import "subcontents_radio_responsive";
 
 @import "footer";
-@import "footer_responsive";
 
 @import "lang";
 
 @import "ir";
+
+@import "header_responsive";
+@import "main_responsive";
+@import "common_responsive";
+@import "common_2_responsive";
+@import "common_3_responsive";
+@import "subcontents_radio_responsive";
+@import "footer_responsive";
 

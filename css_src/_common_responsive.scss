@@ -1,19 +1,5 @@
-
-
-.loading{
-  display:none;
-}
-
-.header-logo *{
-  width:100%;
-}
-
-.gnb.on {
-  //height: 100%;
-}
-
 // 1024
-@media all and (max-width:1024px) {
+@media screen and (max-width:1024px) {
 
   #top-contents {
     padding-top: 30px;
@@ -3514,10 +3500,5 @@
     display:block!important;
   }
 
-  .scrollfix{
-    height:100%;
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-  }
+
 }
