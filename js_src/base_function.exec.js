@@ -56,7 +56,7 @@ $(function(){
 
 
 
-    if( windowSize <= 640){
+    if( windowSize <= 1080){
 
       //$('.tab-nav-list-link.on').attr("href", "#");
       //$('.left-menu-depth2-item-link.on').attr("href", "#");
@@ -93,7 +93,7 @@ $(function(){
 
 
 
-    if( $('html').hasClass('mobile') || windowSize <= 1024){
+    if( $('html').hasClass('mobile') || windowSize <= 1080){
       $('.main-section2-text-tit').addClass('on');
       $('.main-section2-text-tit').on('click',function(){
         $(this).toggleClass('on');
@@ -150,14 +150,14 @@ $(function(){
   // set full page
   (function(){
 
-    if( $(window).outerWidth() > 1024 ){
+    if( $(window).outerWidth() > 1080 ){
 
       if( $('#fullpage').length > 0 ){
 
         $('#fullpage').fullpage({
           scrollBar: true,
           scrollingSpeed: 1000,
-          responsiveWidth: 1025,
+          responsiveWidth: 1081,
           normalScrollElements: '.layer',
           afterLoad: function(anchorLink, index){
             if(index == 2){
@@ -177,7 +177,7 @@ $(function(){
         $('#fullpage').fullpage({
           scrollBar: true,
           scrollingSpeed: 1000,
-          responsiveWidth: 1025,
+          responsiveWidth: 1081,
           normalScrollElements: '.layer.system, .layer'
         });
 

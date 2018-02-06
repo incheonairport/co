@@ -1,6 +1,6 @@
 
 // 1024
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1080px) {
   .section{
     height:auto!important;
 
@@ -197,6 +197,10 @@
             position:absolute;
             top:calc(50% - 55px);
             transform:translateY(-50%);
+            -webkit-transform:translateY(-50%);
+            -moz-transform:translateY(-50%);
+            -ms-transform:translateY(-50%);
+            -o-transform:translateY(-50%);
 
             text-indent:-99999em;
 
