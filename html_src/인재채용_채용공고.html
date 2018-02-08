@@ -1,0 +1,376 @@
+<!--=include _include/_header.html -->
+<section id="top-contents" class="contents">
+  <!--위치-->
+  <div class="location">
+    <div class="location-btn">
+      <button type="button" class="location-btn-minus ico"></button>
+      <button type="button" class="location-btn-plus ico"></button>
+      <button type="button" class="location-btn-print ico"></button>
+    </div>
+    <div class="location-bar">
+      <ul class="location-bar-nav">
+        <li class="location-bar-nav-item ico"><a href="/co/ko/index.do" class="location-bar-nav-item-link home ico">home</a></li>
+        <li class="location-bar-nav-item ico"><a href="/co_cnt/ko/career/career/career.do" class="location-bar-nav-item-link">인재채용</a></li>
+        <li class="location-bar-nav-item"><a href="/co/ko/cmm/cmmBbsList.do?FNCT_CODE=229" class="location-bar-nav-item-link">채용공고</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="sub-top bg6">
+    <div class="sub-top-inner">
+      <div class="sub-top-descbox">
+        <div class="sub-top-descbox-text">
+          <h2 class="sub-top-descbox-tit"><em class="color-o">인재채용</em></h2>
+
+          <h3 class="sub-top-descbox-sub">채용공고</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--//위치-->
+
+</section>
+
+<section class="contents">
+  <div class="inner-section">
+
+    <!-- leftmenu start -->
+
+
+    <nav class="left-menu">
+      <ul class="left-menu-depth1">
+        <li class="left-menu-depth1-item"><a href="/co_cnt/ko/career/career/career.do" class="left-menu-depth1-item-link ">채용안내</a></li>
+        <li class="left-menu-depth1-item"><a href="/co_cnt/ko/career/talent/talent.do" class="left-menu-depth1-item-link ">인재상</a></li>
+        <li class="left-menu-depth1-item"><a href="/co_cnt/ko/career/job/affair/affair.do" class="left-menu-depth1-item-link ">직무소개</a></li>
+        <li class="left-menu-depth1-item"><a href="/co/ko/cmm/cmmBbsList.do?FNCT_CODE=229" class="left-menu-depth1-item-link on">채용공고</a></li>
+      </ul>
+    </nav>
+    <!--// leftmenu end -->
+
+
+    <div class="sub-contents">
+      <input type="hidden" id="FNCT_CODE" name="FNCT_CODE" value="229">
+      <input id="PAGEINDEX" name="PAGEINDEX" type="hidden" title="개발에 필요한 빈 인풋" value="1">
+      <input id="SERCHVAL" name="SERCHVAL" type="hidden" title="개발에 필요한 빈 인풋" value="">
+      <input id="NODE_ID" name="NODE_ID" type="hidden" title="개발에 필요한 빈 인풋" value="">
+      <input id="LANG_SE" name="LANG_SE" type="hidden" title="개발에 필요한 빈 인풋" value="ko">
+
+      <article class="article">
+        <!--검색-->
+        <div class="search-box day">
+          <div class="multi-col double">
+            <div class="inner-col w40">
+              <div class="timesetting">
+                <div class="timesetting-date">
+                  <label for="from-day" class="d-none">시작일</label>
+                  <input type="text" class="timesetting-date-day hasDatepicker" readonly="" placeholder="" id="from-day" title="작성날짜를 선택하면 출력됩니다" value="20170208">
+                  <button class="timesetting-date-calendar ico" type="button" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                </div>
+                <span class="timesetting-dash">~</span>
+
+                <div class="timesetting-date">
+                  <label for="to-day" class="d-none">종료일</label>
+                  <input type="text" class="timesetting-date-day hasDatepicker" readonly="" placeholder="" id="to-day" title="작성날짜를 선택하면 출력됩니다" value="20180208">
+                  <button class="timesetting-date-calendar ico" type="button" title="클릭시 날짜를 선택할 수 있는 달력이 나옵니다">날짜 선택</button>
+                </div>
+              </div>
+            </div>
+            <div class="inner-col w60">
+              <div class="search-box-input-item">
+                <select class="search-box-input-select" title="검색옵션을 선택해 주세요" id="SEARCH_TYPE" name="SEARCH_TYPE">
+                  <option value="all">전체</option>
+                  <option value="subject">제목</option>
+                  <option value="content">내용</option>
+                </select>
+                <input type="text" class="search-box-input-txt" id="SEARCH_STR" name="SEARCH_STR" placeholder="검색어 입력" title="검색어 입력을 통해 검색할 수 있습니다" value="">
+              </div>
+              <div class="search-box-btn-area">
+                <button type="button" class="search-box-btn ico" onclick="fncRefresh();return false;">검색</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--//검색-->
+
+        <p class="board-page"> 전체 :<strong>9</strong>건 (1 / 1 page)</p>
+
+        <!--table-->
+
+        <table class="table vt board-list" summary="불편 칭찬 게시판입니다.">
+          <caption>불편 칭찬 게시판</caption>
+          <colgroup>
+            <col style="width:5%">
+            <col style="width:65%">
+            <col style="width:10%">
+            <col style="width:10%">
+            <col style="width:10%">
+          </colgroup>
+          <thead>
+          <tr>
+            <th scope="col"><strong>번호</strong></th>
+            <th scope="col"><strong>제목</strong></th>
+            <th scope="col"><strong>첨부파일</strong></th>
+            <th scope="col"><strong>작성일</strong></th>
+            <th scope="col"><strong>조회수</strong></th>
+          </tr>
+          </thead>
+          <tbody>
+
+
+          <tr>
+            <td class="center">
+              9
+            </td>
+            <td>
+              <a class="board-list-link" href="#" onclick="fncGoView('22895', '229', '', '', '1');">
+
+
+                인천국제공항공사 비상임이사 공모
+
+
+                <img src="/static/co/images/icon_new.gif" alt="new">
+              </a>
+            </td>
+            <td class="center">
+              <span class="file-list-link crud-ico file-hwp">첨부파일</span>
+            </td>
+            <td class="center">
+              2018.02.02
+            </td>
+            <td class="center">
+              748
+            </td>
+          </tr>
+
+          <tr>
+            <td class="center">
+              8
+            </td>
+            <td>
+              <a class="board-list-link" href="#" onclick="fncGoView('22858', '229', '', '', '1');">
+
+
+                “인천공항공사 배드민턴단” 트레이너(주무) 및 물리치료....
+
+
+              </a>
+            </td>
+            <td class="center">
+              <span class="file-list-link crud-ico file-hwp">첨부파일</span>
+            </td>
+            <td class="center">
+              2017.12.27
+            </td>
+            <td class="center">
+              662
+            </td>
+          </tr>
+
+          <tr>
+            <td class="center">
+              7
+            </td>
+            <td>
+              <a class="board-list-link" href="#" onclick="fncGoView('22813', '229', '', '', '1');">
+
+
+                인천국제공항공사 비상임이사 공모
+
+
+              </a>
+            </td>
+            <td class="center">
+              <span class="file-list-link crud-ico file-hwp">첨부파일</span>
+            </td>
+            <td class="center">
+              2017.11.24
+            </td>
+            <td class="center">
+              962
+            </td>
+          </tr>
+
+          <tr>
+            <td class="center">
+              6
+            </td>
+            <td>
+              <a class="board-list-link" href="#" onclick="fncGoView('22686', '229', '', '', '1');">
+
+
+                2017년 하반기 신입직원(채용형 인턴) 채용 공고
+
+
+              </a>
+            </td>
+            <td class="center">
+              <span class="file-list-link crud-ico ">첨부파일</span>
+            </td>
+            <td class="center">
+              2017.09.06
+            </td>
+            <td class="center">
+              44669
+            </td>
+          </tr>
+
+          <tr>
+            <td class="center">
+              5
+            </td>
+            <td>
+              <a class="board-list-link" href="#" onclick="fncGoView('22667', '229', '', '', '1');">
+
+
+                인천공항운영관리주식회사 사장후보자 추가공모
+
+
+              </a>
+            </td>
+            <td class="center">
+              <span class="file-list-link crud-ico file-hwp">첨부파일</span>
+            </td>
+            <td class="center">
+              2017.08.28
+            </td>
+            <td class="center">
+              1267
+            </td>
+          </tr>
+
+          <tr>
+            <td class="center">
+              4
+            </td>
+            <td>
+              <a class="board-list-link" href="#" onclick="fncGoView('22655', '229', '', '', '1');">
+
+
+                인천공항운영관리주식회사 사장 공모
+
+
+              </a>
+            </td>
+            <td class="center">
+              <span class="file-list-link crud-ico file-hwp">첨부파일</span>
+            </td>
+            <td class="center">
+              2017.08.14
+            </td>
+            <td class="center">
+              1456
+            </td>
+          </tr>
+
+          <tr>
+            <td class="center">
+              3
+            </td>
+            <td>
+              <a class="board-list-link" href="#" onclick="fncGoView('22411', '229', '', '', '1');">
+
+
+                2017년 인천국제공항공사 R&amp;D 정책연구 전문연구원 ....
+
+
+              </a>
+            </td>
+            <td class="center">
+              <span class="file-list-link crud-ico file-hwp">첨부파일</span>
+            </td>
+            <td class="center">
+              2017.04.04
+            </td>
+            <td class="center">
+              2807
+            </td>
+          </tr>
+
+          <tr>
+            <td class="center">
+              2
+            </td>
+            <td>
+              <a class="board-list-link" href="#" onclick="fncGoView('22385', '229', '', '', '1');">
+
+
+                인천공항공사 배드민턴단 코치 및 물리치료사 모집공고
+
+
+              </a>
+            </td>
+            <td class="center">
+              <span class="file-list-link crud-ico file-hwp">첨부파일</span>
+            </td>
+            <td class="center">
+              2017.03.02
+            </td>
+            <td class="center">
+              807
+            </td>
+          </tr>
+
+          <tr>
+            <td class="center">
+              1
+            </td>
+            <td>
+              <a class="board-list-link" href="#" onclick="fncGoView('22382', '229', '', '', '1');">
+
+
+                인천국제공항공사 상임감사위원 모집공고문
+
+
+              </a>
+            </td>
+            <td class="center">
+              <span class="file-list-link crud-ico file-hwp">첨부파일</span>
+            </td>
+            <td class="center">
+              2017.02.24
+            </td>
+            <td class="center">
+              901
+            </td>
+          </tr>
+
+
+          </tbody>
+        </table>
+
+        <!-- 페이지네이션 -->
+        <div class="mt40">
+          <div class="multi-col double">
+            <div class="inner-col wide">
+              <div class="pagenation">
+                <ol class="pagenation-list">
+                  <li class="pagenation-list-item on"><a class="pagenation-list-link" href="#">1</a></li>
+                </ol>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="article">
+        <div class="text-box contact">
+          <div class="text-box-headline-col">
+            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 문의 주시기 바랍니다.</h6>
+          </div>
+          <ul class="list1">
+            <li class="list1-item">
+              <strong>담당부서 :</strong> 인사팀
+            </li>
+            <li class="list1-item">
+              <strong>전화번호 :</strong> 032-741-2331, 2332
+            </li>
+          </ul>
+        </div>
+      </article>
+
+
+    </div>
+  </div>
+</section>
+<!--=include _include/_footer.html -->
