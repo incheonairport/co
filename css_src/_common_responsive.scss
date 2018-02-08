@@ -1,6 +1,62 @@
 // 1024
 @media screen and (max-width:1080px) {
 
+  /* 게시판 및 인풋 페이지별 컨트롤 */
+  section.empl{
+    /*조건*/
+    .search-box{
+      .search-box-input-item{
+        width:50%;
+        border-bottom:0;
+        .search-box-input-txt{
+          border-bottom:0;
+        }
+        &:last-child{
+          width:100%;
+          border-left:1px solid #818181;
+          .search-box-input-select{
+            border-left:0;
+          }
+        }
+      }
+      .search-box-title{
+        display:none;
+      }
+      .search-box-input-select{
+        width:100%!important;
+      }
+    }
+
+    /*게시판*/
+    .board-list{
+      colgroup{
+        display:none!important;
+        //min-width:0!important;
+      }
+      th{
+        //width:25%;
+        //min-width:0!important;
+        font-size:0.5rem!important;
+
+
+      }
+      td{
+        padding:0!important;
+
+        font-size:0.5rem!important;
+        //width:25%;
+        white-space: normal;
+        .list1-item{
+          padding-left: 2px;
+          font-size:0.5rem!important;
+          &:before{
+            display:none;
+          }
+        }
+      }
+    }
+  }
+
   #top-contents {
     padding-top: 30px;
   }
@@ -921,7 +977,7 @@
       }
       th{
         padding:10px;
-        text-align: left;
+        //text-align: center;
         &.sub{
           padding:10px;
         }
@@ -930,36 +986,42 @@
         padding:10px;
       }
       td.center{
-        text-align: left;
+        //text-align: left;
       }
       &.board-list{
         font-size:1rem;
         & th{
-          display:none;
-          width:80%;
+          //display:none;
+          //width:80%;
 
           &:nth-child(2), &:nth-child(3){
-            display:table-cell!important;
+            //display:table-cell!important;
           }
           &:after{
             display:none;
           }
         }
         & td{
-          max-width: 0;
-          width: 50%;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+          /*  ... 처리 */
+          //max-width: 0;
+          //width: 50%;
+          //overflow: hidden;
+          //text-overflow: ellipsis;
+          //white-space: nowrap;
+          font-size:0.825rem;
+          font-weight:600;
+          .list1-item{
+            font-size:0.825rem;
+          }
 
-          display:none;
-          padding:5px 0;
+          //display:none;
+          padding:0 10px;
           &.no-data-found{
             text-align:center;
             padding: 40px 20px;
           }
           &:nth-child(2), &:nth-child(3){
-            display:table-cell!important;
+            //display:table-cell!important;
           }
           .btn-type-small{
             font-size:0.825rem;
@@ -3498,7 +3560,7 @@
   }
 
   .left-menu-depth1-item-link.on{
-    display:block!important;
+    display:none;
   }
   .left-menu-depth2-item-link.on+.left-menu-depth2{
     display:block!important;
