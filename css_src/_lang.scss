@@ -102,6 +102,13 @@
     max-width: 220px;
     line-height: 1.3;
   }
+
+  @media screen and (max-width:1200px) {
+    .co-history-list-year{
+      display: inline-block;
+    }
+  }
+
 }
 
 .ch{

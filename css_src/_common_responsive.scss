@@ -915,6 +915,7 @@
     &.table-block{
       display:table!important;
       white-space: normal!important;
+      text-align: center;
     }
     &.vt{
       &.board-list{
@@ -991,6 +992,7 @@
       &.board-list{
         font-size:1rem;
         & th{
+          padding: 2px;
           //display:none;
           //width:80%;
 
@@ -1015,7 +1017,7 @@
           }
 
           //display:none;
-          padding:0 10px;
+          padding:0 2px;
           &.no-data-found{
             text-align:center;
             padding: 40px 20px;
@@ -1024,8 +1026,10 @@
             //display:table-cell!important;
           }
           .btn-type-small{
+            border-radius: 5px;
             font-size:0.825rem;
             padding:0 10px;
+            margin: 5px 0;
             &:after{
               display:none;
             }
@@ -2732,6 +2736,7 @@
     width: 100%;
     padding-bottom: 15px;
     border-bottom: 1px solid #d9d9d9;
+    background: none;
     .organization-chart{
       text-align:center;
       &-grid{
