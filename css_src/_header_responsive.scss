@@ -1,4 +1,46 @@
 @media screen and (max-width:1200px) {
+
+  .menu-mobile-item {
+    position:relative;
+    &.on{
+      &:after{
+        transform: rotate(-280deg);
+      }
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 12px;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      bottom: 0;
+      margin: auto;
+      //background: url(/static/co/images/spr_ico_left_menu.png) no-repeat -9px -4px;
+      background: url(/static/co/images/spr_ico_left_menu.png) -32px -2px no-repeat;
+      transform: rotate(180deg);
+    }
+    .menu-mobile-ui{
+      width:100%;
+      background: #fafafa;
+      color: #222 !important;
+      border: 1px solid #d9d9d9 !important;
+      display: block;
+      font-weight: 400;
+      font-size:0.825rem;
+      padding: 10px;
+      text-align: left;
+
+    }
+  }
+  .left-menu-depth2-item{
+    display:none;
+  }
+  .open-ui{
+    display:block!important;
+  }
+
   .scrollfix{
     height:100%;
     position: fixed;
