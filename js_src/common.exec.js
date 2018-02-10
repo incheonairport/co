@@ -2,6 +2,15 @@
  * Common Execution *
  ********************/
 
+var _focus = $(this);
+if($('.layer-wrap').hasClass('on')){
+  $('.layer').attr("tabindex", "0").focus();
+}
+
+$('.layer-close').on('click', function(){
+  _focus.focus();
+});
+
 $(function(){
 
   /**
