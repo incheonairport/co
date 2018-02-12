@@ -973,6 +973,9 @@
       overflow-y: hidden;
       white-space: nowrap;
       display: inline-block;
+      .list1-item:before{
+        display: none;
+      }
       &.pd0{
         td{
           padding:10px;
