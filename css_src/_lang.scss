@@ -110,7 +110,16 @@
 
     .main-visual-news{
       &-section{
-
+        &.last{
+          .main-visual-news-txt{
+            .tab{
+              width: 100%;
+              .main-list{
+                width: 90%;
+              }
+            }
+          }
+        }
       }
       &-title{
         font-size: 1rem;
