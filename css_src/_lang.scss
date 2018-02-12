@@ -113,6 +113,10 @@
 
 .ch{
 
+  .text-box.contact{
+    display:none;
+  }
+
   * {
     font-family: 'Noto Sans SC', roboto, spoqa ,sans-serif!important;
   }
@@ -163,7 +167,9 @@
 
 
 .ja{
-
+  .text-box.contact{
+    display:none;
+  }
   * {
     font-family: 'Noto Sans JP', roboto, spoqa, sans-serif!important;
   }

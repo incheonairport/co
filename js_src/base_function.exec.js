@@ -46,7 +46,7 @@ $(function(){
 
     if( windowSize <= 1080){
 
-      
+
 
       var depthOne = $('.left-menu-depth2'); //lnb
       var depthTwo = $('.tab-nav-list'); //tab
@@ -58,7 +58,7 @@ $(function(){
       depthOne.prepend('<li class="menu-mobile-item"><button type="button" class="menu-mobile-ui"><span>메뉴선택</span></button></li>');
       depthTwo.prepend('<li class="menu-mobile-item"><button type="button" class="menu-mobile-ui"><span>메뉴선택</span></button></li>');
 
-      $('.left-menu-depth2 .menu-mobile-ui span').text(oneOnText);
+      $('.left-menu-depth2.on .menu-mobile-ui span').text(oneOnText);
       $('.tab-nav-list .menu-mobile-ui span').text(twoOnText);
       $('.tab-nav.sub .tab-nav-list .menu-mobile-ui span').text(threeOnText);
 
