@@ -199,6 +199,48 @@
     word-break: break-all;
   }
 
+  @media screen and (max-width:1200px) {
+    .co-history-list-year{
+      display: inline-block;
+    }
+
+    .main-visual-news{
+      &-section{
+        &.last{
+          .main-visual-news-txt{
+            &.tab{
+              width: 100%;
+              .main-list{
+                width: 90%;
+              }
+            }
+          }
+        }
+      }
+      &-title{
+        font-size: 1rem;
+      }
+      &-txt{
+        font-size: 0.75rem;
+        letter-spacing: -1px;
+        margin-top:0;
+        width: 60%;
+        br{
+          display: none;
+        }
+      }
+    }
+    .main-section2-text{
+      min-height: inherit;
+      &-box{
+        height: auto;
+      }
+      &-list{
+        margin-top: 0;
+      }
+    }
+  }
+
 }
 
 
@@ -254,5 +296,47 @@
 
   .table.vt-dark td{
     word-break: break-all;
+  }
+
+  @media screen and (max-width:1200px) {
+    .co-history-list-year{
+      display: inline-block;
+    }
+
+    .main-visual-news{
+      &-section{
+        &.last{
+          .main-visual-news-txt{
+            &.tab{
+              width: 100%;
+              .main-list{
+                width: 90%;
+              }
+            }
+          }
+        }
+      }
+      &-title{
+        font-size: 1rem;
+      }
+      &-txt{
+        font-size: 0.75rem;
+        letter-spacing: -1px;
+        margin-top:0;
+        width: 60%;
+        br{
+          display: none;
+        }
+      }
+    }
+    .main-section2-text{
+      min-height: inherit;
+      &-box{
+        height: auto;
+      }
+      &-list{
+        margin-top: 0;
+      }
+    }
   }
 }
