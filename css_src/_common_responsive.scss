@@ -1025,17 +1025,17 @@
         th{
           font-size: 0.815rem;
         }
-        colgroup {
-          col{
-            &:first-child{
-              width:20%!important;
-            }
-            &:last-child{
-              width:20%!important;
-            }
-            width:60%!important;
-          }
-        }
+        //colgroup {
+        //  col{
+        //    &:first-child{
+        //      width:20%!important;
+        //    }
+        //    &:last-child{
+        //      width:20%!important;
+        //    }
+        //    width:60%!important;
+        //  }
+        //}
         .mobile{
           //display:none;
         }
