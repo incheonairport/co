@@ -977,10 +977,10 @@
           //display:none;
         }
         &.first{
-          & th:first-child{
-            display: none;
+          th:first-child{
+              display: none;
           }
-          & td :first-child{
+          td :first-child{
             display: none;
           }
         }
