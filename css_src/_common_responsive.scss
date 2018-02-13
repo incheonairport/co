@@ -976,6 +976,14 @@
         .mobile{
           //display:none;
         }
+        &.first{
+          & th:first-child{
+            display: none;
+          }
+          & td :first-child{
+            display: none;
+          }
+        }
       }
     }
     &.vt,
