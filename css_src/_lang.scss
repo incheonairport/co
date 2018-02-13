@@ -109,6 +109,33 @@
     }
   }
 
+
+  /*검색*/
+  .search-box{
+    width:100%;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    @extend %clearfix;
+    // for develop main html
+    &-title{
+      font-weight:800;
+      float: left;
+      padding-right: 5px;
+      position: relative;
+      top:13px;
+      &.pr15{
+         padding-right: 15px;
+       }
+
+      &.pr5{
+        padding-right: 5px;
+      }
+    }
+
+
+  }
+
 }
 
 .ch{
