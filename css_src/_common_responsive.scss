@@ -921,6 +921,9 @@
     word-wrap: break-word!important;
   }
   .table{
+    colgroup{
+      display: none !important;
+    }
     table-layout: fixed;
     td,th,strong{
       font-size:0.75rem!important;
