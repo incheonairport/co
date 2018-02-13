@@ -926,9 +926,9 @@
 
 
     &.table-block{
-      //display:table!important;
-      //white-space: normal!important;
-      //text-align: center;
+      display:table!important;
+      white-space: normal!important;
+      text-align: center;
     }
     &.vt{
       &.board-list{
@@ -980,7 +980,10 @@
           th:first-child{
               display: none;
           }
-          td :first-child{
+          td:first-child{
+            display: none;
+          }
+          colgroup{
             display: none;
           }
         }
