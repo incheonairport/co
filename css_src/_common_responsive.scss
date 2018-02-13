@@ -287,6 +287,10 @@
   //article
   .article{
     margin-bottom:30px;
+    //항공기 소음관리 지도부분
+    &.p-dv{
+      display: none;
+    }
   }
 
   .btn {
@@ -923,14 +927,73 @@
       word-break: inherit!important;
       word-wrap: break-word!important;
     }
-
-
     &.table-block{
       display:table!important;
       white-space: normal!important;
       text-align: center;
     }
     &.vt{
+
+      &.table-responsive{
+        text-align: center;
+        colgroup{
+          display: none;
+        }
+      }
+      &.table-responsive tbody td img{
+          display: none !important;
+        }
+      &.table-responsive tbody td br{
+          display: none;
+        }
+      &.table-responsive caption {
+          background-image: none;
+        }
+      &.table-responsive thead {
+          display: none;
+        }
+      &.table-responsive tbody td {
+          padding: 0.6rem;
+          display: inline-table;
+          width: 50%;
+          float: left;
+          .schedule{
+            width: 6px!important;
+            height: 6px!important;
+            border-radius: 6px !important;
+            top: -10px!important;
+            left: 25%!important;
+          }
+        }
+      &.table-responsive tbody tr td:first-child {
+          background: #323648;
+          display: block;
+          width: 100%;
+          color: #fff;
+        }
+      &.table-responsive tbody td:last-child {
+          width: 50%;
+          font-size: 0.875rem;
+          height: 30px;
+        }
+      &.table-responsive tbody td:before {
+          content: attr(data-th);
+          font-weight: bold;
+          display: inline-block;
+          /*width: 6rem;*/
+      }
+      &.table-responsive tbody td[data-type=currency] {
+        /*text-align: right;*/
+      }
+      &.table-responsive tbody td[data-title]:before {
+        content: attr(data-title);
+        /*float: left;*/
+        //text-align: center;
+        border-right: 1px solid #aaa;
+        width: 50%;
+        font-size: 1rem;
+        color: rgba(94, 93, 82, 0.75);
+      }
       &.board-list{
         overflow: visible;
         //white-space: normal;
@@ -2171,7 +2234,9 @@
       display:block;
       &-item{
         width:calc(100% - 40px);
-
+        &.a-btn{
+          width: 100%!important;
+        }
       }
       &-select, &-txt{
         width:100%;
@@ -2230,6 +2295,14 @@
       width:40px;
       height:40px;
       line-height:40px;
+      &.a-btn{
+        width: 100%!important;
+        height: auto;
+        a{
+          margin-top: 10px;
+          padding: 0;
+        }
+      }
 
       &.view-large{
         position: absolute;
@@ -3598,6 +3671,5 @@
   .left-menu-depth2-item-link.on+.left-menu-depth2{
     display:block!important;
   }
-
 
 }
