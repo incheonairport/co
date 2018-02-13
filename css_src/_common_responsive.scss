@@ -916,14 +916,16 @@
     }
   }
   // table
+  table{
+    colgroup{
+      display: none!important;
+    }
+  }
   .table.vt.pd0 td, .table.vt-dark.pd0 td{
     padding:10px 0!important;
     word-wrap: break-word!important;
   }
   .table{
-    colgroup{
-      display: none !important;
-    }
     table-layout: fixed;
     td,th,strong{
       font-size:0.75rem!important;
