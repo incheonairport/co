@@ -916,6 +916,11 @@
     }
   }
   // table
+  table{
+    colgroup{
+      display: none!important;
+    }
+  }
   .table.vt.pd0 td, .table.vt-dark.pd0 td{
     padding:10px 0!important;
     word-wrap: break-word!important;
