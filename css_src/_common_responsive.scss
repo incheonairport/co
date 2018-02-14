@@ -225,7 +225,7 @@
 
   .book-btn{
     float:left;
-    width:50%;
+    width:48%;
   }
 
   td{
@@ -1073,6 +1073,17 @@
             display: none;
           }
         }
+        &.nth4{
+          th:nth-child(4){
+            display: none;
+          }
+          td:nth-child(4){
+            display: none;
+          }
+          colgroup{
+            display: none;
+          }
+        }
         &.last{
           th:last-child{
             display: none;
@@ -1212,6 +1223,13 @@
         }
         .inner-col{
           display:block;
+        }
+        .timesetting-date{
+          &.long{
+            .timesetting-date-day{
+              margin-bottom: 10px;
+            }
+          }
         }
         .timesetting-date-day{
           margin-bottom: 10px;
