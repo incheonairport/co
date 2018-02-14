@@ -6,6 +6,9 @@
     /*조건*/
     .search-box{
       .search-box-input-item{
+        &.a-btn{
+          width: 100%!important;
+        }
         width:50%;
         border-bottom:0;
         .search-box-input-txt{
@@ -1049,6 +1052,28 @@
               display: none;
           }
           td:first-child{
+            display: none;
+          }
+          colgroup{
+            display: none;
+          }
+        }
+        &.nth3{
+          th:nth-child(3){
+            display: none;
+          }
+          td:nth-child(3){
+            display: none;
+          }
+          colgroup{
+            display: none;
+          }
+        }
+        &.last{
+          th:last-child{
+            display: none;
+          }
+          td:last-child{
             display: none;
           }
           colgroup{
@@ -2188,6 +2213,9 @@
         margin:0;
       }
       .search-box-input-item{
+        &.a-btn{
+          width: 100%!important;
+        }
         .search-box-input-select{
 
           width:100%;
