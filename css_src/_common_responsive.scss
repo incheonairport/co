@@ -1228,6 +1228,7 @@
           &.long{
             .timesetting-date-day{
               margin-bottom: 10px;
+              width: calc( 100% - 40px );
             }
           }
         }
@@ -1240,7 +1241,7 @@
           margin-bottom: 10px;
         }
         .user-text{
-          width:100%;
+          width:90%;
           margin-bottom: 10px;
         }
         .checkbox + label {
@@ -2404,7 +2405,7 @@
   }
 
   select{
-    font-size:1rem!important;
+    font-size:0.825rem!important;
     color:#444!important;
   }
 
