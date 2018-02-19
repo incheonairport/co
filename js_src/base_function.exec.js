@@ -34,7 +34,7 @@ $(function(){
     var windowSize = $(window).outerWidth();
 
 
-    if( windowSize <= 1080){
+    //if( windowSize <= 1080){
 
       var depthOne = $('.left-menu-depth2'); //lnb
       var depthTwo = $('.tab-nav-list'); //tab
@@ -42,7 +42,7 @@ $(function(){
       depthOne.prepend('<li class="menu-mobile-item"><button type="button" class="menu-mobile-ui"><span>메뉴선택</span></button></li>');
       depthTwo.prepend('<li class="menu-mobile-item"><button type="button" class="menu-mobile-ui"><span>메뉴선택</span></button></li>');
 
-      var oneOnText = $('.left-menu-depth2-item-link.on').text();
+      var oneOnText = $('.sub-contents-heading1').text();
       var twoOnText = $('.sub-contents-heading1+.tab-nav .tab-nav-list-link.on').text();
       var threeOnText = $('.tab-nav.sub .tab-nav-list-link.on').text();
 
@@ -58,9 +58,7 @@ $(function(){
         $(this).parent().siblings().toggleClass('open-ui');
       });
 
-    } else {
-
-    }
+    //}
 
 
 

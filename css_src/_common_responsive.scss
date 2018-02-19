@@ -92,7 +92,8 @@
           height:100%!important;
           font-size:0.825rem;
           line-height:1.3;
-          padding:5px;
+          padding:10px;
+          font-weight:600;
 
           position:relative;
 
@@ -3749,6 +3750,11 @@
 
   .menu-mobile-item{
     display:block;
+  }
+
+  
+  .tab-nav+.mt30{
+    margin-top:0;
   }
 
 }
