@@ -1723,8 +1723,8 @@
   }
   /*연혁*/
   .co-history{
-    .ceo{
-      &.multi-col{
+    .multi-col{
+      &.ceo{
         .w30{
           width: 50% !important;
           float: left;
