@@ -5,6 +5,11 @@
   section.empl{
     /*조건*/
     .search-box{
+      .search-box-input{
+        .f-left{
+          float: none;
+        }
+      }
       .search-box-input-item{
         &.a-btn{
           width: 100%!important;
