@@ -145,6 +145,10 @@
     width:215px;
     margin:0 auto;
 
+    img{
+      width:100%;
+    }
+
     *{
       display:block;
     }
@@ -317,7 +321,7 @@
   top:60px;
   left:0;
   z-index:9998;
-  transition: all .3s;
+  //transition: all .3s;
   //transition:all .3s ease-out;
   //transition:all .3s ease-out;
 
