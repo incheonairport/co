@@ -1723,6 +1723,20 @@
   }
   /*연혁*/
   .co-history{
+    .multi-col{
+      .w30{
+        width: 50% !important;
+        float: left;
+      }
+      .w70{
+        width: 40% !important;
+        float: left;
+        margin: 40px 0 0 20px;
+        .history{
+          text-align: left;
+        }
+      }
+    }
     &-year{
       display:block;
       font-size: 1.125rem;
@@ -1743,7 +1757,7 @@
       &-year{
         display:inline;
         padding-right:8px;
-        letter-spacing:-1px;
+        letter-spacing: normal;
         font-size:0.825rem;
         margin-right:0;
         width: 100%;
