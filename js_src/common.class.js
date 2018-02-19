@@ -151,10 +151,13 @@ $(function(){
 
     };
 
-    $(window).scroll(function(){
-      $('.select-list').removeClass('on');
-      $('.select-link-default').removeClass('on');
-    });
+
+    if( $(window).outerWidth() > 1080 ){
+      $(window).scroll(function(){
+        $('.select-list').removeClass('on');
+        $('.select-link-default').removeClass('on');
+      });
+    }
 
   };
 

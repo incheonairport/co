@@ -1,4 +1,125 @@
 .en{
+  font-size:14px;
+
+  footer{
+    //footer 셀렉트
+    .select-link .select-list-item{
+      text-indent:0;
+    }
+    .select-link .select-list-link{
+      font-size: 0.75rem;
+      line-height: 1.4;
+      padding-left: 12px;
+      margin-bottom: 10px;
+    }
+  }
+
+
+  // 통합검색
+  .header-search-input{
+    width:118px;
+    right:0;
+    left:30px
+  }
+  .header-search-item.gnb-search.on{
+    width:270px!important;
+  }
+  .header-search-item.gnb-search{
+    width:75px;
+  }
+  .header-search-btn.gnb-search{
+    padding: 4px 0 6px 8px;
+  }
+
+  // 임원진 CO_CH_02
+  .profile-box {
+    &-img {
+
+    }
+    &-desc {
+      font-size: 0.825rem;
+    }
+    &-tit {
+    }
+    .list1{
+    }
+    dt.list1-item {
+      font-size:0.825rem;
+    }
+    dt.list1-item+dd{
+    }
+  }
+
+  /* 조직도 */
+  .organization-chart-wrap{
+    .organization-chart{
+      &-grid{
+      }
+      &-box{
+        font-size:1rem;
+        &.round{
+          font-size:1.125rem;
+        }
+        &:first-child{
+        }
+        &:nth-child(2){
+        }
+        &:last-child{
+        }
+      }
+      &-list{
+        &-item{
+          font-size:1rem;
+          &:first-child{
+          }
+          &:nth-child(2){
+          }
+          &:nth-child(3){
+          }
+        }
+      }
+      &-tit{
+        font-size: 0.825rem;
+      }
+      &-subtit{
+        font-size: 0.825rem;
+      }
+      &-team{
+        .list1-item{
+          font-size:0.825rem;
+          &:before{
+          }
+        }
+        .organization-chart-team-link{
+          &:hover{
+          }
+        }
+      }
+
+      &.type1{
+        .organization-chart-team{
+        }
+      }
+
+      &.type2{
+        .organization-chart-box{
+        }
+        .organization-chart-team{
+        }
+        .organization-chart-tit{
+        }
+      }
+
+      &.type3{
+        .organization-chart-tit{
+        }
+        .organization-chart-team{
+        }
+        .organization-chart-list{
+        }
+      }
+    }
+  }
 
 
   .header-search-btn.gnb-search{
@@ -277,6 +398,77 @@
 
 
 .ja{
+  /* 조직도 */
+  .organization-chart-wrap{
+    .organization-chart{
+      &-grid{
+      }
+      &-box{
+        font-size:1rem;
+        &.round{
+          font-size:1.125rem;
+        }
+        &:first-child{
+        }
+        &:nth-child(2){
+        }
+        &:last-child{
+        }
+      }
+      &-list{
+        &-item{
+          font-size:1rem;
+          &:first-child{
+          }
+          &:nth-child(2){
+          }
+          &:nth-child(3){
+          }
+        }
+      }
+      &-tit{
+        font-size: 1rem;
+      }
+      &-subtit{
+        font-size: 0.825rem;
+      }
+      &-team{
+        .list1-item{
+          font-size:0.825rem;
+          &:before{
+          }
+        }
+        .organization-chart-team-link{
+          &:hover{
+          }
+        }
+      }
+
+      &.type1{
+        .organization-chart-team{
+        }
+      }
+
+      &.type2{
+        .organization-chart-box{
+        }
+        .organization-chart-team{
+        }
+        .organization-chart-tit{
+        }
+      }
+
+      &.type3{
+        .organization-chart-tit{
+        }
+        .organization-chart-team{
+        }
+        .organization-chart-list{
+        }
+      }
+    }
+  }
+
   .text-box.contact{
     display:none;
   }
