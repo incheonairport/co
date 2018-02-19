@@ -298,6 +298,120 @@ $(function(){
   };
 
   /**
+   * TopPopup Class
+   */
+
+  TopPopup = new function(){
+
+    Index.apply(this);
+
+    // private
+    var $visualItem = $('.top-popup-item');
+    var easingType = this.easingType;
+
+    var currentVisualIndex = 0;
+    var nextVisualIndex = 0;
+    var totalPage = $visualItem.length;
+
+    var timeID;
+    var imageMovingTime = 1000;
+    var imageIntervalTime = 10000;
+
+    // private
+    var _initPaging = function(){
+
+      $('.top-popup-control-paging-number').find('.current').text(currentVisualIndex+1);
+      $('.top-popup-control-paging-number').find('.total').text(totalPage);
+
+    };
+
+    var _initPosition = function(){
+
+      $visualItem.hide().eq(0).show();
+
+    };
+
+    this.init = function(){
+
+      _initPosition();
+
+      _initPaging();
+
+    };
+
+    // public
+    this.fade = function(){
+
+      if( nextVisualIndex >= $visualItem.length ){
+
+        nextVisualIndex = 0;
+
+      } else if( nextVisualIndex <= -1 ){
+
+        nextVisualIndex = $visualItem.length-1;
+
+      }
+
+      $visualItem.eq(currentVisualIndex).stop().fadeOut(imageMovingTime, easingType);
+      $visualItem.eq(nextVisualIndex).stop().fadeIn(imageMovingTime, easingType);
+
+      $('.top-popup-control-paging-number').find('.current').text(nextVisualIndex+1);
+
+      currentVisualIndex = nextVisualIndex;
+
+    };
+
+    this.rollAuto = function(){
+
+      var _fade = this.fade;
+
+      timeID = setInterval(function(){
+
+        nextVisualIndex = currentVisualIndex + 1;
+        _fade();
+
+      }, imageIntervalTime);
+
+    };
+
+    this.rollLeft = function(){
+
+      this.rollStop();
+
+      nextVisualIndex = currentVisualIndex + 1;
+      this.fade();
+
+    };
+
+    this.rollRight = function(){
+
+      this.rollStop();
+
+      nextVisualIndex = currentVisualIndex - 1;
+      this.fade();
+
+    };
+
+    this.rollStop = function(){
+
+      // stop rolling
+      clearInterval(timeID);
+
+    };
+
+    this.checkAnimate = function(){
+
+      return $visualItem.is(':animated');
+
+    };
+
+    // running in constructor when loading
+    this.init();
+    this.rollAuto();
+
+  };
+
+  /**
    * BottomBanner Class
    */
 
