@@ -186,7 +186,7 @@
           height: 1px;
           width: 1px;
           margin: -1px;
-          padding: 0px;
+          padding: 0;
           &+.today-label{
             padding-left: 30px;
             &:before {
@@ -324,8 +324,8 @@
   top:0;
   left:0;
   z-index:9999;
-
-  transition: all .3s;
+  transition: top .3s ease-out;
+  //transition: all .3s;
 
   &-site{
 
@@ -605,7 +605,7 @@
   top:60px;
   left:0;
   z-index:9998;
-  transition: all .3s;
+  transition:top .3s ease-out;
   //transition:all .3s ease-out;
   //transition:all .3s ease-out;
 

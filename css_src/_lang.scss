@@ -1,4 +1,7 @@
 .en{
+  &.main{
+    font-size:15px;
+  }
   font-size:14px;
 
   footer{
@@ -302,9 +305,9 @@
 
 .ch{
 
-  .text-box.contact{
-    display:none;
-  }
+  //.text-box.contact{
+  //  display:none;
+  //}
 
   * {
     font-family: 'Noto Sans SC', roboto, spoqa ,sans-serif!important;
@@ -469,9 +472,9 @@
     }
   }
 
-  .text-box.contact{
-    display:none;
-  }
+  //.text-box.contact{
+  //  display:none;
+  //}
   * {
     font-family: 'Noto Sans JP', roboto, spoqa, sans-serif!important;
   }

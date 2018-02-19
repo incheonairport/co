@@ -69,6 +69,7 @@
     &-nav {
       &-list {
         width: 100%;
+        margin-top: 6px;
         //display:flex;
         &-item {
           display:none;
@@ -92,7 +93,8 @@
           height:100%!important;
           font-size:0.825rem;
           line-height:1.3;
-          padding:5px;
+          padding:10px;
+          font-weight:600;
 
           position:relative;
 
@@ -102,6 +104,7 @@
             }
             background:#466fb7;
             color:#fff!important;
+            border-bottom: 1px solid #d9d9d9;
             //border:1px solid #d9d9d9!important;
             //display:block;
             //font-weight: 400;
@@ -754,6 +757,7 @@
     margin:30px 0;
     height: auto;
     padding:15px 0;
+    background-size:cover!important;
     &-inner {
     }
     &-descbox {
@@ -782,6 +786,7 @@
     margin-bottom:0;
     &-depth1{
       border-bottom: 1px solid #d9d9d9;
+      //border-bottom:0;
       &-item{
         &-link{
           padding:0 0 10px;
@@ -810,6 +815,12 @@
               display: none;
             }
           }
+        }
+        &:last-child{
+          .left-menu-depth1-item-link{
+            //border-bottom:1px solid #d9d9d9!important;
+          }
+
         }
       }
 
@@ -1001,9 +1012,12 @@
         content: attr(data-title);
         /*float: left;*/
         //text-align: center;
-        border-right: 1px solid #aaa;
+        //border-right: 1px solid #aaa;
+        position:relative;
+        top:0;
+        left:-20px;
         width: 50%;
-        font-size: 1rem;
+        font-size: 0.75rem;
         color: rgba(94, 93, 82, 0.75);
       }
       &.board-list{
@@ -1732,7 +1746,7 @@
         .w70{
           width: 40% !important;
           float: left;
-          margin: 40px 0 0 20px;
+          margin:0 0 0 20px;
           .history{
             text-align: left;
           }
@@ -1752,6 +1766,7 @@
     }
     &-list{
       font-size: 1rem;
+      text-align:left;
 
       &-item{
         font-weight:400;
@@ -3747,6 +3762,24 @@
   }
   .left-menu-depth2-item-link.on+.left-menu-depth2{
     display:block!important;
+  }
+
+  .menu-mobile-item{
+    display:block;
+  }
+
+
+  /* 모바일 탭 및 컨텐츠영역 간격 */
+  .tab-nav+.mt30{
+    margin-top:0;
+  }
+
+  .tab-nav+.article{
+    margin-top:30px;
+  }
+
+  .left-menu+.sub-contents .article{
+    margin-top:30px
   }
 
 }
