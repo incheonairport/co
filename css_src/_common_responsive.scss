@@ -3752,9 +3752,14 @@
     display:block;
   }
 
-  
+
+  /* 모바일 탭 및 컨텐츠영역 간격 */
   .tab-nav+.mt30{
     margin-top:0;
+  }
+
+  .tab-nav:last-child .article{
+    margin-bottom:15px;
   }
 
 }
