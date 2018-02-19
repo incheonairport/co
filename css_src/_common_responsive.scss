@@ -1725,16 +1725,18 @@
   /*연혁*/
   .co-history{
     .multi-col{
-      .w30{
-        width: 50% !important;
-        float: left;
-      }
-      .w70{
-        width: 40% !important;
-        float: left;
-        margin: 40px 0 0 20px;
-        .history{
-          text-align: left;
+      &.ceo{
+        .w30{
+          width: 50% !important;
+          float: left;
+        }
+        .w70{
+          width: 40% !important;
+          float: left;
+          margin: 40px 0 0 20px;
+          .history{
+            text-align: left;
+          }
         }
       }
     }
