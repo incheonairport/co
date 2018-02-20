@@ -1069,13 +1069,8 @@
             white-space: nowrap;
             width: 86%;
             display: block;
-            &.lock{
-              &:after{
-              }
-            }
-            &.good{
-              &:before{
-              }
+            img{
+              display: none;
             }
           }
         }
@@ -1105,7 +1100,12 @@
             display: none;
           }
           colgroup{
-            display: none;
+            col:first-child{
+              width: 80%;
+            }
+            col:nth-child(2){
+              width: 20%;
+            }
           }
         }
         &.nth3{
@@ -1116,7 +1116,12 @@
             display: none;
           }
           colgroup{
-            display: none;
+            col:first-child{
+              width: 80%;
+            }
+            col:nth-child(2){
+              width: 20%;
+            }
           }
         }
         &.nth4{
@@ -1127,7 +1132,12 @@
             display: none;
           }
           colgroup{
-            display: none;
+            col:first-child{
+              width: 80%;
+            }
+            col:nth-child(2){
+              width: 20%;
+            }
           }
         }
         &.last{
@@ -1138,7 +1148,12 @@
             display: none;
           }
           colgroup{
-            display: none;
+            col:first-child{
+              width: 80%;
+            }
+            col:nth-child(2){
+              width: 20%;
+            }
           }
         }
       }
