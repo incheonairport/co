@@ -3819,9 +3819,9 @@
       width: auto!important;
     }
     &.img-auto2{
-      width: auto;
-      display: block;
-      margin: 0 auto;
+      width: auto!important;
+      display: block!important;
+      margin: 0 auto!important;
     }
   }
 
