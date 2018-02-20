@@ -49,6 +49,14 @@
         font-size:0.5rem!important;
         //width:25%;
         white-space: normal;
+
+        .user-input-link{
+          font-size: 0.75rem!important;
+          height: auto!important;
+          padding: 5px!important;
+          line-height: inherit!important;
+          border-radius: 5px!important;
+        }
         .list1-item{
           padding-left: 2px;
           font-size:0.5rem!important;
@@ -1173,6 +1181,14 @@
           }
         }
       }
+      
+      &.img-none{
+        td{
+          img{
+            display: none!important;
+          }
+        }
+      }
       th{
         padding:5px;
         //text-align: center;
@@ -1393,8 +1409,8 @@
     }
 
     &.full-step{
-      padding: 15px 0;
-      border:0;
+      padding: 15px 15px;
+      //border:0;
     }
 
     &.advertising{
@@ -2788,6 +2804,8 @@
     background-position:center;
   }
   .digr-personal-information{
+    background-size:contain;
+    height: 210px;
     background: url(/static/co/images/digr_personal_information.png) no-repeat;
   }
   .digr-social-contribution01{
@@ -3827,6 +3845,9 @@
 
   .left-menu+.sub-contents .article{
     margin-top:30px
+  }
+  .btn-right{
+    position: static;
   }
 
   img{
