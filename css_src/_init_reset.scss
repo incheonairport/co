@@ -97,6 +97,14 @@ input{
   box-sizing:border-box;
 }
 
+button, input{
+  font-family:roboto, spoqa, sans-serif;
+}
+
+button{
+  cursor:pointer;
+}
+
 select {
   -webkit-appearance: none;
   -webkit-border-radius: 0px;

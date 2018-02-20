@@ -30,7 +30,7 @@
 </section>
 
 
-<section class="contents">
+<section class="contents statistics">
   <div class="inner-section">
 
     <!--=include _include/_left_menu_02.html -->
@@ -68,29 +68,194 @@
       <article class="article mt30">
         <div class="search-box day">
           <div class="search-box-input">
-            <label class="search-box-title pr15" for="start-day">시작일</label>
-            <div class="search-box-input-item">
-              <select class="search-box-input-select" id="start-day" title="검색을 원하시는 년도를 선택해 주세요">
-                <option>년</option>
-              </select>
-              <select class="search-box-input-select small" title="검색을 원하시는 월을 선택해 주세요">
-                <option>월</option>
-              </select>
+            <div class="f-left">
+              <div class="timesetting">
+                <label class="search-box-title ml15" for="S_YEAR">날짜</label>
+                <select id="S_YEAR" name="S_YEAR" class="search-box-input-select year">
+
+                  <option value="2017">
+                    2017
+                  </option>
+
+                  <option value="2016">
+                    2016
+                  </option>
+
+                </select>
+                <label class="search-box-title ml5" for="S_MONTH">년</label>
+
+                <select id="S_MONTH" name="S_MONTH" title="시작월" class="search-box-input-select month">
+
+
+                  <option value="01">
+                    01
+                  </option>
+
+
+                  <option value="02">
+                    02
+                  </option>
+
+
+                  <option value="03">
+                    03
+                  </option>
+
+
+                  <option value="04">
+                    04
+                  </option>
+
+
+                  <option value="05">
+                    05
+                  </option>
+
+
+                  <option value="06">
+                    06
+                  </option>
+
+
+                  <option value="07">
+                    07
+                  </option>
+
+
+                  <option value="08">
+                    08
+                  </option>
+
+
+                  <option value="09">
+                    09
+                  </option>
+
+
+                  <option value="10">
+                    10
+                  </option>
+
+
+                  <option value="11">
+                    11
+                  </option>
+
+
+                  <option value="12">
+                    12
+                  </option>
+
+                </select>
+                <label class="search-box-title ml5 pr15" for="S_MONTH">월</label>
+                <label class="search-box-title pr15" for="E_YEAR">~</label>
+
+                <select id="E_YEAR" name="E_YEAR" title="종료년도" class="search-box-input-select year">
+
+                  <option value="2017">2017</option>
+
+                  <option value="2016">2016</option>
+
+                </select>
+                <label class="search-box-title ml5" for="E_YEAR">년</label>
+                <select id="E_MONTH" name="E_MONTH" title="종료월" class="search-box-input-select month">
+
+
+                  <option value="01">
+                    01
+                  </option>
+
+
+                  <option value="02">
+                    02
+                  </option>
+
+
+                  <option value="03">
+                    03
+                  </option>
+
+
+                  <option value="04">
+                    04
+                  </option>
+
+
+                  <option value="05">
+                    05
+                  </option>
+
+
+                  <option value="06">
+                    06
+                  </option>
+
+
+                  <option value="07">
+                    07
+                  </option>
+
+
+                  <option value="08">
+                    08
+                  </option>
+
+
+                  <option value="09">
+                    09
+                  </option>
+
+
+                  <option value="10">
+                    10
+                  </option>
+
+
+                  <option value="11">
+                    11
+                  </option>
+
+
+                  <option value="12">
+                    12
+                  </option>
+
+                </select>
+                <label class="search-box-title ml5" for="E_MONTH">월</label>
+
+              </div>
             </div>
-            <label class="search-box-title pf15 ml15" for="end-day">종료일</label>
-            <div class="search-box-input-item">
-              <select class="search-box-input-select" id="end-day" title="검색을 원하시는 년도를 선택해 주세요">
-                <option>년</option>
-              </select>
-              <select class="search-box-input-select small" title="검색을 원하시는 월을 선택해 주세요">
-                <option>월</option>
-              </select>
-            </div>
-            <div class="search-box-btn-area ml10">
-              <button type="button" class="search-box-btn ico">검색</button>
+            <div class="search-box-btn-area ml10 a-btn">
+              <button type="button" class="search-box-btn ico" onclick="fncGoSearch()">검색</button>
             </div>
           </div>
         </div>
+
+        <!--<div class="search-box day">-->
+          <!--<div class="search-box-input">-->
+            <!--<label class="search-box-title pr15" for="start-day">시작일</label>-->
+            <!--<div class="search-box-input-item">-->
+              <!--<select class="search-box-input-select" id="start-day" title="검색을 원하시는 년도를 선택해 주세요">-->
+                <!--<option>년</option>-->
+              <!--</select>-->
+              <!--<select class="search-box-input-select small" title="검색을 원하시는 월을 선택해 주세요">-->
+                <!--<option>월</option>-->
+              <!--</select>-->
+            <!--</div>-->
+            <!--<label class="search-box-title pf15 ml15" for="end-day">종료일</label>-->
+            <!--<div class="search-box-input-item">-->
+              <!--<select class="search-box-input-select" id="end-day" title="검색을 원하시는 년도를 선택해 주세요">-->
+                <!--<option>년</option>-->
+              <!--</select>-->
+              <!--<select class="search-box-input-select small" title="검색을 원하시는 월을 선택해 주세요">-->
+                <!--<option>월</option>-->
+              <!--</select>-->
+            <!--</div>-->
+            <!--<div class="search-box-btn-area ml10">-->
+              <!--<button type="button" class="search-box-btn ico">검색</button>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
         <div class="multi-col double mt30">
           <div class="inner-col">
             <p class="guide-desc mark">정기 여객기 기준 인천공항 실적만 작성</p>

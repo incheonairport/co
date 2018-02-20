@@ -28,6 +28,8 @@
   }
 }
 
+
+
 .top-popup{
   width:100%;
   background:#272936;
@@ -221,7 +223,7 @@
   &-toggle{
     //width:100px;
     height:20px;
-
+    font-size: 0.75rem;
     border:0;
     background:#272936;
     color:#fff;
@@ -254,7 +256,7 @@
   &.down{
     .top-popup-toggle{
       //right:165px;
-      bottom:0;
+      bottom:0!important;
     }
   }
 }
@@ -499,7 +501,8 @@
         &-search{
           //width:22px;
           //height:27px;
-          font-weight:600;
+          font-size:1rem;
+          font-weight:400;
           color: #fff;
           width: auto;
           min-width: 70px;
