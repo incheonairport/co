@@ -1166,6 +1166,14 @@
           }
         }
       }
+      
+      &.img-none{
+        td{
+          img{
+            display: none!important;
+          }
+        }
+      }
       th{
         padding:5px;
         //text-align: center;
@@ -2781,6 +2789,8 @@
     background-position:center;
   }
   .digr-personal-information{
+    background-size:contain;
+    height: 210px;
     background: url(/static/co/images/digr_personal_information.png) no-repeat;
   }
   .digr-social-contribution01{
@@ -3820,6 +3830,9 @@
 
   .left-menu+.sub-contents .article{
     margin-top:30px
+  }
+  .btn-right{
+    position: static;
   }
 
   img{
