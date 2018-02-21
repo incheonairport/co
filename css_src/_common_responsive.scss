@@ -991,10 +991,39 @@
       word-break: inherit!important;
       word-wrap: break-word!important;
     }
+    .download{
+      text-indent:-999em;
+      width:30px;
+      min-width:30px;
+      height:30px;
+      margin: auto;
+      &:after{
+        display: block!important;
+        background: url(/static/co/images/spr_ico_global.png) no-repeat -68px -98px;
+        width: 13px;
+        height: 12px;
+        right:auto;
+      }
+    }
+    .arrow-small-right{
+      text-indent:-999em;
+      width:30px;
+      min-width:30px;
+      height:30px;
+      margin: auto;
+      &:after{
+        display: block!important;
+        background: url(/static/co/images/spr_ico_global.png) no-repeat -383px -99px;
+        width: 14px;
+        height: 12px;
+        right:auto;
+      }
+
+    }
     &.table-block{
       display:table!important;
       white-space: normal!important;
-      text-align: center;
+      text-align: center!important;
     }
     &.vt{
 
@@ -1069,6 +1098,8 @@
           span{
             font-size:0.75rem;
           }
+
+
           padding: 8px 0;
           & .board-list-link{
             font-size:0.825rem;
@@ -1093,10 +1124,10 @@
             &:first-child{
               width: 80% !important;
             }
-            &:nth-child(2){
+            &:nth-child(2),
+            &:nth-child(3){
               width: 20% !important;
             }
-            &:nth-child(3),
             &:nth-child(4),
             &:nth-child(5),
             &:nth-child(6){
