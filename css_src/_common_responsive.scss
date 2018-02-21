@@ -69,12 +69,18 @@
   }
 
   //항공통계인풋
+
+  .halfsearch{
+    .search-box-input-item{
+      width: calc(50% - 20px);
+    }
+  }
   section.statistics{
     .search-box{
       .search-box-title{
         display:none;
         &:first-child{
-          display:block;
+          //display:block;
 
         }
         &:nth-child(6){
@@ -1144,6 +1150,22 @@
           }
           td:first-child{
             display: none;
+          }
+          colgroup{
+            col{
+              &:first-child{
+                width: 80% !important;
+              }
+              &:nth-child(2){
+                width: 20% !important;
+              }
+              &:nth-child(3),
+              &:nth-child(4),
+              &:nth-child(5),
+              &:nth-child(6){
+                display: none;
+              }
+            }
           }
         }
         &.nth3{
@@ -2250,7 +2272,220 @@
     font-size:0.825rem!important;
     font-weight: 400!important;
   }
+
+  /* 항공통계 인풋 */
+  section.maxlabel{
+    .search-box{
+      .search-box-title{
+      }
+      &-input{
+        .f-left{
+          float: none;
+        }
+      }
+      .form-layout,.multi-col{
+        display:block;
+        .timesetting{
+
+          .search-box-title{
+
+            &:first-child{
+              width:20%;
+              display:block!important;
+            }
+
+          }
+
+          display: inline-block;
+          width: 100%;
+          .search-box-title{
+            display:none;
+          }
+          .search-box-input-select{
+            width:20%;
+            float:left;
+            font-size:0.825rem!important;
+            border-bottom:1px solid #818181;
+
+          }
+        }
+        .search-box-title{
+          width:20%;
+          float:left;
+          text-align:left;
+          border:none;
+        }
+        .search-box-input-select{
+          width:30%;
+          border-bottom:0;
+        }
+        .mt10{
+          margin:0;
+        }
+        .search-box-input-item{
+          .search-box-input-txt{
+            width:100%;
+          }
+          .search-box-input-select{
+            width:100%;
+          }
+          .search-box-input-select.medium{
+            width:100%;
+          }
+        }
+
+        .search-box-btn-area{
+          width:100%!important;
+        }
+      }
+      border:0;
+      .form-layout{
+        width:100%;
+      }
+      width:100%;
+      padding:0;
+      &-year-contents{
+        display:none;
+        &.on{
+          display:block;
+        }
+      }
+      &-title{
+        font-size:0.825rem;
+        display:block;
+        height:30px;
+        line-height:30px;
+        float: none;
+        padding-right:0;
+        text-align:center;
+        border:1px solid #a5a7aa;
+        position:static;
+        border-bottom:0;
+
+        &.pr15{
+          padding-right:0;
+        }
+      }
+      &-input{
+        display:block;
+        &-item{
+          width:80%;
+        }
+        &-select, &-txt{
+          width:100%;
+          float:none;
+        }
+        &-select{
+          width:100%;
+          &.medium{
+            width: 100%;
+          }
+          &.large{
+            width: 100%;
+          }
+          &.small{
+            width: 100%;
+          }
+          &.year{
+            width: 100%;
+          }
+          &.month{
+            width: 100%;
+          }
+          &.airline{
+            width: 100%;
+          }
+          &+.search-box-input-select{
+            width:100%;
+          }
+          &+.search-box-input-txt{
+            width:100%;
+          }
+          &.time{
+            width:100%;
+          }
+        }
+        &-txt{
+          width:100%;
+          &.medium{
+            width:100%;
+          }
+          &.large{
+            width:100%;
+          }
+        }
+        &-btn{
+          width:100%;
+          padding:0;
+          border: 0;
+          background: #323648;
+        }
+        &.select{
+          width:100%;
+        }
+      }
+      &-btn-area{
+        width:40px;
+        height:40px;
+        line-height:40px;
+        &.a-btn{
+          width: 100%!important;
+          height: auto;
+          a{
+            margin-top: 10px;
+            padding: 0;
+          }
+        }
+
+        &.view-large{
+          position: absolute;
+          bottom: 26px;
+        }
+        .search-box-btn{
+          width:100%!important;
+          height: 40px!important;
+
+          &.big{
+            width:100%;
+            height:40px;
+          }
+
+          &.view-large-btn{
+            padding:0 20px;
+            &.ico{
+              &:after{
+              }
+            }
+          }
+        }
+      }
+      &.day{
+        padding:0;
+        .day-option{
+          height: 40px;
+          &-link{
+            min-width:50%;
+            padding: 10px;
+            border: 1px solid #a5a7aa;
+            text-align: center;
+            &+.day-option-link{
+              border-left:1px solid #a5a7aa;
+            }
+            &.on{
+              font-weight: 800;
+              color: #323648;
+              border: 1px solid #323648;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .search-box{
+    .search-box-title{
+      display:none;
+    }
     &-input{
       .f-left{
         float: none;
@@ -2268,40 +2503,7 @@
     .form-layout,.multi-col{
 
       display:block;
-      .timesetting{
 
-          .search-box-title{
-
-            &:first-child{
-              width:20%;
-              display:block!important;
-            }
-
-          }
-
-        display: inline-block;
-        width: 100%;
-        .search-box-title{
-          display:none;
-        }
-        .search-box-input-select{
-          width:20%;
-          float:left;
-          font-size:0.825rem!important;
-          border-bottom:1px solid #818181;
-
-        }
-      }
-      .search-box-title{
-        width:20%;
-        float:left;
-        text-align:left;
-        border:none;
-      }
-      .search-box-input-select{
-        width:30%;
-        border-bottom:0;
-      }
       .mt10{
         margin:0;
       }
@@ -2474,6 +2676,7 @@
       }
     }
   }
+
 
   select{
     font-size:0.825rem!important;
