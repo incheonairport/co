@@ -147,7 +147,7 @@ $(function(){
           scrollBar: true,
           scrollingSpeed: 1000,
           responsiveWidth: 1081,
-          normalScrollElements: '.layer.system, .layer'
+          normalScrollElements: '.layer.system, .layer, .relsite'
         });
 
         //MainVisual.rollFirst();
