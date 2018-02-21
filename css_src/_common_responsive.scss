@@ -265,6 +265,7 @@
   .book-btn{
     float:left;
     width:48%;
+    margin-right: 5px;
   }
 
   td{
@@ -1078,7 +1079,8 @@
             width: 86%;
             display: block;
             img{
-              display: none;
+              width: 8px!important;
+              margin-left: 10px;
             }
           }
         }
@@ -1086,17 +1088,22 @@
         th{
           font-size: 0.75rem;
         }
-        //colgroup {
-        //  col{
-        //    &:first-child{
-        //      width:20%!important;
-        //    }
-        //    &:last-child{
-        //      width:20%!important;
-        //    }
-        //    width:60%!important;
-        //  }
-        //}
+        colgroup{
+          col{
+            &:first-child{
+              width: 80% !important;
+            }
+            &:nth-child(2){
+              width: 20% !important;
+            }
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6){
+              display: none;
+            }
+          }
+        }
         .mobile{
           //display:none;
         }
@@ -1107,18 +1114,12 @@
           td:first-child{
             display: none;
           }
-          colgroup{
-           display: none;
-          }
         }
         &.nth3{
           th:nth-child(3){
             display: none;
           }
           td:nth-child(3){
-            display: none;
-          }
-          colgroup{
             display: none;
           }
         }
@@ -1129,18 +1130,12 @@
           td:nth-child(4){
             display: none;
           }
-          colgroup{
-            display: none;
-          }
         }
         &.last{
           th:last-child{
             display: none;
           }
           td:last-child{
-            display: none;
-          }
-          colgroup{
             display: none;
           }
         }
@@ -1571,41 +1566,6 @@
         min-height:inherit;
         &:before{
           display:none;
-        }
-        &.type1:before{
-
-        }
-
-        &.type2:before{
-
-        }
-
-        &.type3:before{
-
-        }
-
-        &.type4:before{
-
-        }
-
-        &.type5:before{
-
-        }
-
-        &.type6:before{
-
-        }
-        &.type7:before{
-
-        }
-        &.type8:before{
-
-        }
-        &.type9:before{
-
-        }
-        &.type10:before{
-
         }
       }
     }
@@ -2316,17 +2276,18 @@
       }
       .search-box-input-item{
         &.a-btn{
-          width: 100%!important;
+          width: calc( 100% - 40px )!important;
+        }
+        .search-box-input-txt{
+          width:50%;
         }
         .search-box-input-select{
-
-          width:100%;
+          width:50%;
           font-size:0.825rem!important;
-
-
+          float: left;
+          border-bottom: 1px solid #818181;
         }
-
-        width:80%;
+        //width:80%;
         //float:none;
         .search-box-input-select.medium{
           width:50%;
@@ -2334,7 +2295,7 @@
       }
 
       .search-box-btn-area{
-        width:100%!important;
+        width:40px!important;
       }
     }
     border:0;
@@ -3086,6 +3047,10 @@
 
   // 게시판 추후 정리필요
   .board-view{
+    img{
+      width: 100%!important;
+      height: auto!important;
+    }
     &.vt{
       white-space:normal;
     }
@@ -3093,9 +3058,6 @@
       border-bottom:1px solid #d9d9d9;
       &-tit{
         padding:10px;
-      }
-      &-date{
-
       }
       &-info{
         padding:20px;
