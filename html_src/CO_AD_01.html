@@ -1,312 +1,412 @@
 <!--=include _include/_header.html -->
 <section class="contents" id="top-contents"> <!--위치-->
-  <div class="location">
-    <div class="location-btn">
-      <button class="location-btn-minus ico" type="button">축소</button>
-      <button class="location-btn-plus ico" type="button">확대</button>
-      <button class="location-btn-print ico" type="button">인쇄</button>
-    </div>
-    <div class="location-bar">
-      <ul class="location-bar-nav">
-        <li class="location-bar-nav-item ico"><a class="location-bar-nav-item-link home ico" href="/co/ko/index.do">home</a></li>
-        <li class="location-bar-nav-item ico"><a class="location-bar-nav-item-link" href="/co_cnt/ko/intro/message/grengs/grengs.do">공사소개</a></li>
-        <li class="location-bar-nav-item ico"><a class="location-bar-nav-item-link" href="/co_cnt/ko/intro/organiza/orgint/orgint.do">조직</a></li>
-        <li class="location-bar-nav-item"><a class="location-bar-nav-item-link" href="/co_cnt/ko/intro/organiza/orgint/orgint.do">조직소개</a></li>
-      </ul>
-    </div>
-  </div>
-  <!--//위치-->
-  <div class="sub-top bg1">
-    <div class="sub-top-inner">
-      <div class="sub-top-descbox">
-        <div class="sub-top-descbox-text">
-          <h2 class="sub-top-descbox-tit">공사소개</h2>
+	<div class="location">
+		<div class="location-btn">
+			<button class="location-btn-minus ico" type="button">축소</button>
+			<button class="location-btn-plus ico" type="button">확대</button>
+			<button class="location-btn-print ico" type="button">인쇄</button>
+		</div>
+		<div class="location-bar">
+			<ul class="location-bar-nav">
+				<li class="location-bar-nav-item ico"><a class="location-bar-nav-item-link home ico" href="/co/ko/index.do">home</a></li>
+				<li class="location-bar-nav-item ico"><a class="location-bar-nav-item-link" href="/co_cnt/ko/intro/message/grengs/grengs.do">공사소개</a></li>
+				<li class="location-bar-nav-item ico"><a class="location-bar-nav-item-link" href="/co_cnt/ko/intro/organiza/orgint/orgint.do">조직</a></li>
+				<li class="location-bar-nav-item"><a class="location-bar-nav-item-link" href="/co_cnt/ko/intro/organiza/orgint/orgint.do">조직소개</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--//위치-->
+	<div class="sub-top bg1">
+		<div class="sub-top-inner">
+			<div class="sub-top-descbox">
+				<div class="sub-top-descbox-text">
+					<h2 class="sub-top-descbox-tit">공사소개</h2>
 
-          <h3 class="sub-top-descbox-sub">조직</h3></div>
-      </div>
-    </div>
-  </div>
+					<h3 class="sub-top-descbox-sub">조직</h3></div>
+			</div>
+		</div>
+	</div>
 </section>
 <section class="contents">
-  <div class="inner-section"> [[--ActionStart--]][[--h_co_lnb_1--]][[--Actionend--]]
+	<div class="inner-section">
+		<nav class="left-menu">
+			<ul class="left-menu-depth1">
+				<li class="left-menu-depth1-item"><a href="#" class="left-menu-depth1-item-link has-child close">CEO 메시지</a>
+					<ul class="left-menu-depth2">
+						<li class="menu-mobile-item">
+							<button type="button" class="menu-mobile-ui"><span>조직소개</span></button>
+						</li>
+						<li class="left-menu-depth2-item"><a id="grengs" href="javascript:openCMSLayerContents('intro','message','grengs');" class="left-menu-depth2-item-link">인사말</a></li>
+						<li class="left-menu-depth2-item"><a id="profil" href="javascript:openCMSLayerContents('intro','message','profil');" class="left-menu-depth2-item-link">프로필</a></li>
+					</ul>
+				</li>
+				<li class="left-menu-depth1-item"><a href="#" class="left-menu-depth1-item-link close has-child">일반현황</a>
+					<ul class="left-menu-depth2">
+						<li class="menu-mobile-item">
+							<button type="button" class="menu-mobile-ui"><span>조직소개</span></button>
+						</li>
+						<li class="left-menu-depth2-item"><a id="purbus" href="javascript:openCMSLayerContents('intro','general','purbus');" class="left-menu-depth2-item-link">설립목적 및 주요사업</a></li>
+						<li class="left-menu-depth2-item"><a id="vision" href="javascript:openCMSLayerContents('intro','general','vision');" class="left-menu-depth2-item-link">비전</a></li>
+						<li class="left-menu-depth2-item"><a id="iianum_iiasca" href="javascript:openCMSLayerContents('intro','general','iianum');" class="left-menu-depth2-item-link">한눈에 보는 IIAC</a></li>
+						<li class="left-menu-depth2-item"><a id="phapro" href="javascript:openCMSLayerContents('intro','general','phapro');" class="left-menu-depth2-item-link">4단계 건설사업</a></li>
+					</ul>
+				</li>
+				<li class="left-menu-depth1-item"><a href="#" class="left-menu-depth1-item-link close has-child">마일스톤</a>
+					<ul class="left-menu-depth2">
+						<li class="menu-mobile-item">
+							<button type="button" class="menu-mobile-ui"><span>조직소개</span></button>
+						</li>
+						<li class="left-menu-depth2-item"><a id="histor" href="javascript:openCMSLayerContents('intro','mileston','histor');" class="left-menu-depth2-item-link">연혁</a></li>
+						<li class="left-menu-depth2-item"><a id="fooair" href="javascript:openCMSLayerContents('intro','mileston','fooair');" class="left-menu-depth2-item-link">인천공항의 발자취</a></li>
+						<li class="left-menu-depth2-item"><a href="/co/ko/itr/photoHistoryList.do?ITEM_SE=6" class="left-menu-depth2-item-link">포토역사관</a></li>
+					</ul>
+				</li>
+				<li class="left-menu-depth1-item"><a href="#" class="left-menu-depth1-item-link has-child on open">조직</a>
+					<ul class="left-menu-depth2 on open">
+						<li class="menu-mobile-item">
+							<button type="button" class="menu-mobile-ui"><span>조직소개</span></button>
+						</li>
+						<li class="left-menu-depth2-item"><a id="orgint" href="javascript:openCMSLayerContents('intro','organiza','orgint');" class="left-menu-depth2-item-link on">조직소개</a></li>
+						<li class="left-menu-depth2-item"><a id="exeint" href="javascript:openCMSLayerContents('intro','organiza','exeint');" class="left-menu-depth2-item-link">임원소개</a></li>
+						<li class="left-menu-depth2-item"><a id="emplist" href="/co/ko/itr/employeeList.do" class="left-menu-depth2-item-link">직원 업무 및 연락처</a></li>
+						<li class="left-menu-depth2-item"><a id="effstr" href="javascript:openCMSLayerContents('intro','organiza','effstr');" class="left-menu-depth2-item-link">정원</a></li>
+					</ul>
+				</li>
+				<li class="left-menu-depth1-item"><a href="#" class="left-menu-depth1-item-link close has-child">열린 경영</a>
+					<ul class="left-menu-depth2">
+						<li class="menu-mobile-item">
+							<button type="button" class="menu-mobile-ui"><span>조직소개</span></button>
+						</li>
+						<li class="left-menu-depth2-item"><a id="sustai_staeng_sorere_crshva" href="javascript:openCMSLayerContents('intro','open','sustai');" class="left-menu-depth2-item-link">지속가능 경영</a></li>
+						<li class="left-menu-depth2-item"><a id="ethstr_ethedu_repcon_mofeed_emaexo_coofet_etprpr" href="javascript:openCMSLayerContents('intro','open','ethstr');"
+																								 class="left-menu-depth2-item-link">윤리경영</a></li>
+						<li class="left-menu-depth2-item"><a id="socoov_comcon_glcoac_cpasoc" href="javascript:openCMSLayerContents('intro','open','socoov');" class="left-menu-depth2-item-link">사회공헌</a></li>
+						<li class="left-menu-depth2-item"><a id="sygrov_dicoch_wicprp_strcom" href="javascript:openCMSLayerContents('intro','open','sygrov');" class="left-menu-depth2-item-link">동반성장</a></li>
+						<li class="left-menu-depth2-item"><a id="vianst_enmosy_inanma_atenma_warema_aqmaia_resman_policy_enmasy_envrep_ainome_nocobu_ainoge_quamea"
+																								 href="javascript:openCMSLayerContents('intro','open','vianst');" class="left-menu-depth2-item-link">환경경영</a></li>
+						<li class="left-menu-depth2-item"><a id="lcefsm_ensaef_eneind_carneu_awanpr" href="javascript:openCMSLayerContents('intro','open','lcefsm');" class="left-menu-depth2-item-link">에너지경영</a>
+						</li>
+						<li class="left-menu-depth2-item"><a id="cwroft_monsys_emvcpl" href="javascript:openCMSLayerContents('intro','open','cwroft');" class="left-menu-depth2-item-link">공정거래자율준수</a></li>
+					</ul>
+				</li>
+				<li class="left-menu-depth1-item"><a id="mamdis_stexau" href="/co_cnt/ko/intro/mamdis/mamdis.do" class="left-menu-depth1-item-link">경영공시</a>
+					<!--<ul class="left-menu-depth2">-->
+					<!--<li class="left-menu-depth2-item"><a id="fnctc147" href="/co/ko/cmm/cmmBbsList.do?FNCT_CODE=147" class="left-menu-depth2-item-link">일반현황 및 정보센터</a></li>-->
+					<!--<li class="left-menu-depth2-item"><a id="fnctc151" href="/co/ko/cmm/cmmBbsList.do?FNCT_CODE=151" class="left-menu-depth2-item-link">기관운영</a></li>-->
+					<!--<li class="left-menu-depth2-item"><a id="stexau" href="javascript:openCMSLayerContents('intro','mamdis','stexau');" class="left-menu-depth2-item-link">주요사업 및 경영성과</a></li>-->
+					<!--<li class="left-menu-depth2-item"><a id="fnctc127" href="/co/ko/cmm/cmmBbsList.do?FNCT_CODE=127" class="left-menu-depth2-item-link">대내외 평가 및 회의록</a></li>-->
+					<!--<li class="left-menu-depth2-item"><a id="aitrpe" href="javascript:openCMSLayerContents('intro','mamdis','aitrpe');" class="left-menu-depth2-item-link">경영실적</a></li>-->
+					<!--</ul>-->
+				</li>
+				<li class="left-menu-depth1-item"><a id="watoco" href="/co_cnt/ko/intro/watoco/watoco.do" class="left-menu-depth1-item-link">오시는 길</a></li>
+			</ul>
+		</nav>
+		<div class="sub-contents">
+			<h4 class="sub-contents-heading1">조직소개</h4>
+			<article class="article">
+				<div class="organization-chart-wrap">
+					<div class="organization-chart type1">
+						<div class="organization-chart-grid">
+							<div class="organization-chart-box round">사장</div>
+							<div class="organization-chart-box">이사회</div>
+							<div class="organization-chart-box line">상임감사위원</div>
+						</div>
+						<ul class="organization-chart-list">
+							<li class="organization-chart-list-item line"><span class="organization-chart-tit"> 비서실 </span></li>
+							<li class="organization-chart-list-item"><a class="organization-chart-tit" href="/co/ko/itr/employeeList.do?DEPT_NM=홍보기획팀">홍보실</a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=홍보기획팀">홍보기획팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=언론홍보팀">언론홍보팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
+								</ul>
+							</li>
+							<li class="organization-chart-list-item"><a class="organization-chart-tit" href="/co/ko/itr/employeeList.do?DEPT_NM=행정감사팀">감사실</a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=행정감사팀">행정감사팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=기술감사팀">기술감사팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=청렴감찰팀">청렴감찰팀</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="organization-chart type2">
+						<div class="organization-chart-grid">
+							<div class="organization-chart-box round">부사장</div>
+						</div>
+						<ul class="organization-chart-list">
+							<li class="organization-chart-list-item line"><a class="organization-chart-tit" href="/co/ko/itr/employeeList.do?DEPT_NM=기획관리팀">기획조정실</a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=기획관리팀">기획관리팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=경영전략팀">경영전략팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=예산팀">예산팀</a></li>
+								</ul>
+							</li>
 
-    <div class="sub-contents">
-      <h4 class="sub-contents-heading1">조직소개</h4>
-      <article class="article">
-        <div class="organization-chart-wrap">
-          <div class="organization-chart type1">
-            <div class="organization-chart-grid">
-              <div class="organization-chart-box round">사장</div>
-              <div class="organization-chart-box">이사회</div>
-              <div class="organization-chart-box">상임감사위원</div>
-            </div>
-            <ul class="organization-chart-list">
-              <li class="organization-chart-list-item"><span class="organization-chart-tit"> 비서실 </span></li>
-              <li class="organization-chart-list-item"><a class="organization-chart-tit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=홍보기획팀">홍보실</a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=홍보기획팀">홍보기획팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=언론홍보팀">언론홍보팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=국제협력팀">국제협력팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=의전팀">의전팀</a></li>
-                </ul>
-              </li>
-              <li class="organization-chart-list-item"><a class="organization-chart-tit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=행정감사팀">감사실</a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=행정감사팀">행정감사팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=기술감사팀">기술감사팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=청렴감찰팀">청렴감찰팀</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="organization-chart type2">
-            <div class="organization-chart-grid">
-              <div class="organization-chart-box round">부사장</div>
-            </div>
-            <ul class="organization-chart-list">
-              <li class="organization-chart-list-item"><a class="organization-chart-tit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=기획관리팀">기획조정실</a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=기획관리팀">기획관리팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=경영전략팀">경영전략팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=예산팀">예산팀</a></li>
-                </ul>
-              </li>
-              <li class="organization-chart-list-item"><a class="organization-chart-tit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=공항연구소">공항연구소</a></li>
-              <li class="organization-chart-list-item"><a class="organization-chart-tit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=상황관리팀">통합운영센터</a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=상황관리팀">상황관리팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=공항운영1팀">공항운영1팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=공항운영2팀">공항운영2팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=공항운영3팀">공항운영3팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=공항운영4팀">공항운영4팀</a></li>
-                </ul>
-              </li>
-              <li class="organization-chart-list-item"><a class="organization-chart-tit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=운영준비기획팀">T2운영준비단</a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=운영준비기획팀">운영준비기획팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=종합시운전팀">종합시운전팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=통합정보팀">통합정보팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=시스템통합팀">시스템통합팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=시험운영팀">시험운영팀</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="organization-chart type3 mt55">
-            <ul class="organization-chart-list">
-              <li class="organization-chart-list-item"><span class="organization-chart-tit">경영혁신본부</span> <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=경영혁신팀">
-                경영혁신처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=경영혁신팀">경영혁신팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=인사팀">인사팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=성과관리팀">성과관리팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=노무복지팀"> 상생경영처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=노무복지팀">노무복지팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=동반성장팀">동반성장팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=사회공헌팀">사회공헌팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=재무팀"> 재무처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=재무팀">재무팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=회계팀">회계팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=수입총괄팀">수입총괄팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=재산관리팀">재산관리팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=총무팀"> 경영지원처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=총무팀">총무팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=계약팀">계약팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=법무팀">법무팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=경영정보팀">경영정보팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=사무정보팀">사무정보팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=인재교육팀"> 인재개발원 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=인재교육팀">인재교육팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=항공교육팀">항공교육팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=글로벌교육팀">글로벌교육팀</a></li>
-                </ul>
-              </li>
-              <li class="organization-chart-list-item"><span class="organization-chart-tit">여객서비스본부</span> <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=운영기획팀">여객서비스처</a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=운영기획팀">운영기획팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=CS관리팀">CS관리팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=여객서비스팀">여객서비스팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=여객시설팀">여객시설팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=입주자지원센터">입주자지원센터</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=교통계획팀"> 교통운영처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=교통계획팀">교통계획팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=교통서비스팀">교통서비스팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=교통시설팀">교통시설팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=셔틀트레인팀">셔틀트레인팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=자기부상철도팀">자기부상철도팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=면세사업팀"> 상업시설처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=면세사업팀">면세사업팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=식음서비스팀">식음서비스팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=T2상업시설팀">T2상업시설팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=스마트공항팀"> 정보통신처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=스마트공항팀">스마트공항팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=여객정보팀">여객정보팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=운항통신팀">운항통신팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=통신시설운영팀">통신시설운영팀</a></li>
-                </ul>
-              </li>
-              <li class="organization-chart-list-item"><span class="organization-chart-tit">운항서비스본부</span> <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=운항계획팀">
-                운항지원처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=운항계획팀">운항계획팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=계류장운영팀">계류장운영팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=계류장관제팀">계류장관제팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=운항안전팀"> 운항시설처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=운항안전팀">운항안전팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=항공동화팀">항공동화팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=기반시설팀">기반시설팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=수하물시설팀"> 수하물운영처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=수하물시설팀">수하물시설팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=수하물운영1팀">수하물운영1팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=수하물운영2팀">수하물운영2팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=계기착륙팀"> 항행처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=계기착륙팀">계기착륙팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=관제통신팀">관제통신팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=레이더팀">레이더팀</a></li>
-                </ul>
-              </li>
-              <li class="organization-chart-list-item"><span class="organization-chart-tit">시설본부</span> <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=터미널건축팀">
-                터미널시설처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=터미널건축팀">터미널건축팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=기계시설팀">기계시설팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=승강시설팀">승강시설팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=시설환경팀">시설환경팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=토목조경팀"> 공항시설처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=토목조경팀">토목조경팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=플랜트시설팀">플랜트시설팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=공항건출팀">공항건출팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=에너지관리팀"> 에너지환경처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=에너지관리팀">에너지관리팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=전략계통팀">전략계통팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=전력운영팀">전력운영팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=환경관리팀">환경관리팀</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="organization-chart-list mt40">
-              <li class="organization-chart-list-item"><span class="organization-chart-tit">건설본부</span> <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=공항계획팀">
-                건설관리처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=공항계획팀">공항계획팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=사업관리팀">사업관리팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=기술조정팀">기술조정팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=안전품질팀">안전품질팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=토목지원팀"> 토목처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=토목지원팀">토목지원팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=토목공사팀">토목공사팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=조경팀">조경팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=터미널공사1팀"> 건축1처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=터미널공사1팀">터미널공사1팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=터미널공사2팀">터미널공사2팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=환경디자인팀">환경디자인팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=T2전면시설팀"> 건축2처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=T2전면시설팀">T2전면시설팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=부대건물팀">부대건물팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=기계설비팀"> 기계처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=기계설비팀">기계설비팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=수하물설비팀">수하물설비팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=탑승기계팀">탑승기계팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=전기시설팀"> 전기통신처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=전기시설팀">전기시설팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=등화시설팀">등화시설팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=통신시설팀">통신시설팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=보안시설팀">보안시설팀</a></li>
-                </ul>
-              </li>
-              <li class="organization-chart-list-item"><span class="organization-chart-tit">미래사업추진실</span> <a class="organization-chart-subtit"
-                                                                                                              href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=허브화기획팀"> 허브화전략처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=허브화기획팀">허브화기획팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=항공마케팅팀">항공마케팅팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=환승서비스팀">환승서비스팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=물류개발팀"> 물류처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=물류개발팀">물류개발팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=화물마케팅팀">화물마케팅팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=화물운영팀">화물운영팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=사업개발팀"> 복합도시사업처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=사업개발팀">사업개발팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=항공시설개발팀">항공시설개발팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=해외사업총괄팀"> 해외사업처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=해외사업총괄팀">해외사업총괄팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=해외사업1팀">해외사업1팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=해외사업2팀">해외사업2팀</a></li>
-                </ul>
-              </li>
-              <li class="organization-chart-list-item"><span class="organization-chart-tit">안전보안실</span> <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=보안계획팀">
-                항공보안처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=보안계획팀">보안계획팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=보안경비팀">보안경비팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=보안검색팀">보안검색팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=보안장비팀">보안장비팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=테러대응팀">테러대응팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=안전관리팀"> 공항안전처 </a>
-                <ul class="organization-chart-team">
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=안전관리팀">안전관리팀</a></li>
-                  <li class="list1-item"><a class="organization-chart-team-link" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=구조소방팀">구조소방팀</a></li>
-                </ul>
-                <a class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=사이버보안센터"> 사이버보안센터 </a> <a class="organization-chart-subtit"
-                                                                                                                                href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=비상계획단"> 비상계획단 </a> <a
-                        class="organization-chart-subtit" href="/co/${LANG_SE}/itr/employeeList.do?DEPT_NM=통합연대"> 통합연대 </a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="mt30 text-center"><a class="btn-type-normal ico arrow-normal-right" href="http://phonebook.airport.kr/phonebook/?cgCode=100" target="_blank"><strong>부서별 전화번호 바로가기</strong></a> <a
-                class="btn-type-normal btn2 ico arrow-point-right" href="/co/ko/itr/employeeList.do"><strong>직원별 전화번호 바로가기</strong></a></div>
-      </article>
-      <article class="article">
-        <div class="text-box contact">
-          <div class="text-box-headline-col">
-            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 문의 주시기 바랍니다.</h6></div>
-          <ul class="list1">
-            <li class="list1-item "><strong>담당부서 :</strong> 경영전략팀</li>
-            <li class="list1-item "><strong>TEL :</strong> 32-741-2161, 2162</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </div>
+							<li class="organization-chart-list-item line1"><a class="organization-chart-tit" href="/co/ko/itr/employeeList.do?DEPT_NM=인재교육팀">인재개발원</a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=인재교육팀">인재교육팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=글로벌교육팀">글로벌교육팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=항공교육팀">항공교육팀</a></li>
+								</ul>
+							</li>
+							<li class="organization-chart-list-item line"><a class="organization-chart-tit" href="/co/ko/itr/employeeList.do?DEPT_NM=운영총괄팀">통합운영센터</a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=운영총괄팀">운영총괄팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항운영1팀">공항운영1팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항운영2팀">공항운영2팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항운영3팀">공항운영3팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항운영4팀">공항운영4팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항운영4팀">공항운영4팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항운영4팀">공항운영4팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항운영4팀">공항운영4팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항운영4팀">공항운영4팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항운영4팀">공항운영4팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항운영4팀">공항운영4팀</a></li>
+								</ul>
+							</li>
+							<li class="organization-chart-list-item"><a class="organization-chart-tit" href="/co/ko/itr/employeeList.do?DEPT_NM=공항연구소">공항연구소</a></li>
+						</ul>
+					</div>
+					<div class="organization-chart type3 mt30">
+						<ul class="organization-chart-list">
+							<li class="organization-chart-list-item line"><span class="organization-chart-tit">경영혁신본부</span>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=경영혁신팀">경영혁신처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=경영혁신팀">경영혁신팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=인사팀">인사팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=성과관리팀">성과관리팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=노무후생팀"> 상생경영처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=노무후생팀">노무후생팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=정규직전환팀">정규직전환팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=자회사협력팀">자회사협력팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=협력사총괄팀">협력사총괄팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=재무팀"> 재무처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=재무팀">재무팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=회계팀">회계팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=수입총괄팀">수입총괄팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=재산관리팀">재산관리팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=총무팀"> 경영지원처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=총무팀">총무팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=사회공헌">사회공헌팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=계약팀">계약팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=법무팀">법무팀</a></li>
+								</ul>
+							</li>
+							<li class="organization-chart-list-item line1"><span class="organization-chart-tit">여객서비스본부</span>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=운영기획팀">여객서비스처</a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=운영기획팀">운영기획팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=CS관리팀">CS관리팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=여객서비스1팀">여객서비스1팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=여객서비스2팀">여객서비스2팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=교통계획팀"> 교통서비스처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=교통계획팀">교통계획팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=교통서비스1팀">교통서비스1팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=교통서비스2팀">교통서비스2팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=상업기획팀"> 상업시설처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=상업기획팀">상업기획팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=면세사업팀">면세사업팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=식음서비스팀">식음서비스팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=여객시설팀"> 여객시설처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=여객시설팀">여객시설팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=교통시설팀">교통시설팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=입주자지원센터">입주자지원센터</a></li>
+								</ul>
+							</li>
+							<li class="organization-chart-list-item line"><span class="organization-chart-tit">운항서비스본부</span>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=운항계획팀">운항지원처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=운항계획팀">운항계획팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=계류장운영팀">계류장운영팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=계류장관제팀">계류장관제팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=운항안전팀"> 운항시설처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=운항안전팀">운항안전팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=항공동화팀">항공동화팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=기반시설팀">기반시설팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=수하물시설팀"> 수하물운영처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=수하물시설팀">수하물시설팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=수하물운영1팀">수하물운영1팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=수하물운영2팀">수하물운영2팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=계기착륙팀"> 항행처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=계기착륙팀">계기착륙팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=항공통신팀">항공통신팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항레이더팀">공항레이더팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=지상레이더팀">지상레이더팀</a></li>
+								</ul>
+							</li>
+							<li class="organization-chart-list-item"><span class="organization-chart-tit">시설본부</span>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=터미널건축팀">터미널시설처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=터미널건축팀">터미널건축팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=시설환경팀">시설환경팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=T1리뉴얼팀">T1리뉴얼팀</a></li>
+
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=토목시설팀"> 공항시설처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=토목시설팀">토목시설팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=조경팀">조경팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=플랜트시설팀">플랜트시설팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항건축팀">공항건축팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=기계시설팀"> 기계시설처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=기계시설팀">기계시설팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=승강시설팀">승강시설팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=셔틀트레인팀">셔틀트레인팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=자기부상철도팀">자기부상철도팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=에너지관리팀"> 에너지환경처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=에너지관리팀">에너지관리팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=전력계통팀">전력계통팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=전력시설팀">전력시설팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=전력운영팀">전력운영팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=환경관리팀">환경관리팀</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="organization-chart-list mt40">
+							<li class="organization-chart-list-item"><span class="organization-chart-tit">건설본부</span>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=공항계획팀"> 건설기획처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=공항계획팀">공항계획팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=사업조정팀">사업조정팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=건설기술팀">건설기술팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=토목계획팀"> 토목처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=토목계획팀">토목계획팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=AS토목팀">AS토목팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=LS토목팀">LS토목팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=터미널건설팀"> 건축기계처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=터미널건설팀">터미널건설팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=부대건물팀">부대건물팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=기계설비팀">기계설비팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=수하물설비팀">수하물설비팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=전기설비팀"> 전기통신처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=전기설비팀">전기설비팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=항행시설팀">항행시설팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=통신보안팀">통신보안팀</a></li>
+								</ul>
+							</li>
+							<li class="organization-chart-list-item"><span class="organization-chart-tit">미래사업추진실</span>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=허브화기획팀">허브화전략처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=허브화기획팀">허브화기획팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=국제협력팀">국제협력팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=항공마케팅팀">항공마케팅팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=물류마케팅팀">물류마케팅팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=일자리기획팀"> 복합도시사업처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=일자리기획팀">일자리기획팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=복합리조트팀">복합리조트팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=항공시설개발팀">항공시설개발팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=물류개발팀">물류개발팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=화물운영팀">화물운영팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=해외사업총괄팀"> 해외사업처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=해외사업총괄팀">해외사업총괄팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=해외사업1팀">해외사업1팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=해외사업2팀">해외사업2팀</a></li>
+								</ul>
+							</li>
+							<li class="organization-chart-list-item"><span class="organization-chart-tit">안전보안실</span>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=보안계획팀">항공보안처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=보안계획팀">보안계획팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=보안검색팀">보안검색팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=테러대응팀">테러대응팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=보안경비팀"> 경비보안처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=보안경비팀">보안경비팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=보안장비팀">보안장비팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=출입증관리센터">출입증관리센터</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=재난관리팀"> 공항안전처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=재난관리팀">재난관리팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=안전관리팀">안전관리팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=구조소방팀">구조소방팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=비상계획단"> 비상계획단 </a>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=통합연대"> 통합연대 </a>
+							</li>
+
+							<li class="organization-chart-list-item"><span class="organization-chart-tit">스마트추진단</span>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=스마트공항팀">스마트공항처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=스마트공항팀">스마트공항팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=스마트서비스팀">스마트서비스팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=운항통신팀">운항통신팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=통신시설운영팀">통신시설운영팀</a></li>
+								</ul>
+								<a class="organization-chart-subtit" href="/co/ko/itr/employeeList.do?DEPT_NM=경영정보팀"> 스마트정보처 </a>
+								<ul class="organization-chart-team">
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=경영정보팀">경영정보팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=사무정보팀">사무정보팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=통합정보팀">통합정보팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=시스템통합팀">시스템통합팀</a></li>
+									<li class="list1-item"><a class="organization-chart-team-link" href="/co/ko/itr/employeeList.do?DEPT_NM=사이버보안센터">사이버보안센터</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mt30 text-center">
+					<a class="btn-type-normal ico arrow-normal-right" href="http://phonebook.airport.kr/phonebook/?cgCode=100" target="_blank"><strong>부서별 전화번호 바로가기</strong></a>
+					<a class="btn-type-normal btn2 ico arrow-point-right" href="/co/ko/itr/employeeList.do"><strong>직원별 전화번호 바로가기</strong></a>
+				</div>
+			</article>
+			<article class="article">
+				<div class="text-box contact">
+					<div class="text-box-headline-col">
+						<h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 문의 주시기 바랍니다.</h6></div>
+					<ul class="list1">
+						<li class="list1-item "><strong>담당부서 :</strong> 경영전략팀</li>
+						<li class="list1-item "><strong>TEL :</strong> 032-741-2161, 2162</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+	</div>
 </section>
 <!--=include _include/_footer.html -->

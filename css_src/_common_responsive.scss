@@ -1108,12 +1108,7 @@
             display: none;
           }
           colgroup{
-            col:first-child{
-              width: 80%;
-            }
-            col:nth-child(2){
-              width: 20%;
-            }
+           display: none;
           }
         }
         &.nth3{
@@ -1124,12 +1119,7 @@
             display: none;
           }
           colgroup{
-            col:first-child{
-              width: 80%;
-            }
-            col:nth-child(2){
-              width: 20%;
-            }
+            display: none;
           }
         }
         &.nth4{
@@ -1140,12 +1130,7 @@
             display: none;
           }
           colgroup{
-            col:first-child{
-              width: 80%;
-            }
-            col:nth-child(2){
-              width: 20%;
-            }
+            display: none;
           }
         }
         &.last{
@@ -1156,12 +1141,7 @@
             display: none;
           }
           colgroup{
-            col:first-child{
-              width: 80%;
-            }
-            col:nth-child(2){
-              width: 20%;
-            }
+            display: none;
           }
         }
       }
@@ -2995,6 +2975,9 @@
     padding-bottom: 15px;
     border-bottom: 1px solid #d9d9d9;
     background: none;
+    &:before{
+      display: none;
+    }
     .organization-chart{
       text-align:center;
       &-grid{
@@ -3015,7 +2998,11 @@
           font-size:1rem;
           border-radius:0;
         }
-
+        &.line {
+          &:after {
+            display: none;
+          }
+        }
       }
       &-list{
         float:none;
@@ -3026,6 +3013,16 @@
           font-size:1rem;
           font-weight:400;
           margin-bottom:8px;
+          &.line{
+            &:after{
+              display: none;
+            }
+          }
+          &.line1 {
+            &:after {
+              display: none;
+            }
+          }
           &:first-child{
             margin-left:0;
           }

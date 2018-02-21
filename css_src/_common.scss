@@ -4990,9 +4990,18 @@ label.d-none{
 .organization-chart-wrap{
   width: 100%;
   overflow: hidden;
-  background: url(/static/co/images/digr_organization_chart.png) no-repeat 0 -12px;
+  //background: url(/static/co/images/digr_organization_chart.png) no-repeat 0 -12px;
   padding-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 2000px;
+    background: #d9d9d9;
+  }
   .organization-chart{
     @extend %clearfix;
     text-align:center;
@@ -5014,6 +5023,18 @@ label.d-none{
         padding:20px 0;
         font-size:1.25rem;
         border-radius:50px;
+      }
+      &.line{
+        &:after{
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50px;
+          left: 50%;
+          width: 1px;
+          height: 44px;
+          background: #d9d9d9;
+        }
       }
       &:first-child{
         left:0;
@@ -5039,6 +5060,33 @@ label.d-none{
         color:#fff;
         font-size:1.125rem;
         font-weight:700;
+        &.line{
+          position: relative;
+          &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: -22px;
+            left: 50%;
+            width: 220px;
+            height: 22px;
+            border: 1px solid #d9d9d9;
+            border-bottom: 0;
+          }
+        }
+        &.line1 {
+          position: relative;
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -22px;
+            left: 50%;
+            width: 230px;
+            height: 1px;
+            border-top : 1px solid #d9d9d9;
+          }
+        }
         &:first-child{
           margin-left:0;
         }
@@ -5102,6 +5150,10 @@ label.d-none{
     }
 
     &.type3{
+      background: white;
+      position: relative;
+      z-index: 9999;
+      padding-top: 22px;
       .organization-chart-tit{
         background:#dd7713;
       }
