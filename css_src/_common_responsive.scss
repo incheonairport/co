@@ -1169,6 +1169,14 @@
             display: none;
           }
         }
+        &.nth5{
+          th:nth-child(5){
+            display: none;
+          }
+          td:nth-child(5){
+            display: none;
+          }
+        }
         &.last{
           th:last-child{
             display: none;

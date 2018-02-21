@@ -159,6 +159,11 @@
 
   .ja{
 
+    .header-util-cs-link {
+      font-size: 0.75rem;
+      letter-spacing: -1px;
+    }
+
     .btn{
       &-type{
         &-small{
@@ -170,7 +175,7 @@
     }
 
     .gnb-depth1{
-      width: auto;
+      width: 295px;
     }
 
     .co-history-list-year{

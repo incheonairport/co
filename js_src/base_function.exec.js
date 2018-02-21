@@ -64,6 +64,26 @@ $(function(){
       $('.organization-chart-subtit',this).height(titleHighestBox);
     });
 
+    $('.organization-chart.type3').each(function(){
+      var titleTypeThreeHighestBox = 0;
+      $('.organization-chart-tit', this).each(function(){
+        if($(this).height() > titleTypeThreeHighestBox)
+          titleTypeThreeHighestBox = $(this).height();
+      });
+      $('.organization-chart-tit',this).height(titleTypeThreeHighestBox);
+    });
+
+    $('.organization-chart.type2').each(function(){
+      var titleTypeTwoHighestBox = 0;
+      $('.organization-chart-tit', this).each(function(){
+        if($(this).height() > titleTypeTwoHighestBox)
+          titleTypeTwoHighestBox = $(this).height();
+      });
+      $('.organization-chart-tit',this).height(titleTypeTwoHighestBox);
+    });
+
+
+
   })();
 
   // 공사 메인 탭 모바일
