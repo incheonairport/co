@@ -1,6 +1,15 @@
 @media screen and (max-width:1080px){
 
   .en{
+    .btn{
+      &-type{
+        &-small{
+          height: auto;
+          line-height: 1.4;
+          padding: 5px;
+        }
+      }
+    }
 
     .list1{
       &-item{
@@ -90,6 +99,16 @@
 
   .ch{
 
+    .btn{
+      &-type{
+        &-small{
+          height: auto;
+          line-height: 1.4;
+          padding: 5px;
+        }
+      }
+    }
+
       .gnb-depth1{
         width: auto;
       }
@@ -139,6 +158,16 @@
 
 
   .ja{
+
+    .btn{
+      &-type{
+        &-small{
+          height: auto;
+          line-height: 1.4;
+          padding: 5px;
+        }
+      }
+    }
 
     .gnb-depth1{
       width: auto;

@@ -629,6 +629,7 @@
     &.double{
       .inner-col{
         &.w-auto{
+          padding-right: 0;
         }
         &.img-area{
           text-align:center;
@@ -660,21 +661,7 @@
         }
       }
     }
-    &.triple{
-      .inner-col{
 
-      }
-    }
-    &.four{
-      .inner-col{
-
-      }
-    }
-    &.five{
-      .inner-col{
-
-      }
-    }
     &.unbalance{
       .inner-col{
         margin-left:0;
@@ -805,8 +792,6 @@
     height: auto;
     padding:15px 0;
     background-size:cover!important;
-    &-inner {
-    }
     &-descbox {
       font-size: 1.5rem;
       &-text {
@@ -2839,6 +2824,7 @@
     height: 164px;
     background-size:contain;
     background-position:center;
+    overflow: hidden;
   }
   .digr-construction-case03{
     height: 104px;
