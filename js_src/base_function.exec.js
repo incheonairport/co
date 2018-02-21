@@ -26,6 +26,40 @@
 
 $(function(){
 
+  // 공사 조직도 높이 동일
+  (function(){
+    $('.organization-chart.type1').each(function(){
+      var elementHeights = $(this).find('.organization-chart-team').map(function() {
+        return $(this).height();
+      }).get();
+      var maxHeight = Math.max.apply(null, elementHeights);
+      $(this).find('.organization-chart-team').outerHeight(maxHeight);
+    });
+
+    $('.organization-chart.type2').each(function(){
+      var elementHeights = $(this).find('.organization-chart-team').map(function() {
+        return $(this).height();
+      }).get();
+      var maxHeight = Math.max.apply(null, elementHeights);
+      $(this).find('.organization-chart-team').outerHeight(maxHeight);
+    });
+
+    $('.organization-chart.type3').each(function(){
+      var elementHeights = $(this).find('.organization-chart-team').map(function() {
+        return $(this).height();
+      }).get();
+      var maxHeight = Math.max.apply(null, elementHeights);
+      $(this).find('.organization-chart-team').outerHeight(maxHeight);
+    });
+
+    $('.organization-chart.type3').each(function(){
+      var elementHeights = $(this).find('.organization-chart-subtit').map(function() {
+        return $(this).height();
+      }).get();
+      var maxHeight = Math.max.apply(null, elementHeights);
+      $(this).find('.organization-chart-subtit').outerHeight(maxHeight);
+    });
+  })();
 
   // 공사 메인 탭 모바일
   (function(){
