@@ -29,36 +29,41 @@ $(function(){
   // 공사 조직도 높이 동일
   (function(){
     $('.organization-chart.type1').each(function(){
-      var elementHeights = $(this).find('.organization-chart-team').map(function() {
-        return $(this).height();
-      }).get();
-      var maxHeight = Math.max.apply(null, elementHeights);
-      $(this).find('.organization-chart-team').outerHeight(maxHeight);
+      var typeOnehighestBox = 0;
+      $('.organization-chart-team', this).each(function(){
+        if($(this).height() > typeOnehighestBox)
+          typeOnehighestBox = $(this).height();
+      });
+      $('.organization-chart-team',this).height(typeOnehighestBox);
     });
 
     $('.organization-chart.type2').each(function(){
-      var elementHeights = $(this).find('.organization-chart-team').map(function() {
-        return $(this).height();
-      }).get();
-      var maxHeight = Math.max.apply(null, elementHeights);
-      $(this).find('.organization-chart-team').outerHeight(maxHeight);
+      var typeTwohighestBox = 0;
+      $('.organization-chart-team', this).each(function(){
+        if($(this).height() > typeTwohighestBox)
+          typeTwohighestBox = $(this).height();
+      });
+      $('.organization-chart-team',this).height(typeTwohighestBox);
     });
 
     $('.organization-chart.type3').each(function(){
-      var elementHeights = $(this).find('.organization-chart-team').map(function() {
-        return $(this).height();
-      }).get();
-      var maxHeight = Math.max.apply(null, elementHeights);
-      $(this).find('.organization-chart-team').outerHeight(maxHeight);
+      var typeThreehighestBox = 0;
+      $('.organization-chart-team', this).each(function(){
+        if($(this).height() > typeThreehighestBox)
+          typeThreehighestBox = $(this).height();
+      });
+      $('.organization-chart-team',this).height(typeThreehighestBox);
     });
 
     $('.organization-chart.type3').each(function(){
-      var elementHeights = $(this).find('.organization-chart-subtit').map(function() {
-        return $(this).height();
-      }).get();
-      var maxHeight = Math.max.apply(null, elementHeights);
-      $(this).find('.organization-chart-subtit').outerHeight(maxHeight);
+      var titleHighestBox = 0;
+      $('.organization-chart-subtit', this).each(function(){
+        if($(this).height() > titleHighestBox)
+          titleHighestBox = $(this).height();
+      });
+      $('.organization-chart-subtit',this).height(titleHighestBox);
     });
+
   })();
 
   // 공사 메인 탭 모바일

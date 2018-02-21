@@ -57,75 +57,75 @@
   }
 
   /* 조직도 */
-  .organization-chart-wrap{
-    .organization-chart{
-      &-grid{
-      }
-      &-box{
-        font-size:1rem;
-        &.round{
-          font-size:1.125rem;
-        }
-        &:first-child{
-        }
-        &:nth-child(2){
-        }
-        &:last-child{
-        }
-      }
-      &-list{
-        &-item{
-          font-size:1rem;
-          &:first-child{
-          }
-          &:nth-child(2){
-          }
-          &:nth-child(3){
-          }
-        }
-      }
-      &-tit{
-        font-size: 0.825rem;
-      }
-      &-subtit{
-        font-size: 0.825rem;
-      }
-      &-team{
-        .list1-item{
-          font-size:0.825rem;
-          &:before{
-          }
-        }
-        .organization-chart-team-link{
-          &:hover{
-          }
-        }
-      }
-
-      &.type1{
-        .organization-chart-team{
-        }
-      }
-
-      &.type2{
-        .organization-chart-box{
-        }
-        .organization-chart-team{
-        }
-        .organization-chart-tit{
-        }
-      }
-
-      &.type3{
-        .organization-chart-tit{
-        }
-        .organization-chart-team{
-        }
-        .organization-chart-list{
-        }
-      }
-    }
-  }
+  //.organization-chart-wrap{
+  //  .organization-chart{
+  //    &-grid{
+  //    }
+  //    &-box{
+  //      font-size:1rem;
+  //      &.round{
+  //        font-size:1.125rem;
+  //      }
+  //      &:first-child{
+  //      }
+  //      &:nth-child(2){
+  //      }
+  //      &:last-child{
+  //      }
+  //    }
+  //    &-list{
+  //      &-item{
+  //        font-size:1rem;
+  //        &:first-child{
+  //        }
+  //        &:nth-child(2){
+  //        }
+  //        &:nth-child(3){
+  //        }
+  //      }
+  //    }
+  //    &-tit{
+  //      font-size: 0.825rem;
+  //    }
+  //    &-subtit{
+  //      font-size: 0.825rem;
+  //    }
+  //    &-team{
+  //      .list1-item{
+  //        font-size:0.825rem;
+  //        &:before{
+  //        }
+  //      }
+  //      .organization-chart-team-link{
+  //        &:hover{
+  //        }
+  //      }
+  //    }
+  //
+  //    &.type1{
+  //      .organization-chart-team{
+  //      }
+  //    }
+  //
+  //    &.type2{
+  //      .organization-chart-box{
+  //      }
+  //      .organization-chart-team{
+  //      }
+  //      .organization-chart-tit{
+  //      }
+  //    }
+  //
+  //    &.type3{
+  //      .organization-chart-tit{
+  //      }
+  //      .organization-chart-team{
+  //      }
+  //      .organization-chart-list{
+  //      }
+  //    }
+  //  }
+  //}
 
 
   .header-search-btn.gnb-search{
@@ -405,75 +405,75 @@
 
 .ja{
   /* 조직도 */
-  .organization-chart-wrap{
-    .organization-chart{
-      &-grid{
-      }
-      &-box{
-        font-size:1rem;
-        &.round{
-          font-size:1.125rem;
-        }
-        &:first-child{
-        }
-        &:nth-child(2){
-        }
-        &:last-child{
-        }
-      }
-      &-list{
-        &-item{
-          font-size:1rem;
-          &:first-child{
-          }
-          &:nth-child(2){
-          }
-          &:nth-child(3){
-          }
-        }
-      }
-      &-tit{
-        font-size: 1rem;
-      }
-      &-subtit{
-        font-size: 0.825rem;
-      }
-      &-team{
-        .list1-item{
-          font-size:0.825rem;
-          &:before{
-          }
-        }
-        .organization-chart-team-link{
-          &:hover{
-          }
-        }
-      }
-
-      &.type1{
-        .organization-chart-team{
-        }
-      }
-
-      &.type2{
-        .organization-chart-box{
-        }
-        .organization-chart-team{
-        }
-        .organization-chart-tit{
-        }
-      }
-
-      &.type3{
-        .organization-chart-tit{
-        }
-        .organization-chart-team{
-        }
-        .organization-chart-list{
-        }
-      }
-    }
-  }
+  //.organization-chart-wrap{
+  //  .organization-chart{
+  //    &-grid{
+  //    }
+  //    &-box{
+  //      font-size:1rem;
+  //      &.round{
+  //        font-size:1.125rem;
+  //      }
+  //      &:first-child{
+  //      }
+  //      &:nth-child(2){
+  //      }
+  //      &:last-child{
+  //      }
+  //    }
+  //    &-list{
+  //      &-item{
+  //        font-size:1rem;
+  //        &:first-child{
+  //        }
+  //        &:nth-child(2){
+  //        }
+  //        &:nth-child(3){
+  //        }
+  //      }
+  //    }
+  //    &-tit{
+  //      font-size: 1rem;
+  //    }
+  //    &-subtit{
+  //      font-size: 0.825rem;
+  //    }
+  //    &-team{
+  //      .list1-item{
+  //        font-size:0.825rem;
+  //        &:before{
+  //        }
+  //      }
+  //      .organization-chart-team-link{
+  //        &:hover{
+  //        }
+  //      }
+  //    }
+  //
+  //    &.type1{
+  //      .organization-chart-team{
+  //      }
+  //    }
+  //
+  //    &.type2{
+  //      .organization-chart-box{
+  //      }
+  //      .organization-chart-team{
+  //      }
+  //      .organization-chart-tit{
+  //      }
+  //    }
+  //
+  //    &.type3{
+  //      .organization-chart-tit{
+  //      }
+  //      .organization-chart-team{
+  //      }
+  //      .organization-chart-list{
+  //      }
+  //    }
+  //  }
+  //}
 
   //.text-box.contact{
   //  display:none;
