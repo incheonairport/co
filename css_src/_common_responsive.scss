@@ -13,6 +13,7 @@
         border-bottom:0;
         .search-box-input-txt{
           border-bottom:0;
+          width: 100%;
         }
         &:last-child{
           width:100%;
@@ -27,6 +28,16 @@
       }
       .search-box-input-select{
         width:100%!important;
+        &.medium{
+          width: 33.33%!important;
+          border-right: 1px solid #818181;
+          &:last-child{
+            border-right: 0;
+          }
+        }
+      }
+      .search-box-btn-area{
+        width: 100%!important;
       }
     }
 
@@ -56,6 +67,12 @@
           padding: 5px!important;
           line-height: inherit!important;
           border-radius: 5px!important;
+          &.min {
+            min-width: 50% !important;
+            height: 20px !important;;
+            line-height: 20px !important;;
+            font-size: 0.75rem!important;
+          }
         }
         .list1-item{
           padding-left: 2px;
@@ -1105,6 +1122,18 @@
               margin-left: 10px;
             }
           }
+          .user-input-link{
+            font-size: 0.75rem!important;
+            height: auto!important;
+            padding: 5px!important;
+            line-height: inherit!important;
+            border-radius: 5px!important;
+            &.min {
+              min-width: 50% !important;
+              font-size: 0.75rem!important;
+              padding: 4px!important;
+            }
+          }
         }
 
         th{
@@ -1112,22 +1141,26 @@
         }
         colgroup{
           col{
-            &:first-child{
-              width: 80% !important;
-            }
-            &:nth-child(2),
-            &:nth-child(3){
-              width: 20% !important;
-            }
-            &:nth-child(4),
-            &:nth-child(5),
-            &:nth-child(6){
-              display: none;
-            }
+            //&:first-child{
+            //  width: 80% !important;
+            //}
+            //&:nth-child(2),
+            //&:nth-child(3){
+            //  width: 20% !important;
+            //}
+            //&:nth-child(4),
+            //&:nth-child(5),
+            //&:nth-child(6){
+            //  display: none;
+            //}
+            display: none;
           }
         }
         .mobile{
           //display:none;
+        }
+        &.btn-type{
+
         }
         &.first{
           th:first-child{
@@ -1135,22 +1168,6 @@
           }
           td:first-child{
             display: none;
-          }
-          colgroup{
-            col{
-              &:first-child{
-                width: 80% !important;
-              }
-              &:nth-child(2){
-                width: 20% !important;
-              }
-              &:nth-child(3),
-              &:nth-child(4),
-              &:nth-child(5),
-              &:nth-child(6){
-                display: none;
-              }
-            }
           }
         }
         &.nth3{
@@ -1160,6 +1177,22 @@
           td:nth-child(3){
             display: none;
           }
+          //colgroup{
+          //  col{
+          //    &:first-child{
+          //      width: 80% !important;
+          //    }
+          //    &:nth-child(2){
+          //      width: 20% !important;
+          //    }
+          //    &:nth-child(3),
+          //    &:nth-child(4),
+          //    &:nth-child(5),
+          //    &:nth-child(6){
+          //      display: none;
+          //    }
+          //  }
+          //}
         }
         &.nth4{
           th:nth-child(4){
@@ -1168,6 +1201,22 @@
           td:nth-child(4){
             display: none;
           }
+          //colgroup{
+          //  col{
+          //    &:first-child{
+          //      width: 80% !important;
+          //    }
+          //    &:nth-child(2){
+          //      width: 20% !important;
+          //    }
+          //    &:nth-child(3),
+          //    &:nth-child(4),
+          //    &:nth-child(5),
+          //    &:nth-child(6){
+          //      display: none;
+          //    }
+          //  }
+          //}
         }
         &.nth5{
           th:nth-child(5){
