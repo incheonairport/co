@@ -30,32 +30,15 @@ $(function(){
 
   (function(){
 
-
-
     var colOneIndex = $('.organization-chart.type3 .organization-chart-list-item').length;
-
-
     for (var i = 0; i <= colOneIndex; i++) {
       $(".organization-chart.type3 .organization-chart-list-item:eq(" + i + ")").addClass('col' + i);
     }
-
     var rowOneIndex = $('.organization-chart.type3 .organization-chart-list').children('.organization-chart-list-item').find('.organization-chart-team').length;
     for (var i = 0; i <= rowOneIndex; i++) {
       $(".organization-chart.type3 .organization-chart-list").children(".organization-chart-list-item").find(".organization-chart-team:eq(" + i + ")").addClass('row' + i);
       $(".organization-chart.type3 .organization-chart-list").children(".organization-chart-list-item").find(".organization-chart-subtit:eq(" + i + ")").addClass('row' + i);
     }
-
-    //$('.organization-chart.type3 .organization-chart-list-item').each(function(i, e){
-    //  var $this = $(this),
-    //      $children = $this.children('.organization-chart-list-item'),
-    //      $find = $children.find('.organization-chart-team'),
-    //      $findLenght = $find.length;
-    //
-    //      $children.find(".organization-chart-team:eq(" + i + ")").addClass('row' + i);
-    //      $children.find(".organization-chart-subtit:eq(" + i + ")").addClass('row' + i);
-    //});
-
-
     $('.organization-chart.type1').each(function(){
       var col0row = 0;
       $('.organization-chart-team', this).each(function(){
@@ -64,8 +47,6 @@ $(function(){
       });
       $('.organization-chart-team',this).height(col0row);
     });
-
-
     $('.organization-chart.type2').each(function(){
       var col0row = 0;
       $(".organization-chart-tit", this).each(function () {
@@ -81,13 +62,7 @@ $(function(){
       });
       $(".organization-chart-team", this).height(col0row);
     });
-
-
-
-
-
     $('.organization-chart.type3').each(function(){
-
       $('.organization-chart-list').each(function(){
 
       var col0row = 0;
@@ -172,63 +147,6 @@ $(function(){
 
       });
     });
-
-
-    //$('.organization-chart.type3').each(function(){
-    //  var col0row0 = 0;
-    //
-    //  $(".organization-chart-team.row1", this).each(function () {
-    //    if ($(this).height() > col0row0)
-    //      col0row0 = $(this).height();
-    //  });
-    //  $(".organization-chart-team.row1", this).height(col0row0);
-    //
-    //});
-
-
-
-
-
-
-    //$('.organization-chart.type2').each(function(){
-    //  var typeTwohighestBox = 0;
-    //  $('.organization-chart-team', this).each(function(){
-    //    if($(this).height() > typeTwohighestBox)
-    //      typeTwohighestBox = $(this).height();
-    //  });
-    //  $('.organization-chart-team',this).height(typeTwohighestBox);
-    //});
-
-
-
-    //$('.organization-chart.type3').each(function(){
-    //  var titleHighestBox = 0;
-    //  $('.organization-chart-subtit', this).each(function(){
-    //    if($(this).height() > titleHighestBox)
-    //      titleHighestBox = $(this).height();
-    //  });
-    //  $('.organization-chart-subtit',this).height(titleHighestBox);
-    //});
-
-    //$('.organization-chart.type3').each(function(){
-    //  var titleTypeThreeHighestBox = 0;
-    //  $('.organization-chart-tit', this).each(function(){
-    //    if($(this).height() > titleTypeThreeHighestBox)
-    //      titleTypeThreeHighestBox = $(this).height();
-    //  });
-    //  $('.organization-chart-tit',this).height(titleTypeThreeHighestBox);
-    //});
-
-    //$('.organization-chart.type2').each(function(){
-    //  var titleTypeTwoHighestBox = 0;
-    //  $('.organization-chart-tit', this).each(function(){
-    //    if($(this).height() > titleTypeTwoHighestBox)
-    //      titleTypeTwoHighestBox = $(this).height();
-    //  });
-    //  $('.organization-chart-tit',this).height(titleTypeTwoHighestBox);
-    //});
-
-
 
   })();
 
