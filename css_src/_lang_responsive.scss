@@ -1,6 +1,11 @@
 @media screen and (max-width:1080px){
 
   .en{
+
+    .btn-type-normal.table {
+      padding:5px;
+    }
+
     .btn{
       &-type{
         &-small{
