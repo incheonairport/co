@@ -6,11 +6,11 @@
     /*조건*/
     .search-box{
       .search-box-input-item{
+        width:50%;
+        border-bottom:0;
         &.a-btn{
           width: 100%!important;
         }
-        width:50%;
-        border-bottom:0;
         .search-box-input-txt{
           border-bottom:0;
           width: 100%;
@@ -43,10 +43,10 @@
 
     /*게시판*/
     .board-list{
-      colgroup{
-        display:none!important;
-        //min-width:0!important;
-      }
+      //colgroup{
+      //  display:none!important;
+      //  //min-width:0!important;
+      //}
       th{
         //width:25%;
         //min-width:0!important;
@@ -1139,28 +1139,24 @@
         th{
           font-size: 0.75rem;
         }
-        colgroup{
-          col{
-            //&:first-child{
-            //  width: 80% !important;
-            //}
-            //&:nth-child(2),
-            //&:nth-child(3){
-            //  width: 20% !important;
-            //}
-            //&:nth-child(4),
-            //&:nth-child(5),
-            //&:nth-child(6){
-            //  display: none;
-            //}
-            display: none;
-          }
-        }
+        //colgroup{
+        //  col{
+        //    &:first-child{
+        //      width: 80% !important;
+        //    }
+        //    &:nth-child(2){
+        //      width: 20% !important;
+        //    }
+        //    &:nth-child(3),
+        //    &:nth-child(4),
+        //    &:nth-child(5),
+        //    &:nth-child(6){
+        //      display: none;
+        //    }
+        //  }
+        //}
         .mobile{
           //display:none;
-        }
-        &.btn-type{
-
         }
         &.first{
           th:first-child{
@@ -1168,6 +1164,22 @@
           }
           td:first-child{
             display: none;
+          }
+          colgroup{
+            col{
+              &:first-child{
+                width: 80% !important;
+              }
+              &:nth-child(2){
+                width: 20% !important;
+              }
+              &:nth-child(3),
+              &:nth-child(4),
+              &:nth-child(5),
+              &:nth-child(6){
+                display: none;
+              }
+            }
           }
         }
         &.nth3{
@@ -1226,12 +1238,76 @@
             display: none;
           }
         }
-        &.last{
-          th:last-child{
+        &.last {
+          th:last-child {
             display: none;
           }
-          td:last-child{
+          td:last-child {
             display: none;
+          }
+        }
+        &.type3{
+          colgroup{
+            col{
+              &:first-child{
+                width: 60% !important;
+              }
+              &:nth-child(2),
+              &:nth-child(3){
+                width: 20% !important;
+                display: block !important;
+              }
+              &:nth-child(4),
+              &:nth-child(5),
+              &:nth-child(6){
+                display: none;
+              }
+            }
+          }
+        }
+        &.type3-2{
+          colgroup{
+            col{
+              &:first-child{
+                width: 20% !important;
+              }
+              &:nth-child(2){
+                width: 60% !important;
+              }
+              &:nth-child(3){
+                width: 20% !important;
+                display: block !important;
+              }
+              &:nth-child(4),
+              &:nth-child(5),
+              &:nth-child(6){
+                display: none;
+              }
+            }
+          }
+        }
+        &.type4{
+          colgroup{
+            col{
+              &:first-child{
+                width: 20% !important;
+              }
+              &:nth-child(2){
+                width: 20% !important;
+              }
+              &:nth-child(3){
+                width: 20% !important;
+                display: block !important;
+              }
+              &:nth-child(4){
+                width: 20% !important;
+                display: block !important;
+              }
+              &:nth-child(5),
+              &:nth-child(6){
+                display: none;
+              }
+            }
           }
         }
       }
@@ -1995,12 +2071,6 @@
         margin-bottom: 6px;
         font-size: 1.25rem;
       }
-      &-txt{
-
-      }
-      &+.iiac-numbering-item{
-
-      }
       &.img{
         display:none;
       }
@@ -2266,16 +2336,6 @@
         }
 
       }
-    }
-  }
-
-  .guide-desc{
-
-    &.mark{
-
-    }
-    &.mark2{
-
     }
   }
 
@@ -2555,6 +2615,9 @@
         }
         .search-box-input-txt{
           width:50%;
+          .max-width{
+            width: 100%;
+          }
         }
         .search-box-input-select{
           width:50%;
