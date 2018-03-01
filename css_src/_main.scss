@@ -197,7 +197,7 @@
             margin-right:10px;
             width:11px;
             height:11px;
-            border:2px solid #333;
+            border:2px solid #fff;
             border-radius:50%;
             position:relative;
             overflow:hidden;
@@ -215,7 +215,7 @@
             bottom:0;
 
             &.on{
-              background:#333333;
+              background:#fff;
             }
           }
         }

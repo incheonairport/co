@@ -1,14 +1,18 @@
 @media screen and (max-width:1200px) {
+  .top-popup *{
+    transition:none;
+  }
   .top-open.top-popup .top-popup-inner{
     height:128px;
   }
   .top-open{
 
     &.top-popup{
-
+      transition:none;
       .top-popup-inner{
         height:auto;
         padding:10px 0 12px;
+        transition:none!important;
       }
     }
 
@@ -37,6 +41,7 @@
   }
   .top-popup-toggle{
     right:0;
+    z-index:8889;
   }
   .top-popup-article{
     a{
@@ -51,6 +56,7 @@
   .top{
     &-popup{
       padding:0 20px;
+      transition:none;
       //display:none;
 
       &-wrap{
@@ -199,6 +205,18 @@
   //}
 
   .header{
+    &:after{
+      content:'';
+      display:block;
+      width:100%;
+      height:50px;
+      background:#fff;
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      z-index: 8888;
+    }
     min-width:inherit;
     height:60px;
     padding-top:15px;
@@ -207,7 +225,7 @@
       width:170px;
       position:relative;
       left:-4px;
-      z-index:0;
+      z-index:8889;
 
       img{
         width:100%;
@@ -613,6 +631,7 @@
       position:absolute;
       top:22px;
       left:25px;
+      z-index:8889;
 
       &:before, &:after {
         content: "";

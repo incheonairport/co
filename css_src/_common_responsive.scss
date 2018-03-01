@@ -3343,11 +3343,13 @@
       }
       &-tit{
         width:100%;
-        padding:8px 0;
+        padding:8px;
+        height: auto!important;
       }
       &-subtit{
         margin-top:8px;
-        padding:8px 0;
+        padding:8px;
+        height: auto!important;
         font-weight:400;
       }
       &-team{

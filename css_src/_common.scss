@@ -5017,10 +5017,11 @@ label.d-none{
       color:#fff;
       font-weight:700;
       font-size:1rem;
-      padding:17px 0;
+      padding:17px;
       &.round{
-        width:190px;
-        padding:20px 0;
+        min-width:190px;
+        padding:17px;
+        line-height:1.4;
         font-size:1.125rem;
         border-radius:50px;
       }
@@ -5103,7 +5104,7 @@ label.d-none{
       width:100%;
       background:#2c8279;
       color:#fff;
-      padding:13px 0;
+      padding:13px;
     }
     &-subtit{
       display:block;
