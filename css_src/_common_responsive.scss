@@ -4143,21 +4143,31 @@
     display:block;
   }
 
+  .list1-item,.list2-item{
+    br{
+      display:none
+    }
+  }
+
 
   /* 모바일 탭 및 컨텐츠영역 간격 */
   .tab-nav+.mt30{
     margin-top:0;
   }
 
-  .tab-nav+.article{
-    margin-top:30px;
-  }
+  //.tab-nav+.article{
+  //  margin-top:30px;
+  //}
 
-  .left-menu+.sub-contents .article{
-    margin-top:30px
+  .left-menu,.tab-nav{
+    margin-bottom:10px;
   }
   .btn-right{
     position: static;
+  }
+
+  .table-inherit{
+    table-layout: inherit;
   }
 
   img{

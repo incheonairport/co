@@ -1,5 +1,19 @@
 
-// 1024
+@media screen and (max-width:1200px) {
+  .main{
+    &-visual{
+      &-news{
+        width:100%;
+        &-section{
+          width:33.33%;
+        }
+        &-inner{
+          width:95%;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width:1080px) {
   .section{
     height:auto!important;

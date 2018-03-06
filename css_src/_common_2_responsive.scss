@@ -4,6 +4,90 @@
   .sticker{
     width:auto;
   }
+  .scheduler-box{
+    &-header{
+
+    }
+    &-controller{
+
+      &-date{
+        font-size: 1rem;
+      }
+
+    }
+
+    .scheduler{
+      thead{
+        tr{
+          th{
+            padding:5px;
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+            height:auto;
+          }
+        }
+      }
+
+      td,th{
+        padding:3px;
+      }
+      &-date{
+      }
+      &-group{
+        &-inner{
+          margin-top:5px;
+        }
+        &-btn{
+          display: block;
+          width:100%;
+          max-height:inherit;
+          line-height:1.4;
+          font-size:0.5rem!important;
+          float: none;
+          margin-left:0;
+        }
+      }
+      &-radio{
+        display:none;
+        & + .scheduler-radio-label{
+          display: block;
+          width:100%;
+          height:auto;
+          line-height:1.4;
+          color: #666;
+          font-size:0.5rem;
+        }
+      }
+    }
+
+
+    &-footer{
+      margin-top:20px;
+      &-tit{
+        font-size:1.25rem;
+        font-weight:700;
+      }
+      .legend{
+        padding:20px 0;
+        .scheduler-group{
+          text-align: inherit;
+        }
+        &-mark{
+          display:inline-block;
+          margin-right:20px;
+          line-height:1.8;
+          .scheduler-group-btn{
+            margin-right:10px;
+          }
+        }
+      }
+    }
+
+  }
 
   .btn-type-small{
     &.more{
