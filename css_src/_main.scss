@@ -167,8 +167,8 @@
 
         .play-button{
           display:block;
-          width:11px;
-          height:11px;
+          width:15px;
+          height:15px;
           padding:0;
           border:none;
           border-radius:0;
@@ -180,7 +180,7 @@
           text-indent:-99999em;
 
           &.play{
-            background-position:-16px 0;
+            background-position:-25px 0;
           }
 
         }
@@ -195,8 +195,8 @@
           &-item{
             float:left;
             margin-right:10px;
-            width:11px;
-            height:11px;
+            width:15px;
+            height:15px;
             border:2px solid #fff;
             border-radius:50%;
             position:relative;
@@ -204,7 +204,7 @@
           }
           &-link{
             display:block;
-            width:11px;
+            width:15px;
             //height:11px;
             height:100%;
             //border:2px solid #333;

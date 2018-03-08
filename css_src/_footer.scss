@@ -162,6 +162,9 @@
       &-item{
         display:inline-block;
         margin-right:10px;
+        &.size{
+          width:25px;
+        }
       }
       &-link{
         width:22px;
@@ -225,4 +228,18 @@
 
   }
 
+}
+
+.wb:after{
+  content:'';
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  margin:auto;
+  background: url(/static/ap/images/ico_weibo.png) no-repeat;
+  width: 25px;
+  height: 20px;
 }
