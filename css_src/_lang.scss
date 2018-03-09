@@ -330,7 +330,11 @@
 }
 
 .ch{
-
+  .btn-type-normal.table {
+    height: auto;
+    line-height: 1.4;
+    padding: 10px 40px 10px 15px;
+  }
   //.text-box.contact{
   //  display:none;
   //}
@@ -427,6 +431,11 @@
 
 
 .ja{
+  .btn-type-normal.table {
+    height: auto;
+    line-height: 1.4;
+    padding: 10px 40px 10px 15px;
+  }
   /* 조직도 */
   //.organization-chart-wrap{
   //  .organization-chart{

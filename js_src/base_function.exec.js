@@ -414,7 +414,7 @@ $(function(){
 
         if( !$(this).data().open ){
 
-          console.log($(this).data().open);
+          //console.log($(this).data().open);
 
           $('.gnb-depth1-item').removeClass('on').children('.gnb-depth1-link').data('open', false);
           $(this).parents('.gnb-depth1-item').addClass('on');
@@ -422,7 +422,7 @@ $(function(){
 
         } else {
 
-          console.log($(this).data().open);
+          //console.log($(this).data().open);
 
           $(this).parents('.gnb-depth1-item').removeClass('on').children('.gnb-depth1-link').data('open', false);
           $(this).data('open', false);
