@@ -17,51 +17,72 @@
     }
     &.type1{
       &:after{
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -17px -128px;
       }
     }
     &.type2 {
       &:after {
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -159px -128px;
       }
     }
     &.type3{
       &:after{
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -291px -128px;
       }
     }
     &.type4{
       &:after{
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -17px -254px;
       }
     }
     &.type5 {
       &:after {
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -160px -254px;
       }
     }
     &.type6{
       &:after{
-        width: 116px;
-        height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -291px -254px;
       }
     }
     &.type7{
       &:after{
-        width: 116px;
-       height: 116px;
-        background-position: -10px -10px;
+        width: 100px;
+        height: 100px;
+        background-position: -17px -379px;
+      }
+    }
+    &.type8{
+      &:after{
+        width: 100px;
+        height: 100px;
+        background-position: -159px -379px;
+      }
+    }
+    &.type9{
+      &:after{
+        width: 100px;
+        height: 100px;
+        background-position: -291px -379px;
+      }
+    }
+    &.type10{
+      &:after{
+        width: 100px;
+        height: 100px;
+        background-position: -17px -505px;
       }
     }
     &-heading{
@@ -85,41 +106,41 @@
     }
     &-onlink{
       display: block;
-      width: 116px;
-      height: 116px;
+      line-height:30px;
+      padding:0 10px;
+      border:1px solid #d9d9d9;
+      cursor: pointer;
+
       position: absolute;
-      text-indent: -99999em;
-      top: 0;
-      left: 0;
+      bottom: 0;
+      left: 34px;
       &:before{
         content: '';
         display: block;
         background: url(/static/co/images/spr_ico_ethics_practice.png) no-repeat;
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        top: -86px;
+        left: 16px;
       }
       &.type1{
         &:before{
-          width: 116px;
-          height: 116px;
-          background-position: -10px -133px;
+          width: 58px;
+          height: 64px;
+          background-position: -36px -35px;
         }
       }
       &.type2{
         &:before{
-          width: 116px;
-          height: 116px;
-          background-position: -10px -133px;
+          width: 51px;
+          height: 51px;
+          background-position: -181px -40px;
         }
       }
       &.type3{
         &:before{
-          width: 116px;
-          height: 116px;
-          background-position: -10px -133px;
+          width: 45px;
+          height: 61px;
+          background-position: -318px -36px;
         }
       }
     }

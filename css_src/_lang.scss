@@ -1,0 +1,183 @@
+.en{
+
+  .gnb-depth1{
+    width: 905px;
+  }
+
+  .main-section2{
+    height: 753px;
+    background-size: cover;
+  }
+
+  .main-section2-text-box{
+    height: 385px;
+  }
+
+  .main-section2-text{
+    min-height: 126px;
+    &-list{
+      margin-top: 25px;
+    }
+  }
+
+  .external-link-text{
+    &.webjin{
+      margin:0;
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.human{
+      margin-right: 0;
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.badminton{
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .text-box.consulting{
+   height: 350px;
+  }
+
+  .result-box-btn{
+    position: relative;
+    right: 0;
+  }
+
+  .user-input-link.min{
+    display: block;
+  }
+
+  .left-menu-depth1-item-link{
+    padding: 10px 30px 10px 15px;
+  }
+
+  .sub-contents-heading2{
+    text-align: left;
+    line-height: 1.3;
+  }
+  .step-circle {
+    &-list {
+      &-item {
+        .list-article {
+          .article-num{
+            font-size: 0.75rem;
+          }
+          .article-txt {
+            font-size: 0.75rem;
+            .guide-desc{
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .multi-col{
+    .double .inner-col.txt-area{
+      padding: 0 20px;
+    }
+  }
+  .guidebox-btn{
+    word-break: keep-all;
+    display: inline-block;
+    max-width: 220px;
+    line-height: 1.3;
+  }
+}
+
+.ch{
+
+  * {
+    font-family: 'Noto Sans SC', roboto, spoqa ,sans-serif!important;
+  }
+
+  .gnb-depth1{
+    width: 905px;
+  }
+
+  .main-section2-text-box{
+    height: 286px;
+  }
+
+  .main-section2-text{
+    min-height: 63px;
+  }
+
+  .external-link-text{
+    &.webjin{
+      margin:0 43px 0 0;
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.human{
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.badminton{
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+  }
+
+}
+
+
+.ja{
+
+  * {
+    font-family: 'Noto Sans JP', roboto, spoqa, sans-serif!important;
+  }
+
+  .gnb-depth1{
+    width: 905px;
+  }
+
+  .main-section2-text-box{
+    height: 300px;
+  }
+
+  .main-section2-text{
+    min-height: 84px;
+  }
+
+  .external-link-text{
+    &.webjin{
+      margin:0 43px 0 0;
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.human{
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+    &.badminton{
+      &:after{
+        left: auto;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .table.vt-dark td{
+    word-break: break-all;
+  }
+}

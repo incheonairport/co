@@ -195,7 +195,8 @@
         padding: 10px 15px;
         display: block;
         &.on{
-          color:#42519e;
+          color: #fff;
+          background: #42519e;
         }
       }
     }
@@ -273,7 +274,9 @@
 
     &.sub{
       margin-top: 10px;
-
+      .tab-nav-sub-default{
+        display:none;
+      }
       .tab-nav-list{
 
         &-item {
@@ -824,7 +827,7 @@ em{
       &-txt {
         position: absolute;
         top: 0;
-        left: 9px;
+        left: 12px;
         color: #fff;
         font-size: 1.125rem;
         line-height: 56px;
@@ -974,12 +977,18 @@ em{
       }
     }
     &.padding-0{
+      thead tr:nth-child(even) th{
+          border-top:1px solid #d9d9d9;
+        }
       th {
         vertical-align: middle;
         font-size:0.875rem;
         display: table-cell;
         &:after {
           height: 26px;
+        }
+        &:nth-child(2){
+          border-top:1px solid #d9d9d9;
         }
       }
       td{
@@ -1098,6 +1107,10 @@ em{
 
       a{
         font-size:1rem;
+
+        &.table{
+          font-size: 0.875rem;
+        }
       }
 
       &.center{
@@ -1176,6 +1189,9 @@ em{
       &:nth-child(2){
         border-left:1px solid #d9d9d9;
       }
+      &[rowspan]{
+        border-right:1px solid #d9d9d9;
+      }
     }
 
     td{
@@ -1241,6 +1257,10 @@ em{
     td{
       font-size:0.875rem;
     }
+  }
+
+  .list1-item{
+    font-size:1rem;
   }
 }
 
@@ -1614,6 +1634,16 @@ em{
           font-weight: 800;
         }
       }
+
+      &.table{
+        height: 30px;
+        line-height: 30px;
+        margin-bottom:10px;
+
+        &:last-child{
+          margin-bottom:0;
+        }
+      }
     }
 
     &-small {
@@ -1628,6 +1658,11 @@ em{
       font-weight: 400;
       color: #222;
       display: inline-block;
+
+      &.large{
+        height:auto;
+        padding: 5px 32px 5px 12px;
+      }
       &.point {
         background: #f2f2f2;
       }
@@ -2133,7 +2168,7 @@ label.d-none{
 .object-list{
   min-width:250px;
   height:40px;
-  padding: 0 15px;
+  padding-left: 15px;
   border: 1px solid #d9d9d9;
 }
 
@@ -2223,6 +2258,10 @@ label.d-none{
   padding:30px;
   &.padding25{
     padding: 25px 0 25px 25px;
+  }
+
+  &.full-step{
+    padding: 30px 0;
   }
 
   &.advertising{
@@ -2797,12 +2836,36 @@ label.d-none{
 }
 
 .step-circle {
+
   &-list {
     width: 870px;
     @extend %clearfix;
     &-item {
       float: left;
       padding: 0 30px 0 10px;
+
+      &.three{
+        padding: 0 170px 0 10px;
+
+        &.ico:after{
+          background-position: -219px -28px;
+          width: 11px;
+          height: 22px;
+          right: 75px;
+          left: auto;
+        }
+      }
+      &.four{
+        padding: 0 30px 0 35px;
+
+        &.ico:after{
+          background-position: -219px -28px;
+          width: 11px;
+          height: 22px;
+          right: -10px;
+          left: auto;
+        }
+      }
 
       .list-article {
         width: 139px;
@@ -2843,10 +2906,18 @@ label.d-none{
     }
     &.no-ico {
       width: 100%;
+      &.four{
+        .step-circle-list-item {
+          padding: 0;
+          & + .step-circle-list-item {
+            padding-left: 84px;
+          }
+        }
+      }
       .step-circle-list-item {
         padding: 0;
         & + .step-circle-list-item {
-          padding-left: 7px;
+          padding-left: 6px;
         }
       }
     }
@@ -3558,6 +3629,13 @@ label.d-none{
   border: 1px solid #d9d9d9;
   text-align: center;
   @extend %clearfix;
+  // for develop main html
+  &-year-contents{
+    display:none;
+    &.on{
+      display:block;
+    }
+  }
   &-title{
     font-weight:800;
     float: left;
@@ -3576,7 +3654,7 @@ label.d-none{
     }
     &-select, &-txt{
       height:40px;
-      padding: 0 10px;
+      padding-left: 10px;
       border: 1px solid #818181;
       border-right:0;
       font-size:0.9375rem;
@@ -3597,6 +3675,9 @@ label.d-none{
       }
       &.year{
         width:79px;
+        border: 1px solid #818181;
+      }
+      &.year2{
         border: 1px solid #818181;
       }
       &.month{
@@ -3661,6 +3742,11 @@ label.d-none{
       &.big{
         width: 100px;
         height: 92px;
+      }
+
+      &.big2{
+        width: 160px;
+        height: 145px;
       }
 
       &.view-large-btn{
@@ -3827,6 +3913,11 @@ label.d-none{
       margin-right: 25px;
       display: inline-block;
       width: 158px;
+      vertical-align:top;
+    }
+    &-desc{
+      display: inline-block;
+      width: calc(100% - 187px);
     }
   }
 
@@ -4819,13 +4910,135 @@ label.d-none{
 }
 
 /* 조직도 */
-.organization-chart{
+.organization-chart-wrap{
   width: 100%;
-  height: 3179px;
   overflow: hidden;
-  background: url(/static/co/images/digr_organization_chart.png)no-repeat;
+  background: url(/static/co/images/digr_organization_chart.png) no-repeat 0 -12px;
   padding-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
+  .organization-chart{
+    @extend %clearfix;
+    text-align:center;
+    &-grid{
+      width:100%;
+      height:160px;
+      position:relative;
+    }
+    &-box{
+      position:absolute;
+      width:210px;
+      background:#333649;
+      color:#fff;
+      font-weight:700;
+      font-size:1.125rem;
+      padding:17px 0;
+      &.round{
+        width:190px;
+        padding:20px 0;
+        font-size:1.25rem;
+        border-radius:50px;
+      }
+      &:first-child{
+        left:0;
+        right:0;
+        margin:auto;
+      }
+      &:nth-child(2){
+        top:66px;
+        left:0;
+      }
+      &:last-child{
+        top:66px;
+        right:0;
+      }
+    }
+    &-list{
+      float:right;
+      @extend %clearfix;
+      &-item{
+        float:left;
+        width:205px;
+        margin-left:16px;
+        color:#fff;
+        font-size:1.125rem;
+        font-weight:700;
+        &:first-child{
+          margin-left:0;
+        }
+        &:nth-child(2){
+          margin-right:4px;
+        }
+        &:nth-child(3){
+          margin-left:14px;
+        }
+      }
+    }
+    &-tit{
+      display:block;
+      width:100%;
+      background:#2c8279;
+      color:#fff;
+      padding:13px 0;
+    }
+    &-subtit{
+      display:block;
+      width:100%;
+      border:1px solid #d9d9d9;
+      margin-top:16px;
+      padding:13px 0;
+      font-weight:900;
+    }
+    &-team{
+      padding:18px;
+      text-align:left;
+      background:#f2f2f2;
+      .list1-item{
+        font-size:1rem;
+        line-height:1.3;
+        &:before{
+          color:#222;
+        }
+      }
+      .organization-chart-team-link{
+        &:hover{
+          color:#999;
+        }
+      }
+    }
+
+    &.type1{
+      .organization-chart-team{
+        min-height:124px;
+      }
+    }
+
+    &.type2{
+      .organization-chart-box{
+        background:#41519e;
+      }
+      .organization-chart-team{
+        min-height:148px;
+      }
+      .organization-chart-tit{
+        background:#4674c9;
+      }
+    }
+
+    &.type3{
+      .organization-chart-tit{
+        background:#dd7713;
+      }
+      .organization-chart-team{
+        min-height:148px;
+      }
+      .organization-chart-list{
+        float:left;
+      }
+    }
+  }
+
+
+
 }
 
 /* 국제 구호 활동 */
@@ -4929,6 +5142,11 @@ label.d-none{
   width: 100%;
   height: 400px;
   border: 1px solid #d9d9d9 ;
+
+  iframe{
+    width:100%;
+    height:400px;
+  }
 }
 
 /*안내, 경로*/

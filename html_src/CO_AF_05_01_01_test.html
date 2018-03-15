@@ -1,0 +1,225 @@
+<!--=include _include/_header.html -->
+<section id="top-contents" class="contents">
+  <!--위치-->
+  <div class="location">
+    <div class="location-btn">
+      <button type="button" class="location-btn-minus ico">축소</button>
+      <button type="button" class="location-btn-plus ico">확대</button>
+      <button type="button" class="location-btn-print ico">인쇄</button>
+    </div>
+    <div class="location-bar">
+      <ul class="location-bar-nav">
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link home ico">home</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">공사소개</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">열린 경영</a></li>
+        <li class="location-bar-nav-item ico"><a href="#" class="location-bar-nav-item-link">환경경영</a></li>
+        <li class="location-bar-nav-item"><a href="#" class="location-bar-nav-item-link">비전 및 전략</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--//위치-->
+  <div class="sub-top bg1">
+    <div class="sub-top-inner">
+      <div class="sub-top-descbox">
+        <div class="sub-top-descbox-text">
+          <h2 class="sub-top-descbox-tit">공사소개</h2>
+          <h3 class="sub-top-descbox-sub">열린경영</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contents">
+  <div class="inner-section">
+
+    <!--=include _include/_left_menu_01.html -->
+
+    <div class="sub-contents">
+      <h4 class="sub-contents-heading1">환경경영</h4>
+
+      <nav class="tab-nav long-word">
+        <ul class="tab-nav-list">
+          <li class="tab-nav-list-item" style="width:25%;">
+            <a href="#" class="tab-nav-list-link on">환경경영</a>
+          </li>
+          <li class="tab-nav-list-item" style="width:25%;">
+            <a href="#" class="tab-nav-list-link">환경<br>모니터링</a>
+          </li>
+          <li class="tab-nav-list-item" style="width:25%;">
+            <a href="#" class="tab-nav-list-link">항공기<br>소음관리</a>
+          </li>
+          <li class="tab-nav-list-item" style="width:25%;">
+            <a href="#" class="tab-nav-list-link">대기환경<br>관리</a>
+          </li>
+          <li class="tab-nav-list-item" style="width:33.33%;">
+            <a href="#" class="tab-nav-list-link">수자원<br>관리</a>
+          </li>
+          <li class="tab-nav-list-item" style="width:33.33%;">
+            <a href="#" class="tab-nav-list-link">실내 공기질<br>관리</a>
+          </li>
+          <li class="tab-nav-list-item" style="width:33.33%;">
+            <a href="#" class="tab-nav-list-link">자원관리</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="tab-nav sub">
+        <button type="button" name="button" title="클릭하면 관련사이트 목록이 나타납니다." class="tab-nav-sub-default">
+          <span>비전 및 전략</span><span class="ico arrow_up">목록보기</span>
+        </button>
+        <ul class="tab-nav-list">
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link on">비전 및 전략</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">방침</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">환경경영 체제</a>
+          </li>
+          <li class="tab-nav-list-item">
+            <a href="#" class="tab-nav-list-link">환경 보고서</a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+      <script>
+
+
+        if ($('html').hasClass('mobile')) {
+          $('.tab-nav').addClass('mobile-tab');
+        }
+
+        $('.tab-nav-sub-default').on('click', function(){
+          $(this).toggleClass('on');
+          $(this).next('.tab-nav-list').toggleClass('on');
+        });
+
+        $('.tab-nav-sub-default').on('click', function(){
+          $(this).parents('.tab-nav-list').removeClass('on');
+          $(this).parents('.tab-nav-list').prev('.tab-nav-sub-default').removeClass('on');
+        });
+
+        var tabcontainer = $('.tab-nav-list');
+        if (!tabcontainer.is(e.target) && tabcontainer.has(e.target).length === 0) {
+          tabcontainer.removeClass('on');
+          $('.tab-nav-sub-default').removeClass('on');
+        }
+
+        /**
+         * SelectBox Class
+         */
+
+//        function mobileTabSub(){
+//
+//          this.toggleSelectList = function( $this ){
+//            $this.toggleClass('on');
+//            $this.next('.select-list').toggleClass('on');
+//          };
+//
+//          this.afterClickList = function( $this ){
+//            $this.parents('.select-list').removeClass('on');
+//            $this.parents('.select-list').prev('.select-link-default').removeClass('on');
+//          };
+//
+//          this.hideList = function(e){
+//
+//            var container = $('.select-list');
+//            if (!container.is(e.target) && container.has(e.target).length === 0) {
+//              container.removeClass('on');
+//              $('.select-link-default').removeClass('on');
+//            }
+//
+//          };
+//
+//        } mobileTabSub();
+      </script>
+
+
+      <article class="article mt30">
+        <h5 class="sub-contents-heading2">환경경영 비전 및 전략</h5>
+        <p>
+          저탄소 친환경공항 중장기 추진계획을 수립하여 글로벌 리딩 저탄소 친환경 공항으로 거듭나기 위하여 노력하고 있습니다.
+        </p>
+
+        <div class="digr-vision-strategy1 mt30">
+          <ul class="ir-technique">
+            <li>
+              전략과제(전사)
+              <ul>
+                <li>저탄소 친환경 공항 구현</li>
+              </ul>
+            </li>
+            <li>
+              추진과제(전사)
+              <ul>
+                <li>환경오염 저감 및 자원재활용 확대</li>
+              </ul>
+            </li>
+            <li>
+              환경목표
+              <ul>
+                <li>환경적으로 건강하고 자원친화적인 친환경 공항 구현</li>
+              </ul>
+            </li>
+            <li>
+              과제
+              <ul>
+                <li>환경오염저감을 통한 건강한 공항 구현</li>
+                <li>재활용 확대 등을 통한 자원친화적인 공항 구현</li>
+                <li>친환경 공항 환경관리체계 구축</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="article">
+        <h5 class="sub-contents-heading2">조직</h5>
+
+        <div class="digr-vision-strategy2">
+          <ul class="ir-technique">
+            <li>
+              환경관리팀
+              <ul>
+                <li>환경관리팀</li>
+                <li>환경관리소</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="list1 mt30">
+          <li class="list1-item">환경친화적인 공항운영을 지향하는 인천국제공항공사는 환경관리업무의 독립성 을 보장하기 위하여 환경전담팀인 환경관리팀을 조직하여 환경문제를 전담하고 있으며, 공항운영, 공항건설분야에 환경경영시스템(ISO14000s)을 취득하여 운영 중입니다.</li>
+          <li class="list1-item">환경조직은 폐기물, 수질, 대기질, 항공기소음 등 제반환경문제를 총괄담당하는 환경관리팀과 공항내에 설치되어 24시간 감시활동을 수행하고 있는 환경감시시설의 운영을 담당하는 환경관리소로 구성되어 운영되고 있습니다.<li>
+          <li class="list1-item">환경관리소는 전문용역기관에 의해 측정국 점검 및 운영, 환경조사차량 운영, 측정자료의 분석 등의 업무를 수행하여, 공항환경 모니터링에 만전을 기하고 있습니다.</li>
+        </ul>
+      </article>
+
+      <article class="article">
+        <div class="text-box contact">
+          <div class="text-box-headline-col">
+            <h6 class="text-box-headline">홈페이지 내 게시된 정보 문의는 아래의 연락처로 문의 주시기 바랍니다.</h6>
+          </div>
+          <ul class="list1">
+            <li class="list1-item ">
+              <strong>담당부서 :</strong>환경관리팀
+            </li>
+            <li class="list1-item ">
+              <strong>TEL :</strong> 032-741-2644, 2645
+            </li>
+          </ul>
+        </div>
+      </article>
+
+
+    </div>
+
+  </div>
+</section>
+<!--=include _include/_footer.html -->

@@ -29,8 +29,33 @@ $(function(){
 
   $('.gnb').append('<div class="scroll-amount"></div>');
 
+  (function(){
+
+    var $html = $('html');
+    var lang = $html.attr('lang');
 
 
+    switch(lang){
+
+      case 'ko' :
+        $html.addClass('ko');
+        break;
+
+      case 'en' :
+        $html.addClass('en');
+        break;
+
+      case 'ch' :
+        $html.addClass('ch');
+        break;
+
+      case 'ja' :
+        $html.addClass('ja');
+        break;
+
+    }
+
+  })();
 
   /**
    * event
@@ -143,6 +168,35 @@ $(function(){
 
     });
 
+    $('.main-visual-news-title.tab').on('click', function(){
+
+      var indexTab = $(this).index('.main-visual-news-title.tab');
+
+      $('.main-visual-news-title.tab').each(function(i){
+
+        if( i < indexTab ){
+          $('.main-visual-news-title.tab').eq(i).addClass('prev').removeClass('next on');
+        } else if(i > indexTab) {
+          $('.main-visual-news-title.tab').eq(i).addClass('next').removeClass('prev on');
+        } else {
+          $('.main-visual-news-title.tab').eq(i).addClass('on').removeClass('prev next');
+        }
+
+      });
+
+      $('.main-visual-news-txt.tab').removeClass('on');
+      $(this).next('.main-visual-news-txt.tab').addClass('on');
+
+    });
+
+    $('.main-banner-wrap .banner-btn.left').on('click', function(){
+      BottomBanner.rollRight();
+    });
+
+    $('.main-banner-wrap .banner-btn.right').on('click', function(){
+      BottomBanner.rollLeft();
+    });
+
   })();
 
   // LNB 이벤트
@@ -192,6 +246,24 @@ $(function(){
 
       }
 
+    });
+
+  })();
+
+  // select box 이벤트
+  (function(){
+
+    $('.search-box-btn').on('click', function(){
+      if( $('div').hasClass('search-box-year-contents') ){
+        var index = $('#search-year.search-box-input-select option:selected').index();
+        var val = $('#search-year.search-box-input-select option:selected').text();
+
+        $('.search-box-year-contents').removeClass('on');
+        $('.search-box-year-contents').eq(index).addClass('on');
+      }
+
+      $('.sub-contents-heading2.change-heading .year').text( val );
+      $('.sub-contents-heading2.change-heading .number').text( $('.search-box-year-contents').eq(index).find('.table.vt-dark tr').length-1 );
     });
 
   })();

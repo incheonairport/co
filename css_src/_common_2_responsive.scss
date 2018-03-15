@@ -1,0 +1,137 @@
+
+// 1024
+@media all and (max-width:1023px) {
+  .massage{
+
+    &-wrap{
+      width:100%;
+      height:auto;
+      padding:15px;
+      position: static;
+      text-align:center;
+
+    }
+
+    &-txt-tit{
+      br{
+        display:none;
+      }
+      font-size: 1.5rem;
+    }
+
+    &-txt{
+      font-size: 1rem;
+
+      &:before{
+       display:none;
+      }
+    }
+
+    &-img{
+      position: static;
+      width: 50%;
+      margin-bottom: 10px;
+    }
+
+    &-img2{
+      position: static;
+    }
+
+  }
+  .history{
+    text-align:center;
+    &-txt{
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    &-ceo{
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    &-list{
+      &-head{
+        width:160px;
+        float: left;
+      }
+
+      &-body{
+        float:left;
+      }
+    }
+
+  }
+
+  /*이용일시*/
+  .timesetting{
+    display:block;
+    &-etc{
+      float:none;
+    }
+    &-time{
+      float:none;
+    }
+    &-date{
+      width:100%;
+      float:none;
+      &-text{
+        height: 40px;
+        line-height:40px;
+      }
+      &-day{
+        width:calc(100% - 40px);
+      }
+      &-calendar {
+        border-left:1px solid #d9d9d9;
+        &:after {
+          background-position: -99px -96px;
+          width: 17px;
+          height: 16px;
+        }
+      }
+      &.long{
+        width: 160px;
+        .timesetting-date-day{
+          width: 120px;
+        }
+      }
+    }
+    &-dash{
+      width:100%;
+      float: none;
+      display:inline-block;
+      text-align:center;
+      margin:0;
+    }
+    .object-list{
+      min-width: 100px;
+    }
+    .user-text{
+      width: 177px;
+      height: 40px;
+      vertical-align: bottom;
+    }
+  }
+
+  .input-align{
+    width:100%;
+    .capcha{
+      width:50%;
+      float:left;
+      &:first-child{
+        border-right:0!important;
+      }
+      &:nth-child(3){
+        border-left:1px solid #d9d9d9;
+      }
+    }
+    img{
+      float:none;
+      width:100%;
+    }
+    .user-input-text{
+      width:100%!important;
+    }
+  }
+}
